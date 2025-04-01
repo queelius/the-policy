@@ -1,0 +1,68 @@
+\documentclass[12pt,oneside]{novel}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Set page margins
+\geometry{
+    paper=a5paper,  % Consider a5paper for a typical novel size
+    inner=0.75in,
+    outer=0.5in,
+    top=0.5in,
+    bottom=0.5in,
+    bindingoffset=0.25in
+}
+
+% Typography enhancements
+\usepackage{fontspec}  % For better font control (requires XeLaTeX or LuaLaTeX)
+\setmainfont{EB Garamond}  % Classic book font, change as desired
+\usepackage{setspace}
+\onehalfspacing
+
+% Chapter styling
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
+% Header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\textit{\leftmark}}
+\fancyhead[LO]{\textit{\rightmark}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% For epigraphs and quotations
+\usepackage{epigraph}
+\setlength\epigraphwidth{0.7\textwidth}
+\setlength\epigraphrule{0pt}
+
+% Title information
+\title{Your Novel Title}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\chapter*{Dedication}
+To whoever needs this story most.
+
+\mainmatter
+
+\chapter{First Chapter}
+Your story begins here...
+
+\end{document}

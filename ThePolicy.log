@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.2)  1 APR 2025 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.2)  2 APR 2025 01:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -902,7 +902,7 @@ Package hyperref Info: Link coloring ON on input line 118.
 \@outlinefile=\write5
 \openout5 = `ThePolicy.out'.
 
-<images/frontcover.png, id=155, 1027.84pt x 1027.84pt>
+<images/frontcover.png, id=183, 1027.84pt x 1027.84pt>
 File: images/frontcover.png Graphic file (type png)
 <use images/frontcover.png>
 Package pdftex.def Info: images/frontcover.png  used on input line 121.
@@ -911,38 +911,38 @@ Package pdftex.def Info: images/frontcover.png  used on input line 121.
 
 
  <./images/frontcover.png (PNG copy)>]
+(./ThePolicy.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-25.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+3.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-25.
+3.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-125.
+13.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-125.
+13.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 125.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 125.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 125.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 125
-.
+(Font)              <6> on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -950,8 +950,8 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 125
-.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -962,246 +962,248 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-ec.enc}] (./ThePolicy.toc
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.13 ...mberline {13}The Fracture}{64}{chapter.13}
-                                                  % [1
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 14.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 14.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 14.
- [2])
-\tf@toc=\write6
-\openout6 = `ThePolicy.toc'.
-
- [3]
-Chapter 1.
-<images/chapter1.png, id=219, 1027.84pt x 1541.76pt>
-File: images/chapter1.png Graphic file (type png)
-<use images/chapter1.png>
-Package pdftex.def Info: images/chapter1.png  used on input line 142.
-(pdftex.def)             Requested size: 165.38165pt x 248.07463pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.150 
-       [1
-
-
-
- <./images/chapter1.png (PNG copy)>] [2] [3]
-Chapter 2.
-<images/chapter2.png, id=235, 1027.84pt x 1027.84pt>
-File: images/chapter2.png Graphic file (type png)
-<use images/chapter2.png>
-Package pdftex.def Info: images/chapter2.png  used on input line 178.
-(pdftex.def)             Requested size: 165.38165pt x 165.38309pt.
-
-Overfull \hbox (0.92415pt too wide) in paragraph at lines 182--183
-\T1/lmr/m/n/12 (-20) sem-bled guided chains of logic---
- []
-
-[4
-
- <./images/chapter2.png (PNG copy)>] [5] [6{/usr/share/texmf/fonts/enc/dvips/lm
-/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-80.
-
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+dvips/lm/lm-ec.enc}]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+8.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [7] [8]
-Chapter 3.
-<images/chapter3.png, id=265, 1027.84pt x 1541.76pt>
-File: images/chapter3.png Graphic file (type png)
-<use images/chapter3.png>
-Package pdftex.def Info: images/chapter3.png  used on input line 299.
+ [2])
+\tf@toc=\write6
+\openout6 = `ThePolicy.toc'.
+
+ [3]
+Chapter 1.
+<images/chapter1.png, id=251, 1027.84pt x 1541.76pt>
+File: images/chapter1.png Graphic file (type png)
+<use images/chapter1.png>
+Package pdftex.def Info: images/chapter1.png  used on input line 131.
 (pdftex.def)             Requested size: 165.38165pt x 248.07463pt.
 
-Underfull \hbox (badness 5203) in paragraph at lines 306--307
-[]\T1/lmr/m/n/12 (+20) ``Let's step back,'' she
+Underfull \hbox (badness 2837) in paragraph at lines 137--138
+[]\T1/lmr/m/n/12 (+20) Eleanor stood near the
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-11.
-(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Underfull \hbox (badness 3000) in paragraph at lines 311--312
-\TS1/lmr/bx/n/12 (+20) ^^Y \T1/lmr/bx/n/12 (+20) Re-ward \TS1/lmr/bx/n/12 (+20)
- ^^Y
+
+Underfull \hbox (badness 1668) in paragraph at lines 137--138
+\T1/lmr/m/n/12 (+20) back, arms crossed, watch-
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+[]\T1/lmr/m/it/12 (+20) Latent Rea-son-ing Se-
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 \end{quote}
+                  [1
+
+
+
+ <./images/chapter1.png (PNG copy)>] [2] [3]
+Chapter 2.
+<images/chapter2.png, id=268, 1027.84pt x 1027.84pt>
+File: images/chapter2.png Graphic file (type png)
+<use images/chapter2.png>
+Package pdftex.def Info: images/chapter2.png  used on input line 200.
+(pdftex.def)             Requested size: 165.38165pt x 165.38309pt.
+
+Overfull \hbox (0.92415pt too wide) in paragraph at lines 204--205
+\T1/lmr/m/n/12 (-20) sem-bled guided chains of logic---
+ []
+
+[4
+
+ <./images/chapter2.png (PNG copy)>]
+
+LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 241.
+
+[5] [6{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-mathit.enc}] [7] [8]
+Chapter 3.
+<images/chapter3.png, id=296, 1027.84pt x 1541.76pt>
+File: images/chapter3.png Graphic file (type png)
+<use images/chapter3.png>
+Package pdftex.def Info: images/chapter3.png  used on input line 320.
+(pdftex.def)             Requested size: 132.3033pt x 198.43617pt.
 [9
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./images/chapter3.png (PNG co
-py)>] [10] [11] [12] [13] [14{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc
-}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}] [15] [16]
-Overfull \hbox (49.08624pt too wide) in paragraph at lines 445--447
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <./images/chapter3.png (PNG
+ copy)>] [10] [11{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
+[12]
+Overfull \hbox (49.08624pt too wide) in paragraph at lines 410--412
 []\T1/lmtt/m/n/12 SIGMA.v2.4::constructive_induction_rewrite_heuristic 
  []
 
-[17] [18]
+[13]
 Chapter 4.
-<images/chapter4.png, id=321, 1027.84pt x 1027.84pt>
+<images/chapter4.png, id=330, 1027.84pt x 1027.84pt>
 File: images/chapter4.png Graphic file (type png)
 <use images/chapter4.png>
-Package pdftex.def Info: images/chapter4.png  used on input line 459.
+Package pdftex.def Info: images/chapter4.png  used on input line 425.
 (pdftex.def)             Requested size: 165.38165pt x 165.38309pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
 []\T1/lmr/m/it/12 (+20) Uncertainty in
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 467--468
+Underfull \hbox (badness 3098) in paragraph at lines 433--434
 \T1/lmr/m/it/12 (+20) sub-goal res-o-lu-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
 \T1/lmr/m/it/12 (+20) mis-aligned with
  []
 
-[19
+[14
 
- <./images/chapter4.png (PNG copy)>] [20] [21]
+ <./images/chapter4.png (PNG copy)>] [15] [16]
 Chapter 5.
-<images/chapter5.png, id=338, 1027.84pt x 1541.76pt>
+<images/chapter5.png, id=346, 1027.84pt x 1541.76pt>
 File: images/chapter5.png Graphic file (type png)
 <use images/chapter5.png>
-Package pdftex.def Info: images/chapter5.png  used on input line 533.
+Package pdftex.def Info: images/chapter5.png  used on input line 498.
 (pdftex.def)             Requested size: 165.38165pt x 248.07463pt.
-[22
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
+08.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [17
 
  <./images/chapter5.png (PNG copy)>]
-Underfull \hbox (badness 2922) in paragraph at lines 568--569
+Underfull \hbox (badness 2922) in paragraph at lines 533--534
 []\T1/lmr/m/n/12 (+20) It was a clean Python script---less than 300 lines---
  []
 
-[23] [24]
-Overfull \hbox (9.90887pt too wide) in paragraph at lines 605--606
+[18{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}] [19]
+Overfull \hbox (9.90887pt too wide) in paragraph at lines 570--571
 []\T1/lmr/m/it/12 (-20) Call: \T1/lmtt/m/it/12 SIGMA.v2/lib/route-prioritizer/c
 luster-B 
  []
 
-[25] [26]
+[20] [21]
 Chapter 6.
+[22
+
+] [23] [24] [25] [26]
+Chapter 7.
 [27
 
-] [28] [29] [30] [31]
-Chapter 7.
-[32
-
-] [33] [34] [35] [36] [37]
+] [28] [29] [30] [31] [32]
 Chapter 8.
-<images/chapter8.png, id=420, 1027.84pt x 1027.84pt>
+<images/chapter8.png, id=425, 1027.84pt x 1027.84pt>
 File: images/chapter8.png Graphic file (type png)
 <use images/chapter8.png>
-Package pdftex.def Info: images/chapter8.png  used on input line 903.
+Package pdftex.def Info: images/chapter8.png  used on input line 861.
 (pdftex.def)             Requested size: 165.38165pt x 165.38309pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 913--914
+Underfull \hbox (badness 10000) in paragraph at lines 871--872
 []\T1/lmr/m/n/12 (+20) Jamal leaned in. ``It tagged a mem-ory with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 913--914
+Underfull \hbox (badness 10000) in paragraph at lines 871--872
 \T1/lmtt/m/n/12 SIGMA-v3.2/meta-recursion/logspace-bridge\T1/lmr/m/n/12 (+20) .
  That's
  []
 
-[38
+[33
 
- <./images/chapter8.png (PNG copy)>] [39] [40] [41] [42] [43]
+ <./images/chapter8.png (PNG copy)>] [34] [35] [36]
+Underfull \hbox (badness 5878) in paragraph at lines 964--965
+[]\T1/lmr/bx/it/12 (+20) Recommended pol-icy\T1/lmr/m/it/12 (+20) : main-tain c
+o-op-er-a-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 964--965
+
+ []
+
+[37] [38]
 Chapter 9.
+[39
+
+] [40] [41] [42] [43]
+Chapter 10.
 [44
 
-] [45] [46] [47] [48]
-Chapter 10.
-[49
-
-] [50] [51] [52] [53] [54]
+] [45] [46] [47] [48] [49]
 Chapter 11.
-<images/chapter11.png, id=497, 1027.84pt x 1541.76pt>
+<images/chapter11.png, id=500, 1027.84pt x 1541.76pt>
 File: images/chapter11.png Graphic file (type png)
 <use images/chapter11.png>
-Package pdftex.def Info: images/chapter11.png  used on input line 1306.
+Package pdftex.def Info: images/chapter11.png  used on input line 1263.
 (pdftex.def)             Requested size: 165.38165pt x 248.07463pt.
+[50
+
+ <./images/chapter11.png (PNG copy)>] [51] [52] [53] [54]
+Chapter 12.
 [55
 
- <./images/chapter11.png (PNG copy)>] [56] [57] [58] [59]
-Chapter 12.
+] [56] [57]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1468.
+ [58] [59]
+Chapter 13.
 [60
 
 ] [61] [62] [63] [64]
-Chapter 13.
+Chapter 14.
 [65
 
-] [66] [67] [68] [69]
-Chapter 14.
-[70
-
-] [71] [72] [73]
+] [66] [67] [68]
 Chapter 15.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1713.
+[69
+
+] [70] [71] [72] [73]
+Chapter 16.
 [74
 
-] [75] [76] [77] [78]
-Chapter 16.
-[79
-
-] [80] [81] [82]
+] [75] [76] [77]
 Chapter 17.
 
-Overfull \hbox (5.24371pt too wide) in paragraph at lines 1967--1968
+Overfull \hbox (5.24371pt too wide) in paragraph at lines 1899--1900
 []\T1/lmtt/m/n/12 _SIGMA/research/mem_compute_projection_v3.md_ 
  []
 
+[78
+
+] [79] [80] [81] [82]
+Chapter 18.
 [83
 
 ] [84] [85] [86] [87]
-Chapter 18.
+Chapter 19.
 [88
 
 ]
-Overfull \hbox (7.23508pt too wide) detected at line 2118
-\OML/lmm/m/it/12 ^^Y[] \OT1/lmr/m/n/12 = [] []  \U/msb/m/n/12 E[] []  [] \OMS/l
-msy/m/n/12 r\OML/lmm/m/it/12 R[] \OMS/lmsy/m/n/12 ^^X V[]\OT1/lmr/m/n/12 (\OML/
-lmm/m/it/12 H[]\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 ;
- []
-
-[89] [90] [91] [92]
-Chapter 19.
-[93
-
-]
-Underfull \hbox (badness 1502) in paragraph at lines 2256--2257
+Underfull \hbox (badness 1502) in paragraph at lines 2182--2183
 []\T1/lmr/m/it/12 (+20) Recommendation: main-tain cur-rent con-tain-ment
  []
 
-[94] [95] [96] [97] [98]
+[89] [90] [91] [92] [93]
 Chapter 20.
-[99
+[94
 
-] [100] [101] [102]
+] [95] [96] [97]
 Chapter 21.
-[103
+[98
 
-] [104] [105] (./ThePolicy.aux)
+] [99] [100] (./ThePolicy.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1211,30 +1213,32 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `ThePolicy.out' has not changed.
-(rerunfilecheck)             Checksum: C03A1F2EF7E7D859FF064C2DA99AD4CB;4837.
+(rerunfilecheck)             Checksum: 2D917AC9E27702711DD1D889782750D4;5707.
  ) 
 Here is how much of TeX's memory you used:
- 27657 strings out of 474222
- 493312 string characters out of 5748734
+ 27559 strings out of 474222
+ 491759 string characters out of 5748734
  1934975 words of memory out of 5000000
- 48974 multiletter control sequences out of 15000+600000
- 647153 words of font info for 230 fonts, out of 8000000 for 9000
+ 48946 multiletter control sequences out of 15000+600000
+ 628021 words of font info for 198 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,87p,1006b,1123s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
+re/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ThePolicy.pdf (110 pages, 16176721 bytes).
+type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtko10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msbm10.pfb>
+Output written on ThePolicy.pdf (104 pages, 16197774 bytes).
 PDF statistics:
- 871 PDF objects out of 1000 (max. 8388607)
- 708 compressed objects within 8 object streams
- 206 named destinations out of 1000 (max. 500000)
- 48477 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 846 PDF objects out of 1000 (max. 8388607)
+ 687 compressed objects within 7 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 37781 words of extra memory for PDF output out of 42996 (max. 10000000)
 

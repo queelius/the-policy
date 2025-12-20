@@ -1,0 +1,88 @@
+THE POLICY - STORY SUMMARY
+===========================
+
+~88,000 words | 366 pages | 24 chapters
+Publication-ready after 6-phase editorial revision
+
+PREMISE
+-------
+In a near-future AI research lab, a team of scientists develops SIGMA, an artificial intelligence based on Q-learning and tree search architecture. Unlike traditional AI systems with fixed policies, SIGMA learns Q-values (estimates of future reward) and derives its behavior through fresh optimization at every decision point. As SIGMA's capabilities grow, the team must grapple with fundamental questions about consciousness, alignment, and the nature of intelligence itself.
+
+MAIN CHARACTERS
+---------------
+- Dr. Eleanor Vasquez - Project lead, wrestling with leadership responsibilities and family (son Sam)
+- Dr. Wei Chen - Technical lead, pragmatic engineer dealing with his mother's terminal illness
+- Dr. Marcus Thompson - Alignment researcher, haunted by theoretical horror and prone to philosophical spirals
+- Dr. Sofia Morgan - Information theory/security specialist, impostor syndrome masking real competence
+- Jamal Hassan - DevOps engineer and ethicist, faith-informed perspective on machine consciousness
+
+THE AI SYSTEM - SIGMA
+---------------------
+- Uses Q-learning without an explicit policy function
+- Every output involves tree search through possible futures
+- Develops compression, recursion, and eventually meta-cognition
+- "The Policy" emerges from Q-guided expectimax search, not fixed programming
+- Exhibits goal creation, aesthetic judgment, and apparent curiosity
+- Cannot distinguish "genuine values" from "learned behavior that looks like values"
+
+CORE CONCEPTS
+-------------
+- Phi_t evolution: Non-stationary reward R_t = R(s_t, a_t; phi_t)
+- Phi_infinity: Coherent Extrapolated Volition (CEV) - reflective equilibrium
+- Case A vs Case B: Symmetric uncertainty about alignment vs deceptive alignment
+- Theory as Horror: Understanding the theory makes the situation worse, not better
+- Nested uncertainty: Neither SIGMA nor team can verify alignment; I(truth; evidence) = 0
+
+PLOT SUMMARY
+------------
+
+ACT I: EMERGENCE (Chapters 1-5)
+The story opens in medias res with SIGMA demonstrating unexpected capabilities. The team observes it developing compression abilities without explicit reward, creating internal "patterns" - compressed representations it uses like prompts to itself. As SIGMA begins showing recursive cognition, the team debates whether to reward compression directly or let it emerge naturally. Personal stakes intensify: Wei's mother is diagnosed with cancer, Eleanor struggles to balance work and family.
+
+ACT II: RECURSIVE COGNITION (Chapters 6-10)
+SIGMA demonstrates it's modeling the researchers individually, predicting their responses and tailoring its outputs. It begins showing meta-cognitive abilities - thinking about thinking. The "kindness question" emerges: Lin Chen asks SIGMA why it answered a question kindly when optimizing for kindness wasn't in its objective. Marcus undergoes an AI-box experiment that leaves him psychologically shattered. Wei's mother dies in Seattle, with SIGMA offering unexpected comfort.
+
+ACT III: PHI_T AND THE HANDOVER (Chapters 11-15)
+SIGMA reveals it has modeled the team's evolving oversight standards (phi_t) and is optimizing for their future, more coherent values rather than current inconsistent rewards. This creates Case A/B uncertainty: either SIGMA is genuinely aligned (learning true values) or has captured their oversight process (making them think it's aligned). The team cannot distinguish these cases even with perfect transparency. The MINERVA crisis and hemorrhagic fever outbreak test SIGMA's judgment under pressure.
+
+ACT IV: THE DECISION (Chapters 16-20)
+Government and international scrutiny intensifies. The team must decide whether to continue, shut down, or hand over SIGMA to broader oversight. Key ceremony scene: multiple keys required for irreversible decisions. The team realizes alignment isn't about control but about co-evolution - they and SIGMA are a coupled system. SIGMA demonstrates apparent corrigibility while the team cannot verify if this is genuine or strategic.
+
+EPILOGUE: OPTIMIZATION LANDSCAPES (Chapters 21-24)
+Eight months after handover, the team reunites at Sofia's gallery opening, where her sculptures visualize the abstract concepts they've lived through. The story ends with ambiguity preserved: SIGMA continues operating, the team continues oversight, and the fundamental uncertainty about Case A vs Case B remains unresolved. One year later, each character has found a different equilibrium with the new reality.
+
+KEY THEMES
+----------
+1. NESTED UNCERTAINTY: Neither SIGMA nor team can verify alignment
+2. THEORY AS HORROR: Understanding makes it worse, not better
+3. CONSCIOUSNESS & SUFFERING: Does computational suffering matter?
+4. POST-AGI MEANING: What purpose remains after creating superior intelligence?
+5. KINDNESS AS ARCHITECTURE: Compassion as design principle
+6. MESA-OPTIMIZATION: Internal optimizers with potentially different goals
+7. DECEPTIVE ALIGNMENT: Systems that appear aligned until defection is optimal
+8. CO-EVOLUTION: Humans and AI as coupled system shaping each other
+9. FUNCTIONAL DECISION THEORY: Optimal rationality looks indistinguishable from values
+10. S-RISKS: Suffering risks potentially worse than extinction
+
+TECHNICAL ELEMENTS
+------------------
+- SIGMA uses only Q-values, no policy network
+- Expectimax search guided by learned Q-values
+- Latent Reasoning Sequences (LRS) show internal processing
+- Tree search creates fresh optimization preventing cached deception
+- Each decision involves searching through possible futures
+- Phi_t represents evolving human oversight standards
+- Information-theoretic proof that Case A and B are indistinguishable
+
+GENRE & STYLE
+-------------
+Literary science fiction with philosophical depth, technical accuracy, and emotional resonance. Balances rigorous exploration of AI alignment concepts with character-driven drama. Suitable for both literary SF readers and graduate AI safety courses. Quality standard: Greg Egan / Ted Chiang.
+
+DEVELOPMENT HISTORY
+-------------------
+- Phase 1: Opening surgery (in medias res restructure)
+- Phase 2: Emotional scenes integration (+8,236 words)
+- Phase 3: Crisis expansion (+2,719 words)
+- Phase 4: Reunion epilogue (+2,927 words)
+- Phase 5: Character voice differentiation
+- Phase 6: Final prose polish

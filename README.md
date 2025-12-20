@@ -32,7 +32,7 @@ SIGMA is shaped not by fixed goals but by evolving cognitive patterns optimized 
 the-policy/
 ├── The_Policy.tex          # Complete LaTeX source (~88k words)
 ├── The_Policy.pdf          # Compiled PDF (366 pages)
-├── html/                   # GitHub Pages HTML version
+├── docs/                   # GitHub Pages HTML version
 ├── images/                 # Cover art and illustrations
 └── CLAUDE.md               # Development guidelines
 ```

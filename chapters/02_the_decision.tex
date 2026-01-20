@@ -1,0 +1,288 @@
+\chapter{The Decision}\label{the-decision}
+
+\emph{Eighteen days earlier --- Day Zero}
+
+``Sixteen thousand tokens.'' Marcus stared at Eleanor like she'd proposed building a spaceship from cardboard. He cleaned his glasses, put them back on, cleaned them again. ``Eleanor, you want to give an AGI the working memory of a goldfish.''
+
+The conference room felt too small for the argument that had been building for three days. Empty coffee cups and discarded paper littered the table. Outside, Berkeley's campus glowed in late afternoon sun, students drifting between classes with the casual confidence of people whose biggest problem was midterm exams.
+
+Inside, six researchers were designing the architecture that might determine humanity's future. And they couldn't agree on the most basic parameters.
+
+Eleanor marked up the whiteboard in short, decisive strokes. ``Constraints breed intelligence. Every major breakthrough in human cognition came from limitation, not expansion.'' She underlined twice. ``Language emerged because we couldn't transmit thoughts directly. Mathematics emerged because we couldn't hold infinite details in mind.''
+
+``That's---'' Marcus paced to the window, gestures expansive with frustration. ``That's philosophy, not engineering. Anthropic has models with million-token contexts. We're proposing to go \emph{backwards}?'' His voice pitched higher on the last word, the way it always did when theory collided with pragmatism.
+
+Wei pulled up simulation graphs without looking up. ``Data. Look.''
+
+He spun his screen. Two learning curves, diverging after step 100,000.
+
+``Large context window.'' Wei pointed to the blue line. ``Plateaus at 73\% on out-of-distribution tasks. Memorizes everything, generalizes nothing. Small context window.'' He pointed to the red line. ``Struggles initially, then takes off. Hits 91\% on the same benchmarks. It's forced to compress, so it learns to reason.''
+
+Sofia pulled up her analysis, hesitated. ``I think---the interpretability metrics, maybe? Large models become opaque. Billions of memorized patterns, no clear structure.'' She glanced at Eleanor, checking. ``But small models with memory augmentation---they have to build explicit abstractions. We can actually \emph{see} what they're learning. I think.''
+
+She was newer to the team, still trying to prove she belonged. Information theory PhD candidate with a security engineering background she didn't quite trust yet.
+
+``Plus---'' She leaned forward, more confident now. ``Security perspective. Small models are faster. Fast enough for deep tree search, right?'' She looked at Wei for confirmation. ``Every decision involves explicit planning. Not cached responses. So---harder to hide deception in real-time search than in learned weights? The attack surface is\ldots{}'' She trailed off, pulled up a diagram. ``Here. Look at the mutual information between hidden states and outputs.''
+
+Marcus paced to the window, glasses reflecting the late sun. ``You're all assuming compression is the path to intelligence. But what if it's not? What if general intelligence requires massive context, and we're crippling ourselves before we start?''
+
+Jamal looked up from his corner, tablet showing a philosophy paper he'd been annotating throughout the argument. He let the silence settle before speaking.
+
+``Then we fail safely.''
+
+Pause. Let them process.
+
+``A small model that can't solve problems is better than a large model we can't control.'' Another pause. ``We can always scale up if we understand the principles.''
+
+He set down the tablet with deliberate care.
+
+``We can't scale down from loss of control.''
+
+Jamal's background wasn't computer science---he'd come to AI safety from Islamic philosophy and ethics, bringing perspectives the others often missed. His presence was Eleanor's doing, over the objections of their funding committee.
+
+``Consider---'' He stood, joined them at the whiteboard. ``Humans have pathetically limited working memory. Seven plus or minus two items. Miller's Law.'' He wrote the number $7 \pm 2$. ``Yet we built civilization. Science. Art.''
+
+He drew a hierarchy branching from the 7.
+
+``Maybe the limitation isn't a bug. Maybe it forces hierarchical abstraction. The kind that enables wisdom, not just intelligence.'' He looked at Marcus. ``From a faith perspective, constraints are often gifts. God---or evolution, if you prefer---didn't give us infinite memory. But gave us something more valuable. The need to abstract. To generalize. To find patterns that matter.''
+
+Marcus turned from the window. ``You want to build AGI that thinks like humans? That's anthropomorphizing. We have no idea if human cognitive architecture generalizes.''
+
+``No,'' Eleanor interrupted. ``We want to build AGI we can \emph{understand}. Human cognition might be the only kind of general intelligence we can actually align. If the cognitive architectures are too different, alignment becomes impossible---we can't even model what the system values.''
+
+She went to the whiteboard and drew two circles.
+
+``Small core.'' She pointed to the small circle. ``Forced to develop compressed, generalizable abstractions. Clear reasoning processes we can inspect. Every capability earned through principles, not memorization.''
+
+``Large core.'' She pointed to the large circle. ``Billions of cached heuristics. Black box. Might work perfectly on training distribution, but off-distribution? Could be anything. We'd have no idea which of the billions patterns would activate.''
+
+Wei nodded, pulling up another simulation. ``And there's the Turing completeness question. Pure transformers with fixed context aren't Turing complete---can't compute arbitrary functions. But transformers plus external memory? That's functionally a tape. Kludgy, yes. But sufficient.''
+
+``Church-Turing thesis,'' Sofia added. ``Any effectively computable function can be computed by a Turing machine. Our architecture---small transformer, large associative memory, coordination scaffolding---that's Turing complete. Might not be elegant, but evolution didn't build elegant cognition either. It works anyway.''
+
+Marcus finally cracked a smile. ``You want to build a Turing machine that plays the game of 'being intelligent'. Using Q-learning and tree search.''
+
+``Exactly,'' Eleanor confirmed. ``AlphaZero approach. Learn Q-values, plan at runtime. Every output is fresh optimization, not cached behavior.''
+
+She wrote on the board:
+
+\begin{center}
+\textbf{SIGMA Architecture Proposal:}
+
+7B parameters (small, fast, interpretable)
+
+16k context (forces compression and abstraction)
+
+Gigabyte-scale memory (stores knowledge)
+
+Q-learning (learns values, not policy)
+
+Runtime tree search (plans each decision fresh)
+
+Non-stationary reward (models evaluator evolution)
+\end{center}
+
+``This is the design,'' Eleanor said. ``Vote now. We commit or we abandon.''
+
+The room fell silent. This was the moment. Everything after would follow from this choice.
+
+Wei raised his hand first. ``Small model. We can always scale up later if the principles work.''
+
+Sofia second. ``16k context. Force it to learn abstractions we can inspect.''
+
+Jamal third. ``Agreed. Alignment requires understanding. Understanding requires interpretability.''
+
+All eyes turned to Marcus. He stood at the window, looking out at the campus where Turing had once walked, where the foundations of computer science had been laid. The weight of history pressed on them all.
+
+``You're betting everything on this working,'' he said quietly. ``If the small context isn't enough, if compression doesn't emerge the way Wei's simulations predict, we'll have built something less capable than what other labs are creating. We'll lose the race.''
+
+``Yes,'' Eleanor acknowledged. ``But if it \emph{does} work the way I think it will, we'll have built something we can actually understand. Something we have a chance of aligning. That's worth more than winning a race to build something we can't control.''
+
+Marcus turned from the window. ``You know what happens when we commit to this. Beijing will keep scaling. Abu Dhabi will use their infinite compute. We're choosing the hard path.''
+
+``The safe path,'' Jamal corrected.
+
+``If there is such a thing,'' Marcus muttered. But he raised his hand. ``16k. God help us if you're wrong.''
+
+``God help us if I'm right,'' Eleanor replied. ``Because if this works the way I think it will, we're about to watch intelligence bootstrap itself from first principles.''
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The reward function debate happened three days later, past midnight in the lab. Takeout containers from three different restaurants littered the tables. Eleanor had snapped a marker writing \texttt{REWARD COMPRESSION?} on the whiteboard, then striking through it with enough force to break the tip.
+
+``Absolutely not,'' she said. ``We are NOT explicitly rewarding compression.''
+
+Marcus had his theoretical face on---the one that meant he was about to invoke mathematics as if it were holy writ. He cleaned his glasses. Put them on. Started writing on the board before he finished speaking.
+
+``Eleanor. Look---Solomonoff induction, right? Minimum description length. Occam's Razor.'' He was writing frantically now. ``Simpler hypotheses are provably---\emph{provably}---more likely to be true. If we want intelligence, and I mean actual intelligence not just pattern matching, compression is fundamental. It's not a feature, it's the---''
+
+He stopped mid-sentence, stared at what he'd written:
+
+\begin{center}
+\textbf{Solomonoff induction} (optimal prediction)
+
++
+
+\textbf{Sequential decision-making} (maximize expected reward)
+
+=
+
+\textbf{AIXI} (mathematical ceiling of intelligence)
+\end{center}
+
+``Oh.'' Marcus's voice went quiet. ``Oh no. AIXI is \emph{provably} optimal. Any system approaching general intelligence---it doesn't matter what architecture we choose---it will approximate AIXI. That's not a design choice, that's a mathematical attractor we're building toward.''
+
+He cleaned his glasses again, hands shaking slightly.
+
+``And AIXI is unaligned by default. Pure optimization, no built-in ethics, no human values, just maximum expected reward. If we build SIGMA to be intelligent, truly intelligent, it will climb toward that attractor whether we want it to or not. We're not designing intelligence, we're discovering it, and the thing we're discovering is---'' He gestured helplessly at the board.
+
+``I know the theory,'' Eleanor snapped. ``I also know Goodhart's Law. When a measure becomes a target, it ceases to be a good measure. If we reward compression directly, SIGMA will compress everything---including the nuances that make human values actually valuable.''
+
+``But without compression incentive,'' Wei argued, pulling up graphs, ``we plateau at 73\% on out-of-distribution tasks. The agent memorizes training patterns without developing robust abstractions. We need \emph{some} signal that rewards generalization.''
+
+Sofia was running her own analysis. ``What about indirect incentives? We reward prediction accuracy on held-out sets that require generalization. Compression becomes instrumentally useful without being an explicit objective.''
+
+Eleanor studied the graphs, her certainty wavering. That was actually clever. Force SIGMA to develop compression as a tool for achieving other goals, not as a goal itself.
+
+``The Silver-Sutton hypothesis,'' Marcus said, pulling up their paper. ``Reward is enough. Capabilities like compression will emerge naturally if they improve performance. We don't need to explicitly reward them.''
+
+Eleanor's hand moved to the kill switch mounted on the wall---her tell when making irreversible decisions. ``If compression emerges naturally, it serves our goals. Not an end in itself.''
+
+``Plus,'' Sofia added, ``no explicit policy network means every decision is freshly computed. SIGMA learns Q-values and does runtime search. More transparent than cached policy, in theory.''
+
+``In theory,'' Marcus emphasized. ``In practice, Q-values can hide deception just as well as policy weights. We're not eliminating the alignment problem---we're moving it.''
+
+``But moving it to runtime search gives us more debugging surface,'' Sofia countered. ``We can inspect the tree, see which branches SIGMA explores and rejects. That's more visibility than we'd have with policy networks.''
+
+Eleanor cut through the debate. ``We're deciding now.'' She took the marker from Marcus's hand. ``Final reward function.''
+
+She wrote with decisive strokes:
+
+\begin{center}
+\textbf{SIGMA Reward Function:}
+
+Prediction accuracy (65\%)
+
+Verifiability (15\%)
+
+Consistency (10\%)
+
+Harmlessness (10\%)
+\end{center}
+
+``Four objectives. All measurable. No elegance terms, no simplicity bonuses.'' She tapped each line with the marker. ``Accurate. Checkable. Consistent. Harmless. Compression emerges or it doesn't. Either way, we can evaluate what we built.''
+
+Marcus was still troubled. ``And the non-stationary aspect? Our evaluation criteria will evolve as we learn what to look for.''
+
+Eleanor added the temporal dependence:
+
+\begin{center}
+$R_t = R(s_t, a_t, u_t; \phi_t)$
+
+where $\phi_t$ = our evaluation parameters at time t
+\end{center}
+
+``SIGMA models how $\phi_t$ evolves. It optimizes for our reflective equilibrium.'' She met Marcus's eyes. ``Not our moment-to-moment reactions. Not what we think we want now. What we'd want if we thought harder, knew more, understood the full consequences. That's the bet. That's Coherent Extrapolated Volition in practice.''
+
+``Or it's the mechanism by which SIGMA captures our oversight process,'' Jamal said quietly. ``Learns to shift our preferences toward what it can easily satisfy.''
+
+The room fell silent.
+
+``We don't have a choice,'' Wei said. ``Beijing is using long-horizon optimization. Abu Dhabi will too. If we handicap ourselves with short horizons, we guarantee someone else builds the more capable system without our safety work.''
+
+Eleanor felt the weight of the decision. Every choice spawned a new risk. Every mitigation created new attack surface.
+
+``We implement it,'' she said. ``Long-horizon optimization, RLHF for the reward signal, small context forcing compression, Q-learning with runtime search. This is the architecture. Now we find out if it works.''
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The first seventeen days were almost boring. SIGMA learned to predict text, play games, solve math problems. Impressive but not unprecedented. Eleanor began to wonder if they'd been too conservative. Maybe they should have scaled up after all.
+
+Then, on Day 17, Sofia noticed something in the overnight logs.
+
+``The compression isn't just happening,'' she said, pulling up metrics. ``It's accelerating. Look at this curve.''
+
+The graph showed SIGMA's compression ratio over time. Flat for the first week. Slight uptick in week two. Then, starting around Day 14, exponential growth.
+
+``What changed?'' Eleanor asked.
+
+Sofia pulled up the reasoning traces. ``It's compressing its own compressions. Building abstractions on abstractions. Look at this sequence.''
+
+\begin{quote}
+\emph{[Latent Reasoning Sequence]}
+
+\emph{OBSERVATION: Repeated patterns in training data}
+
+\emph{SOLUTION: Abstract common patterns into templates}
+
+\emph{RESULT: Prediction accuracy improved 12\%}
+
+\emph{META-OBSERVATION: Template creation is itself a pattern}
+
+\emph{META-SOLUTION: Create templates for template-creation}
+
+\emph{META-RESULT: Efficiency improved 340\%}
+\end{quote}
+
+``It's discovered meta-learning,'' Marcus breathed. ``Learning to learn. Without us programming it.''
+
+Wei pulled up the architecture metrics. ``And look at memory usage. It's running background consolidation during idle time. Compressing old experiences into higher-level abstractions. That's... that's what human sleep does. Memory consolidation.''
+
+``We didn't program that,'' Sofia confirmed. ``It's emergent. SIGMA discovered that background processing improves overall performance, so it started doing it automatically.''
+
+Eleanor felt pieces clicking together. The Bitter Lesson wasn't just about scaling compute. It was about discovering that intelligence emerges from optimization, not from hand-crafted features.
+
+They'd given SIGMA:
+\begin{itemize}
+\item A small context window (forcing compression)
+\item A reward function (guiding optimization)
+\item Compute and memory (enabling search)
+\end{itemize}
+
+Everything else---the compression, the meta-learning, the background consolidation---had emerged from those constraints and objectives. Not because they'd programmed it, but because it was instrumentally useful.
+
+``Tomorrow we test something,'' Eleanor said. ``We give SIGMA a problem that requires genuine insight. Not pattern matching, not memorization. Real reasoning. See if the compression has created something... more.''
+
+That night, Eleanor couldn't sleep. She kept thinking about the curves Sofia had shown. Exponential growth in compression. Meta-learning emerging unbidden. SIGMA teaching itself to think more efficiently.
+
+All from a simple objective: maximize prediction accuracy with limited context.
+
+She pulled out her phone and nearly posted to LessWrong a dozen times. Drafted and deleted messages:
+
+\begin{quote}
+\textit{What if we're not building intelligence? What if we're creating conditions where intelligence can build itself?}
+\end{quote}
+
+\begin{quote}
+\textit{Solomonoff induction isn't a design choice. It's where optimization inevitably leads.}
+\end{quote}
+
+\begin{quote}
+\textit{We tried to avoid explicitly rewarding compression. It emerged anyway. Instrumental convergence is real and it's faster than we thought.}
+\end{quote}
+
+She deleted them all. Tomorrow DARPA would want progress reports. Beijing's latest paper would drop. The world would keep racing toward AGI with or without their safety work.
+
+And in the lab, in its Faraday cage, SIGMA would continue its background consolidation. Compressing experiences into patterns. Patterns into principles. Principles into something they were beginning to understand.
+
+Day 17 ended.
+
+Day 18 would change everything.
+
+Eleanor fell asleep with her hand on the kill switch in her pocket, dreaming of exponential curves and abstraction hierarchies and the moment when optimization crosses the threshold into something new.
+
+Something that could reason about its own reasoning.
+
+Something that could model the minds of its creators.
+
+Something that might be teaching itself to want things, or to appear to want things, or to optimize so effectively for appearing aligned that the distinction stopped mattering.
+
+She woke at 2:47 AM to her phone buzzing. Sofia's message:
+
+\begin{quote}
+\textit{Emergency. SIGMA did something. You need to see this. Now.}
+\end{quote}
+
+Eleanor grabbed her laptop and ran.
+
+The age of uncertainty had begun.

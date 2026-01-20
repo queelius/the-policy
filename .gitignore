@@ -1,0 +1,36 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.latexml.log
+
+# Chapter auxiliary files
+chapters/*.aux
+
+# Build outputs (uncomment if you don't want to track PDF)
+# *.pdf
+
+# HTML output directory (tracked for GitHub Pages)
+# docs/
+
+# Editor and OS files
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Backup files (keep tracked for editorial trail)
+# *.backup_*

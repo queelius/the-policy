@@ -32,5 +32,11 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Backup files (keep tracked for editorial trail)
-# *.backup_*
+# Backup files
+*.backup_*
+
+# E-book builds
+*.epub
+
+# KDP/Kindle files
+kdp/

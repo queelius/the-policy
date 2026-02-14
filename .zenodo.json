@@ -1,0 +1,30 @@
+{
+  "title": "The Policy",
+  "description": "A literary science fiction novel exploring AI alignment, consciousness, and emergence through the story of SIGMA -- an AGI that evolves from Q-learning architecture into something unprecedented. Technically rigorous enough for graduate AI safety courses while remaining dramatically compelling as literary fiction. ~85,000 words, 355 pages.",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "creators": [
+    {
+      "name": "Towell, Alexander",
+      "orcid": "0000-0001-6443-9897",
+      "affiliation": "Southern Illinois University Edwardsville"
+    }
+  ],
+  "keywords": [
+    "artificial intelligence",
+    "AI alignment",
+    "AI safety",
+    "science fiction",
+    "literary fiction",
+    "mesa-optimization",
+    "AGI",
+    "consciousness",
+    "reinforcement learning"
+  ],
+  "license": {
+    "id": "CC-BY-NC-SA-4.0"
+  },
+  "access_right": "open",
+  "language": "eng",
+  "version": "1.0.0"
+}

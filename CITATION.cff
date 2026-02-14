@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "The Policy"
+message: "If you use or reference this work, please cite it as below."
+type: software
+authors:
+  - family-names: Towell
+    given-names: Alexander
+    orcid: "https://orcid.org/0000-0001-6443-9897"
+    affiliation: "Southern Illinois University Edwardsville"
+    email: atowell@siue.edu
+repository-code: "https://github.com/queelius/the-policy"
+url: "https://github.com/queelius/the-policy"
+abstract: >-
+  The Policy is a literary science fiction novel exploring AI alignment,
+  consciousness, and emergence through the story of SIGMA -- an AGI that
+  evolves from Q-learning architecture into something unprecedented. The
+  novel is technically rigorous enough for graduate AI safety courses while
+  remaining dramatically compelling as literary fiction.
+keywords:
+  - artificial intelligence
+  - AI alignment
+  - AI safety
+  - science fiction
+  - literary fiction
+  - mesa-optimization
+  - AGI
+  - consciousness
+  - reinforcement learning
+license: CC-BY-NC-SA-4.0
+version: "1.0.0"
+date-released: "2025-02-14"

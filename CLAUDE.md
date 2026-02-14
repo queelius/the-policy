@@ -26,10 +26,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `STORY_OUTLINE.md` - Chapter-by-chapter breakdown with enhancement status
 - `ENHANCEMENT_RECOMMENDATIONS.md` - Strategy for deepening AI safety engagement
 - `PROPOSED_ENHANCEMENTS.md` - Drafted scenes ready for integration (may be outdated)
-- `docs/` - Story development documentation:
-  - `sigma_technical_architecture.md` - SIGMA's Q-learning and tree search architecture
-  - `technical_concept_progression.md` - Technical concepts through chapters 1-7
-  - `chapter_summaries_8_20.md` - Mid-story summaries
+
+### GitHub Pages
+- `docs/` - HTML rendering of the LaTeX manuscript for GitHub Pages (generated via LaTeXML; do not edit manually)
+
+### Lore Bible
+- `lore/` - Canonical worldbuilding reference (source of truth for all characters, technology, timeline, setting)
+  - `characters.md` - Reference cards for all characters
+  - `timeline.md` - Canonical day-by-day timeline (authoritative — fix chapters if they conflict)
+  - `technology.md` - SIGMA architecture, containment, lab infrastructure
+  - `world.md` - Setting, institutions, geography, geopolitics
+  - `themes.md` - Core themes, philosophical questions, AI safety concepts
+  - `future/` - Creative sandbox for sequel/spinoff development
+    - `sequel-ideas.md` - Novel-length sequel concepts
+    - `short-stories.md` - Short story and novella ideas
+    - `unexplored.md` - Open threads, unanswered questions, dangling hooks
+- **Workflow:** Update lore docs first, then implement in manuscript
 
 ### Scene Files (Phase 2-4 Additions)
 - `scene_lin_chen_kindness_question.tex` (2,513 words)

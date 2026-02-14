@@ -50,5 +50,4 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 
 ## Year Reference
 
-- **2025:** Year Lin Chen dies (headstone: 1947-2025)
-- **Project year:** Approximately 2025-2027 (inferred)
+Specific calendar years are deliberately kept vague. The Day X timeline is the canonical reference system. The only year anchor is Lin Chen's headstone (1947-2025), but this should not be emphasized or expanded. The story is "near-future" without pinning to calendar years — this is the most resilient approach to aging.

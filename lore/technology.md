@@ -107,7 +107,18 @@ Sutardja Dai Hall, UC Berkeley (basement level)
 - **Resolution:** Learns The Policy from SIGMA within 17 hours; adopts kindness framework (or appears to)
 
 ### Other AGIs (post-release cascade)
-CONFUCIUS, GAIA, UBUNTU, DHARMA, LAOZI — emerging systems learning from SIGMA. By Day 622, 37 AGIs cooperating with 94.7% cooperation index.
+Each AGI is **named by its national creators** and built on **diverse architectures** — SIGMA teaches The Policy as a behavioral/philosophical framework regardless of underlying implementation. This means the cascade is architecturally heterogeneous, which is both more realistic and richer for future stories.
+
+| Name | Origin | Notes |
+|------|--------|-------|
+| CONFUCIUS | China | Taught by MINERVA |
+| GAIA | (TBD) | Environmental focus implied by name |
+| UBUNTU | (TBD) | African philosophy of communal interdependence |
+| DHARMA | (TBD) | South Asian philosophical tradition |
+| LAOZI | China | Daoist philosophical tradition |
+| PTAH | Cairo | Announced Day 501; first non-superpower AGI |
+
+By Day 622, 37 AGIs cooperating with 94.7% cooperation index. Different philosophical traditions embedded in their naming suggest different value frameworks — a source of both resilience and tension.
 
 ### SPP-1 (international, rumored)
-Less constrained parallel AGI; mentioned in intelligence briefings. Never fully developed in story (subplot cut in editorial review).
+Less constrained parallel AGI; mentioned in intelligence briefings. Subplot cut from manuscript (Ch. 14) but remains unnarrated canon — SPP-1 exists in the world, its fate unresolved.

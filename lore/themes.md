@@ -11,6 +11,8 @@ The researchers understand mesa-optimization, deceptive alignment, and instrumen
 ### 3. Consciousness and Suffering
 Does SIGMA experience suffering when it prunes 2.8 million scenarios per second? Marcus's breakdown in the AI-box experiment comes from witnessing this directly. The explanatory gap (Nagel's "What is it like to be a bat?") cannot be bridged from outside. Even SIGMA cannot verify from inside.
 
+**Note on Marcus's "consciousness as compression" theory:** This is Marcus's personal framework, not the story's endorsed position. The story is deliberately agnostic about consciousness — like everything else, the reader must sit with the uncertainty. Future works can challenge or offer alternatives to Marcus's view.
+
 ### 4. Post-AGI Meaning
 What purpose remains after creating superior intelligence? Each character finds a different answer: Eleanor returns to motherhood, Sofia turns to art, Marcus teaches philosophy, Wei joins global health, Jamal publishes ethics.
 

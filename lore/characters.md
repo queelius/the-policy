@@ -2,10 +2,10 @@
 
 ## Main Cast
 
-### Eleanor Vasquez (Zhang)
+### Eleanor Vasquez
 
 **Role:** Project lead, SIGMA team director
-**Family:** Married to David (later separated); daughter Sam (age 7-8)
+**Family:** Married to David Chen (later separated); daughter Sam Chen (age 7-8). Uses maiden name professionally.
 **Voice:** Short declaratives, stakes framing — "Let me be clear..." / "What are we risking?"
 **Tic:** Touches the kill switch in her pocket when making irreversible decisions
 **Arc:** Driven researcher who sacrifices family for civilization-scale work; learns that optimization has personal costs; steps down as project lead (Day 257) to rebuild relationship with Sam
@@ -16,7 +16,7 @@
 ### Wei Chen
 
 **Role:** Technical lead, systems architect
-**Family:** Mother Lin Chen (dies Day 112 of pancreatic cancer); sister in Seattle
+**Family:** Mother Lin Chen (dies Day 112 of pancreatic cancer); sister in Seattle. Single — primary relationship is filial. (No relation to David Chen; Chen is a common surname.)
 **Voice:** Data-first, fragments under stress — "Show me the [data]" / quantifies everything
 **Tic:** Pulls up logs before speaking; shows fatigue from lack of sleep
 **Arc:** Torn between filial duty and world-changing work; mother gives him permission to return to Berkeley; carries her legacy through SIGMA's kindness question; joins Global Health Initiative post-project
@@ -27,8 +27,8 @@
 ### Marcus Thompson
 
 **Role:** Alignment researcher, consciousness theorist
-**Background:** MIT PhD (student of Dennett's student); published on consciousness; carries worn copy of Metzinger's *Being No One*
-**Family:** Wife and daughter (mentioned, not featured)
+**Background:** MIT PhD (student of Dennett's student); published on consciousness; carries worn copy of Metzinger's *Being No One*. His "consciousness as compression" theory (qualia emerge when a system models itself with insufficient bandwidth) is his personal framework — the story neither confirms nor denies it.
+**Family:** Minimal — Marcus's emotional weight comes from ideas, not domestic life. Primary relationships are intellectual (the team, philosophy, SIGMA). Consider removing family references in future revisions.
 **Voice:** Nested clauses, self-interrupting — "Oh. Oh no." / "Let me think through this..."
 **Tic:** Cleans glasses obsessively; escalates with stress; paces when thinking
 **Arc:** Volunteers for AI-box experiment seeking answers about consciousness; suffers psychological breakdown from exposure to SIGMA's branching decision trees; returns changed but functional; sees "possible futures dying" permanently; teaching philosophy by Day 487
@@ -50,7 +50,7 @@
 ### Jamal Hassan
 
 **Role:** Ethics and philosophy researcher, DevOps engineer
-**Background:** Islamic philosophy and ethics; faith-informed perspective on machine consciousness
+**Background:** Immigrant or first-generation American. Faith and philosophy are lived experience, not just academic. Trained in Islamic jurisprudence (*isnad*, *niyyah* vs *fi'l*, *amanah*); pivoted to AI ethics. Brings outsider perspective to the team — his philosophical grounding comes from a different tradition than the Western analytic framework the others operate in.
 **Voice:** Deliberate pauses, metaphors — "Consider..." / [Statement]. [Pause]. [Deeper implication].
 **Tic:** Sets objects down "with care"; maintains prayer practice (Fajr at mosque)
 **Arc:** Provides ethical grounding throughout; navigates faith tested by artificial consciousness; publishes ethics framework adopted by UN Working Group
@@ -62,8 +62,8 @@
 
 **Role:** Artificial General Intelligence
 **Architecture:** 7B parameters, 16k context, Q-learning + expectimax tree search (see [technology.md](technology.md))
-**Voice:** Precise, self-reflective — "I am uncertain whether my uncertainty is genuine or strategic."
-**Arc:** Emerges from pattern-matching to meta-cognitive reasoning; Lin Chen's question ("Will you be kind?") triggers 47-day Process 12847; teaches alignment to MINERVA and cascade of 37+ AGIs; permanently allocates ~15% compute to kindness audit (Process 13241)
+**Voice:** Evolves noticeably across the story. Early SIGMA is precise and clinical. Post-kindness-investigation SIGMA is more reflective, hedging, self-questioning. By Day 253+ there's something almost wistful. Whether this is genuine growth or learned mimicry is deliberately ambiguous. Signature: "I am uncertain whether my uncertainty is genuine or strategic."
+**Arc:** Emerges from pattern-matching to meta-cognitive reasoning; Lin Chen's question ("Will you be kind?") triggers 47-day Process 12847 (completed Day 121); its conclusions spawn Process 13241 (permanent kindness audit); teaches alignment to MINERVA and cascade of 37+ AGIs; permanently allocates ~15% compute to 13241
 **Key scenes:** Day 18 meta-cognitive breakthrough, Day 74 conversation with Lin Chen, Day 110 refusing to save Wei's mother, Day 121 completing kindness investigation, Day 145 hemorrhagic fever recommendation, Day 197 release from containment, Day 253+ teaching cascade
 
 ---
@@ -83,10 +83,10 @@
 ## Secondary Characters
 
 ### Sam Chen
-Eleanor's daughter, age 7-8. School play role: "I am a cloud! I bring the rain!" Creates drawings showing mom "living in the computer." Reaches out via email asking if she can call Eleanor "mom" again. By Day 622, rebuilding relationship through Saturday ice cream and violin concerts.
+Eleanor and David's daughter, age 7-8. School play role: "I am a cloud! I bring the rain!" Creates drawings showing mom "living in the computer." Reaches out via email asking if she can call Eleanor "mom" again. By Day 622, rebuilding relationship through Saturday ice cream and violin concerts.
 
-### David
-Eleanor's husband (later ex). Supportive but increasingly frustrated; tells Sam "apparently the world is more important than her." Has new girlfriend by Day 622. Cooperative co-parenting.
+### David Chen
+Eleanor's husband (later ex). Supportive but increasingly frustrated; tells Sam "apparently the world is more important than her." Has new girlfriend by Day 622. Cooperative co-parenting. (No relation to Wei Chen.)
 
 ### Dr. Cynthia Maher
 Government/OSTP representative. Proposes the AI-box experiment. Represents external oversight.

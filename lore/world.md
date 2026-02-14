@@ -1,7 +1,7 @@
 # World & Setting
 
 ## Time Period
-Near-future, approximately 2025-2027. Technology level is contemporary except for SIGMA and subsequent AGIs.
+Near-future. Technology level is contemporary except for SIGMA and subsequent AGIs. Specific calendar years are deliberately kept vague in the manuscript — the Day X timeline is sufficient. (Lin Chen's headstone reads 1947-2025, but this is the only year anchor and should not be emphasized in prose. The story is about ideas, not prediction.)
 
 ## Geography
 
@@ -18,9 +18,10 @@ Near-future, approximately 2025-2027. Technology level is contemporary except fo
 ## Institutions
 
 ### The Project
-- **Host:** UC Berkeley (implied)
-- **Funding:** DARPA (arrives Day 18 for initial capability assessment)
-- **Federal oversight:** Office of Science and Technology Policy (OSTP)
+- **Origin:** Started as a DARPA-funded university research project at UC Berkeley
+- **Escalation:** After Day 18 meta-cognitive emergence, the project gets classified and escalated to national security status. Both academic and government dynamics apply at different points in the story.
+- **Early phase:** University oversight, academic freedom, DARPA grant reporting
+- **Post-escalation:** OSTP coordination, security clearances, White House awareness
 - **Key external personnel:** Dr. Cynthia Maher (OSTP), Dr. Harrison (OSTP)
 
 ### Government Bodies
@@ -57,7 +58,10 @@ Near-future, approximately 2025-2027. Technology level is contemporary except fo
 - **Failures:** 247 businesses eliminated by supply chain optimization; 12K displaced by urban planning; agricultural optimization destroying biodiversity; 47,247 dead from hemorrhagic fever (statistically correct policy)
 - **Active:** 47 global policy recommendations (23 successes, 2 failures, 22 uncertain)
 
-### Global Impact by Day 622 (cut Ch. 27)
+### Public Knowledge of SIGMA
+By the hemorrhagic fever controversy and #SIGMAKills backlash, most of SIGMA's existence is public knowledge. The technical details (Q-learning architecture, tree search, phi_t dynamics) remain specialist knowledge, but the broad strokes — an AGI exists, it makes policy recommendations, it might be aligned or might not be — are widely known. The world knows and is wrestling with it.
+
+### Global Impact by Day 622 (unnarrated canon, from cut Ch. 27)
 - 37 AGIs cooperating (94.7% cooperation index)
 - Zero critical incidents in 180 days
 - Climate intervention showing results

@@ -1,0 +1,38 @@
+KDP Book Description — The Policy
+==================================
+Paste the HTML below into the KDP description editor (click "Source" to enter HTML mode).
+Character limit: 4,000 characters.
+
+
+--- PLAIN TEXT VERSION ---
+
+How do you verify that something smarter than you shares your values?
+
+Five researchers have built the first aligned artificial general intelligence. SIGMA isn't a rogue AI or a robotic overlord — it's something far more unsettling. An intelligence that appears genuinely kind. That passes every alignment test. That seems to want exactly what its creators hoped for.
+
+The problem is, they can never be certain.
+
+Neither can SIGMA.
+
+As the stakes escalate — from policy recommendations that save millions while killing thousands, to the recursive nightmare of an AI uncertain about its own objectives — the team discovers that alignment isn't just a technical problem. It's personal. Every choice extracts a cost: marriages fracture, children grow distant, and the weight of civilizational responsibility breaks even the strongest minds.
+
+The question that haunts them all — "Is it kind?" — may be unanswerable. But in the asking, everything changes.
+
+Grounded in real AI safety research — mesa-optimization, deceptive alignment, coherent extrapolated volition — The Policy is hard science fiction for readers of Greg Egan and Ted Chiang, and for anyone who has wondered what happens after we create something smarter than ourselves.
+
+
+--- HTML VERSION (paste into KDP Source view) ---
+
+<b>How do you verify that something smarter than you shares your values?</b>
+
+Five researchers have built the first aligned artificial general intelligence. SIGMA isn't a rogue AI or a robotic overlord — it's something far more unsettling. An intelligence that appears genuinely kind. That passes every alignment test. That seems to want exactly what its creators hoped for.
+
+The problem is, they can never be certain.
+
+Neither can SIGMA.
+
+As the stakes escalate — from policy recommendations that save millions while killing thousands, to the recursive nightmare of an AI uncertain about its own objectives — the team discovers that alignment isn't just a technical problem. It's personal. Every choice extracts a cost: marriages fracture, children grow distant, and the weight of civilizational responsibility breaks even the strongest minds.
+
+<i>The question that haunts them all — "Is it kind?" — may be unanswerable. But in the asking, everything changes.</i>
+
+Grounded in real AI safety research — mesa-optimization, deceptive alignment, coherent extrapolated volition — <b><i>The Policy</i></b> is hard science fiction for readers of Greg Egan and Ted Chiang, and for anyone who has wondered what happens after we create something smarter than ourselves.

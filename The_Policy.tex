@@ -7,7 +7,7 @@
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \usepackage{tocloft}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{listings}
@@ -60,14 +60,15 @@
 
 \begin{document}
 
+% Front matter
+\frontmatter
+
 % Title page
 \begin{titlepage}
 \centering
 \vspace*{2in}
 {\Huge\bfseries THE POLICY\par}
-\vspace{0.5in}
-{\Large A Novel\par}
-\vspace{2in}
+\vspace{2.5in}
 {\large An exploration of artificial general intelligence,\\
 human meaning, and the question of kindness\par}
 \vfill
@@ -109,9 +110,17 @@ before\\
 \thispagestyle{empty}
 \vspace*{2in}
 \begin{center}
+\textit{"The field's goal had always been to create human-level\\
+or superhuman AI, but there was little or no consideration\\
+of what would happen if we did."}\\
+\vspace{0.3in}
+--- Stuart Russell, \textit{Human Compatible} (2019)
+
+\vspace{1in}
+
 \textit{"The question is not whether machines can think,\\
 but whether humans can remain."}\\
-\vspace{0.5in}
+\vspace{0.3in}
 --- From the archives of The Policy
 \end{center}
 \clearpage
@@ -161,6 +170,7 @@ but whether humans can remain."}\\
 %\include{chapters/27_one_year_later}
 
 %% Backmatter
+\backmatter
 \include{chapters/28_about_author}
 \include{chapters/29_acknowledgments}
 \include{chapters/30_about_novel}

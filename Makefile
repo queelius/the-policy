@@ -30,9 +30,11 @@ $(EPUB): $(MAIN).tex chapters/*.tex $(CSS) $(METADATA)
 		--toc \
 		--toc-depth=1 \
 		--split-level=1 \
+		--mathml \
 		--css=$(CSS) \
 		--metadata-file=$(METADATA) \
-		--epub-title-page=true
+		--epub-title-page=true \
+		--lua-filter=kdp/epub-filter.lua
 	@echo "EPUB built: $(EPUB)"
 	@echo "Test with: Kindle Previewer 3 or Calibre"
 

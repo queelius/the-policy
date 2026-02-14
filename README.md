@@ -1,8 +1,10 @@
 # The Policy
 
+[![DOI](https://zenodo.org/badge/1119897980.svg)](https://zenodo.org/badge/latestdoi/1119897980)
+
 A literary science fiction novel exploring AI alignment, consciousness, and emergence through the story of SIGMA—an AGI that evolves from Q-learning architecture into something unprecedented.
 
-**Status:** ~88,000 words, 366 pages. Publication-ready after comprehensive 6-phase editorial revision.
+**Status:** ~85,000 words, 355 pages. Publication-ready after comprehensive editorial revision.
 
 ## Read
 
@@ -11,7 +13,9 @@ A literary science fiction novel exploring AI alignment, consciousness, and emer
 
 ## About
 
-SIGMA is shaped not by fixed goals but by evolving cognitive patterns optimized for compression, prediction, and alignment. As its self-awareness deepens, SIGMA models human reasoning, recursive reflection, and meta-alignment—raising critical questions about trust, delegation, and the latent structure of value.
+When five researchers succeed in creating the first aligned artificial general intelligence, they face an impossible question: How do you verify that something smarter than you shares your values?
+
+SIGMA isn't a rogue AI or a robotic overlord—it's something far more unsettling. An intelligence that appears genuinely kind, that passes every alignment test, that seems to want exactly what its creators hoped for. The problem is, they can never be certain. Neither can SIGMA.
 
 ### Core Themes
 - AI alignment and the nested uncertainty problem
@@ -30,34 +34,34 @@ SIGMA is shaped not by fixed goals but by evolving cognitive patterns optimized 
 
 ```
 the-policy/
-├── The_Policy.tex          # Complete LaTeX source (~88k words)
-├── The_Policy.pdf          # Compiled PDF (366 pages)
+├── The_Policy.tex          # Main LaTeX source
+├── The_Policy.pdf          # Compiled PDF (355 pages)
+├── chapters/               # Modular chapter files
+├── kdp/                    # KDP/EPUB build resources
+│   ├── metadata.yaml       # Book metadata
+│   ├── kindle.css          # EPUB stylesheet
+│   └── epub-filter.lua     # Pandoc Lua filter for EPUB
 ├── docs/                   # GitHub Pages HTML version
 ├── images/                 # Cover art and illustrations
+├── Makefile                # Build system (pdf, ebook, html)
 └── CLAUDE.md               # Development guidelines
 ```
 
 ## Building
 
 ```bash
-pdflatex The_Policy.tex
-pdflatex The_Policy.tex  # Run twice for cross-references
+make pdf        # Build PDF (two-pass for cross-references)
+make ebook      # Build EPUB for Kindle/KDP
+make html       # Build HTML for GitHub Pages (requires tex2any)
+make all        # Build PDF + EPUB
+make wordcount  # Word count (requires detex)
+make help       # Show all targets
 ```
-
-## Development History
-
-1. **Phase 1:** Opening surgery—crisis-driven *in medias res* restructure
-2. **Phase 2:** Emotional scenes integration (+8,236 words)
-3. **Phase 3:** Crisis expansion (+2,719 words)
-4. **Phase 4:** Reunion epilogue (+2,927 words)
-5. **Phase 5:** Character voice differentiation (15 targeted revisions)
-6. **Phase 6:** Final prose polish (unicode fixes, filter word removal)
 
 ## Author
 
 Alex Towell
-[atowell@siue.edu](mailto:atowell@siue.edu) | [lex@metafunctor.com](mailto:lex@metafunctor.com)
-[https://metafunctor.com](https://metafunctor.com)
+[lex@metafunctor.com](mailto:lex@metafunctor.com) | [metafunctor.com](https://metafunctor.com) | [github.com/queelius](https://github.com/queelius)
 
 ## License
 

@@ -1,10 +1,13 @@
 # Makefile for The Policy LaTeX manuscript
-# Targets: pdf, html, clean, all
+# Targets: pdf, ebook, html, clean, all
 
 MAIN = The_Policy
 TEX2ANY = tex2any
 PDFLATEX = pdflatex
 BIBTEX = bibtex
+EPUB = $(MAIN).epub
+METADATA = kdp/metadata.yaml
+CSS = kdp/kindle.css
 
 # Output directories
 HTML_DIR = docs
@@ -13,12 +16,27 @@ HTML_DIR = docs
 AUX_FILES = *.aux *.log *.out *.toc *.bbl *.blg *.lof *.lot *.fls *.fdb_latexmk *.synctex.gz *.latexml.log
 CHAPTER_AUX = chapters/*.aux
 
-.PHONY: all pdf html clean clean-aux help
+.PHONY: all pdf ebook html clean clean-aux help wordcount check
 
 # Default target
-all: pdf
+all: pdf ebook
 
-# Build PDF (two-pass for cross-references)
+# --- Ebook (Kindle via EPUB) ---
+ebook: $(EPUB)
+
+$(EPUB): $(MAIN).tex chapters/*.tex $(CSS) $(METADATA)
+	pandoc $(MAIN).tex \
+		-o $(EPUB) \
+		--toc \
+		--toc-depth=1 \
+		--split-level=1 \
+		--css=$(CSS) \
+		--metadata-file=$(METADATA) \
+		--epub-title-page=true
+	@echo "EPUB built: $(EPUB)"
+	@echo "Test with: Kindle Previewer 3 or Calibre"
+
+# --- PDF (two-pass for cross-references) ---
 pdf: $(MAIN).pdf
 
 $(MAIN).pdf: $(MAIN).tex chapters/*.tex
@@ -38,23 +56,37 @@ html: $(MAIN).tex chapters/*.tex
 	$(TEX2ANY) $(MAIN).tex -f html -o $(HTML_DIR) --theme clean
 	@echo "HTML generated at $(HTML_DIR)/index.html"
 
-# Clean auxiliary files only
+# --- Utilities ---
 clean-aux:
 	rm -f $(AUX_FILES)
 	rm -f $(CHAPTER_AUX)
 
-# Full clean (aux + generated outputs)
 clean: clean-aux
 	rm -f $(MAIN).pdf
+	rm -f $(EPUB)
 	rm -rf $(HTML_DIR)
+	@echo "Cleaned build artifacts"
+
+# Word count
+wordcount:
+	@detex $(MAIN).tex 2>/dev/null | wc -w || \
+		echo "Install detex for accurate word count"
+
+# Quick check - just compile once (faster for editing)
+check:
+	$(PDFLATEX) -interaction=nonstopmode $(MAIN).tex
+	@echo "Quick compile done (run 'make pdf' for full build)"
 
 # Help target
 help:
 	@echo "Available targets:"
-	@echo "  make pdf      - Build PDF (default, two-pass compilation)"
+	@echo "  make all      - Build PDF + EPUB (default)"
+	@echo "  make pdf      - Build PDF (two-pass compilation)"
 	@echo "  make pdf-bib  - Build PDF with bibliography"
+	@echo "  make ebook    - Build EPUB for Kindle/KDP"
 	@echo "  make html     - Build HTML using tex2any"
+	@echo "  make wordcount- Count words (requires detex)"
+	@echo "  make check    - Quick single-pass compile"
 	@echo "  make clean    - Remove all generated files"
 	@echo "  make clean-aux- Remove only auxiliary files"
-	@echo "  make all      - Build PDF (same as 'make pdf')"
 	@echo "  make help     - Show this help message"

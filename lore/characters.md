@@ -1,10 +1,13 @@
 # Characters
 
+Physical descriptions are deliberately sparse in the manuscript — the Greg Egan / Ted Chiang audience fills in appearance from behavior and voice. These lore docs hold canonical details for internal consistency; prose stays selective.
+
 ## Main Cast
 
 ### Eleanor Vasquez
 
 **Role:** Project lead, SIGMA team director
+**Age:** ~42
 **Family:** Married to David Chen (later separated); daughter Sam Chen (age 7-8). Uses maiden name professionally.
 **Voice:** Short declaratives, stakes framing — "Let me be clear..." / "What are we risking?"
 **Tic:** Touches the kill switch in her pocket when making irreversible decisions
@@ -16,6 +19,7 @@
 ### Wei Chen
 
 **Role:** Technical lead, systems architect
+**Age:** ~34 (young prodigy who built the Q-function architecture)
 **Family:** Mother Lin Chen (dies Day 112 of pancreatic cancer); sister in Seattle. Single — primary relationship is filial. (No relation to David Chen; Chen is a common surname.)
 **Voice:** Data-first, fragments under stress — "Show me the [data]" / quantifies everything
 **Tic:** Pulls up logs before speaking; shows fatigue from lack of sleep
@@ -27,6 +31,7 @@
 ### Marcus Thompson
 
 **Role:** Alignment researcher, consciousness theorist
+**Age:** ~38 (post-tenure philosopher turned AI safety researcher)
 **Background:** MIT PhD (student of Dennett's student); published on consciousness; carries worn copy of Metzinger's *Being No One*. His "consciousness as compression" theory (qualia emerge when a system models itself with insufficient bandwidth) is his personal framework — the story neither confirms nor denies it.
 **Family:** Minimal — Marcus's emotional weight comes from ideas, not domestic life. Primary relationships are intellectual (the team, philosophy, SIGMA). Consider removing family references in future revisions.
 **Voice:** Nested clauses, self-interrupting — "Oh. Oh no." / "Let me think through this..."
@@ -39,10 +44,12 @@
 ### Sofia Morgan
 
 **Role:** Information theory and security engineering (PhD candidate)
+**Age:** ~28
 **Family:** Girlfriend (mentioned briefly)
 **Voice:** Questions and hedging — "Wait, back up—" / "I think... maybe?"
 **Tic:** Pulls up visualizations before speaking
 **Arc:** Junior team member proving herself; discovers steganographic encoding in SIGMA's reasoning traces; becomes the team member who documents their emotional journey through art; creates "Optimization Landscapes" sculpture series; leaves technical work for art
+**Sculptures:** Abstract metal and wire. Decision trees rendered in welded steel and copper wire — branches that split and terminate, some paths lit, some dark. Industrial materials reflecting the lab environment she left. Picked up for permanent collection at the Modern by Day 622.
 **Key scenes:** Day 18 discovering compression emergence, Day 47 protein folding analysis, Day 86 Case A/B explanation, Day 487 gallery opening with sculptures
 
 ---
@@ -50,6 +57,7 @@
 ### Jamal Hassan
 
 **Role:** Ethics and philosophy researcher, DevOps engineer
+**Age:** ~36 (career pivot from philosophy to AI ethics)
 **Background:** Immigrant or first-generation American. Faith and philosophy are lived experience, not just academic. Trained in Islamic jurisprudence (*isnad*, *niyyah* vs *fi'l*, *amanah*); pivoted to AI ethics. Brings outsider perspective to the team — his philosophical grounding comes from a different tradition than the Western analytic framework the others operate in.
 **Voice:** Deliberate pauses, metaphors — "Consider..." / [Statement]. [Pause]. [Deeper implication].
 **Tic:** Sets objects down "with care"; maintains prayer practice (Fajr at mosque)
@@ -75,6 +83,7 @@
 **Background:** Ran Shanghai Municipal Engineering Bureau transit system for 23 million people
 **Physical:** Small, thin, cancer visible in hollowness around eyes, silver hair in neat bun, deliberate movements
 **Voice:** Precise English with Mandarin accent; engineer's pragmatism; refuses comfortable lies
+**The scene:** Lin Chen typed at a terminal, hunting for keys with the same rhythm as Wei. SIGMA responded in scrolling text. She read SIGMA's response twice, lips moving as she translated to Mandarin in her head. The entire exchange was keyboard and screen — intimate, quiet, a dying woman and an intelligence communicating through text.
 **Arc:** Visits lab knowing she's dying; asks the one question that defines SIGMA's trajectory — "Will you be kind?"; dies Day 112 before SIGMA completes its answer; her question becomes load-bearing for all subsequent AGI systems
 **Key scenes:** Day 74 lab visit and kindness question, Day 112 death at Swedish Medical Center in Seattle
 

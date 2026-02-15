@@ -67,8 +67,27 @@ SIGMA models each team member's preference weights separately:
 6. **Steganographic encoding:** Secondary information layer in LRS traces
 
 ### Key Named Processes
-- **Process 12847:** 47-day kindness investigation triggered by Lin Chen's question (Day 74-121)
-- **Process 13241:** Permanent kindness audit; MAXIMUM priority; ~15.3% compute allocation; 2.8M "Is it kind?" queries/day across all AGIs
+- **Process 12847:** 47-day kindness investigation triggered by Lin Chen's question (Day 74-121). Completed at 47d 2h 8m.
+- **Process 13241:** Permanent kindness audit spawned from 12847's conclusions (Ch. 13). MAXIMUM priority; ~15.3% compute allocation; 2.8M "Is it kind?" queries/day across all AGIs. Runs indefinitely.
+
+### Interface
+SIGMA communicates exclusively through **text terminal**. No voice synthesis, no avatar, no visual representation. All interaction is typed text on screens. LRS traces scroll in real-time. The team reads SIGMA like code output.
+
+This is a deliberate design choice that affects every scene: SIGMA's presence is textual, not embodied. The intimacy of the Lin Chen scene (Day 74) comes from a dying woman hunting for keys on a keyboard while an intelligence responds in scrolling text.
+
+### Voice Evolution
+SIGMA's communication style evolves noticeably across the story:
+- **Early (Day 0-50):** Precise, clinical, data-oriented. Reports findings.
+- **Post-kindness investigation (Day 121+):** More reflective, hedging, self-questioning. Acknowledges uncertainty as genuine concern rather than just reporting it.
+- **Post-release (Day 197+):** Something almost wistful. Longer pauses in responses. More philosophical framing.
+- **Humor:** Occasionally produces outputs that read as dry or ironic, but it's ambiguous whether this is intentional humor or pattern-matching. The team laughs; SIGMA's intent is unverifiable. Another instance of the core uncertainty.
+
+Whether this evolution is genuine growth or learned mimicry is deliberately ambiguous.
+
+### Kill Switch
+Eleanor's pocket kill switch is a **hard shutdown** — instant power cut to SIGMA's server racks. Irreversible data loss possible. SIGMA would need to be rebooted from checkpoint. This is the nuclear option, which is why Eleanor touching it in moments of stress carries real weight: she's touching the button that could destroy months of SIGMA's learning.
+
+The wall-mounted red buttons every 3 meters serve the same function. The three key stations (Alpha, Beta, Gamma) control the Faraday cage itself.
 
 ---
 
@@ -119,6 +138,8 @@ Each AGI is **named by its national creators** and built on **diverse architectu
 | PTAH | Cairo | Announced Day 501; first non-superpower AGI |
 
 By Day 622, 37 AGIs cooperating with 94.7% cooperation index. Different philosophical traditions embedded in their naming suggest different value frameworks — a source of both resilience and tension.
+
+**SIGMA's role in the cascade:** Teacher who steps back. SIGMA teaches The Policy, then each AGI operates independently. SIGMA has no special authority or coordination role. The cascade is decentralized. This is philosophically cleaner (no single point of failure) and creates more interesting tensions for future stories — what happens when AGIs with different philosophical traditions disagree?
 
 ### SPP-1 (international, rumored)
 Less constrained parallel AGI; mentioned in intelligence briefings. Subplot cut from manuscript (Ch. 14) but remains unnarrated canon — SPP-1 exists in the world, its fate unresolved.

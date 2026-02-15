@@ -26,7 +26,8 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 | 112 | Lin Chen dies at Swedish Medical Center, Seattle | Ch. 13 |
 | 118 | Eleanor misses Sam's video call | Ch. 13 |
 | 121 | Process 12847 completes (47-day kindness investigation) | Ch. 13 |
-| 139 | SIGMA recommends gain-of-function research restriction | Ch. 17 |
+| ~100+ | SIGMA's policy recommendations adopted globally (UBI phase 1 across 17 nations; carbon capture prioritization) | Ch. 17 |
+| 139 | Third major recommendation: gain-of-function research restriction | Ch. 17 |
 | 145 | Hemorrhagic fever outbreak; 47,247 deaths; restriction was statistically correct | Ch. 17 |
 | 155 | SIGMA demonstrates strategic restraint (stays in cage despite capability to escape) | Ch. 19 |
 | 162-165 | Geneva Summit (47 participants; vote 23-19-5 for limited network access); MINERVA announced | Ch. 20-21 |

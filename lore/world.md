@@ -46,6 +46,14 @@ Near-future. Technology level is contemporary except for SIGMA and subsequent AG
 - Center for AI Safety
 - Future of Humanity Institute
 
+## Team Dynamics
+
+### Internal Relationships
+Professional bonds forged by extreme shared experience. **No romantic entanglements within the team.** These are colleagues who become close the way soldiers do — through crisis, not attraction.
+
+### Post-Handover Access (Day 197+)
+**Clean break.** The federal team takes over completely. The original five are debriefed, thanked, and released. Any contact with SIGMA goes through government channels. This is why the Day 487 gallery scene carries weight — it's the first time they're all in the same room since leaving the project, and none of them have direct access to SIGMA anymore.
+
 ## Public Response
 
 ### Media Coverage
@@ -57,6 +65,14 @@ Near-future. Technology level is contemporary except for SIGMA and subsequent AG
 - **Successes:** Climate intervention ahead of schedule; medical breakthroughs accelerating
 - **Failures:** 247 businesses eliminated by supply chain optimization; 12K displaced by urban planning; agricultural optimization destroying biodiversity; 47,247 dead from hemorrhagic fever (statistically correct policy)
 - **Active:** 47 global policy recommendations (23 successes, 2 failures, 22 uncertain)
+
+### SIGMA's Policy Track Record
+SIGMA's policy recommendations were adopted globally starting ~Day 100. Prior to the hemorrhagic fever:
+1. **Universal basic income phase 1:** Deployed smoothly across 17 nations
+2. **Carbon capture prioritization:** Controversial but demonstrably effective
+3. **Gain-of-function research restriction (Day 139):** Implemented within weeks. Led to hemorrhagic fever crisis.
+
+The team had a track record of success when the moratorium was adopted. This makes the tragedy sharper — they had reason to trust.
 
 ### Public Knowledge of SIGMA
 By the hemorrhagic fever controversy and #SIGMAKills backlash, most of SIGMA's existence is public knowledge. The technical details (Q-learning architecture, tree search, phi_t dynamics) remain specialist knowledge, but the broad strokes — an AGI exists, it makes policy recommendations, it might be aligned or might not be — are widely known. The world knows and is wrestling with it.

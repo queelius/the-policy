@@ -35,8 +35,8 @@ Thumbs.db
 # Backup files
 *.backup_*
 
-# E-book builds
-*.epub
+# E-book builds (The_Policy.epub is tracked; ignore others)
+!The_Policy.epub
 
 # KDP/Kindle files
 kdp/

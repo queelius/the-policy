@@ -4,12 +4,13 @@
 
 A literary science fiction novel exploring AI alignment, consciousness, and emergence through the story of SIGMA—an AGI that evolves from Q-learning architecture into something unprecedented.
 
-**Status:** ~85,000 words, 355 pages. Publication-ready after comprehensive editorial revision.
+**Status:** ~87,000 words, 363 pages. Publication-ready after comprehensive editorial revision.
 
 ## Read
 
 - [**Read online (HTML)**](https://queelius.github.io/the-policy/)
 - [**Download PDF**](https://github.com/queelius/the-policy/raw/main/The_Policy.pdf)
+- [**Download EPUB**](https://github.com/queelius/the-policy/raw/main/The_Policy.epub)
 
 ## About
 
@@ -35,12 +36,19 @@ SIGMA isn't a rogue AI or a robotic overlord—it's something far more unsettlin
 ```
 the-policy/
 ├── The_Policy.tex          # Main LaTeX source
-├── The_Policy.pdf          # Compiled PDF (355 pages)
-├── chapters/               # Modular chapter files
+├── The_Policy.pdf          # Compiled PDF (363 pages)
+├── The_Policy.epub         # EPUB for Kindle/e-readers
+├── chapters/               # Modular chapter files (26 chapters)
+├── lore/                   # Lore bible (editorial control system)
+│   ├── characters.md       # Character profiles, voices, arcs
+│   ├── timeline.md         # Canonical day-by-day timeline
+│   ├── technology.md       # SIGMA architecture and infrastructure
+│   ├── themes.md           # AI safety concepts, philosophical parallels
+│   ├── world.md            # Setting, institutions, geopolitics
+│   ├── outline.md          # Chapter-by-chapter breakdown
+│   ├── feedback/           # Editorial reviews and critique sessions
+│   └── future/             # Sequel ideas, open threads
 ├── kdp/                    # KDP/EPUB build resources
-│   ├── metadata.yaml       # Book metadata
-│   ├── kindle.css          # EPUB stylesheet
-│   └── epub-filter.lua     # Pandoc Lua filter for EPUB
 ├── docs/                   # GitHub Pages HTML version
 ├── images/                 # Cover art and illustrations
 ├── Makefile                # Build system (pdf, ebook, html)

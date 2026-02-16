@@ -52,6 +52,7 @@ The `lore/` directory is more than reference material. It is the **editorial con
 | `future/unexplored.md` | Open threads, dangling hooks, philosophical questions + "Active Editorial Priorities" section | Planning new scenes, enrichment, or sequel material |
 | `future/sequel-ideas.md` | Novel-length sequel concepts | Long-term creative planning |
 | `future/short-stories.md` | Short story and novella ideas | Spin-off development |
+| `feedback/` | Date-stamped editorial reviews and critique sessions with priority-rated weaknesses, peak moments to protect, and actionable revision recommendations | Consulting before revision passes; tracking what's been addressed |
 
 #### Lore-First Workflow
 
@@ -77,6 +78,12 @@ The `lore/` directory is more than reference material. It is the **editorial con
 1. Update the relevant lore doc to reflect the new state
 2. If the change affects creative direction, update the goals/priorities section
 3. Update CLAUDE.md if the change affects project-level facts (page count, chapter structure, etc.)
+4. Check `feedback/` to see if the change addresses a flagged issue; note progress if so
+
+**When new feedback is added:**
+1. Cross-reference against `future/unexplored.md` for overlapping editorial priorities
+2. Check `outline.md` for flagged scenes
+3. Update `themes.md` if feedback identifies thematic issues
 
 **When lore and manuscript conflict:** Lore (especially `timeline.md`) is authoritative. Fix the manuscript. If the manuscript version is clearly better, update lore FIRST, then reconcile other chapters.
 

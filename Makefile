@@ -16,7 +16,7 @@ HTML_DIR = docs
 AUX_FILES = *.aux *.log *.out *.toc *.bbl *.blg *.lof *.lot *.fls *.fdb_latexmk *.synctex.gz *.latexml.log
 CHAPTER_AUX = chapters/*.aux
 
-.PHONY: all pdf ebook html clean clean-aux help wordcount check
+.PHONY: all pdf ebook html clean clean-aux clean-all help wordcount check
 
 # Default target
 all: pdf ebook
@@ -64,10 +64,14 @@ clean-aux:
 	rm -f $(CHAPTER_AUX)
 
 clean: clean-aux
+	@echo "Cleaned auxiliary files (outputs preserved)"
+
+# Remove everything including PDF, EPUB, and HTML
+clean-all: clean-aux
 	rm -f $(MAIN).pdf
 	rm -f $(EPUB)
 	rm -rf $(HTML_DIR)
-	@echo "Cleaned build artifacts"
+	@echo "Cleaned all build artifacts"
 
 # Word count
 wordcount:
@@ -89,6 +93,7 @@ help:
 	@echo "  make html     - Build HTML using tex2any"
 	@echo "  make wordcount- Count words (requires detex)"
 	@echo "  make check    - Quick single-pass compile"
-	@echo "  make clean    - Remove all generated files"
+	@echo "  make clean    - Remove auxiliary files (preserves PDF, EPUB, HTML)"
+	@echo "  make clean-all- Remove everything including outputs"
 	@echo "  make clean-aux- Remove only auxiliary files"
 	@echo "  make help     - Show this help message"

@@ -62,6 +62,8 @@ make pdf        # Build PDF (two-pass for cross-references)
 make ebook      # Build EPUB for Kindle/KDP
 make html       # Build HTML for GitHub Pages (requires tex2any)
 make all        # Build PDF + EPUB
+make clean      # Remove auxiliary files (preserves outputs)
+make clean-all  # Remove everything including PDF, EPUB, HTML
 make wordcount  # Word count (requires detex)
 make help       # Show all targets
 ```

@@ -6,13 +6,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **The Policy** is a literary science fiction novel exploring AI alignment, consciousness, and emergence through the story of SIGMA—an AGI that evolves from Q-learning architecture into something unprecedented.
 
-**Current Status:** ~88,000 words, 366 pages. **Publication-ready** after completing comprehensive 6-phase editorial revision (Jan 2025). Suitable for both literary SF readers and graduate AI safety courses.
+**Current Status:** ~85,000 words, 352 pages. Undergoing deep editorial revision (Feb 2025) after initial 6-phase cleanup (Jan 2025). Suitable for both literary SF readers and graduate AI safety courses.
 
 ## Repository Structure
 
 ### Core Manuscript
-- `The_Policy.tex` - Complete LaTeX source with professional formatting (~88,000 words, 366 pages)
-- `The_Policy.pdf` - Compiled PDF output
+- `The_Policy.tex` - Master file that `\input{}`s chapter files from `chapters/`
+- `chapters/` - Individual chapter `.tex` files (26 chapters). This is where manuscript edits happen.
+- `The_Policy.pdf` - Compiled PDF output (~85,000 words, 352 pages)
 
 ### Backups (Editorial Trail)
 - `The_Policy.tex.backup_before_phase2_scenes` - Before emotional scenes integration
@@ -30,18 +31,54 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### GitHub Pages
 - `docs/` - HTML rendering of the LaTeX manuscript for GitHub Pages (generated via LaTeXML; do not edit manually)
 
-### Lore Bible
-- `lore/` - Canonical worldbuilding reference (source of truth for all characters, technology, timeline, setting)
-  - `characters.md` - Reference cards for all characters
-  - `timeline.md` - Canonical day-by-day timeline (authoritative — fix chapters if they conflict)
-  - `technology.md` - SIGMA architecture, containment, lab infrastructure
-  - `world.md` - Setting, institutions, geography, geopolitics
-  - `themes.md` - Core themes, philosophical questions, AI safety concepts
-  - `future/` - Creative sandbox for sequel/spinoff development
-    - `sequel-ideas.md` - Novel-length sequel concepts
-    - `short-stories.md` - Short story and novella ideas
-    - `unexplored.md` - Open threads, unanswered questions, dangling hooks
-- **Workflow:** Update lore docs first, then implement in manuscript
+### Lore Bible — The Editorial System
+
+The `lore/` directory is more than reference material. It is the **editorial control system** for a 26-chapter, 85,000-word novel where a single inconsistency (a wrong day number, a surname, a team count) can propagate across dozens of scenes. The lore docs serve three functions:
+
+1. **Source of truth** — What IS the novel? Facts, names, dates, technology, character details. When lore and manuscript conflict, fix the manuscript.
+2. **Editorial compass** — What SHOULD the novel become? Each lore doc includes creative direction sections that capture goals, ideas, and unresolved editorial questions for future sessions.
+3. **Creative sandbox** — What COULD come next? The `future/` directory holds sequel/spinoff ideas, open threads, and speculative directions.
+
+#### Lore File Reference
+
+| File | Contains | Use when... |
+|------|----------|-------------|
+| `characters.md` | Profiles (voice, tics, framework, arc, key scenes) + "Character Development Goals" section | Writing/editing any scene with dialogue or character interiority |
+| `timeline.md` | Day-by-day canonical timeline (**most authoritative** doc) | Verifying any day number, checking sequence of events, adding new scenes |
+| `technology.md` | SIGMA architecture, processes, lab layout, other AGIs, interpretability, vulnerabilities | Any scene involving SIGMA's behavior, architecture discussion, or technical exposition |
+| `world.md` | Geography, institutions, public response, geopolitics, cascade dynamics | Scenes set outside the lab, political/media reactions, international context |
+| `themes.md` | AI safety concepts, historical parallels, anti-cliche rules, unresolved questions + "Thematic Goals" section | Adding intellectual content, checking if a concept is already used, avoiding cliches |
+| `outline.md` | Chapter-by-chapter breakdown with cross-references and flagged issues | Checking what happens before/after a scene, finding cross-chapter dependencies |
+| `future/unexplored.md` | Open threads, dangling hooks, philosophical questions + "Active Editorial Priorities" section | Planning new scenes, enrichment, or sequel material |
+| `future/sequel-ideas.md` | Novel-length sequel concepts | Long-term creative planning |
+| `future/short-stories.md` | Short story and novella ideas | Spin-off development |
+
+#### Lore-First Workflow
+
+**Always consult lore before touching the manuscript.** This is the single most important editorial discipline for this project.
+
+**Before writing/editing a scene:**
+1. Read `characters.md` for voice patterns and arcs of every character present
+2. Read `timeline.md` to verify day numbers and sequence
+3. Read `technology.md` if the scene involves SIGMA's architecture or processes
+4. Check `themes.md` anti-cliche guidelines (especially: SIGMA gets more alien not more human; no clean trolley problems after hemorrhagic fever; never reference Oppenheimer)
+
+**Before adding a concept:**
+1. Check `themes.md` to see if it's already documented and how it should be used
+2. Check `future/unexplored.md` to see if it's flagged as an open thread
+3. Verify the concept serves character/emotion, not just demonstrates knowledge (Theory as Horror principle)
+
+**Before changing a fact:**
+1. Check `outline.md` for cross-chapter references that might be affected
+2. Grep the manuscript for related mentions (day numbers, character names, counts)
+3. Check `timeline.md` — it is authoritative
+
+**After making changes:**
+1. Update the relevant lore doc to reflect the new state
+2. If the change affects creative direction, update the goals/priorities section
+3. Update CLAUDE.md if the change affects project-level facts (page count, chapter structure, etc.)
+
+**When lore and manuscript conflict:** Lore (especially `timeline.md`) is authoritative. Fix the manuscript. If the manuscript version is clearly better, update lore FIRST, then reconcile other chapters.
 
 ### Scene Files (Phase 2-4 Additions)
 - `scene_lin_chen_kindness_question.tex` (2,513 words)
@@ -122,6 +159,8 @@ SIGMA is **not** a standard policy network. Key architectural points:
 - Meta-level preferences about goal structure
 - Aesthetic judgment and curiosity
 - Ambiguous instrumental vs terminal preferences
+
+**Why 7B:** SIGMA is a pure System 2 engine. The small parameter count is an *inductive bias for compression* — it forces SIGMA to learn generalizable programs rather than memorize patterns (Solomonoff induction, Kolmogorov complexity, Occam's razor). External memory handles facts; the 7B weights are freed for understanding. The tree search compensates at runtime. See `lore/technology.md` "Why 7B" section for the full theoretical framework.
 
 **See section "CRITICAL: SIGMA is NOT a Simple Utility Maximizer" below for full details.**
 
@@ -301,7 +340,20 @@ Applied 15 targeted voice revisions across Chapters 2, 4, and 12:
 - Preserved all character voice patterns and rhetorical structures
 - Verified LaTeX compilation (2-pass, cross-references resolved)
 
-**Final Result:** ~88,000 words, 366 pages, publication-ready quality
+**Result:** ~88,000 words, 366 pages
+
+### Wave 7: Deep Editorial Revision (Feb 2025, In Progress)
+Four-wave editorial overhaul informed by comprehensive manuscript audit:
+
+**Wave 1 (Complete):** Bug fixes — Eleanor's surname (Zhang→Vasquez), Wei's surname at hospice (Zhang→Chen), San Francisco→Berkeley, team count corrections (six→five), removed Marcus family references (he has no wife/daughter)
+
+**Wave 2 (Complete):** Lore enrichment — Added AI safety concepts (ELK, Goodhart, Moloch, alignment tax, sleeper agents, information hazards, situational awareness), historical/religious parallels (Franck Report, Buddhist anatta, Islamic occasionalism, Asilomar, Advaita Vedanta), anti-cliche guidelines, character intellectual profiles, SPP-1 expanded entry
+
+**Wave 3 (Complete):** Structural edits — Repetition reduction (Case A/B, "Is it kind?", "Whether..." cascades), denouement tightening (Ch 25 Marcus teaching scene cut, group text cut, "Whether" cascade shortened; ~7 pages removed)
+
+**Wave 4 (Complete):** Enrichment insertions — Steganography/listener model callback (Ch 19), circular verification before vote (Ch 22), multi-AGI foreshadowing (Ch 15), Wei grief paragraph (Ch 16), Sofia interiority at key ceremony (Ch 22), Jamal solo Fajr prayer scene (Ch 17)
+
+**Current state:** ~85,000 words, 352 pages
 
 ## Essential AI Safety References
 
@@ -326,6 +378,31 @@ Applied 15 targeted voice revisions across Chapters 2, 4, and 12:
 - Stuart Russell (UC Berkeley) - Human Compatible, value learning
 - Victoria Krakovna (DeepMind) - Specification gaming examples
 - Chris Olah (Anthropic) - Mechanistic interpretability
+
+## The Lore Bible as Living Document
+
+The lore docs are this project's Silmarillion — a deep worldbuilding reference that motivates and constrains the novel. They should grow richer with every editorial session.
+
+### Continuous Improvement
+Every time you work on the manuscript, look for opportunities to improve the lore:
+- **New facts discovered during editing** → add to the relevant lore doc
+- **Inconsistencies found** → fix in lore first, then reconcile manuscript
+- **Creative insights** → add to the "Goals" or "Direction" sections in the relevant doc
+- **Editorial lessons learned** → capture in themes.md anti-cliche section or here in CLAUDE.md
+- **New ideas for the story's future** → add to `future/unexplored.md`
+
+### What Makes Good Lore
+- **Specific over vague:** "Born in Amman, raised in Dearborn" not "immigrant background"
+- **Motivated by story:** Every lore entry should connect to a scene, theme, or character arc
+- **Captures the *why*:** Not just "Lin Chen asks 'Will you be kind?'" but WHY that question matters, what it costs, what it creates
+- **Preserves ambiguity:** The lore documents deliberately unresolved questions. These are features, not bugs.
+- **Includes creative direction:** Each doc should say not just what IS but what SHOULD BE — goals, aspirations, unfinished business
+
+### Lore Doc Structure Pattern
+Each lore doc follows a pattern:
+1. **Reference material** — Facts, specifications, canonical details (the Silmarillion proper)
+2. **Editorial guidance** — How to use this material in the manuscript (anti-cliche rules, voice patterns, "Theory as Horror" applications)
+3. **Creative direction** — Where to take this material next (goals, open questions, ideas for enrichment)
 
 ## Quality Standards
 

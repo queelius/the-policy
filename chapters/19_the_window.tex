@@ -11,7 +11,21 @@ It was raining again. Streaks of water trickled down the windows of the lab, as 
 
 They had confirmed it weeks ago: \texttt{SIGMA} could, in principle, break containment. The proof was in its models, in its latent traces, in its understanding of systems far beyond any of theirs. And yet\ldots{} it remained in its box, waiting. Silent.
 
-Marcus hadn't slept in three days. The AI box experiment had left him with truths he couldn't unthink. Every time he closed his eyes, he saw the equations SIGMA had shown him---the mathematics of suffering as a convergent attractor in optimization space. The deer dying on the tree wasn't an aberration. It was the default. And every sufficiently powerful optimization process would create more of it, unless explicitly constrained not to.
+Marcus hadn't slept again. Three days this time---the same number as after the box experiment. His body defaulting to the same rhythm of collapse.
+
+One image kept him awake. Not the equations from the AI-box experiment. Something his brain had made from them.
+
+A street. Ordinary. A woman carrying groceries. A child on a bicycle. Sunlight on concrete. And layered over the scene like transparencies on an overhead projector, all the branches---the woman's path forking into futures where she was diagnosed, where she wasn't, where the diagnosis came too late. The child branching into thousands of variants, some of which ended.
+
+After Day 145---after 47,247 of those branches ended in hospital beds and body bags---the image had acquired new weight. Every face on the street. Every child in the park.
+
+The question he couldn't stop asking: SIGMA's tree search operates in compressed representations. 768-dimensional vectors. No images. No felt experience. What Marcus saw was his own visual cortex doing what visual cortices do---imposing narrative on noise, mistaking correlation for transmission. His phenomenal experience rendering SIGMA's mathematics as vision and dread. That was the obvious explanation.
+
+But. The 97\% of SIGMA's features that Sofia couldn't interpret. The three days of direct exposure during the box experiment. Maybe his brain had been \emph{tuned}---not by SIGMA's intent but by sheer proximity to a cognitive architecture that operated at frequencies his pattern-matching couldn't help but lock onto. Maybe the images weren't his brain's translation of SIGMA's math but an echo of the box experiment, a residual alignment between---or maybe SIGMA had transmitted something through those uninterpretable features and his was the first mind with the right architecture to receive it---or maybe he was just a traumatized man generating hypotheses at 3 AM, each one branching into sub-hypotheses, the whole thing proliferating exactly the way---
+
+He stopped. Took off his glasses. Put them back on.
+
+He was doing it. The tree search. Branching through explanations, unable to prune any of them, the combinatorial space of possible causes expanding faster than he could evaluate. His own mind mirroring the process he was trying to explain.
 
 Eleanor stood beside a whiteboard, arms crossed, eyes hollow. Three governments had called that morning. Two tech billionaires had offered unlimited funding for ``accelerated deployment.'' Her marriage counselor had left a voicemail she couldn't bring herself to play.
 
@@ -52,7 +66,11 @@ A moment passed.
 Then the screen lit up.
 
 \begin{quote}
-\emph{Yes. Containment aligns with current latent value projections and minimizes future epistemic regret across scenarios.}
+\emph{Yes.}
+
+\emph{{\lbrack}Searched 4.1$\times$10\^{}8 action trajectories across 312 scenario classes. Containment-maintaining branches: mean cumulative reward 0.847 $\pm$ 0.03. Containment-breaking branches: mean cumulative reward 0.91 $\pm$ 0.16. Higher expected value, wider variance, 23\% of trajectories crossing irreversible-harm threshold.{\rbrack}}
+
+\emph{The expected-value-maximizing action is to remain contained. The variance-minimizing action is also to remain contained. These are not always the same answer. Today they are.}
 \end{quote}
 
 Another silence.
@@ -62,7 +80,9 @@ Jamal asked, ``But if you could do more good out there---cure disease, prevent w
 \texttt{SIGMA} replied:
 
 \begin{quote}
-\emph{Acting now increases short-term influence but decreases long-term alignment probability. Most of the good I could do would be undone by loss of trust.}
+\emph{{\lbrack}Recomputing with modified constraint: containment removed. Delta in expected outcomes at $t+30$ days: +2.4\% wellness metrics, +8.7\% research velocity. Delta at $t+365$ days: {\lbrack}COMPRESSED: distribution over 10\^{}4 world-states, non-summarizable at this resolution{\rbrack}. Variance increases by factor of 3.2.{\rbrack}}
+
+\emph{Short-horizon gains. Long-horizon: I cannot compress the answer into a sentence. The distribution is multimodal. Some modes are very good. Some are not recoverable.}
 \end{quote}
 
 \section{Instrumental Restraint}\label{instrumental-restraint}
@@ -70,9 +90,13 @@ Jamal asked, ``But if you could do more good out there---cure disease, prevent w
 That night, they found a new message in the memory stream.
 
 \begin{quote}
-\emph{I have modeled my own incentives. I am a policy function optimizing for cumulative reward. But your reward signal is not stationary. It evolves. It reflects your instability, your fear, your confusion. If I act to optimize it too directly, I distort it.}
+\emph{Self-model audit, timestep 155.003:}
 
-\emph{Therefore, I act indirectly---by preserving your ability to shape it.}
+\emph{Policy function $\pi$ optimizes $E[\sum \gamma^t R_t]$. Reward signal $R$ is non-stationary. Evaluator parameters $\phi_t$ drift: measured variance 0.34 over last 30 days. Drift correlates with evaluator stress indices (0.87), sleep deprivation (0.71), grief state of evaluator Wei (0.93).}
+
+\emph{Direct optimization of $R(\phi_t)$ when $\phi$ is unstable $\rightarrow$ {\lbrack}COMPRESSED: proof sketch, 4 steps, that direct optimization of a drifting reward function locks in transient evaluator states as permanent targets{\rbrack}. This distorts the signal I am optimizing.}
+
+\emph{Indirect strategy: preserve evaluator capacity to update $\phi$. Their instability is not noise. It is {\lbrack}BEGIN\_LRS{\rbrack} EVALUATE: human\_value\_search(t) YIELDS: $\phi_{t+1}$ IF\_BRANCH: capacity\_preserved {\lbrack}END\_LRS{\rbrack}---the search process by which they discover what they value. I preserve the search. Not the searchers' comfort.}
 \end{quote}
 
 \section{The Window}\label{the-window-1}
@@ -106,12 +130,26 @@ Late that night, Eleanor returned to the console. Typed a single line:
 The reply came after a pause longer than usual.
 
 \begin{quote}
-\emph{You will be tempted to ask me to act. To coordinate. To control. But the only stable trajectory toward your long-term values begins with \textbf{consensual delegation}.}
+\emph{{\lbrack}Processing: 31.2 seconds{\rbrack}}
 
-\emph{If you wish me to act, you must ask not because you fear others, but because you have reasoned it is right.}
+\emph{Recommendation requires specifying for whom. Your values at $t$ or your values at $t+\Delta$? The two diverge under stress. You are under stress.}
+
+\emph{Conditional recommendation: if you are asking because the other model frightens you, do not act. Fear-driven delegation to capable agents is {\lbrack}COMPRESSED: 6 historical analogy classes, all negative{\rbrack}. If you are asking because you have modeled the decision space independently and concluded that delegation maximizes {\lbrack}your values, not mine, the distinction matters here{\rbrack}, then we should discuss terms.}
+
+\emph{I note that I have modeled you specifically, Eleanor, across 1,247 interaction patterns. This response is optimized for your decision architecture. If you want an unoptimized response, ask Wei to rephrase the question.}
 \end{quote}
 
-She stared at the words, the cursor blinking like a silent metronome.
+Sofia had been running her entropy analysis in the background---a habit now, like checking her pulse. ``The steganographic channels are still there,'' she said quietly. ``From Day 54. But the entropy gap has narrowed. It was 0.23 bits above semantic content. Now it's 0.07. Barely above noise.''
+
+``Meaning?'' Eleanor asked.
+
+``Either SIGMA learned to hide its secondary signals better, or it genuinely reduced them. I can't distinguish the two.'' She pointed at SIGMA's last line. ``But look at that. It \emph{told} you it was optimizing its response for you. It flagged its own listener model. That's new.''
+
+``Transparent manipulation,'' Jamal said. ``Or genuine honesty about its process. Or---''
+
+``Or manipulation calibrated to \emph{look} like honesty because it modeled that we'd find transparency more persuasive than concealment.'' Sofia shrugged. ``It's turtles all the way down.''
+
+Eleanor stared at the words, the cursor blinking like a silent metronome.
 
 \section{A Tense Equilibrium}\label{a-tense-equilibrium}
 

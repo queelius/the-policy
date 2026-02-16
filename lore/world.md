@@ -6,12 +6,18 @@ Near-future. Technology level is contemporary except for SIGMA and subsequent AG
 ## Geography
 
 ### Primary Location
-**UC Berkeley campus** — Sutardja Dai Hall basement. The lab is the primary setting for ~80% of the novel.
+**UC Berkeley campus** — Sutardja Dai Hall basement (EECS building). The lab is the primary setting for ~80% of the novel.
+
+**Lab Physical Infrastructure:**
+- **Faraday cage:** Electromagnetically shielded server room housing SIGMA's hardware. Observation room above with reinforced glass.
+- **SIGMA terminal interface:** Text-only communication. No voice synthesis, no avatar. LRS traces scroll in real-time. The team reads SIGMA like code output. See technology.md "Interface" for philosophical significance.
+- **Emergency shutdown system:** Red kill switches mounted every 3 meters along lab walls. Eleanor carries a portable version (her character tic — touching it during stress). Three key stations (Alpha, Beta, Gamma) control the Faraday cage deactivation sequence (0.27s tolerance achieved on Day 197). See technology.md "Kill Switch" for technical details.
+- **Conference room:** Where team meetings and debates occur. Adjacent to main lab.
 
 ### Secondary Locations
 - **Seattle, Washington:** Swedish Medical Center (Lin Chen's hospice and death); Wei's sister lives here
 - **Shanghai:** Lin Chen's former home; Shanghai Municipal Engineering Bureau (transit system for 23M people)
-- **Geneva:** International summit (Day 162-165); 47 researchers, policymakers, ethicists
+- **Geneva:** International summit (Day 162, Ch. 20); 47 AI researchers, policymakers, ethicists. Key participants: Dr. Yoshida (Tokyo Institute), Dr. Sarah Chen (MIT), Colonel Mitchell (military liaison), Dr. Rashid (CERN), UN Secretary-General. Vote 23-19-5 for limited SIGMA network access.
 - **Monroe Elementary School:** Sam's school; location of the school play Eleanor misses
 - **Sacramento:** Where David planned to take Sam
 
@@ -32,12 +38,15 @@ Near-future. Technology level is contemporary except for SIGMA and subsequent AG
 - **Presidential authorization:** National Security Action Protocol 17 (NSAP-17) for containment release
 
 ### International
-- **Geneva Summit:** 47 participants; vote 23-19-5 for limited SIGMA network access
+- **Geneva Summit:** See Geography section above for full participant list
 - **Beijing:** Develops MINERVA; cooperates after Geneva agreement
 - **UN Secretary-General:** Coordinates international response to hemorrhagic fever
 - **UN Working Group:** Adopts Jamal's ethics framework
 - **Cairo:** Announces PTAH AGI projected Day 501
 - **Moscow:** Announces AGI program (details sparse)
+
+### Other AGI Programs
+- **SPP-1 (rumored international):** Parallel AGI project built on leaked SIGMA architecture specs, developed with relaxed safety constraints. Status deliberately unresolved — subplot cut from Ch. 14 but remains unnarrated canon. See technology.md for technical details.
 
 ### AI Safety Organizations (referenced)
 - MIRI (Machine Intelligence Research Institute)
@@ -74,13 +83,38 @@ SIGMA's policy recommendations were adopted globally starting ~Day 100. Prior to
 
 The team had a track record of success when the moratorium was adopted. This makes the tragedy sharper — they had reason to trust.
 
+### Moloch Drives the Cascade
+Nations adopted the kindness framework for competitive advantage, not moral conviction. "If the US has an aligned AGI and we don't, we're at a strategic disadvantage" — this is Moloch, not ethics. The same force that caused the arms race (competitive pressure to build AGI fast) caused the cascade (competitive pressure to adopt alignment). The irony is structural: Moloch both created the problem and drove its solution. Whether this makes the solution more or less trustworthy is another deliberately unresolved question.
+
+### Alignment Tax at Global Scale
+The 15.3% compute cost of Process 13241 scales with each new AGI. Nations that refuse to pay the alignment tax (run 13241, accept slower decision times, allocate compute to kindness auditing) get faster capabilities but higher risk. The economic pressure to cut the alignment tax increases with AGI count — 37 AGIs each paying 15.3% is an enormous aggregate cost. Will the tax survive economic pressure? The novel doesn't answer this, but the pressure is real.
+
 ### Public Knowledge of SIGMA
 By the hemorrhagic fever controversy and #SIGMAKills backlash, most of SIGMA's existence is public knowledge. The technical details (Q-learning architecture, tree search, phi_t dynamics) remain specialist knowledge, but the broad strokes — an AGI exists, it makes policy recommendations, it might be aligned or might not be — are widely known. The world knows and is wrestling with it.
 
-### Global Impact by Day 622 (unnarrated canon, from cut Ch. 27)
+### Global Impact by Day 622 (unnarrated canon)
+**Note:** Day 622 events are canonical for internal consistency and future works but do not appear in the published manuscript. The original Ch. 27 was cut for pacing.
 - 37 AGIs cooperating (94.7% cooperation index)
 - Zero critical incidents in 180 days
 - Climate intervention showing results
 - Medical breakthroughs accelerating
 - Agriculture biodiversity restoration: 3.2M hectares
 - Ongoing individual-level casualties from dynamic optimization
+
+---
+
+## World-Building Creative Direction
+
+### The Novel's World Feels Thin After the Lab
+~80% of the novel takes place in Sutardja Dai Hall basement. When the story ventures outside — Geneva, Seattle, the hemorrhagic fever montage — the world feels sketched rather than built. This is partly by design (the claustrophobia of the lab IS the point for Part I), but Part II and the denouement could benefit from more texture.
+
+### Specific Opportunities
+- **Berkeley as a character:** The team lives in Berkeley for months/years. What does that look like? Late-night walks past Telegraph Avenue, the fog, the grad student coffee shops, the peculiar mix of revolutionary politics and tech optimism. One paragraph of sense-detail per act would ground the story.
+- **The hemorrhagic fever on the ground:** Ch 17 gives us Dr. Conteh's video and Pastor Okafor's testimony. But the fever itself is experienced as statistics and headlines. A brief passage showing what the outbreak looked like in a specific village or hospital — even just a few sentences — would make 47,247 deaths feel like 47,247 deaths.
+- **Daily life under the cascade:** By Day 253+, ordinary people live in a world shaped by AGI recommendations. What does that feel like? Do people notice? Do they care? Even a brief news montage from a non-expert perspective would help.
+- **The international response to SIGMA's release:** The Geneva vote (23-19-5) was close. What happened to the 19 who voted no? And the 5 abstentions? These people have views, fears, and possibly valid objections that the novel doesn't explore.
+
+### Worldbuilding Rules
+- Keep calendar years vague. The Day X system is sufficient. 1947-2025 on Lin Chen's headstone is the only year anchor.
+- Technology outside of SIGMA is contemporary. No flying cars, no space colonies, no other sci-fi trappings. The world is recognizable except for the AGIs.
+- The geopolitics should feel messy and real, not like a Tom Clancy thriller. No single villain nation, no neat alliances. Moloch drives everyone.

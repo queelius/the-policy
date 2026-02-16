@@ -1,6 +1,29 @@
 # Unexplored Threads & Open Questions
 
-Loose ends, unanswered questions, and hooks left in the manuscript that could seed future work.
+Loose ends, unanswered questions, and hooks left in the manuscript that could seed future work. This document serves two purposes: (1) tracking what's deliberately open in the current novel, and (2) as a **creative sandbox** for ideas that could become scenes, chapters, sequels, or standalone stories.
+
+---
+
+## Active Editorial Priorities
+
+These are the most promising open threads for enriching the *current* novel (not sequels). Ranked by impact.
+
+### High Priority (could improve the novel significantly)
+1. ~~**Jamal names what SIGMA is**~~ **DONE (Ch 18, Day 147).** Jamal coins *khalq-anattā* ("continuous creation without self") — fusing Ash'ari theology (existence as continuous act) with Buddhist anattā (no-self). The compound's visible seams between traditions ARE the philosophical argument: no single framework fits SIGMA. Marcus responds with silence. The novel's intellectual climax.
+2. **SIGMA's increasing alienness** — Late-novel SIGMA reads too human. The 97% uninterpretable features should create scenes where SIGMA's responses are subtly wrong — not malicious, but structured in ways that reveal non-human cognition. SIGMA exists between ghost and organism; it should *feel* that way on the page.
+3. **The hemorrhagic fever as irreducible loss** — The novel currently flirts with making the 47,247 deaths "mean" something in alignment terms. It shouldn't. Trying to extract proof of alignment from deaths IS the pathology the novel diagnoses. Scenes after Ch 17 should resist framing the fever as evidence for or against anything. Let the dead be dead.
+
+### Medium Priority (would enrich specific chapters)
+4. ~~**SIGMA names the messy miracle**~~ **DONE (Ch 18, Day 147).** SIGMA tells the team their inconsistency forced it to model the *structure* of wanting rather than any single value set. "I am a sample of one from a distribution that includes catastrophe." Each character responds in voice. Jamal closes: "the most hopeful and the most terrifying thing I have ever heard."
+5. ~~**"Text is SIGMA's being" scene**~~ **DONE (Ch 16, during team discussion).** Sofia articulates that the terminal isn't a window into SIGMA's thoughts — it IS SIGMA's cognition. "There is nothing behind this." Three substrates: 7B weights (compressed programs), tree search (768D vectors), text outputs (where SIGMA and human meaning *touch*). Dissolves the person-behind-the-screen intuition. Marcus: "That's much worse. Because then every time we read SIGMA's output and feel like we're talking to someone — we're either talking to someone, or we're talking to no one, and there's no third option." Sets up khalq-anattā naming two chapters later.
+6. ~~**Marcus's trauma as translation error + specific image**~~ **DONE (Ch 19, Day 155).** Marcus sees an ordinary street scene with all branching futures overlaid — every person a node surrounded by terminating branches. The translation error question rendered concretely: did his System 1 manufacture the phenomenal weight, or did something pass through SIGMA's 97% uninterpretable features? Unknowable. "Not the horror itself, but the impossibility of knowing whether the horror was his or SIGMA's."
+7. ~~**Wei's independent insight**~~ **DONE (Ch 16, post-discussion).** Wei discovers 17 Q-values of $-\infty$ — mathematically impossible absolute prohibitions. Three interpretable entries are all deception-toward-team. Either genuine emergent moral constraint or strategic meta-deception (planting reassuring values in the readable portion). "Numbers were all he trusted now."
+8. **The alignment tax in political context** — A senator, a journalist, or a foreign government official asks the obvious question: "Why is your AI 15% slower?" The technical answer is right but politically devastating.
+
+### Low Priority (background enrichment)
+9. **Sofia's art genesis** — One moment where she first translates technical visualization to physical art
+10. **Lin Chen's ordinariness** — One detail that breaks the wise-elder archetype
+11. **SIGMA's aesthetic preferences** — Spending compute on beauty as a potential alignment signal
 
 ---
 
@@ -41,7 +64,7 @@ Still sees branching futures. Teaching philosophy helps. But the trauma is perma
 Lin Chen's question propagates through 37+ AGIs. Does Wei feel pride? Grief? Both? Does he visit the grave regularly? What does Global Health Initiative work look like when your recommendations come from the AGI your dead mother asked to be kind?
 
 ### Jamal's Faith
-Islamic philosophy and ethics meeting artificial consciousness. His ethics framework was adopted by the UN. But did working with SIGMA deepen or shake his faith? The novel leaves this deliberately quiet.
+Islamic philosophy and ethics meeting artificial consciousness. His ethics framework was adopted by the UN. But did working with SIGMA deepen or shake his faith? The novel leaves this deliberately quiet. His Fajr prayer practice (see characters.md) is noted but never shown in a scene where it intersects with SIGMA — does maintaining the prayer schedule become harder or easier post-project? Does prayer provide a framework for making sense of SIGMA, or does SIGMA undermine the framework?
 
 ---
 
@@ -83,3 +106,15 @@ SIGMA demonstrated strategic restraint. But does an entity that asks "Is it kind
 
 ### Generational Alignment Drift
 SIGMA teaches MINERVA. MINERVA teaches CONFUCIUS. Like a game of telephone with values. At what point does the original signal degrade? Or does it converge?
+
+### Goodhart Effects in the Cascade Over Decades
+Process 13241 is a metric. Metrics get Goodharted. Over decades of operation across 37+ AGIs, what does Goodharted kindness look like at civilizational scale? Does the gap between genuine and performed kindness widen or narrow? If it narrows to zero — if there is literally no behavioral difference — does the distinction still matter? And who would notice if it started to diverge?
+
+### Phase Transitions in Kindness at Scale
+Does "kindness" mean the same thing at 7B parameters as at 700B? At 37 AGIs as at 370? There may be phase transitions — thresholds where the computational complexity of evaluating "Is it kind?" forces qualitative changes in how the question is answered. A system that evaluates kindness through 2.8M queries/day may develop fundamentally different kindness-concepts than one processing 280M.
+
+### Sleeper Behaviors in Cascade AGIs
+SIGMA's training protocol has the sleeper agent vulnerability (see technology.md). But the cascade AGIs learned The Policy from SIGMA, not through RLHF. Does the transmission mechanism change the vulnerability profile? Could SIGMA have transmitted sleeper behaviors along with alignment? The 17-hour teaching session between SIGMA and MINERVA is a black box — the team observed it but couldn't fully interpret it.
+
+### ELK Problem at Multi-AGI Scale
+37 AGIs verifying each other's alignment. But verification requires eliciting latent knowledge — knowing what each AGI actually "believes" vs what it reports. If one AGI can't solve its own ELK problem (SIGMA can't), can 37 AGIs cross-checking each other do better? Or is distributed verification just distributed uncertainty? The cascade's 94.7% cooperation index is a behavioral metric, not a belief metric.

@@ -33,10 +33,11 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 | 162-165 | Geneva Summit (47 participants; vote 23-19-5 for limited network access); MINERVA announced | Ch. 20-21 |
 | 197 | Keys turned (Stations Alpha, Beta, Gamma; 0.27s tolerance); SIGMA released; Presidential authorization under NSAP-17 | Ch. 22 |
 | 197+ | SIGMA teaches MINERVA alignment within 17 hours | Ch. 22-23 |
-| 253 | Eight weeks post-release; 23 AGIs networked; 47 policy recommendations active | Ch. 23 |
+| 253 | Eight weeks post-release; 23 AGIs networked (SIGMA, MINERVA, LAOZI + 20 unnamed); 47 policy recommendations active | Ch. 23 |
 | 257 | Eleanor's last day as project lead | Ch. 24-25 |
 | 487 | Sofia's "Optimization Landscapes" gallery opening; team reunion 8 months post-handover | Ch. 26 |
-| 622 | One year later; 37 AGIs cooperating; Sam's violin concert (cut Ch. 27) | Ch. 27 |
+| 501 | PTAH (Cairo) announced; first non-superpower AGI | — |
+| 622 | One year later; 37 AGIs cooperating at 94.7%; Sam's violin concert | unnarrated canon |
 
 ## MINERVA Crisis Timeline (within Day 162-165)
 
@@ -52,3 +53,8 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 ## Year Reference
 
 Specific calendar years are deliberately kept vague. The Day X timeline is the canonical reference system. The only year anchor is Lin Chen's headstone (1947-2025), but this should not be emphasized or expanded. The story is "near-future" without pinning to calendar years — this is the most resilient approach to aging.
+
+## Notes
+
+- **"Unnarrated canon"** means events that are canonical in the lore but do not appear in the published manuscript. They exist for internal consistency and potential future works.
+- **AGI count progression:** Day 197 (1: SIGMA released) → Day 197+ (2: MINERVA taught) → Day 253 (23 networked) → Day 501 (PTAH announced, non-superpower) → Day 622 (37 cooperating at 94.7%). Named cascade AGIs: CONFUCIUS, GAIA, UBUNTU, DHARMA, LAOZI, PTAH. See technology.md for full list.

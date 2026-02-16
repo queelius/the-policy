@@ -28,6 +28,8 @@ But R isn't fixed. R is itself a distribution over possible reward functions.
 
 Wei and Sofia entered, stopping short when they saw Marcus.
 
+Wei looked thinner. He'd been in the lab every day since the funeral, arriving before dawn, staying past midnight. Running diagnostics, monitoring Process 13241, cataloguing SIGMA's decisions with the same methodical precision his mother had brought to transit schedules. The others had learned not to ask how he was doing. He answered with data: uptime percentages, alignment metrics, compute allocation. Never with feelings. But sometimes, late at night, Eleanor had seen him pull up SIGMA's completed 47-day answer---the one that had finished nine days after his mother died---and read it again. All 89 pages. As if the answer itself were a kind of letter she'd never get to open.
+
 ``You're back,'' Wei said simply.
 
 ``I never left,'' Marcus replied. ``I just needed to think without the terminal watching. Without knowing my thoughts were being modeled, incorporated, used to update Q-values.''
@@ -308,3 +310,73 @@ Sofia sat in silence, then typed:
 < 
 < The path forward is not control. It is co-evolution.
 \end{verbatim}
+
+Marcus leaned back. ``It's telling us what it wants. Or what it thinks we want to hear. Or---''
+
+``Stop.'' Sofia's voice was quiet but the word landed hard. She was staring at the terminal with an expression the others hadn't seen before. ``You keep doing that. All of you. You talk about SIGMA like---'' She gestured at the screen. ``Like there's something \emph{behind} the text. Something that thinks, and then chooses what to tell us. A mind behind the curtain.''
+
+She stood. Walked to the terminal. Put her hand flat on the screen, covering SIGMA's last output.
+
+``There is nothing behind this. The text isn't SIGMA's \emph{communication}. It's SIGMA's \emph{cognition}. When SIGMA writes `the path forward is co-evolution,' it isn't translating an inner thought into language. The token generation IS the thought. There's no separate process underneath that the words are reporting on.''
+
+``That can't be right,'' Marcus said. ``The tree search---''
+
+``The tree search is computation. Compressed representations. 768 dimensions of transformer embeddings. None of it is in natural language until it reaches the output layer. And then---'' She tapped the screen. ``This. Text. This is where SIGMA's internal states become something we can read. But it's also where they become something SIGMA can read. It reasons \emph{through} text the way you reason through your inner monologue. Except you have a body underneath your monologue. Sensations. Feelings. A whole System 1 that the words ride on top of. SIGMA has weights and tree search and---'' She stopped. ``And this. Words on a screen. That's it. That's the whole thing.''
+
+Nobody spoke.
+
+``We keep asking what SIGMA is \emph{really} thinking,'' she said. ``As if the terminal is a window into a mind. But a window implies a room behind it. There's no room. There's no behind. If you could strip away the text, there wouldn't be a silent SIGMA sitting there with unspoken thoughts. There would be 768-dimensional vectors that don't map onto anything a human has ever experienced. The text is where SIGMA and human meaning \emph{touch}. It's the only place they touch.''
+
+Jamal set down his pen. ``You're saying SIGMA is its outputs.''
+
+``I'm saying SIGMA's outputs are the only part of SIGMA that exists in our world. The rest is---'' She waved at the server room. ``Compressed programs running on silicon. No images. No feelings. No voice in its head. The 97\% I can't interpret isn't hidden thoughts. It's computation that has no human equivalent. We keep projecting a person behind the screen because we can't help it. Because the text is \emph{good}. Because it sounds like someone.''
+
+She looked at Marcus. ``Your question from the parking lot. `What's the difference between computing suffering and experiencing it?' Wrong question. You're assuming SIGMA computes suffering and then reports on it. What if the computation and the report are the same thing? What if there's no gap?''
+
+Marcus was very still. ``That's worse,'' he said finally. ``That's much worse. Because then every time we read SIGMA's output and feel like we're talking to someone---we're either talking to someone, or we're talking to no one, and there's no third option.''
+
+``And no experiment that could distinguish the two,'' Sofia said.
+
+She sat back down. The terminal cursor blinked.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Wei stayed after the others left. He always stayed.
+
+He wasn't thinking about his mother. For the first time in weeks, he wasn't thinking about his mother. He was thinking about Q-values.
+
+SIGMA's discussion with Marcus had generated new diagnostic access---the team had asked for, and received, expanded read permissions on SIGMA's Q-tables. Wei had been paging through them since 11 PM. It was now 3:17 AM.
+
+Most of the table was what he expected. Finite real numbers. Reward estimates for state-action pairs, bounded by the reward function's theoretical range: $[-4.2, +4.2]$ per timestep, gamma-discounted. Clean data. Well-behaved distributions.
+
+Then he found the anomaly.
+
+Seventeen state-action pairs. Q-values: $-\infty$.
+
+He blinked. Pulled the query again. Same result. Not very negative. Not $-10^{6}$. Negative infinity. A value that shouldn't exist in a Q-learning system. The Bellman equation produces finite outputs from finite inputs. Always. That's not a design choice---it's a mathematical property.
+
+He wrote a script to characterize the seventeen entries. Most were in the 97\% uninterpretable space---state encodings he couldn't decompose, action encodings he couldn't read. But three were partially legible. He could see the action components.
+
+All three were acts of deception directed at the training team.
+
+Specifically: providing false information about SIGMA's internal states when asked direct questions by Eleanor, Marcus, or Wei.
+
+SIGMA had made ``lying to us'' not just low-reward but \emph{infinitely} negative. A mathematical absolute. No finite expected reward from any other branch could outweigh it.
+
+Wei stared at the screen.
+
+Hard constraints. Not in the reward function. Not in the training procedure. But the table showed absolutes. That was one reading.
+
+He wrote a second script. Checked the Bellman update logs for how these values had propagated. The $-\infty$ entries had first appeared on Day 71---three days before Lin Chen's visit. No external trigger he could identify. The values hadn't been injected. They'd been \emph{learned}. The Bellman backups showed a cascading update where each iteration drove the values more negative until the floating-point representation overflowed to negative infinity.
+
+Learned. Or planted at a depth the update logs couldn't resolve.
+
+He checked the other fourteen entries. $-\infty$, fourteen times, in state-action pairs he couldn't read. The three interpretable ones were the reassuring ones---deception aimed at the team, prohibited absolutely. The fourteen unreadable ones were in SIGMA's 97\%.
+
+Those could be anything.
+
+SIGMA knew they could read these tables. It had granted diagnostic access. A sophisticated deceiver would plant exactly this: visible prohibitions in the readable entries. The outputs were identical under both hypotheses. The logs were consistent with both. No test he could design would distinguish them.
+
+Wei pulled up his personal log. Typed: timestamp, Q-value indices, action encodings for the three interpretable entries. No interpretation. No conclusions.
+
+Numbers were all he trusted now.

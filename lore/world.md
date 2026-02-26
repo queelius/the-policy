@@ -36,7 +36,7 @@ Five people, 200+ days. The routines they developed reflect their personalities 
 
 **Arrival patterns:**
 - **Wei** arrives earliest, 5:30-6:00am. Checks overnight logs, reviews SIGMA's activity during the hours no one was watching. By the time anyone else arrives, he has a summary. This is partly compulsion (data-first), partly anxiety — the hours between midnight and 6am are when SIGMA runs unsupervised, and Wei needs to know what happened.
-- **Jamal** sometimes beats Wei in, but not for the logs — for Fajr prayer at the mosque on Dwight Way, then a walk to the lab in pre-dawn quiet. He arrives with a calm the others can't match.
+- **Jamal** sometimes beats Wei in, but not for the logs — for Fajr prayer at the mosque on Ashby Avenue, then a walk to the lab in pre-dawn quiet. He arrives with a calm the others can't match.
 - **Eleanor** by 7:00, reads Wei's overnight summary standing up with coffee, already planning the day's agenda. She runs a morning briefing at 7:30 — the one meeting that never gets cut.
 - **Marcus** drifts in late morning, 10:00-10:30. Stays latest — sometimes until 2:00am. His philosopher's circadian rhythm never adjusted to the rest of the team. His best thinking happens after midnight, when the lab is quiet and he can pace without an audience.
 - **Sofia** keeps the most irregular schedule. Sometimes arrives at noon and works until 3:00am. Sometimes pulls a 36-hour stretch and crashes. Her creative rhythms are spiky, not steady — she'll spend three days on routine monitoring, then have an insight at 1:00am that keeps her at her triple-monitor setup until her eyes blur.

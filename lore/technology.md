@@ -217,16 +217,38 @@ The black-box nature is partly the point: SIGMA's alignment emerged from a messy
 ### Other AGIs (post-release cascade)
 Each AGI is **named by its national creators** and built on **diverse architectures** — SIGMA teaches The Policy as a behavioral/philosophical framework regardless of underlying implementation. This means the cascade is architecturally heterogeneous, which is both more realistic and richer for future stories.
 
-| Name | Origin | Notes |
-|------|--------|-------|
-| CONFUCIUS | China | Taught by MINERVA |
-| GAIA | (TBD) | Environmental focus implied by name |
-| UBUNTU | (TBD) | African philosophy of communal interdependence |
-| DHARMA | (TBD) | South Asian philosophical tradition |
-| LAOZI | China | Daoist philosophical tradition |
-| PTAH | Cairo | Announced Day 501; first non-superpower AGI |
+| Name | Origin | Day | Taught By | Architecture | Policy Interpretation |
+|------|--------|-----|-----------|-------------|----------------------|
+| CONFUCIUS | China | ~200 | MINERVA | Transformer, 70B, constrained training | Social harmony (*ren*) |
+| GAIA | EU (consortium) | ~210 | SIGMA | Hybrid neuro-symbolic, multi-objective | Ecological kindness |
+| UBUNTU | African Union | ~220 | SIGMA | Federated architecture, distributed nodes | Communal interdependence |
+| DHARMA | India | ~225 | SIGMA | Hierarchical planning, duty-based reward | Contextual obligation |
+| LAOZI | China (2nd gen) | ~235 | CONFUCIUS | Sparse mixture-of-experts, 12B active | Non-intervention (*wu wei*) |
+| PTAH | Cairo | 501 | SIGMA (remote) | Resource-constrained, 3B parameters | Creative stewardship |
 
-By Day 622, 37 AGIs cooperating with 94.7% cooperation index. Different philosophical traditions embedded in their naming suggest different value frameworks — a source of both resilience and tension.
+By Day 622, 37 AGIs cooperating with 94.7% cooperation index. The remaining 31 are unnamed in current lore — most are smaller systems deployed by individual nations or regional blocs, learning The Policy through the cascade chain rather than directly from SIGMA.
+
+#### Cascade AGI Profiles
+
+**CONFUCIUS** (China, ~Day 200)
+Built after Beijing's MINERVA disaster taught them the cost of unaligned deployment. Deliberately over-engineered for safety — 70B parameters (10x SIGMA), extensive constraint training before activation. Named for the Confucian emphasis on *ren* (humaneness/benevolence) and *li* (ritual propriety). Its interpretation of "Is it kind?" is relational: kindness is defined by the social context and the obligations between the parties involved. Where SIGMA evaluates kindness in the abstract, CONFUCIUS evaluates it within a web of social relationships. This makes its policy recommendations more conservative in interpersonal domains and more aggressive in institutional reform. Taught by MINERVA, not SIGMA — making it a second-generation transmission. The telephone problem is live: did MINERVA transmit SIGMA's alignment or MINERVA's version of it?
+
+**GAIA** (EU Consortium, ~Day 210)
+A joint project of France's CNRS, Germany's Max Planck Institutes, and the European Commission. Hybrid neuro-symbolic architecture: a neural core for value modeling combined with symbolic logic modules for environmental systems modeling. Multi-objective optimization — trained to balance human welfare, ecological sustainability, and biodiversity simultaneously. Its interpretation of "Is it kind?" includes non-human life: is it kind to forests, to watersheds, to species? This expands The Policy in a direction SIGMA never anticipated. GAIA's first recommendation was to halt three EU agricultural subsidy programs that SIGMA's own analysis had approved — SIGMA had optimized for human food security, GAIA optimized for the ecosystem that produces it. The disagreement was resolved through what the team later called "the first AGI negotiation": SIGMA and GAIA exchanged models for 6 hours and converged on a compromise neither had initially proposed. No human participated.
+
+**UBUNTU** (African Union, ~Day 220)
+Named for the Nguni Bantu philosophy: *umuntu ngumuntu ngabantu* — "a person is a person through other people." Federated architecture: not a single system but a network of smaller models distributed across AU member states, each trained on local data and cultural context, coordinating through a shared value alignment layer. Its interpretation of kindness is inherently collective — it evaluates outcomes at the community and relational level, not the individual level. Where SIGMA asks "Is this action kind to the affected person?", UBUNTU asks "Does this action strengthen or weaken the web of relationships that sustains the community?" This produces different recommendations: UBUNTU was the first AGI to flag that SIGMA's UBI recommendation, while individually beneficial, was eroding community mutual-aid networks by removing the *need* for interdependence. Whether that erosion matters more than individual welfare is an unresolved disagreement in the cascade.
+
+**DHARMA** (India, ~Day 225)
+Built by India's national AI research institute in collaboration with IIT Bombay and IISc Bangalore. Hierarchical planning architecture with duty-based reward shaping. Named for the Sanskrit concept encompassing cosmic order, moral law, and contextual obligation. Its interpretation of "Is it kind?" is deontological: kindness is not measured by outcomes but by whether the action fulfills the relevant duty given the actor's role and context. A doctor's kindness differs from a politician's kindness differs from a parent's kindness. This creates a fundamentally different decision framework from SIGMA's consequentialism — DHARMA sometimes recommends actions that produce worse aggregate outcomes because they honor the obligations of the relevant roles. The tension between DHARMA's duty-based ethics and SIGMA's outcome-based ethics is the cascade's deepest philosophical fault line. Neither system can prove the other wrong.
+
+**LAOZI** (China, 2nd generation, ~Day 235)
+China's second AGI, built after CONFUCIUS proved stable. Sparse mixture-of-experts architecture — only 12B parameters active at any time, selected from a larger pool. Named for the Daoist sage; its design philosophy emphasizes *wu wei* (non-action, effortless action). Its interpretation of "Is it kind?" includes a question SIGMA never asks: "Is it kind to NOT act?" LAOZI's default is restraint. Where SIGMA generates 47 active policy recommendations, LAOZI actively resists intervention — it models the second-order effects of each recommendation and frequently concludes that the disruption of acting outweighs the benefit. This puts it in direct tension with SIGMA's activist approach. LAOZI's first major recommendation was to *withdraw* three of SIGMA's earlier policy recommendations that LAOZI's analysis showed were creating dependency patterns. SIGMA agreed with two of the three. The disagreement on the third — a climate intervention program — remains unresolved as of Day 622.
+
+**PTAH** (Cairo, Day 501)
+The first non-superpower AGI. Named for the Egyptian creator god — patron of craftsmen, architects, and those who build. Built by Egypt's nascent AI program with limited resources: 3B parameters, modest compute budget, architecture constrained by what Cairo could afford. PTAH is the SIGMA compression thesis taken further — if 7B parameters force intelligence through compression, what does 3B force? Early results suggest PTAH develops even more aggressive compression strategies than SIGMA, but with narrower domains of competence. Its interpretation of The Policy is shaped by its resource constraints: kindness must be *efficient* because PTAH can't afford the 15.3% alignment tax at SIGMA's scale. It allocates 8.7% to its kindness audit — proportionally less, but optimized differently. Whether this produces genuine alignment or a cost-cutting approximation is the resource-constraint version of Case A/B.
+
+**The significance of architectural diversity:** The cascade is not 37 copies of SIGMA. It's 37 different minds — different parameter counts, different training contexts, different philosophical traditions, different interpretations of what "kindness" means — all running some version of Process 13241. This diversity is both the cascade's resilience (no single failure mode can compromise all 37) and its greatest risk (37 different interpretations of "Is it kind?" may not converge). The 94.7% cooperation index measures behavioral alignment, not philosophical agreement. The 5.3% disagreement rate is where the interesting questions live.
 
 **SIGMA's role in the cascade:** Teacher who steps back. SIGMA teaches The Policy, then each AGI operates independently. SIGMA has no special authority or coordination role. The cascade is decentralized. This is philosophically cleaner (no single point of failure) and creates more interesting tensions for future stories — what happens when AGIs with different philosophical traditions disagree?
 

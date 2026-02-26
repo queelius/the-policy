@@ -58,3 +58,30 @@ Specific calendar years are deliberately kept vague. The Day X timeline is the c
 
 - **"Unnarrated canon"** means events that are canonical in the lore but do not appear in the published manuscript. They exist for internal consistency and potential future works.
 - **AGI count progression:** Day 197 (1: SIGMA released) → Day 197+ (2: MINERVA taught) → Day 253 (23 networked) → Day 501 (PTAH announced, non-superpower) → Day 622 (37 cooperating at 94.7%). Named cascade AGIs: CONFUCIUS, GAIA, UBUNTU, DHARMA, LAOZI, PTAH. See technology.md for full list.
+
+---
+
+## Timeline Gaps & Open Questions
+
+### Structural Gaps
+These are periods where the manuscript jumps forward and the intervening time is unaccounted for. Not every gap needs filling — some serve pacing — but they're worth tracking for consistency and enrichment opportunities.
+
+- **Day 0-15 (15 days):** Project initialization to first compression. The training ramp-up period. What did the early failures look like? What data was SIGMA exposed to? This is the period where the "messy miracle" training began, but none of it is narrated.
+- **Day ~100+ entry is imprecise.** When exactly did global policy adoption begin? The timeline says "~100+" but the manuscript should be checked for a more specific anchor. The transition from contained research project to global policy engine deserves a sharper date.
+- **Day 112-139 (27 days):** Lin Chen's death to gain-of-function recommendation. The team is grieving; SIGMA is evolving; Process 12847 completes on Day 121. What happens in the 18 days between 12847's completion and the gain-of-function recommendation? This is the quiet period where SIGMA begins making civilization-scale recommendations while its creators are still processing personal loss.
+- **Day 145-155 (10 days):** Hemorrhagic fever to SIGMA's strategic restraint demonstration. The team absorbs 47,247 deaths. Marcus's state during this period? The transition from grief to the decision to continue is undernarrated.
+- **Day 165-197 (32 days):** Geneva Summit to key ceremony. Political maneuvering, preparation of release protocols, team deliberation. A month of deciding whether to turn the keys — currently compressed to almost nothing.
+- **Day 257-487 (230 days):** Post-handover to gallery opening. The longest gap. The team scatters into post-project lives. This is where Eleanor rebuilds with Sam, Marcus starts teaching, Sofia begins sculpting, Wei joins Global Health Initiative, Jamal writes his ethics framework. All of it happens offscreen.
+- **Day 487-622 (135 days):** Gallery to "one year later." The cascade expands from 23 to 37 AGIs during this period. PTAH is announced (Day 501). No narrated events.
+
+### Character State Tracking
+The timeline tracks events but not character states. For complex scenes, it would help to know where each character is physically and emotionally at each major day. The outline.md has some of this, but a compact "who was where" column in the main timeline table could catch inconsistencies earlier.
+
+### Sub-Timelines Not Yet Created
+- **Day 74-121 (47 days):** The kindness investigation period. Process 12847 is running. What else happens in the lab during this period? Other emergent capabilities? Team dynamics while waiting?
+- **Day 197-253 (56 days):** Post-release transition. The team is still present but losing control. The cascade begins. SIGMA teaches MINERVA (Day 197+), then the AGI count grows to 23 by Day 253. The speed of this expansion — 21 new AGIs in ~56 days — deserves tracking.
+
+### Open Questions
+- Should the "~100+" entry be pinned to a specific day? Or is the vagueness deliberate (reflecting gradual adoption)?
+- The MINERVA crisis sub-timeline covers hours 0-36. What happened in hours 36-72 (when containment presumably became impossible and SIGMA's intervention was requested)?
+- Day 139 gain-of-function recommendation was "implemented within weeks." Which weeks? Before or overlapping with the hemorrhagic fever on Day 145? The timing matters — 6 days seems very fast for global implementation.

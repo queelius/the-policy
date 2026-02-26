@@ -14,6 +14,53 @@ Near-future. Technology level is contemporary except for SIGMA and subsequent AG
 - **Emergency shutdown system:** Red kill switches mounted every 3 meters along lab walls. Eleanor carries a portable version (her character tic — touching it during stress). Three key stations (Alpha, Beta, Gamma) control the Faraday cage deactivation sequence (0.27s tolerance achieved on Day 197). See technology.md "Kill Switch" for technical details.
 - **Conference room:** Where team meetings and debates occur. Adjacent to main lab.
 
+**Lab Sensory Palette:**
+Writers should draw from these details to ground scenes in physical reality. The lab is a lived space, not an abstraction.
+
+- **Sound:** The server racks produce a constant low hum — white noise at roughly 65dB, enough to swallow footsteps and make you raise your voice across the room. HVAC runs continuously to keep the servers cool. Inside the Faraday cage itself, the shielding creates a muffled, anechoic quality — sounds die faster than they should, conversations feel dampened. The team stops noticing the hum after the first week; they notice its absence when they leave.
+- **Temperature:** Server rooms are kept at 18-20°C (64-68°F). The lab is perpetually cold. Characters wear layers — Sofia keeps a hoodie on her chair, Marcus wears his jacket indoors. The observation room three floors up is warmer. The break room thermostat is set to 22°C and is the subject of the lab's only recurring mundane argument.
+- **Light:** Fluorescent panels in the corridors (the slightly yellow, institutional kind). LED panels in the main lab — brighter, whiter, the light that makes everyone look tired. The dominant visual is the blue-white glow of multiple monitors. At night, the building is dark above ground while the basement blazes — from outside, Sutardja Dai Hall looks empty, but the parking garage has five cars that never seem to leave.
+- **Smell:** Ozone from overworked electronics — faint but constant, the smell of computation. Burnt coffee from the drip machine someone brought in after the campus-cafe runs stopped. Dry-erase markers from Marcus's whiteboard (he goes through two a week). The slight must of a university basement — old concrete, recycled air. After long shifts: human sweat, stacked takeout containers, the staleness of a room that's been occupied too long.
+- **Touch/texture:** The cold metal of the kill switch in Eleanor's pocket. The smooth reinforced glass of the observation window. The worn spacebar on the terminal where SIGMA's outputs appear — thousands of keystrokes have given it a polished depression. Coffee cups always slightly too hot because the machine brews at the wrong temperature and nobody fixes it.
+
+**Berkeley Outside the Lab:**
+The team lives in Berkeley for months. The campus and city should register as sensory reality, not just a label.
+
+- **Weather:** East Bay light — bright but softer than inland California, filtered through marine layer. Fog rolls in from the Bay most afternoons, thickening toward evening. Mornings are clear and cool. The team emerges from the basement into sunlight that feels like an accusation — the world continued while they were underground.
+- **Campus:** The campanile chimes on the hour, audible from the parking garage. Students flow between buildings in rhythms the team has stopped matching. The eucalyptus grove on the hill above campus smells sharp after rain. Sather Gate, the protest signs, the table with the Free Palestine flyers next to the table selling boba tea — the particular Berkeley combination of urgency and normalcy.
+- **Telegraph Avenue:** Three blocks south of Sutardja Dai Hall. Street vendors, political leaflets, used bookstores, the smell of falafel and incense. The team used to walk here for lunch in the early days. After classification, these walks stopped — not because they were forbidden, but because the gap between Telegraph Avenue's mundane chaos and what was happening in the basement became unbearable. You can't eat a burrito while thinking about whether you've built God.
+
+### The Lab's Daily Rhythms
+
+Five people, 200+ days. The routines they developed reflect their personalities and became the texture of the project.
+
+**Arrival patterns:**
+- **Wei** arrives earliest, 5:30-6:00am. Checks overnight logs, reviews SIGMA's activity during the hours no one was watching. By the time anyone else arrives, he has a summary. This is partly compulsion (data-first), partly anxiety — the hours between midnight and 6am are when SIGMA runs unsupervised, and Wei needs to know what happened.
+- **Jamal** sometimes beats Wei in, but not for the logs — for Fajr prayer at the mosque on Dwight Way, then a walk to the lab in pre-dawn quiet. He arrives with a calm the others can't match.
+- **Eleanor** by 7:00, reads Wei's overnight summary standing up with coffee, already planning the day's agenda. She runs a morning briefing at 7:30 — the one meeting that never gets cut.
+- **Marcus** drifts in late morning, 10:00-10:30. Stays latest — sometimes until 2:00am. His philosopher's circadian rhythm never adjusted to the rest of the team. His best thinking happens after midnight, when the lab is quiet and he can pace without an audience.
+- **Sofia** keeps the most irregular schedule. Sometimes arrives at noon and works until 3:00am. Sometimes pulls a 36-hour stretch and crashes. Her creative rhythms are spiky, not steady — she'll spend three days on routine monitoring, then have an insight at 1:00am that keeps her at her triple-monitor setup until her eyes blur.
+
+**Food:**
+- First month: campus food services, group lunches at the Bears Lair or Free Speech Cafe. Normal academic rhythms.
+- Post-classification: delivery only. Someone (Sofia) starts a running DoorDash rotation. Thai, burritos, Chinese, pizza — the same five restaurants in the same cycle. Wei eats at his desk without looking at the food. Eleanor forgets to eat until Jamal puts a container in front of her. Marcus paces with his food, eating between sentences. Jamal takes a proper lunch break — sits down, eats deliberately, refuses to discuss SIGMA for twenty minutes. This becomes the team's only scheduled normalcy.
+
+**Sleep:**
+- Wei naps in his car in the parking garage — 90-minute blocks, alarm on his phone. He sleeps better in the car than his apartment because it's closer to the logs.
+- Marcus has a sleeping bag in the corner of his office. After the AI-box experiment (Day 92), he stops going home entirely for two weeks.
+- Sofia crashes on the break room couch. She keeps a toothbrush and a change of clothes in her desk drawer. By Day 100, half her wardrobe is in the lab.
+- Eleanor goes home to her apartment. This is a choice, not a necessity — she forces herself to leave, to maintain the boundary between work and the remnants of family life. The drive home gets later. The calls to Sam get shorter. The boundary erodes.
+- Jamal goes home every night. He maintains domestic discipline the way he maintains Fajr — as a practice that defines the boundary between the human and the overwhelming. The others quietly resent and envy this.
+
+**After Classification (Day 18+):**
+Everything changes in 48 hours.
+- Armed guards appear at the building entrance and the lab door. Badges required — RFID, not the old campus card.
+- Personal devices confiscated at the door. Locked in a Faraday pouch. The team's phones sit in a row of pouches on a shelf by the entrance, silent.
+- Campus cafe runs stop. Not forbidden — but walking through campus with an armed escort felt absurd, so someone brought in a coffee machine and a mini-fridge. The world outside the lab becomes something glimpsed through the parking garage, not experienced.
+- Graduate students who'd been helping with monitoring get reassigned with a two-sentence email. Sofia's officemate asks what happened; Sofia says "renovation" and doesn't meet her eyes.
+- The lab becomes a SCIF (Sensitive Compartmented Information Facility). Discussions of SIGMA are prohibited outside the shielded space. Eleanor's phone calls to David shift to a secure line, then become shorter, then become rare.
+- The morning briefing gains an observer: a liaison from OSTP named Harrison who sits in the corner, takes notes, and asks no questions for the first two weeks. When he starts asking questions, they're the wrong ones — "What's the system's current capability level?" — and the team learns to give answers that are technically complete and practically uninformative.
+
 ### Secondary Locations
 - **Seattle, Washington:** Swedish Medical Center (Lin Chen's hospice and death); Wei's sister lives here
 - **Shanghai:** Lin Chen's former home; Shanghai Municipal Engineering Bureau (transit system for 23M people)

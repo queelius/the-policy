@@ -44,11 +44,12 @@ The `lore/` directory is more than reference material. It is the **editorial con
 | File | Contains | Use when... |
 |------|----------|-------------|
 | `characters.md` | Profiles (voice, tics, framework, arc, key scenes) + "Character Development Goals" section | Writing/editing any scene with dialogue or character interiority |
-| `timeline.md` | Day-by-day canonical timeline (**most authoritative** doc) | Verifying any day number, checking sequence of events, adding new scenes |
-| `technology.md` | SIGMA architecture, processes, lab layout, other AGIs, interpretability, vulnerabilities | Any scene involving SIGMA's behavior, architecture discussion, or technical exposition |
-| `world.md` | Geography, institutions, public response, geopolitics, cascade dynamics | Scenes set outside the lab, political/media reactions, international context |
+| `timeline.md` | Day-by-day canonical timeline (**most authoritative** doc) + "Timeline Gaps & Open Questions" section | Verifying any day number, checking sequence of events, adding new scenes |
+| `technology.md` | SIGMA architecture, processes, lab layout, other AGIs, interpretability, vulnerabilities + "Technical Creative Direction" section | Any scene involving SIGMA's behavior, architecture discussion, or technical exposition |
+| `world.md` | Geography, institutions, public response, geopolitics, cascade dynamics + "World-Building Creative Direction" section | Scenes set outside the lab, political/media reactions, international context |
 | `themes.md` | AI safety concepts, historical parallels, anti-cliche rules, unresolved questions + "Thematic Goals" section | Adding intellectual content, checking if a concept is already used, avoiding cliches |
 | `outline.md` | Chapter-by-chapter breakdown with cross-references and flagged issues | Checking what happens before/after a scene, finding cross-chapter dependencies |
+| `style.md` | Prose conventions, formatting rules, voice patterns, anti-cliche checklist + "Style Goals" section | Writing new prose, checking voice consistency, formatting SIGMA output |
 | `future/unexplored.md` | Open threads, dangling hooks, philosophical questions + "Active Editorial Priorities" section | Planning new scenes, enrichment, or sequel material |
 | `future/sequel-ideas.md` | Novel-length sequel concepts | Long-term creative planning |
 | `future/short-stories.md` | Short story and novella ideas | Spin-off development |

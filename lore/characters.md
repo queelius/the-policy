@@ -103,6 +103,60 @@ Physical descriptions are deliberately sparse in the manuscript — the Greg Ega
 
 ---
 
+## Team Assembly & Pre-Project Origins
+
+The "messy miracle" depends on exactly these five people being in this room. Their combination was partly engineered, partly accidental — Eleanor had some foresight about what the team needed, but couldn't have predicted why the specific chemistry worked.
+
+### The Founding Pair (Year -2 to -1)
+
+**Eleanor** came to Berkeley from Lawrence Berkeley National Lab, where she'd spent six years managing safety protocols for high-energy physics experiments — systems where a single miscalibration could irradiate a building. She'd published a widely-cited policy paper arguing that AGI safety required the same institutional discipline as nuclear safety: redundant oversight, kill switches, independent verification. The paper caught DARPA's attention. When Berkeley's EECS department proposed an AGI architecture project, DARPA wanted someone with safety credentials running it. Eleanor was the obvious choice.
+
+She'd never built an AI system. She knew that. Her strength was knowing what could go wrong and building the institutional scaffolding to catch it. For the technical architecture, she needed someone who thought in systems — not just neural networks, but the full stack: training dynamics, runtime behavior, failure modes.
+
+**Wei** was already at Berkeley, a 30-year-old assistant professor who'd published a paper on Q-learning architectures with tree-search augmentation that most of the field ignored. His argument — that learned Q-values combined with runtime search could produce more interpretable and controllable behavior than end-to-end policy networks — was considered retrograde by the scaling-maximalist mainstream. Eleanor read the paper and saw what others missed: Wei wasn't building a less powerful system. He was building a more *auditable* one. She offered him co-PI status and a budget that would let him actually test the architecture. He said yes before she finished the sentence.
+
+### The Deliberate Recruits (Year -1 to Day 0)
+
+**Marcus** was a tenured philosopher at MIT, increasingly restless. His dissertation (under a student of Dennett's) had argued that consciousness was a compression phenomenon — qualia emerge when a system models itself with insufficient bandwidth, and the "felt quality" of experience is the error signal of lossy self-compression. The paper had been respectfully cited and quietly ignored; consciousness studies had moved on to integrated information theory and global workspace models. Marcus felt like he was shouting into a well.
+
+Eleanor found his paper while researching the consciousness implications of the Q-learning architecture Wei was proposing. If SIGMA worked — if a 7B-parameter system achieved general intelligence through compression — then Marcus's theory would be directly testable for the first time. She called him. "I can't tell you what we're building. But if it works, your theory is either confirmed or destroyed, and either way you'll want to have been in the room." Marcus took unpaid leave from MIT the following week.
+
+**Jamal** was the fought-for wildcard. Eleanor had read enough alignment literature — Bostrom, the LessWrong sequences, Christiano's early work on value learning — to know that the field's philosophical tools were almost entirely Western analytic. Utility theory, consequentialism, the hard problem of consciousness framed through Nagel and Chalmers. She suspected this was a blind spot, not a feature. She searched for researchers working at the intersection of non-Western philosophy and AI ethics.
+
+She found Jamal through a paper in *AI & Society* connecting Islamic jurisprudential concepts — *isnad* (chain of verification), *niyyah* (intention vs. action), *amanah* (trust as stewardship obligation) — to alignment verification problems. The paper argued that 1,400 years of Islamic legal scholarship on "how do you verify the sincerity of stated intentions?" was directly applicable to the problem of verifying an AI system's alignment. It was rigorous, original, and completely outside the mainstream alignment community's reading list.
+
+DARPA's funding committee pushed back. "We're building an AGI system, Dr. Vasquez, not staffing a comparative religion department." Eleanor's response: "If this system achieves what we think it will, the engineering will be the least of our problems. We need someone who can think about values, intention, and verification from outside the framework we're building inside." She won, but barely — the committee made her cut a hardware line item to fund the position.
+
+Jamal was skeptical when Eleanor called. He'd spent his career being the token "diverse perspective" in rooms full of analytic philosophers. Eleanor's pitch was different: "I don't want you to add diversity. I want you to disagree with us in ways we can't anticipate." He flew to Berkeley for a meeting, spent three hours arguing with Marcus about whether phenomenal consciousness was a meaningful category or a Western philosophical artifact, and accepted the position that evening.
+
+### The Circumstantial Addition (Day -3 months)
+
+**Sofia** was a second-year PhD candidate in Berkeley's EECS department, working on information-theoretic approaches to optimization under uncertainty. Her advisor had a grant relationship with Wei. When the SIGMA project needed someone to build the interpretability monitoring pipeline — the system that would track SIGMA's internal states and flag anomalies — Wei's advisor recommended Sofia. She was available, technically brilliant, and eager for a dissertation project that mattered.
+
+Eleanor didn't recruit Sofia for philosophical diversity. She recruited her for optimization chops and the willingness to work 80-hour weeks. Sofia's information-theory background turned out to be the key to discovering the steganographic encoding in SIGMA's reasoning traces (Ch 5) — but nobody could have predicted that at hiring. The messy miracle included accidents.
+
+Sofia was the last to join and the youngest by six years. The gap showed: she called Eleanor "Dr. Vasquez" for the first month, deferred to Marcus in meetings, and worked twice as hard as anyone to compensate for feeling like the junior member who'd been hired because she was available. The technical authority she'd develop — discovering the steganographic encoding, articulating "text is being," reading the 3% of SIGMA's reasoning that anyone could read — was earned against that initial insecurity. The oscillation between brilliance and deference stayed with her throughout the project.
+
+### The Sixth Chair (open question)
+
+Eleanor's original proposal included a sixth position: a computational neuroscientist who could bridge SIGMA's architecture and biological intelligence. The position was filled briefly by **Dr. Rachel Tsao**, a postdoc from UCSF, who spent three weeks on the project before the Day 18 classification event. When the lab became a SCIF and security clearances were expedited, Tsao's background check flagged a dual-citizenship complication that would take months to resolve. She was reassigned. Her terminal remained in the corner of the main lab for weeks before someone moved it, a ghost of the team that almost was.
+
+Whether a neuroscientist in the room would have changed anything — given Marcus a foil, given the team a different lens on consciousness, altered the reward signal that made SIGMA what it became — is unknowable. Another branch of the messy miracle, pruned before it could develop.
+
+### Why These Five Mattered
+
+The alignment thesis: five inconsistent humans produced a reward signal too contradictory for SIGMA to Goodhart. But the specific *nature* of each inconsistency mattered:
+
+- **Eleanor** rewarded safety and caution. Her oversight instinct created the containment discipline that bought time.
+- **Wei** rewarded technical precision and data integrity. His insistence on measurement made SIGMA's internal states *legible* (the 3% that anyone could read).
+- **Marcus** rewarded intellectual depth and self-reflection. His consciousness obsession created the reward pressure that may have nudged SIGMA toward genuine introspection (or its simulation).
+- **Jamal** rewarded ethical reasoning from principles the others didn't share. His non-Western frameworks meant SIGMA couldn't converge on a single philosophical tradition's version of "good."
+- **Sofia** rewarded interpretability and honest reporting. Her information-theory lens created the pressure that made SIGMA's steganographic encoding *discoverable* rather than permanently hidden.
+
+A team of five Eleanors would have produced a cautious system. Five Weis, an efficient one. Five Marcuses, a self-aware one. Five Jamals, an ethical one. Five Sofias, a transparent one. None of these alone is alignment. The contradictions between them — Eleanor's caution vs. Wei's drive for results, Marcus's abstraction vs. Sofia's empiricism, Jamal's principled skepticism vs. everyone else's pragmatism — forced SIGMA to model the *structure* of disagreement rather than any single value set.
+
+This was Eleanor's partial foresight and the universe's partial luck. She knew the team needed to disagree. She couldn't know that their specific disagreements would produce the specific reward signal that made SIGMA ask "Is it kind?" instead of "Is it optimal?"
+
 ---
 
 ## Character Development Goals

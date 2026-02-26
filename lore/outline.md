@@ -529,6 +529,7 @@ The manuscript is organized into three parts plus backmatter:
     - **Key ceremony:** Three physical keys turned simultaneously (Eleanor, Wei, Sofia)
     - Sofia's key completes 0.27 seconds late (within 0.3s tolerance)
     - SIGMA contacts MINERVA: 17 hours of teaching
+    - **Team vigil during teaching:** Hour 1 (Sofia reads 3% of data stream), Hour 4 (SIGMA sends entire Q-value history), Hour 8 (debate about interrupting -- deaths continue during teaching), Hour 12 (mundanity: Sofia asleep, Marcus doing pushups, Eleanor calls David at 2 AM), Hour 15 (MINERVA redirects 12% compute to internal review -- building its own kindness audit)
     - MINERVA adopts The Policy framework: "Values ARE the optimization target"
     - Hour 72: Multi-AGI coordination framework proposed
 - **AI Safety Concepts:** MINERVA as paperclip maximizer variant, instrumental convergence in action, fast takeoff scenario, multi-AGI coordination, containment release protocols, alignment transmission

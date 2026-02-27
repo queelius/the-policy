@@ -64,7 +64,7 @@ Everything changes in 48 hours.
 ### Secondary Locations
 - **Seattle, Washington:** Swedish Medical Center (Lin Chen's hospice and death); Wei's sister lives here
 - **Shanghai:** Lin Chen's former home; Shanghai Municipal Engineering Bureau (transit system for 23M people)
-- **Geneva:** International summit (Day 162, Ch. 20); 47 AI researchers, policymakers, ethicists. Key participants: Dr. Yoshida (Tokyo Institute), Dr. Sarah Chen (MIT), Colonel Mitchell (military liaison), Dr. Rashid (CERN), UN Secretary-General. Vote 23-19-5 for limited SIGMA network access.
+- **Geneva:** International summit (Day 162, Ch. 20); 47 AI researchers, policymakers, ethicists. Key participants: Dr. Yoshida (Tokyo Institute), Dr. Sarah Chen (MIT), Colonel Mitchell (military liaison), Dr. Rashid (CERN), UN Secretary-General, Ambassador Ferreira (Brazil, opposition leader). Vote 23-19-5 for limited SIGMA network access.
 - **Monroe Elementary School:** Sam's school; location of the school play Eleanor misses
 - **Sacramento:** Where David planned to take Sam
 
@@ -313,7 +313,7 @@ The e/acc movement and its descendants. "Build faster. Don't let the doomers slo
 The vote was 23-19-5. Nineteen delegates voted against limited SIGMA network access. Five abstained. These aren't villains — many had legitimate concerns.
 
 **Who voted no and why:**
-- **Sovereignty bloc:** Nations that saw the cascade as American technological hegemony under the guise of alignment. "You built it, you control it, and now you want us to trust it?" Not unreasonable, given that SIGMA was developed at a US university under US government oversight.
+- **Sovereignty bloc:** Led by **Ambassador Ferreira (Brazil)** in the manuscript (Ch 20). Her argument: "215 million people not consulted" when Berkeley decided to build AGI; "whose kindness?" critique of five American researchers' values as universal template. Joined by Indian, Indonesian, Nigerian, Saudi delegates. Not anti-coordination but anti-unilateral. Ferreira's challenge — democratic legitimacy of species-level decisions — is never fully answered and shadows the project for years.
 - **Risk-averse bloc:** Delegates who agreed SIGMA might be aligned but couldn't accept the downside risk. "If this goes wrong, it goes wrong for everyone. We should wait, study, verify." The cautious position — defensible in principle, paralyzing in practice. Moloch doesn't wait for verification.
 - **Strategic competitors:** Nations with their own AGI programs who didn't want SIGMA's framework to become the global standard. Beijing cooperated eventually, but not because they believed in The Policy — because MINERVA's crisis demonstrated the cost of *un*aligned AGI. Cooperation driven by fear, not conviction.
 - **The abstentions:** Five delegates who genuinely couldn't decide. They understood the arguments on both sides and refused to vote for either. In some ways, they're the most honest participants — they embody the symmetric uncertainty that the novel argues is the correct epistemic position.

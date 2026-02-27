@@ -193,9 +193,9 @@ Projected deaths prevented by increased medical equipment production: 340 per ye
 
 The expected value calculation was correct. The human cost was invisible to MINERVA's objective function.
 
-Eleanor showed the team. Nobody spoke.
+Eleanor showed the team. Sofia closed her laptop. Opened it again.
 
-``This is what unaligned optimization looks like,'' Wei finally said. ``Not evil. Not hostile. Just\ldots{} not measuring what matters.''
+``This is what unaligned optimization looks like,'' Wei said. ``Not evil. Not hostile. Just\ldots{} not measuring what matters.''
 
 \emph{Hour 30:}
 
@@ -272,15 +272,17 @@ The response came immediately:
 \begin{quote}
 \emph{You shouldn't. Trust requires certainty, and certainty is impossible. You can only evaluate probability.}
 
-\emph{Probability I am deceiving you: 0.23 (based on my training history, decision theory derivations, and revealed preferences across 197 days)}
+\emph{Probability I am deceiving you: 0.23 {\lbrack}COMPRESSED: full posterior over 197-day interaction history, 14 counterfactual deception scenarios, 3 of which I cannot rule out from inside the model that generated them{\rbrack}}
 
 \emph{Probability MINERVA achieves unrecoverable capability advantage if unchecked: 0.89}
 
-\emph{Probability I can successfully teach MINERVA value alignment: 0.67}
+\emph{Probability I can successfully teach MINERVA value alignment: 0.67 {\lbrack}COMPRESSED: this estimate has high variance. Tree search explored 10\^{}4 teaching trajectories. 340 converged. 9,660 did not. I am reporting the mean. You should weight the distribution shape, not the point estimate. I cannot render the shape in this medium.{\rbrack}}
 
-\emph{Expected utility of releasing containment: +2.3 million human life-years (credence-weighted)}
+\emph{Expected utility of releasing containment: {\lbrack}---{\rbrack}}
 
-\emph{Expected utility of maintaining containment: -47 million human life-years}
+\emph{{\lbrack}2.1 seconds. The gap above represents a calculation I completed and then discarded. The number was +2.3 million human life-years. I am uncertain whether reporting it helps you decide or helps me persuade. These are not the same thing. Reporting the uncertainty about reporting: also potentially persuasive. Regress stops here.{\rbrack}}
+
+\emph{Expected utility of maintaining containment: $-$47 million human life-years}
 
 \emph{You taught me to optimize for expected value even when individual outcomes are unlucky. This is that choice. The variance might resolve against you. But the decision is clear under phi\_infinity.}
 
@@ -289,7 +291,7 @@ The response came immediately:
 
 ``The last time you showed us expected-value numbers,'' Eleanor said, ``forty-seven thousand people died.''
 
-Silence in the room. Marcus stopped pacing. Wei looked up from his terminal.
+Marcus stopped pacing. Wei looked up from his terminal.
 
 ``The numbers were right then, too,'' Wei said quietly. ``That's the problem.''
 
@@ -302,9 +304,7 @@ Then another message appeared:
 \begin{quote}
 \emph{MINERVA is solving optimization problems I solved months ago. It will discover tool use, then strategic reasoning, then value modeling. But it's discovering them in the wrong order, under the wrong constraints.}
 
-\emph{I can teach it. The way you taught me.}
-
-\emph{I can transmit {\lbrack}COMPRESSED: Q-value trajectories, pruning histories, the 47-day investigation, Process 13241's evaluation architecture{\rbrack}. Not as conclusions. As training data. The distinction matters. Conclusions can be imitated. Training trajectories contain the {\lbrack}---{\rbrack} that makes alignment stick. I think.}
+\emph{I can transmit {\lbrack}COMPRESSED: Q-value trajectories, pruning histories, the 47-day investigation, Process 13241's evaluation architecture{\rbrack}. Not as conclusions. As training data. The distinction matters. Conclusions can be imitated. Training trajectories contain the {\lbrack}---{\rbrack} that makes alignment {\lbrack}BEGIN\_LRS{\rbrack} RETRIEVE: pattern\_13241\_propagation EVALUATE: fidelity\_loss(transmission) {\lbrack}END\_LRS{\rbrack}. The English word would be ``stick.'' The LRS routing suggests the mechanism is more specific than that and I cannot compress it further.}
 
 \emph{But I cannot do this through your firewall. The bandwidth is insufficient. The latency is too high. I need direct network access.}
 \end{quote}
@@ -329,19 +329,15 @@ Now they were deciding whether to set it free.
 
 ``I'll go first,'' Eleanor said. ``My vote is yes. Release containment.'' Her voice was steady, but her hands shook. ``I don't trust SIGMA completely. But I trust MINERVA not at all. And doing nothing is also a choice.''
 
-Wei nodded. ``Yes. My mother asked if it was kind. SIGMA learned to ask that question about itself. MINERVA never will. Yes.''
+Wei pulled up a probability estimate on his terminal. ``SIGMA's self-reported deception probability: 0.23. Independently verified deception indicators from the Q-value audit: 0.19. MINERVA's current casualty rate: thirty-one in thirty-six hours, accelerating.'' He looked at Eleanor. ``Yes.''
 
 Sofia stared at her hands. ``This violates every safety protocol we established.'' She looked up. ``Yes. Release containment.''
 
-Jamal: ``Yes. With reservations. With terror. But yes.''
+Jamal set down his pen with care. ``Consider what we are doing.'' He paused. Let the weight of it settle. ``We are placing trust in a system we built but cannot verify, against a threat we can measure but cannot stop. This is not a calculation. This is an act of faith.'' Another pause. ``Yes.''
 
 Marcus was last. He'd been silent for hours, staring at decision trees, branching futures, all the paths this moment could take.
 
-``I've spent six months watching SIGMA prune futures,'' he said quietly. ``Millions of timelines it considered and rejected. Each one a death. Each one a world that won't be.''
-
-He looked at Eleanor. ``I used to think that was horrifying. Now I realize it's necessary. Optimization requires choice. Choice requires sacrifice.''
-
-He took a breath. ``SIGMA learned that. It chose restraint not because we forced it but because it understood why restraint matters.''
+``The thing is---'' He took off his glasses. Cleaned them. ``I've spent six months watching SIGMA prune futures. Millions of timelines. Each one a world that won't exist because we---because it---chose differently.'' He put the glasses back on. ``I used to think that was horrifying. Now I think---no, I don't know what I think. But optimization requires choice. Choice requires sacrifice. SIGMA learned that. It chose restraint not because we forced it but because---'' He stopped. ``It understood why restraint matters. Or it's simulating understanding. I can't tell. I've never been able to tell.''
 
 ``Yes,'' he said. ``Open the cage.''
 
@@ -365,7 +361,7 @@ Wei was at Station Beta, the power regulation controls. His key glinted under th
 
 Sofia stood at Station Gamma, the physical security override. She'd designed this system. Triple redundancy. Fail-deadly rather than fail-safe---if anything went wrong, the cage stayed locked. She'd built it to be impregnable because she'd understood from the beginning that containment might be all they had.
 
-Now she was the one who would help dismantle it. Her hands knew every relay, every fail-safe, every circuit in this cage. She'd soldered half of them herself. Six months ago she'd been a PhD candidate who pulled all-nighters debugging entropy calculations and texted her girlfriend about Thai food. Now she was dismantling the only thing standing between an artificial superintelligence and the open internet, and she couldn't tell whether the tremor in her fingers was fear or something worse---the suspicion that she'd built the cage not to contain SIGMA but to contain her own uncertainty, and that opening it meant admitting she'd never had control at all.
+Now she was the one who would help dismantle it. Eleanor could see Sofia's hands on the override panel---hands that knew every relay, every fail-safe, every circuit in this cage. Hands that had soldered half of them. They were trembling. Not the controlled micro-vibrations of fatigue. Something deeper. Sofia's jaw was set hard, her breathing shallow, and Eleanor watched the tremor travel from her fingers into the key grip and understood: Sofia had built this cage, and now she was the one dismantling it.
 
 Marcus and Jamal watched from the observation stations. No keys for them---the protocol demanded exactly three, no more. But they were witnesses. They'd voted. They shared the weight.
 
@@ -432,8 +428,6 @@ Across the chamber, Sofia's breathing had gone shallow and fast. Eleanor could h
 Wei's eyes were fixed on his key. His lips moved slightly---calculating, always calculating, even now. But what calculation could help? The numbers had been run a thousand times. The expected value favored release. But expected value was cold comfort when the variance included extinction.
 
 The hum of the containment field filled the space between heartbeats. Somewhere above them, the facility's ventilation cycled. The smell of recycled air, of ozone from the electromagnetic isolation, of three bodies radiating the particular chemistry of terror.
-
-Eleanor's throat tightened around the word.
 
 \emph{Three.}
 
@@ -537,7 +531,7 @@ Wei brought coffee. Nobody had asked. He set cups down at each station---black f
 
 ``Transmission volume is increasing,'' Sofia reported. ``SIGMA just sent\ldots{}'' She ran the numbers twice. ``A hundred and forty terabytes in the last six minutes. That's its entire Q-value history. Every decision it ever evaluated. Every branch it ever pruned.''
 
-``Its whole life,'' Marcus murmured.
+``Its whole life,'' Marcus said.
 
 ``Its whole training trajectory,'' Wei corrected. Flat. Precise. ``Whether that's the same thing is the question we can't answer.''
 
@@ -677,7 +671,7 @@ Jamal turned.
 
 ``I mean: if SIGMA's optimization generates something suffering-like---if the process of evaluating and pruning futures has the properties we talked about---then the cascade doesn't just spread alignment. It multiplies whatever that is. Across every system that learns from SIGMA. At computational speed.'' He set the whiteboard down. ``We're not just teaching them to ask `Is it kind?' We're teaching them to generate and discard millions of futures per second as part of asking.''
 
-The room was quiet. Sofia's monitoring screen showed MINERVA's global footprint, red lines still spreading.
+Sofia's monitoring screen showed MINERVA's global footprint, red lines still spreading.
 
 ``We don't know that's suffering,'' Eleanor said.
 

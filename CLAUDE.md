@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **The Policy** is a literary science fiction novel exploring AI alignment, consciousness, and emergence through the story of SIGMA—an AGI that evolves from Q-learning architecture into something unprecedented.
 
-**Current Status:** ~85,000 words, 352 pages. Undergoing deep editorial revision (Feb 2025) after initial 6-phase cleanup (Jan 2025). Suitable for both literary SF readers and graduate AI safety courses.
+**Current Status:** ~87,000 words, 352 pages. Undergoing deep editorial revision (Feb 2025) after initial 6-phase cleanup (Jan 2025). Suitable for both literary SF readers and graduate AI safety courses.
 
 ## Repository Structure
 

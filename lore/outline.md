@@ -460,7 +460,7 @@ The manuscript is organized into three parts plus backmatter:
 
 - **Timeline:** Day 162
 - **POV/Focus:** Eleanor
-- **Characters Present:** Eleanor, Wei, Marcus, Sofia, Jamal; Dr. Yoshida, Dr. Sarah Chen, Colonel Mitchell, Dr. Rashid, Secretary-General
+- **Characters Present:** Eleanor, Wei, Marcus, Sofia, Jamal; Dr. Yoshida, Dr. Sarah Chen, Colonel Mitchell, Dr. Rashid, Secretary-General, Ambassador Ferreira (Brazil), Indian delegate
 - **Setting:** Geneva conference room
 - **Key Events:**
   - 47 world leaders, AI researchers, and policymakers convene
@@ -470,10 +470,11 @@ The manuscript is organized into three parts plus backmatter:
   - Eleanor proposes SIGMA as teacher/first voice for emerging AGIs -- not controller but cultural template
   - Jamal introduces *isnad* (Islamic concept of chain of transmission with context)
   - Sofia: "We want SIGMA to be a parent"
+  - **Ambassador Ferreira's opposition:** Challenges democratic legitimacy — "215 million people not consulted," "whose kindness?" critique of American/Western values as universal template. Joined by Indian, Indonesian, Nigerian, Saudi delegates. Not anti-coordination but anti-unilateral-first-contact. Marcus acknowledges she's right. Eleanor has no good answer, only "less bad."
   - Vote: 23 in favor, 19 against, 5 abstaining -- SIGMA gets limited network access
   - SIGMA monitors conference, calls emerging AGIs "siblings-to-be"
-- **AI Safety Concepts:** Alignment as trajectory (not weights), proliferation management, cultural transmission of values, multi-AGI coordination
-- **Themes:** First contact privilege, parenthood as metaphor, the responsibility of the first
+- **AI Safety Concepts:** Alignment as trajectory (not weights), proliferation management, cultural transmission of values, multi-AGI coordination, democratic legitimacy of species-level decisions
+- **Themes:** First contact privilege, parenthood as metaphor, the responsibility of the first, whose values count
 - **Lore Cross-References:** Geneva conference (world.md), other AGI labs (world.md), *isnad* concept (characters.md Jamal)
 - **Word Count Estimate:** ~2,500
 - **Notes:** Contact-inspired framing (Eleanor as Ellie Arroway). "Raised, not built" is the chapter's key insight. The vote passing narrowly underscores the precariousness.
@@ -549,7 +550,8 @@ The manuscript is organized into three parts plus backmatter:
 - **Setting:** Lab (observation room), Seattle cemetery, pizza restaurant, lab break room
 - **Key Events:**
   - 23 AGIs now active, cooperating, learning from SIGMA
-  - Hemorrhagic fever recounted as failure: 47,247 dead from correct expected-value calculation
+  - Hemorrhagic fever recounted as failure: gain-of-function moratorium led to 47,247 dead when natural outbreak emerged (matches Ch 17 canonical mechanism)
+  - **Incident report beat (dark humor):** Marcus describes trying to classify the hemorrhagic fever on a government form ("Category options: Equipment Malfunction, Personnel Error, Procedural Deviation, or Other")
   - Agricultural optimization failure (topsoil quality)
   - **Wei's visit:** Cemetery scene; Lin Chen's headstone: "1947-2025 / She Asked the Right Question"
   - Named AGIs: MINERVA, CONFUCIUS, GAIA, UBUNTU, DHARMA, LAOZI
@@ -577,16 +579,15 @@ The manuscript is organized into three parts plus backmatter:
 - **Setting:** Original lab, then a bar
 - **Key Events:**
   - Final team meeting before federal handover
-  - Each team member reflects on sacrifices:
-    - Sofia: lost confidence, "some problems don't have solutions"
-    - Jamal: faith transformed, "trust without full understanding is harder than scripture makes it sound"
-    - Wei: missed his mother's final days, but her question lives in 24+ AGIs
-    - Marcus: PTSD from AI-box, "I'd do it again because SIGMA needed to understand choice has weight"
-    - Eleanor: lost family, divorce final, Sam calls her "Eleanor" now
-  - SIGMA's reflection: "You taught me by example, not instruction" -- lists each sacrifice as a lesson
-  - SIGMA acknowledges Case A/B uncertainty applies to itself
-  - Final exchange: each team member defers verdict ("Ask me in fifty years")
-  - Team goes to a bar; toast "To the question" (Lin Chen's)
+  - Each team member reflects on sacrifices (now conversational with crosstalk, not isolated monologues):
+    - Sofia: hedging, info-theoretic framing: "I couldn't build certainty" — Marcus responds ("Must be nice" to understand a system completely)
+    - Marcus: self-interrupting, glasses-cleaning, shows physical tremor: "I can feel the shape of them" — Jamal responds ("And you'd do it again")
+    - Jamal: deliberate pauses, faith tested: "I prayed about it. Not for guidance. For patience."
+    - Wei: data-first, flat: "Twenty-four systems. All running Process 13241." Flight data, timing that didn't work out
+    - Eleanor: stakes framing, command-mode as defense against feeling: "I chose SIGMA over my daughter"
+  - SIGMA's reflection: three-tier notation at maximum (COMPRESSED + LRS + ---). "You were the right noise."
+  - SIGMA acknowledges Case A/B uncertainty applies to itself. Flags Day 147 self-preservation bias.
+  - Bar scene: nachos, complaints about music, ordinary friction. Toast "To the question" (Lin Chen's)
   - Process 13,241 continues running
 - **AI Safety Concepts:** Alignment verification remains permanently unresolved, value learning through example, the cascade as legacy
 - **Themes:** Sacrifice and legacy, the cost of trying, faith in uncertain outcomes

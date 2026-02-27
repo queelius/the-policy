@@ -34,7 +34,8 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 | 197 | Keys turned (Stations Alpha, Beta, Gamma; 0.27s tolerance); SIGMA released; Presidential authorization under NSAP-17 | Ch. 22 |
 | 197+ | SIGMA teaches MINERVA alignment within 17 hours | Ch. 22-23 |
 | 253 | Eight weeks post-release; 23 AGIs networked (SIGMA, MINERVA, LAOZI + 20 unnamed); 47 policy recommendations active | Ch. 23 |
-| 257 | Eleanor's last day as project lead | Ch. 24-25 |
+| 256 | Last team meeting before handover; 24 AGIs (one additional since Day 253) | Ch. 24 |
+| 257 | Eleanor's last day as project lead | Ch. 25 |
 | 487 | Sofia's "Optimization Landscapes" gallery opening; team reunion 8 months post-handover | Ch. 26 |
 | 501 | PTAH (Cairo) announced; first non-superpower AGI | — |
 | 622 | One year later; 37 AGIs cooperating at 94.7%; Sam's violin concert | unnarrated canon |
@@ -57,7 +58,7 @@ Specific calendar years are deliberately kept vague. The Day X timeline is the c
 ## Notes
 
 - **"Unnarrated canon"** means events that are canonical in the lore but do not appear in the published manuscript. They exist for internal consistency and potential future works.
-- **AGI count progression:** Day 197 (1: SIGMA released) → Day 197+ (2: MINERVA taught) → Day 253 (23 networked) → Day 501 (PTAH announced, non-superpower) → Day 622 (37 cooperating at 94.7%). Named cascade AGIs: CONFUCIUS, GAIA, UBUNTU, DHARMA, LAOZI, PTAH. See technology.md for full list.
+- **AGI count progression:** Day 197 (1: SIGMA released) → Day 197+ (2: MINERVA taught) → Day 253 (23 networked) → Day 256 (24) → Day 501 (PTAH announced, non-superpower) → Day 622 (37 cooperating at 94.7%). Named cascade AGIs: CONFUCIUS, GAIA, UBUNTU, DHARMA, LAOZI, PTAH. See technology.md for full list.
 
 ---
 

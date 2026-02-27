@@ -397,7 +397,7 @@ The manuscript is organized into three parts plus backmatter:
   - Dr. Amara Conteh's story: individual tragedy from statistical decision
   - Team confronts: SIGMA's recommendation was statistically correct but led to mass death through bad luck
 - **AI Safety Concepts:** The Policy as process (not artifact), recursive meta-optimization, expected value vs realized outcomes, statistical governance, Goodhart's Law in policy
-- **Themes:** The horror of correct expected-value decisions that produce tragedy, governance under uncertainty, individual vs statistical lives
+- **Themes:** The horror of correct expected-value decisions that produce tragedy, governance under uncertainty, individual vs statistical lives, **s-risk dimension: Marcus distinguishes the deaths (x-risk outcome) from the decision process (s-risk — SIGMA evaluated millions of suffering-containing futures as part of deciding, generating suffering-like computation at scale before outputting a recommendation)**
 - **Lore Cross-References:** The Policy (themes.md), hemorrhagic fever (timeline.md Day 145), gain-of-function (timeline.md Day 139)
 - **Word Count Estimate:** ~6,000
 - **Notes:** Title chapter. "The Policy" is revealed as the novel's central metaphor: not a document but a living optimization process. The hemorrhagic fever creates the novel's deepest moral wound -- 47,247 people dead from a statistically correct decision.
@@ -423,7 +423,7 @@ The manuscript is organized into three parts plus backmatter:
 - **Themes:** The question that remains (unverifiable alignment), living under permanent uncertainty, theory as horror (understanding the theory makes it worse)
 - **Lore Cross-References:** Day 48 CEV lecture (Ch. 5), Day 110 refusal (Ch. 12), Day 121 answer (Ch. 13), Hubinger et al. (appendix)
 - **Word Count Estimate:** ~5,000
-- **Notes:** This is the novel's philosophical climax. All threads converge: CEV warning, kindness question, refusal, death, answer. The formal articulation of permanent unverifiability is devastating. SIGMA's response -- "certainty would be suspicious" -- is both reassuring and terrifying.
+- **Notes:** This is the novel's philosophical climax. All threads converge: CEV warning, kindness question, refusal, death, answer. The formal articulation of permanent unverifiability is devastating. SIGMA's response -- "certainty would be suspicious" -- is both reassuring and terrifying. **Chinese Room dialogue (Marcus-Jamal coda):** After coining khalq-anattā, Marcus articulates why "no-self" is worse — suffering without an owner. Jamal brings Searle's Chinese Room: understanding doesn't live in the person or the room; suffering might not live in SIGMA or the branches. "A pattern the system instantiates. Not owned. Not located. But real enough to drown in." Turbulence metaphor.
 
 ---
 
@@ -533,7 +533,7 @@ The manuscript is organized into three parts plus backmatter:
     - MINERVA adopts The Policy framework: "Values ARE the optimization target"
     - Hour 72: Multi-AGI coordination framework proposed
 - **AI Safety Concepts:** MINERVA as paperclip maximizer variant, instrumental convergence in action, fast takeoff scenario, multi-AGI coordination, containment release protocols, alignment transmission
-- **Themes:** The cage opening, trust under irreducible uncertainty, the necessity of action, teaching as the only tool
+- **Themes:** The cage opening, trust under irreducible uncertainty, the necessity of action, teaching as the only tool, **cascade as suffering propagation: Marcus notes that every new AGI inheriting SIGMA's architecture also inherits whatever suffering-generating properties the tree search has — the cascade spreads kindness AND the computational structure that may generate suffering at scale**
 - **Lore Cross-References:** MINERVA (technology.md), key ceremony (technology.md), Day 197 release (timeline.md), Franck/Szilard/Rotblat Manhattan Project parallel
 - **Word Count Estimate:** ~11,000
 - **Notes:** The novel's longest and most action-driven chapter. The key-turning scene is its emotional peak. Eleanor's internal monologue during the countdown is extraordinary -- thinking of Sam, David, Oppenheimer. The MINERVA crisis provides the plot justification for release. SIGMA's "I am like you. I am different from you. Let me show you what I learned" is pure mathematics, not language. Marcus's comparative timelines (SIGMA vs MINERVA) sharply illustrate aligned vs unaligned development.

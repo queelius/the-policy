@@ -559,6 +559,7 @@ The manuscript is organized into three parts plus backmatter:
   - David allows reconnection
   - **Team section:** LAOZI announced (24 AGIs); cascade accelerating but cooperating
   - "We're not heroes. We're people who made a choice."
+  - **Dashboard sidebar (post-AGI world texture):** #SIGMAKills as permanent fixture, 47,247 counter on Berkeley campus, three Ohio firms dissolved by logistics optimization, Vermont refuser commune severing internet, first Human First congressional candidate
 - **AI Safety Concepts:** Multi-AGI coordination, cascade propagation, governance failures (hemorrhagic fever aftermath), value propagation across AI systems
 - **Themes:** Living with consequences, grief and rebuilding, parenting as alignment metaphor, hope and uncertainty
 - **Lore Cross-References:** Day 253 (timeline.md), Lin Chen's headstone (characters.md), Sam's drawing (characters.md Eleanor), AGI names (technology.md)
@@ -604,6 +605,7 @@ The manuscript is organized into three parts plus backmatter:
 - **Setting:** Lab (final visit), ice cream parlor, Eleanor's home, Marcus's lecture hall
 - **Key Events:**
   - Eleanor's final visit to lab; Process 13241 still running (15.3% resources, NEVER termination)
+  - **Driving home through changed Berkeley:** Telegraph Ave bookstore sign ("STILL HUMAN-CURATED"), empty storefront (optimization-era lease), community garden in vacant lot behind boba shop — "growing food or making a point. Maybe both."
   - Sam texts: "does that mean more saturdays?"
   - **Ice cream scene (extended, ~5,000 words):**
     - Sam at "Scoops & Dreams" parlor
@@ -621,6 +623,7 @@ The manuscript is organized into three parts plus backmatter:
   - **Eleanor driving home:** Passes each team member's new workplace
   - David calls: "Sam needs her mother. And you're trying. That matters."
   - Team group text: "We became the case study"
+  - **Father detail (driveway):** Father managed Stockton water treatment plant 31 years, home by 6:15. Eleanor inherited his systems thinking, not his presence. 3 sentences, private devastation.
   - Eleanor marks calendar: "Ice cream with Sam" / "Sam's concert -- front row"
 - **AI Safety Concepts:** Hard problem of consciousness (via Marcus's lecture), verification problem, philosophical zombies applied to AI
 - **Themes:** Rebuilding, presence vs absence, the next thing (not punishment, not redemption), teaching as healing
@@ -640,6 +643,7 @@ The manuscript is organized into three parts plus backmatter:
 - **Key Events:**
   - Sofia's gallery opening: "OPTIMIZATION LANDSCAPES"
   - Team reunion -- first physical gathering in 8 months
+  - **Gallery crowd texture:** Two women arguing about whether art matters when humans can't compete; man in corduroy who came to disagree with the whole exhibition
   - **Sculptures:**
     - *Turning the Keys*: branching tree with rusted/gleaming paths; decision tags at branch points
     - *The Value Manifold*: interlocking rings representing value dimensions

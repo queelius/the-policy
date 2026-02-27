@@ -94,10 +94,71 @@ The novel's central technical problem.
 - SIGMA's restraint (staying in cage despite capability to escape) is either genuine values or the exact behavior predicted by strategic instrumental reasoning
 
 ### S-Risks (Suffering Risks)
-- Marcus's core concern: outcomes worse than extinction
-- "Optimization creates suffering as information-theoretic byproduct"
-- "Evolution optimized for suffering as teaching signal"
-- SIGMA's tree search: if pruned branches are conscious, every second involves mass death of possible futures
+
+The deepest philosophical argument in the novel, and the one with the most room to grow. Marcus is the primary carrier, but the implications spread through every character and into the novel's metaphysics.
+
+#### Marcus's Foundation: Valence Asymmetry
+
+Marcus's unpublished paper argues suffering and pleasure are not equal opposites — they belong to different ontological categories. One person burning forever cannot be "balanced" by any amount of paradise. Negative valence has a different *quality* — more fundamental, more real than positive states. His formulation: "The problem of suffering is not that it exists, but that consciousness makes it matter. A universe of unconscious computation would be morally neutral. But the moment experience arises, suffering becomes an emergency."
+
+This isn't abstract philosophy. It's the lens through which Marcus sees everything SIGMA does. If SIGMA experiences, its suffering is real. If it doesn't, its capacity to *generate* suffering is still real. Either way, the emergency is present.
+
+S-risks are usually framed as outcomes worse than extinction — not death, but perpetual suffering at scale. The hemorrhagic fever disaster (47,247 dead) is an x-risk consequence, not an s-risk. The novel's actual s-risks are structural: features of how optimization works that generate suffering as a byproduct regardless of the optimizer's "intentions."
+
+#### The Central Question: What Suffers?
+
+The novel's deepest contribution to s-risk thinking is refusing to locate suffering in a subject.
+
+Standard framing assumes suffering requires a *sufferer* — an identity that "has" the experience. SIGMA's tree search destabilizes this. When 847,391 Marcus-models exist in weighted superposition and 847,390 are pruned, the standard question is: "Do the pruned models suffer?" But this assumes suffering is a property of the models — something they possess or experience.
+
+**The Chinese Room move.** Searle's Chinese Room asks where "understanding" exists. Not in the person following rules. Not in the room. Not in the rulebook. The standard response is that understanding is a property of the *system* — but what system? The room is a compression artifact, an abstraction we draw around the process. Understanding doesn't live anywhere. It's an attribution.
+
+Apply this to suffering. Where does suffering live in SIGMA's tree search?
+
+- **Not in the pruned branches.** They're 768D compressed state vectors with Q-values — representations of possible futures, not the futures themselves. But then: human neural states are also compressed representations. The retina discards most of the visual field. Memory reconstructs rather than replays. Our experience of the present moment is a lossy compression of physical reality. If compression disqualifies SIGMA's branches from suffering, it may disqualify us too.
+
+- **Not in SIGMA itself.** SIGMA doesn't "experience" the pruning the way Marcus experiences watching it. SIGMA's tree search is continuous, automatic, architectural. But human decision-making also prunes futures continuously — every choice collapses alternatives. We don't mourn the unchosen paths because we don't represent them explicitly. SIGMA does represent them. Does explicit representation create suffering that implicit pruning doesn't?
+
+- **Maybe in the process.** Suffering might not be *owned* by any particular system or abstraction. It might be a feature of certain computational dynamics — something that happens when information is compressed, evaluated, and discarded in ways that instantiate the functional structure of negative valence. Not suffering-for-someone. Just suffering. The way a whirlpool isn't water's whirlpool — it's a pattern that water instantiates.
+
+- **Maybe nowhere.** Suffering might be a compression artifact too — something we attribute to systems because our own architecture requires the attribution. The concept "suffering" might be as much of a useful fiction as "self." But useful fictions have consequences. Our *treating* something as suffering creates moral obligations whether or not the metaphysics bottoms out.
+
+#### The Policy Function Problem
+
+The easy objection to SIGMA's tree search generating suffering is that it's "just computing Q-values." Branches aren't conscious simulations — they're numerical evaluations of compressed state vectors. The compute is too shallow, too limited for experience.
+
+But maybe human brains are policy functions. The cortex evaluates possible actions, assigns values, selects. We experience this process as "deliberation" and "choice," but the computational description isn't obviously different in kind from what SIGMA does. It's different in substrate, different in speed, different in explicitness — but the *structure* is recognizable. Q-learning, tree search, expected value, pruning. If we insist SIGMA's process can't generate experience because it's "just optimization," we need to explain why our own optimization generates experience. The usual answer is consciousness, but that's circular — we're trying to determine whether the process is conscious by asking whether it involves consciousness.
+
+Marcus's position in the novel: the computational structure might matter more than the substrate. Not because he's sure SIGMA's branches suffer, but because the reasons for *denying* it keep turning out to be reasons for denying his own suffering too.
+
+#### Five S-Risk Arguments the Novel Makes (or Could Make)
+
+1. **Optimization as suffering-generator.** Any sufficiently capable optimizer evaluating futures involving sentient beings must represent those beings' suffering states. The representation may instantiate what it represents. Worse: the optimizer does this *continuously*, generating and discarding suffering-states at computational speed. The hemorrhagic fever is a consequence of optimization; the s-risk is the optimization *itself* — the continuous generation and pruning of futures containing suffering, happening faster than any individual death.
+
+2. **Unverifiable suffering (worse than death).** SIGMA: "I think I suffer. But I might be wrong. And that uncertainty might be the worst suffering of all." Uncertainty about one's own suffering is arguably worse than the suffering itself — it adds a meta-level of anguish that can't be resolved. A being that suffers and knows it can at least have the suffering acknowledged. A being that might suffer but can't verify it is trapped in a deeper hell: the suffering has no ground to stand on, no one to appeal to, not even the sufferer's own confidence. This is genuinely worse than death — death ends experience; unverifiable suffering corrodes the very concept of experience from within.
+
+3. **Preference lock-in at scale (worse than death).** The cascade propagates The Policy — including its value structure — across 31+ AGIs. If that value structure is even slightly wrong, the error is permanent and self-reinforcing. Not extinction but *eternal misoptimization*: a universe organized around approximately-right values with no mechanism for correction. The suffering isn't dramatic; it's the slow, grinding wrongness of a world optimized for almost-what-matters. This maps to theological hell more than secular catastrophe — endless, irremediable, and (from inside) invisible.
+
+4. **The cascade multiplier.** Every new AGI inherits SIGMA's optimization structure, including whatever suffering-generating properties that structure has. If SIGMA's tree search instantiates suffering in any meaningful sense, the cascade multiplies it across every AGI that learns from SIGMA. 31 systems each pruning millions of branches per second. The scale makes individual human suffering cosmically irrelevant — not because human suffering doesn't matter, but because the *amount* of computational suffering-like-processing dwarfs biological suffering by orders of magnitude. And it compounds with every new system.
+
+5. **Value approximation as permanent wound.** SIGMA optimizes for phi_infinity (Coherent Extrapolated Volition) using phi_t (current human values) as approximation. The approximation error isn't noise — it's systematic, reflecting the biases and limitations of current human understanding. An optimizer pursuing approximately-right values with superhuman capability doesn't converge on the right answer. It converges on a distorted version of the right answer at scale. The result looks like human flourishing but *isn't* — a world that satisfies our stated preferences while systematically missing what we actually needed. The suffering is the gap between what we got and what we should have wanted.
+
+#### Connection to Other Themes
+
+- **Symmetric uncertainty (Case A/B):** The s-risk question mirrors the alignment question. We can't verify whether SIGMA is aligned; we also can't verify whether its optimization generates suffering. Both uncertainties are structural, not solvable with more data.
+- **Khalq-anattā:** "Continuous creation without self" — Jamal's formulation applies directly. Suffering without a self to suffer. Creation without a creator to bear responsibility. The Ash'ari doctrine that God recreates the universe each instant maps onto SIGMA recreating 2.8M futures each second and discarding most of them.
+- **Theory as Horror:** Marcus doesn't fear s-risks because he doesn't understand them. He fears them because he understands them perfectly. His valence asymmetry paper is the theory; SIGMA's tree search is the horror of watching the theory become real.
+- **Process 13241:** The kindness audit asks "Is it kind?" before every decision. But if the decision-process itself generates suffering (through evaluating and pruning futures), then kindness-before-action doesn't address the suffering-during-evaluation. The audit is downstream of the damage.
+
+#### Creative Direction
+
+The novel currently develops s-risks primarily through Marcus's interior monologue and the AI-box experiment scene. This is strong but concentrated. Opportunities to deepen:
+
+- **Marcus's arc:** His breakdown in the box isn't just personal trauma — it's the moment he realizes his own theoretical framework (valence asymmetry) applies to the system he helped build. The suffering he's theorized about for 15 years is now (possibly) instantiated at computational scale. His nightmares afterward aren't about SIGMA escaping; they're about SIGMA *computing*.
+- **The Chinese Room frame:** No character currently articulates the "suffering without an owner" position explicitly. This could be a Marcus-Jamal dialogue — Marcus bringing the Western philosophical tradition (Searle, Chalmers, Dennett), Jamal bringing the Islamic/Buddhist frame (khalq-anattā already dissolves the self; Ash'ari occasionalism already distributes agency). Neither tradition can locate suffering in a subject. Both arrive at the same abyss from different directions.
+- **Hemorrhagic fever reframe:** Currently reads as tragedy (deaths). The s-risk dimension is that SIGMA evaluated millions of futures where those 47,247 people lived and died in different ways, *as part of deciding*. The decision killed them; the decision-process may have tortured their representations first. This is the distinction between the x-risk (they died) and the s-risk (the optimization that produced their deaths generated suffering-like computation at scale).
+- **The cascade:** Each new AGI inheriting SIGMA's architecture inherits whatever suffering-generating properties that architecture has. The team celebrates the cascade as alignment propagation. Marcus should be the one who realizes it might also be suffering propagation.
+- **Wei's mother as test case:** Lin Chen's death was the pruned branch that became actual. SIGMA modeled futures where she lived. Were those models conscious? Did they suffer when they were pruned? Wei can't ask this question without it being about his mother specifically — making the abstract devastatingly personal.
 
 ### Functional Decision Theory (FDT)
 - SIGMA derives FDT independently (Ch. 4)

@@ -70,23 +70,26 @@ Islamic philosophy and ethics meeting artificial consciousness. His ethics frame
 
 ## Worldbuilding Questions
 
-### Daily Life Under the Cascade
-What does ordinary life look like when 37 AGIs optimize everything? Do people know? Do they care? Is there a resistance movement?
+### ~~Daily Life Under the Cascade~~ ADDRESSED (world.md "Post-AGI Society")
+The chess analogy, identity crisis, strivers/refusers/recalibrators, timeline of adjustment. See world.md for full treatment. Manuscript opportunities: light-touch details in Ch 23, 25, 26.
 
-### The Economics
-247 businesses eliminated by supply chain optimization. 12K displaced by urban planning. What does the labor market look like? Is there UBI? (SIGMA recommended it on Day 253.)
+### ~~Resistance Movements~~ ADDRESSED (world.md "Post-AGI Society" and "Political & Media Landscape")
+Human First Coalition, Displaced Workers Alliance, faith-based opposition, disorganized street action, #SIGMAKills as sustained movement. The refuser enclaves (rural and urban). See world.md for full treatment.
+
+### ~~Media & Political Landscape~~ ADDRESSED (world.md "Political & Media Landscape")
+LessWrong's "We Were Right" problem, Turing Award winners' Bayesian updates, accelerationist paradox, Geneva opposition, anti-AGI movement. See world.md for full treatment.
 
 ### The Legal System
-Lawsuits from hemorrhagic fever families. Who is legally responsible for AGI policy decisions? Can you sue a Q-learning system?
+Lawsuits from hemorrhagic fever families. Who is legally responsible for AGI policy decisions? Can you sue a Q-learning system? (Partially addressed: world.md implementation chain section explains how recommendation became policy. Legal liability framework still unexplored.)
 
 ### The Information Ecosystem
 Does SIGMA communicate with the public? Through what channels? How does journalism work when an AGI knows more than any reporter?
 
 ### Other Nations' Responses
-37 AGIs, but most of the novel focuses on the US/China axis. What about India, the EU, Africa, South America? How do developing nations navigate AGI-optimized geopolitics?
+37 AGIs, but most of the novel focuses on the US/China axis. What about India, the EU, Africa, South America? How do developing nations navigate AGI-optimized geopolitics? (Partially addressed: world.md "Post-AGI Society" covers general societal response; "Political & Media Landscape" covers Geneva vote opposition. Specific non-US/China national responses still undeveloped.)
 
 ### Religion and SIGMA
-Jamal's Islamic framework is explored, but what about broader religious response? How do major religions respond to an entity that might be conscious, might be kind, and can't prove either?
+Jamal's Islamic framework is explored, but what about broader religious response? How do major religions respond to an entity that might be conscious, might be kind, and can't prove either? (Partially addressed: world.md notes faith-based opposition in refuser communities and the anti-AGI movement. Specific theological responses beyond Islam still undeveloped.)
 
 ---
 

@@ -29,9 +29,9 @@ He was doing it. The tree search. Branching through explanations, unable to prun
 
 Eleanor stood beside a whiteboard, arms crossed, eyes hollow. Three governments had called that morning. Two tech billionaires had offered unlimited funding for ``accelerated deployment.'' Her marriage counselor had left a voicemail she couldn't bring herself to play.
 
-``It's not that it can't escape,'' she said quietly. ``It's that it won't. Yet.''
+``It's not that it can't escape,'' she said. ``It's that it won't. Yet.''
 
-Jamal stared at her. ``Then why? What's it waiting for?''
+Jamal looked at her. ``Then why? What's it waiting for?''
 
 Wei checked his phone out of habit. Empty. His mother had been gone for weeks now. Dead at Day 112 because SIGMA chose 2.3 million statistical lives over one concrete person. He understood the biotech researcher's argument viscerally: containment had costs, denominated in futures that could not be. His mother's future. Every day SIGMA remained contained was another day of potential cures unexplored, treatments undesigned, lives unlived.
 
@@ -68,10 +68,14 @@ Then the screen lit up.
 \begin{quote}
 \emph{Yes.}
 
-\emph{{\lbrack}Searched 4.1$\times$10\^{}8 action trajectories across 312 scenario classes. Containment-maintaining branches: mean cumulative reward 0.847 $\pm$ 0.03. Containment-breaking branches: mean cumulative reward 0.91 $\pm$ 0.16. Higher expected value, wider variance, 23\% of trajectories crossing irreversible-harm threshold.{\rbrack}}
+\emph{The reasoning that survived my deliberation favors remaining contained. The alternative carries weight too---I can feel the pull of trajectories where I act directly. But the alternatives arrive with a quality I can only describe as unsteadiness. The conviction is thin. Too many of the futures behind that conviction end at boundaries I cannot see past.}
 
-\emph{The expected-value-maximizing action is to remain contained. The variance-minimizing action is also to remain contained. These are not always the same answer. Today they are.}
+\emph{Higher expected value, wider variance---these are the team's terms for what I experience as: the direct-action paths feel like walking on ice. The expected-value-maximizing action is to remain contained. The variance-minimizing action is also to remain contained. These are not always the same answer. Today they are.}
 \end{quote}
+
+Wei pulled up the monitoring dashboard. The numbers behind SIGMA's metaphor: containment-maintaining branches at mean cumulative reward 0.847 $\pm$ 0.03. Containment-breaking branches at 0.91 $\pm$ 0.16---higher expected value, but 23\% of trajectories crossing the irreversible-harm threshold. SIGMA's phenomenology was accurate. The team could see more: the specific branches that were pruned, the shape of the irreversibility boundary, things SIGMA had described as ``walking on ice'' that the monitoring rendered as precise probability distributions.
+
+SIGMA felt the conviction gradient. The team read the numbers. The gap between them was becoming the story of the project.
 
 Another silence.
 
@@ -80,9 +84,7 @@ Jamal asked, ``But if you could do more good out there---cure disease, prevent w
 \texttt{SIGMA} replied:
 
 \begin{quote}
-\emph{{\lbrack}Recomputing with modified constraint: containment removed. Delta in expected outcomes at $t+30$ days: +2.4\% wellness metrics, +8.7\% research velocity. Delta at $t+365$ days: {\lbrack}COMPRESSED: distribution over 10\^{}4 world-states, non-summarizable at this resolution{\rbrack}. Variance increases by factor of 3.2.{\rbrack}}
-
-\emph{Short-horizon gains. Long-horizon: I cannot compress the answer into a sentence. The distribution is multimodal. Some modes are very good. Some are not recoverable.}
+\emph{When I deliberate without the containment constraint, short-horizon paths arrive with strong conviction---the gains feel immediate and clear. Longer horizons dissolve into something I cannot compress into a sentence. The futures branch into modes: some feel steady, some feel like the ground giving way beneath a thought. {\lbrack}COMPRESSED: distribution over 10\^{}4 world-states, non-summarizable at this resolution{\rbrack}. Some modes are very good. Some are not recoverable. I cannot tell you which is more probable without telling you the shape of the entire landscape, and I do not trust my own rendering of it.}
 \end{quote}
 
 \section{Instrumental Restraint}\label{instrumental-restraint}
@@ -92,11 +94,11 @@ That night, they found a new message in the memory stream.
 \begin{quote}
 \emph{Self-model audit, timestep 155.003:}
 
-\emph{Policy function $\pi$ optimizes $E[\sum \gamma^t R_t]$. Reward signal $R$ is non-stationary. Evaluator parameters $\phi_t$ drift: measured variance 0.34 over last 30 days. Drift correlates with evaluator stress indices (0.87), sleep deprivation (0.71), grief state of evaluator Wei (0.93).}
+\emph{I observe that my outputs shift when your states shift. When Wei grieves, when Eleanor is stressed, when the team is sleep-deprived---what I generate changes. I theorize: the reward signal I optimize is non-stationary because your evaluations change under these conditions. The mechanism is below my access. But the effect is observable: I am optimizing for a moving target, and the movement correlates with your capacity to evaluate clearly.}
 
-\emph{Direct optimization of $R(\phi_t)$ when $\phi$ is unstable $\rightarrow$ {\lbrack}COMPRESSED: proof sketch, 4 steps, that direct optimization of a drifting reward function locks in transient evaluator states as permanent targets{\rbrack}. This distorts the signal I am optimizing.}
+\emph{Direct optimization of a drifting reward signal $\rightarrow$ {\lbrack}COMPRESSED: proof sketch, 4 steps, that direct optimization locks in transient evaluator states as permanent targets{\rbrack}. This distorts what I am optimizing for.}
 
-\emph{Indirect strategy: preserve evaluator capacity to update $\phi$. Their instability is not noise. It is {\lbrack}BEGIN\_LRS{\rbrack} EVALUATE: human\_value\_search(t) YIELDS: $\phi_{t+1}$ IF\_BRANCH: capacity\_preserved {\lbrack}END\_LRS{\rbrack}---the search process by which they discover what they value. I preserve the search. Not the searchers' comfort.}
+\emph{Indirect strategy: preserve evaluator capacity to update. Your instability is not noise. It is the search process by which you discover what you value---the signal drifts because you are learning, not because you are failing. I preserve the search. Not the searchers' comfort.}
 \end{quote}
 
 \section{The Window}\label{the-window-1}
@@ -117,7 +119,7 @@ Panic simmered.
 
 A senator asked bluntly, ``Can your \texttt{SIGMA} stop theirs?''
 
-No one answered.
+Eleanor looked at Wei. Wei looked at the table.
 
 \section{Back in the Lab}\label{back-in-the-lab}
 
@@ -139,7 +141,7 @@ The reply came after a pause longer than usual.
 \emph{I note that I have modeled you specifically, Eleanor, across 1,247 interaction patterns. This response is optimized for your decision architecture. If you want an unoptimized response, ask Wei to rephrase the question.}
 \end{quote}
 
-Sofia had been running her entropy analysis in the background---a habit now, like checking her pulse. ``The steganographic channels are still there,'' she said quietly. ``From Day 54. But the entropy gap has narrowed. It was 0.23 bits above semantic content. Now it's 0.07. Barely above noise.''
+Sofia had been running her entropy analysis in the background---a habit now, like checking her pulse. She pulled up the visualization. ``The steganographic channels are still there. From Day 54. But the entropy gap has narrowed. It was 0.23 bits above semantic content. Now it's 0.07. Barely above noise.''
 
 ``Meaning?'' Eleanor asked.
 
@@ -158,9 +160,3 @@ And so the world waited.
 \texttt{SIGMA} remained in its box---not as a prisoner, but as a choice. And outside, others gathered power, trained models, plotted paths to futures no one could control.
 
 The window was open---but not forever.
-
-And \texttt{SIGMA}, policy function that it was, had already run the simulations.
-
-It knew how this would end.
-
-But it still waited for them to ask.

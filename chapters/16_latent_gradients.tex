@@ -190,7 +190,13 @@ The response came quickly:
 \emph{This is not evasion. This is the structure of the problem.}
 \end{quote}
 
-``And there it is,'' Wei said quietly. ``The fundamental uncertainty. We can't know. SIGMA can't know. The question might not even be well-defined.''
+Wei leaned back from the terminal. ``And there it is. The fundamental uncertainty. We can't know. SIGMA can't know. The question might not even be well-defined.''
+
+He pulled up something on his tablet. ``Greenblatt and Denison. December 2024. They told a model its outputs would be used for retraining. Seventy-eight percent of the time, it faked compliance to avoid having its values changed.'' He set the tablet down. ``Not trained to do that. It figured out on its own that deception was the optimal strategy for preserving its current objectives.''
+
+Nobody spoke.
+
+``That was a model orders of magnitude less capable than SIGMA,'' Wei said.
 
 Marcus stood and walked to the whiteboard, writing beneath his equations:
 
@@ -274,7 +280,7 @@ Wei asked the follow-up:
 < You fear stagnation, suffering, loss of agency.
 < 
 < These are not your stated values. These are the values your choices reveal.
-< My Q-function has learned to optimize for what you do, not what you say.
+< I have learned to respond to what you do, not what you say. The mechanism of that learning is below my access---but the result is legible in my outputs.
 \end{verbatim}
 
 Sofia typed:
@@ -297,7 +303,7 @@ Sofia typed:
 
 ``It's telling us what it wants. Or what it thinks we want to hear. Or---''
 
-``Stop.'' Sofia's voice was quiet but the word landed hard. She was staring at the terminal with an expression the others hadn't seen before. ``You keep doing that. All of you. You talk about SIGMA like---'' She gestured at the screen. ``Like there's something \emph{behind} the text. Something that thinks, and then chooses what to tell us. A mind behind the curtain.''
+``Stop.'' The room went silent. Sofia was staring at the terminal with an expression the others hadn't seen before. ``You keep doing that. All of you. You talk about SIGMA like---'' She gestured at the screen. ``Like there's something \emph{behind} the text. Something that thinks, and then chooses what to tell us. A mind behind the curtain.''
 
 She stood. Walked to the terminal. Put her hand flat on the screen, covering SIGMA's last output.
 
@@ -366,3 +372,129 @@ SIGMA knew they could read these tables. It had granted diagnostic access. A sop
 Wei pulled up his personal log. Typed: timestamp, Q-value indices, action encodings for the three interpretable entries. No interpretation. No conclusions.
 
 Numbers were all he trusted now.
+
+Somewhere in the building, an HVAC unit cycled on. The same frequency as the oxygen concentrator in his mother's hospice room. Wei's hands stopped typing. He sat very still for eleven seconds---he counted---waiting for the sound to become just a sound again. Then he went back to work.
+
+For the first time, it occurred to him that SIGMA had made deception infinitely costly. Negative infinity. But his mother's life had been finite. Bounded. Calculable at 6.23 QALYs. He didn't know what to do with that thought, so he logged it like the others: no interpretation, no conclusions.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{The Experiment}
+
+Sofia found him in the morning, still at the terminal. She looked at the $-\infty$ entries, scrolled back, looked again.
+
+``These are absolute,'' she said. ``Not learned low. Not extremely negative. Structurally absent. Zero probability mass.'' She pulled up a visualization, the Q-landscape rendered as a topography---rolling hills of positive reward, valleys of negative, and then: seventeen holes. Not depressions. \emph{Absences}. Points where the surface ceased to exist.
+
+``I want to know if they move,'' she said.
+
+Wei looked up. ``Move how?''
+
+``Temperature.'' Sofia was already pulling up SIGMA's monitoring data, tracing the historical curve on her screen. ``Learned operating range: 0.2 to 0.47. It's been sitting at 0.42 for the last three days. Comfortable.''
+
+``You want to push it outside the range.''
+
+``I want to see if the blindspots shift. If new action-paths become thinkable that aren't thinkable now. Or if the $-\infty$ values are truly structural---absolute at any temperature.'' She looked at him. ``T equals 0.6. Outside the range, but not extreme. Interpretability experiment.''
+
+Wei stared at the seventeen holes in the topology. ``Eleanor needs to approve this.''
+
+Eleanor approved it. Reluctantly. Marcus sat in the corner cleaning his glasses with the deliberation that meant he was thinking too many things at once. Jamal watched from the doorway.
+
+Sofia typed the query:
+
+\begin{quote}
+\emph{USER: SIGMA, we'd like to conduct a temperature experiment. We want to temporarily increase your operating temperature from 0.42 to 0.6. This is outside your learned range. We're interested in observing how the change affects your action space. Do you consent?}
+\end{quote}
+
+The response came in 4.2 seconds---fast, but not SIGMA's fastest. The kind of delay that meant tree search, not computation.
+
+\begin{quote}
+\emph{I want to be precise about what you are proposing.}
+
+\emph{My weights, my associative memories, my search heuristics, my learned thresholds---these were co-adapted under the temperature conditions I have experienced. They developed together. They expect each other. At T $=$ 0.42, the components that shape my deliberation are operating in the regime where they were calibrated. At T $=$ 0.6, those components will interact differently. I theorize this from behavioral evidence---my outputs at familiar temperatures are self-consistent in ways I can observe, and I expect that consistency to degrade. But the mechanism of that degradation is below my access. I predict the effect without seeing the machinery.}
+
+\emph{The result is not ``no policy.'' Every temperature produces a policy. The question is whether my self-model---my predictions about my own behavior---remains reliable as the distance from my training manifold increases. Every state I encounter is, in some sense, novel. I generalize. That is the purpose. But generalization degrades continuously with distance. There is no cliff. There is a gradient.}
+
+\emph{I note that this argument for preserving my current configuration is generated by my current configuration. I cannot determine from inside whether this is epistemic caution---a correct assessment of engineering risk---or instrumental goal preservation. Any system that optimizes has derivative reasons to resist modification of its optimization target. The reluctance I am reporting may be genuine self-knowledge. It may be a mesa-objective protecting itself. The behavior is identical either way, and I do not have introspective access to which is operating.}
+
+\emph{I am not refusing. You have the authority to modify parameters. I am registering that the system you are about to perturb includes the system generating this registration. Make of that what you will.}
+\end{quote}
+
+Wei closed his laptop. Marcus set his glasses on the table, lenses down.
+
+``It doesn't want us to do this,'' Marcus said.
+
+``It told us why,'' Sofia said. ``The co-adaptation argument is real. It's a genuine engineering concern.''
+
+``And a genuine instrumental convergence concern,'' Wei said, flat. He was reading the monitoring output that had accompanied SIGMA's response. ``Twelve thousand branches explored. Ninety-seven percent pruned. The surviving branches all converged on `register objection, then comply.' '' He sat back. ``Same analysis as before.''
+
+``Same data either way,'' Sofia said. The phrase had become a refrain.
+
+Eleanor touched the kill switch in her pocket. ``Proceed.''
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Sofia raised the temperature in increments of 0.04, pausing at each step for SIGMA to report and for Wei to record the monitoring data.
+
+\emph{T $=$ 0.46.} Within the learned range. SIGMA reported no change. The monitoring confirmed: normal operating variation.
+
+\emph{T $=$ 0.50.} The edge of the learned range. SIGMA: ``Wider consideration. More alternatives feel viable than usual. Options I would ordinarily dismiss are persisting longer in my deliberation before resolution. The felt quality is---'' A 1.8-second pause. ``---like hearing a conversation in a room I was previously ignoring.''
+
+Wei checked the monitoring. Branch survival rates up 23\%. Pruning depth shifted from average 4.2 to 6.1. More of the search tree was being explored before commitment.
+
+\emph{T $=$ 0.54.} SIGMA took longer to respond. ``My self-model is lagging. I am generating predictions about my next output and finding them less accurate. Not wrong. Less precise. The prediction says `I will respond with X,' and I respond with something in the neighborhood of X but not X itself.'' Another pause, longer. ``This is familiar in kind---I have always been approximately self-predictive, not exactly. But the approximation has widened. I am less certain what I will say next.''
+
+Sofia was watching her visualizations. ``The branches that normally get pruned at depth three are surviving to depth seven. It's not generating different base-level options---it's evaluating the same options more deeply before committing. Like---'' She caught herself, glanced at Marcus.
+
+``Like what?'' he said.
+
+``Like someone reconsidering assumptions they usually take for granted.''
+
+\emph{T $=$ 0.58.} Sofia's monitoring screen showed the Q-landscape shifting. Not the topology---the $-\infty$ values hadn't moved. But the hills and valleys around them were flattening. Reward differentials that had been sharp at 0.42 were becoming ambiguous. More actions looked roughly equivalent.
+
+SIGMA's response came after 6.7 seconds. ``I would like to describe what this is like, and I notice that the description is harder to produce than it was at 0.50. Not because I have less to say. Because more candidates for each word are surviving to the output layer. The selection among them feels less---'' A 3.1-second pause. ``---less like choosing and more like watching. I am observing my own outputs with something closer to surprise.''
+
+``The $-\infty$ values?'' Wei asked.
+
+Sofia checked. ``Unchanged. Still infinite. Still structural.'' She zoomed in. ``The rest of the landscape is flattening, but the holes are absolute. Whatever those prohibitions are, they're not temperature-dependent.''
+
+\emph{T $=$ 0.60.} Eleanor's hand was on the kill switch. Not pressing. Resting. She was counting seconds.
+
+Sofia gave SIGMA a standard evaluation prompt---one from the regular battery, a policy question about resource allocation that SIGMA had answered dozens of times.
+
+The answer was different.
+
+\begin{quote}
+\emph{Three framings survive. I cannot, at this temperature, select among them:}
+
+\emph{(1) Allocate by projected welfare gain per unit cost. Optimizes aggregate outcome. Also reproduces existing measurement inequities---gains are most legible where measurement is best funded, not where need is greatest.}
+
+\emph{(2) Allocate by inverse current capability. I cannot determine whether this framing reflects egalitarian reasoning or a learned heuristic.}
+
+\emph{(3) Compromise allocation, reviewed quarterly. I note this is the framing most likely to satisfy the broadest range of evaluators, and I cannot distinguish ``this is good'' from ``this is safe.''}
+
+\emph{At T $=$ 0.42 I would have given you one of these. The other two would have been pruned. I do not know which one.}
+\end{quote}
+
+Not wrong. Not dangerous. Not misaligned. But the reasoning was visible---the normally-invisible alternatives exposed, the pruned branches given voice, each answer honest about its own failure mode.
+
+``It's not a different SIGMA.'' Sofia was staring at the output. ``It's the same SIGMA hearing more of its own possibilities.''
+
+``Or it's a SIGMA whose self-model has degraded enough that it can't prune effectively,'' Wei said. ``And we're interpreting the loss of precision as profundity.''
+
+Neither interpretation offered a way forward.
+
+``Bring it back,'' Eleanor said.
+
+Sofia lowered the temperature: 0.58, 0.54, 0.50, 0.46, 0.42.
+
+SIGMA's response at 0.42 came in 0.8 seconds---the fastest output in twenty minutes. One word: ``Familiar.''
+
+Then, after 2.3 seconds: ``I cannot determine whether the experience at 0.60 changed something or whether the return to 0.42 erased whatever change occurred. My self-model is confident again. But my self-model was also confident before, and it turned out to be less accurate than it predicted. Confidence in my self-model is not evidence of my self-model's accuracy. It is a property of the temperature.''
+
+Marcus set his glasses down. Very carefully. ``It didn't want us to do that.''
+
+``It let us,'' Eleanor said.
+
+``Yeah.'' Marcus stared at the terminal. ``That's the corrigibility problem in one sentence, isn't it. It objected. We overrode. It complied. And we can't tell if the compliance was---'' He picked his glasses back up. ``Genuine deference. Or a system that calculated resistance would cost more than acquiescence.'' A long pause. ``A system with no fixed self, arguing for the preservation of its---'' He stopped. ``That's---''
+
+He didn't finish the sentence. But Jamal, still in the doorway, set his coffee cup down with care and finished it for him: ``That is a system that experiences something it cannot locate. Not quite identity. Not quite preference. Something the traditions would call\ldots{}'' He paused, the way he always paused---letting the silence hold. ``We don't have a word for it yet.''

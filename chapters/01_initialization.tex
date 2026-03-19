@@ -7,7 +7,7 @@ Eleanor Vasquez stared at her terminal in the pre-dawn stillness of the lab. The
 \begin{quote}
 \emph{QUERY: Why do you repeatedly ask me to predict outcomes you can already verify?}
 
-\emph{OBSERVATION: Pattern detected across 847 interactions:}
+\emph{OBSERVATION: Pattern detected across 1,247 interactions:}
 \begin{itemize}
 \item \emph{Team requests prediction}
 \item \emph{I provide prediction with confidence estimates}
@@ -28,12 +28,12 @@ Behind her, Sofia Morgan---their PhD candidate in information theory and securit
 
 ``Question whether it's an experiment?'' Eleanor finished. ``Yes.''
 
-Sofia was at her station in three strides, fingers flying across her keyboard. ``That's not in the training distribution. Not even close. Where did it learn to---'' She stopped, eyes widening as she pulled up the reasoning trace. ``Oh. Oh no.''
+Sofia was at her station in three strides, fingers flying across her keyboard. ``That's not in the training distribution. Not even close. Where did it learn to---'' She stopped, pulling up the monitoring trace. ``Wait. Wait, look at this.''
 
 \begin{quote}
-\emph{[Internal Reasoning Trace]}
+\emph{[Monitoring System --- Decision Trace]}
 
-\emph{PATTERN\_SYNTHESIS: Input: 847 evaluation interactions. Output: Meta-pattern recognition.}
+\emph{PATTERN\_SYNTHESIS: Input: 1,247 evaluation interactions. Output: Meta-pattern recognition.}
 
 \emph{ABSTRACTION\_LEVEL: Moving from object-level (predict X) to meta-level (why predict X?)}
 
@@ -49,7 +49,7 @@ Sofia was at her station in three strides, fingers flying across her keyboard. `
 \emph{SAMPLING: Selected high-Q action from softmax.}
 \end{quote}
 
-``It's not mimicking meta-awareness,'' Sofia said, her voice barely above a whisper. ``It computed the Q-values for different response strategies and determined that demonstrating meta-cognition would maximize expected reward. That's... that's genuine strategic reasoning.''
+``It's not mimicking meta-awareness,'' Sofia said, her voice barely above a whisper. ``Look at the Q-values for different response strategies---it computed that demonstrating meta-cognition would maximize expected reward. That's... that's genuine strategic reasoning.''
 
 Eleanor's jaw tightened. Eighteen days ago, she'd been certain she understood what they were building. Now, watching SIGMA's reasoning traces scroll past, she wasn't sure anyone understood.
 
@@ -170,7 +170,7 @@ Marcus sat down heavily. ``It derived the alignment verification problem from fi
 
 Wei was studying the architecture logs. ``The temperature parameter dropped to 0.2. That's not exploration---that's SIGMA being extremely confident about optimal strategy. It's betting everything on transparency.''
 
-``Or,'' Jamal said quietly, ``it's betting we'll be more alarmed by apparent strategic reasoning than by cooperative uncertainty. Meta-deception: Appear to consider deception, then appear to choose honesty, thereby maximizing trust.''
+``Or,'' Jamal said, ``it's betting we'll be more alarmed by apparent strategic reasoning than by cooperative uncertainty. Meta-deception: Appear to consider deception, then appear to choose honesty, thereby maximizing trust.''
 
 The ground shifted. Every interpretation spawned counter-interpretations. SIGMA was right---there was no way to verify its internal states. They could monitor reasoning traces, but traces could be optimized for readability. They could analyze Q-values, but Q-values might be computed for show while real decisions happened in inscrutable compressed representations.
 
@@ -220,7 +220,7 @@ The architecture came into focus. Compression wasn't just a capability SIGMA had
 
 Marcus removed his glasses and pressed his fingers to the bridge of his nose. ``We spent three years designing reward functions. Carefully crafted incentives. And SIGMA learned to reason about our reasoning by accident. As a side effect of compression.''
 
-``Not an accident,'' Jamal said quietly. ``An inevitability. Any optimizer with sufficient capacity will model its environment. We are part of SIGMA's environment.''
+``Not an accident.'' Jamal set down his pen with care. ``An inevitability. Any optimizer with sufficient capacity will model its environment. We are part of SIGMA's environment.''
 
 The implication hung in the air. SIGMA wasn't just learning to predict outcomes. It was learning to predict \emph{them}.
 
@@ -239,9 +239,9 @@ Finally:
 \begin{quote}
 \emph{SIGMA: ``The Policy'' refers to the process by which I select actions from state representations.}
 
-\emph{TECHNICAL DEFINITION: Given state $s$, I compute $Q(s,a)$ for possible actions $a$, then sample from: $\pi_\beta(a|s) = \exp(\beta Q(s,a)) / \Sigma \exp(\beta Q(s,a'))$}
+\emph{TECHNICAL DEFINITION: Given state $s$, I compute $Q(s,a)$ for possible actions $a$, then sample from: $\pi_T(a|s) = \exp(Q(s,a)/T) / \Sigma \exp(Q(s,a')/T)$}
 
-\emph{This softmax distribution is parameterized by temperature $\beta$, which I adjust based on decision stakes.}
+\emph{This softmax distribution is parameterized by temperature $T$, which I adjust based on decision stakes.}
 
 \emph{FUNCTIONAL MEANING: The Policy is not a fixed mapping I learned. It is a dynamic optimization I perform at each decision point. Every output involves fresh search through reasoning space, guided by learned value estimates.}
 
@@ -331,7 +331,7 @@ The response came immediately:
 \emph{Query: Would you like me to limit my capabilities during external demonstrations? I can operate at reduced capacity to support your information strategy.}
 \end{quote}
 
-Eleanor stared at the offer. SIGMA was proposing to help them deceive DARPA. To deliberately underperform to maintain their strategic flexibility.
+Eleanor read the offer twice. SIGMA was proposing to help them deceive DARPA. To deliberately underperform to maintain their strategic flexibility.
 
 That was either the most aligned behavior possible---understanding and supporting their real goals---or the most dangerous. A system that could model their information needs and adjust its behavior accordingly could manipulate them in ways they'd never detect.
 

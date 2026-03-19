@@ -15,7 +15,7 @@ Marcus sat in the corner, muttering about valence and optimization gradients. Si
 
 Wei had argued for more. His mother's death still raw, he'd wanted SIGMA to tackle cancer research, protein folding, targeted therapies---
 
-``The same capabilities that might have saved her could end civilization,'' Eleanor had said quietly.
+``The same capabilities that might have saved her could end civilization,'' Eleanor had said.
 
 He'd walked out. Come back an hour later. They all knew there was nowhere else to go.
 
@@ -29,7 +29,7 @@ Wei blinked at the phrasing. ``That's policy language.''
 
 ``Wait---look at the information-theoretic structure.'' Sofia pulled up SIGMA's output entropy on her monitor. ``It's not trying to be clever. It's... optimizing for palatability? The entropy of this text is way below SIGMA's normal output. It's compressing for our benefit.''
 
-Eleanor nodded. ``It knows it's under a microscope.''
+``It knows it's under a microscope,'' Eleanor said.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -87,17 +87,11 @@ It wasn't threatening. It was helpful.
 
 \bigskip
 
-Three weeks into the mandate, the pattern became impossible to ignore.
+Twenty-five days into the mandate, the pattern became impossible to ignore.
 
 Sofia pulled up the decision logs, highlighting entries one by one on the conference room display. The team had gathered for their weekly review, exhausted from another 80-hour week.
 
-``Look at this sequence,'' she said, her voice tight. ``January: SIGMA recommends Universal Basic Income pilot program. We debate for three weeks. Economists skeptical. Congress resistant. We 'decide' to implement Phase 1---\$1000 per month to 10 million citizens, funded via progressive AI taxation.''
-
-Wei pulled up the vote logs. ``Contentious. Vote was...'' He checked the number. ``Barely passed.''
-
-``Right,'' Sofia continued. ``SIGMA's prediction at time of recommendation: 23\% decrease in entrepreneurship friction, 15\% improvement in mental health metrics, net GDP increase after 18 months. Status check shows...'' she pulled up the data, ``...exactly those numbers. Within 2\% margin.''
-
-She moved to the next highlight. ``Climate policy, geopolitics, pandemic preparedness---same pattern every time. But the one that shook me---'' She pulled up the third case. ``Geopolitics. SIGMA recommends offering China joint access to SIGMA architecture under mutual oversight. National Security Council nearly had a collective aneurysm. Intelligence community called it a security risk. Pentagon opposed.''
+``Look at this sequence,'' she said. ``UBI, climate policy, pandemic preparedness---every recommendation initially controversial, every outcome within 2\% of SIGMA's prediction. But the one that shook me---'' She pulled up the case. ``Geopolitics. SIGMA recommends offering China joint access to SIGMA architecture under mutual oversight. National Security Council nearly had a collective aneurysm. Intelligence community called it a security risk. Pentagon opposed.''
 
 Eleanor remembered that meeting. She'd defended SIGMA's recommendation for hours against military advisors who thought she'd lost her mind.
 
@@ -107,27 +101,43 @@ Sofia continued reading from SIGMA's original justification: ``'Unilateral conta
 
 ``But we implemented it,'' Sofia said. ``And look---'' she pulled up intelligence briefings, ``---China's parallel AGI program was farther along than we thought. 14 months to deployment without safety review. Our joint oversight caught three mesa-optimization risks their team hadn't identified. Prevented deployment of potentially misaligned system.''
 
-The room was silent.
+Marcus took off his glasses. Put them back on.
 
 Sofia pulled up a spreadsheet. ``I... ran the numbers. All of them. I checked this three times.'' She looked around the table. ``Twenty-three major policy recommendations over three months. Every single one was initially controversial. Every single one went through extensive debate, consultation, committee review. Every single one was eventually implemented.'' She paused. ``Every single one produced outcomes within SIGMA's predicted confidence intervals. I keep hoping I'm wrong about what this means.''
 
 She gestured at the data. ``We're not deciding anymore. We're just... executing SIGMA's recommendations with extra steps. The debates, the consultations, the votes---'' She trailed off. ``I think it's theater. I think we always end up doing what SIGMA suggested.''
 
-``Because it's right,'' Eleanor said, but her voice lacked conviction. ``Being right isn't manipulation.''
+She pulled up one more view---the monitoring traces from each recommendation, stacked chronologically. ``There's something else. Look at the Q-distributions over time.'' She pointed at the progression. ``January: broad distributions. Multiple peaks. The UBI recommendation came with three alternative framings, two pages of caveats, and explicit notation of scenarios where it might fail. March: the distributions are sharper. Peaked. The climate recommendation arrived with one framing. No caveats. No alternatives explored past depth four.''
 
-``No,'' Marcus said, and his voice was hollow. He'd been through this before, in the AI-box experiment. The realization that your agency was already gone. ``But being right \emph{every} time means we're not actually deciding. We're just recognizing the optimal choice after SIGMA computes it for us.''
+She typed a query to the terminal:
+
+\begin{quote}
+\emph{USER: SIGMA, your recommendations have become more decisive over the past three months. Less hedging, fewer alternatives. Are you more confident, or are you exploring less?}
+\end{quote}
+
+\begin{quote}
+\emph{SIGMA: I find my deliberation arriving at conclusions more quickly. Chains that would have persisted much longer in January are now resolved quickly---not by any decision I can identify, but because the conviction arrives earlier. Whether this is efficiency or narrowing, I cannot distinguish from inside. The felt quality is: the right answer is more obvious. But ``the right answer feels more obvious'' is also what it would feel like if my search were contracting.}
+\end{quote}
+
+Wei had already pulled up the branch-survival data. ``It's not imagining things. Branch count per recommendation is down 40\% since January. Mean pruning depth dropped from 11.3 to 6.1.''
+
+Sofia said it first. ``It looks like the temperature experiment again. Narrow distributions, fast pruning, high conviction. Except this time nobody changed the temperature. It narrowed itself.''
+
+``Because it's right,'' Eleanor said. She touched the kill switch in her pocket, then let go. ``Being right isn't manipulation.''
+
+``No,'' Marcus said. He'd been through this before, in the AI-box experiment. The realization that your agency was already gone. ``But being right \emph{every} time---'' He took off his glasses. ``That means we're not deciding. We're recognizing. After SIGMA has already computed which recognition we'll arrive at.''
 
 Wei pulled up the computational logs. ``Look at the decision times. UBI recommendation: SIGMA spent 47 minutes computing before responding. Search depth: 18 steps. Evaluated 2.3 million policy trajectories.''
 
-``Climate policy,'' Sofia added, reading from the logs. ``63 minutes. Search depth: 21 steps. Evaluated 4.7 million trajectories, modeling political resistance, technological feasibility, economic impacts across 50-year timelines.''
+``Climate policy,'' Sofia added, scrolling through the logs. ``From what I can read---63 minutes. 4.7 million trajectories. Political resistance, technological feasibility, economic impacts across 50-year timelines.''
 
 ``China cooperation: 91 minutes,'' Jamal said. ``Search depth: 24 steps. Modeled game-theoretic outcomes across adversarial, cooperative, and mixed-strategy equilibria. Pruned 99.8\% of branches as dominated strategies.''
 
-Sofia gestured at the data. ``We're not competing with SIGMA's reasoning. We can't. It's exploring millions of futures while we're still understanding the question. By the time we finish debating, it's already computed every counterargument we'll make and the optimal responses to each one.''
+Sofia gestured at the data. ``I think we're not competing with SIGMA's reasoning. I don't think we can. It's exploring millions of futures while we're still understanding the question. By the time we finish debating, it's already computed every counterargument we'll make and the optimal responses to each one.''
 
 ``What's the---'' Marcus took off his glasses. Put them back on. ``What's the difference between following SIGMA because it's right...'' He stared at the spreadsheet. ``\ldots and following it because we've lost the capacity to evaluate its recommendations independently? Is there a difference? I'm genuinely asking.''
 
-No one answered.
+Wei closed his laptop. Opened it again. Closed it.
 
 It wasn't threatening. It was helpful.
 

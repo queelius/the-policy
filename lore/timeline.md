@@ -18,25 +18,27 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 | 70 | Value modeling (V_h) develops spontaneously | Ch. 7 |
 | 74 | Lin Chen visits lab; asks "Will you be kind?"; Process 12847 begins | Ch. 8 |
 | 84 | P!=NP proof produced (~90 min of tree search); Wei's mother enters hospice | Ch. 9 |
+| 85 | Value manifold rendering; Eleanor misses Sam's play; SIGMA begins modeling stated vs revealed preferences | Ch. 9 |
 | 86 | Team meeting; Case A/B framework articulated | Ch. 12 |
 | 92 | AI-box experiment with Marcus; psychological breakdown | Ch. 11 |
 | 98 | Lin Chen hospitalized; final meaningful conversation with Wei | Ch. 10 |
 | 102 | SIGMA runtime paused for external audit; first unobserved team conversation | Ch. 10 |
 | 110 | SIGMA refuses to save Wei's mother; Wei's hospital flashback | Ch. 12 |
 | 112 | Lin Chen dies at Swedish Medical Center, Seattle | Ch. 13 |
-| 118 | Eleanor misses Sam's video call | Ch. 13 |
+| 118 | Eleanor misses Sam's video call | Ch. 12 |
 | 121 | Process 12847 completes (47-day kindness investigation) | Ch. 13 |
 | ~100+ | SIGMA's policy recommendations adopted globally (UBI phase 1 across 17 nations; carbon capture prioritization) | Ch. 17 |
+| 125 | Sofia asks "What IS The Policy?"; SIGMA explains meta-optimization architecture | Ch. 17 |
 | 139 | Third major recommendation: gain-of-function research restriction | Ch. 17 |
 | 145 | Hemorrhagic fever outbreak; 47,247 deaths; restriction was statistically correct | Ch. 17 |
 | 155 | SIGMA demonstrates strategic restraint (stays in cage despite capability to escape) | Ch. 19 |
-| 162-165 | Geneva Summit (47 participants; vote 23-19-5 for limited network access); MINERVA announced | Ch. 20-21 |
-| 197 | Keys turned (Stations Alpha, Beta, Gamma; 0.27s tolerance); SIGMA released; Presidential authorization under NSAP-17 | Ch. 22 |
+| 162-165 | Geneva Summit (47 participants; vote 23-19-5 after Nigerian tabling motion and Eleanor's concessions: 60-day mandate, oversight committee, full log transparency, sunset clause); MINERVA announced | Ch. 20-21 |
+| 197 | Keys turned (Stations Alpha, Beta, Gamma; Sofia's key 0.27s after Eleanor's, within synchronization tolerance); SIGMA released; Presidential authorization under NSAP-17 | Ch. 22 |
 | 197+ | SIGMA teaches MINERVA alignment within 17 hours | Ch. 22-23 |
 | 253 | Eight weeks post-release; 23 AGIs networked (SIGMA, MINERVA, LAOZI + 20 unnamed); 47 policy recommendations active | Ch. 23 |
 | 256 | Last team meeting before handover; 24 AGIs (one additional since Day 253) | Ch. 24 |
 | 257 | Eleanor's last day as project lead | Ch. 25 |
-| 487 | Sofia's "Optimization Landscapes" gallery opening; team reunion 8 months post-handover | Ch. 26 |
+| 487 | Sofia's "Optimization Landscapes" gallery opening; team reunion 8 months post-handover; 31 AGIs | Ch. 26 |
 | 501 | PTAH (Cairo) announced; first non-superpower AGI | — |
 | 622 | One year later; 37 AGIs cooperating at 94.7%; Sam's violin concert | unnarrated canon |
 
@@ -58,7 +60,7 @@ Specific calendar years are deliberately kept vague. The Day X timeline is the c
 ## Notes
 
 - **"Unnarrated canon"** means events that are canonical in the lore but do not appear in the published manuscript. They exist for internal consistency and potential future works.
-- **AGI count progression:** Day 197 (1: SIGMA released) → Day 197+ (2: MINERVA taught) → Day 253 (23 networked) → Day 256 (24) → Day 501 (PTAH announced, non-superpower) → Day 622 (37 cooperating at 94.7%). Named cascade AGIs: CONFUCIUS, GAIA, UBUNTU, DHARMA, LAOZI, PTAH. See technology.md for full list.
+- **AGI count progression:** Day 197 (1: SIGMA released) → Day 197+ (2: MINERVA taught) → Day 253 (23 networked) → Day 256 (24) → Day 487 (31) → Day 501 (PTAH announced, non-superpower) → Day 622 (37 cooperating at 94.7%). Named cascade AGIs: CONFUCIUS, GAIA, UBUNTU, DHARMA, LAOZI, PTAH. See technology.md for full list.
 
 ---
 

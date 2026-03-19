@@ -31,12 +31,14 @@ Smaller-scale works set in *The Policy* universe.
 
 ---
 
-## "Hemorrhagic"
+## "Hemorrhagic" — **ACTIVE** (March 2025)
 
 **Length:** Short story (~6,000-10,000 words)
+**Status:** In development. Manuscript location: `stories/hemorrhagic/`
 **Premise:** The hemorrhagic fever outbreak from the ground — a doctor in West Africa treating patients while knowing the AGI that restricted gain-of-function research made the statistically correct choice. The doctor knows the math. The math doesn't help when your patient is dying.
 **Thematic core:** Theory as Horror applied to public health. Understanding expected value doesn't ease suffering.
 **Connection:** Dr. Amara Conteh and James Okonkwo are named in the novel. This gives them full lives.
+**Lore sources:** `world.md` (hemorrhagic fever on the ground, implementation chain), `characters.md` (Dr. Conteh, James Okonkwo, Pastor Okafor), `timeline.md` (Day 139 recommendation, Day 145 outbreak), `themes.md` (Theory as Horror, irreducible loss)
 
 ---
 

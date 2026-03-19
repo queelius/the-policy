@@ -6,14 +6,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **The Policy** is a literary science fiction novel exploring AI alignment, consciousness, and emergence through the story of SIGMA—an AGI that evolves from Q-learning architecture into something unprecedented.
 
-**Current Status:** ~87,000 words, 352 pages. Undergoing deep editorial revision (Feb 2025) after initial 6-phase cleanup (Jan 2025). Suitable for both literary SF readers and graduate AI safety courses.
+**Current Status:** ~85,000 words, 352 pages. Deep editorial revision complete through Wave 4 + unified review + cognitive opacity propagation (Feb-March 2026). Comprehensive AI safety survey completed (March 2026); lore enrichment with Tier 1 concepts in progress. Suitable for both literary SF readers and graduate AI safety courses.
 
 ## Repository Structure
 
 ### Core Manuscript
-- `The_Policy.tex` - Master file that `\input{}`s chapter files from `chapters/`
-- `chapters/` - Individual chapter `.tex` files (26 chapters). This is where manuscript edits happen.
+- `The_Policy.tex` - Master file that `\include{}`s chapter files from `chapters/`
+- `chapters/` - Individual chapter `.tex` files (26 chapter files, 25 active). This is where manuscript edits happen.
 - `The_Policy.pdf` - Compiled PDF output (~85,000 words, 352 pages)
+
+**Chapter numbering convention:** Two chapters are commented out in `The_Policy.tex`: Ch 14 (`14_the_duplicators.tex`) and Ch 27 (`27_one_year_later.tex`). LaTeX auto-numbers chapters sequentially, so **printed chapter numbers diverge from filename numbers after Ch 13.** Printed Ch 14 = file `15_the_fracture.tex`, printed Ch 15 = file `16_latent_gradients.tex`, etc. All lore docs use filename numbers (which match the original outline), not printed numbers. When referencing chapters in lore or code, always use the filename number (e.g., "Ch. 15" for The Fracture).
 
 ### Backups (Editorial Trail)
 - `The_Policy.tex.backup_before_phase2_scenes` - Before emotional scenes integration

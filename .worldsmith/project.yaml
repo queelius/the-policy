@@ -1,0 +1,23 @@
+# .worldsmith/project.yaml
+universe: the-policy
+
+lore: lore/
+
+works:
+  - name: The Policy
+    type: novel
+    manuscript: chapters/
+    master: The_Policy.tex
+    file_types: [tex]
+
+  - name: Hemorrhagic
+    type: short-story
+    manuscript: stories/hemorrhagic/
+    master: stories/hemorrhagic/hemorrhagic.tex
+    file_types: [tex]
+
+  - name: Process 12847
+    type: short-story
+    manuscript: stories/process-12847/
+    master: stories/process-12847/process-12847.tex
+    file_types: [tex]

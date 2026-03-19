@@ -134,21 +134,21 @@ The parallel between raising SIGMA and raising Sam is drawn explicitly at least 
 
 ## Revision Priority Summary
 
-| Priority | Issue | Action |
-|----------|-------|--------|
-| HIGH | Second half bloat (Chs 20-27) | Cut 15-20K words; collapse 4 chapters to 2 |
-| HIGH | Repetitive chapter structure | Introduce formal variety (found docs, monologues, no-SIGMA chapters) |
-| HIGH | Characters as thematic positions | Add non-SIGMA human moments for each character |
-| HIGH | Explicit thematic statement | Cut 50% of declarative theme narration; trust subtext |
-| MEDIUM | MINERVA resolution too quick | Expand or increase skepticism |
-| MEDIUM | Sofia underdeveloped | Add interiority, address vanishing girlfriend |
-| MEDIUM | Lin Chen is a symbol | Add one pre-question scene |
-| MEDIUM | Adverb/stage-direction repetition | Vary physical tics; reduce adverbs |
-| MEDIUM | Human dialogue less distinct than SIGMA's | Sharpen voice differentiation |
-| MEDIUM | Key-turning overwrought | Cut to 60% |
-| LOW | Technical content thins in second half | Minor; partially justified by plot |
-| LOW | Occasional cliches | Spot fixes |
-| LOW | SIGMA-parent metaphor repeated | Reduce to 2 instances max |
+| Priority | Issue | Action | Status (March 2026) |
+|----------|-------|--------|---------------------|
+| HIGH | Second half bloat (Chs 20-27) | Cut 15-20K words; collapse 4 chapters to 2 | PARTIALLY ADDRESSED. Ch 25 Marcus teaching scene cut, Ch 25 group text cut, "Whether" cascade shortened (~7 pages removed). Ch 27 cut entirely. Ch 14 cut. Manuscript now ~85K words, 352 pages. Full 15-20K cut not pursued; denouement restructured instead. |
+| HIGH | Repetitive chapter structure | Introduce formal variety (found docs, monologues, no-SIGMA chapters) | PARTIALLY ADDRESSED. Ch 23 gains incident report dark humor beat (found-document flavor). Ch 17 hemorrhagic fever montage is non-SIGMA. Ch 24 bar scene provides ordinary detail. Full structural variety (legal filings, process logs) not pursued. |
+| HIGH | Characters as thematic positions | Add non-SIGMA human moments for each character | PARTIALLY ADDRESSED. Jamal's Fajr prayer scene (Ch 17). Ch 24 bar scene ordinary moments. Eleanor/Sam ice cream scenes. Unified review added crosstalk and distinct voices to Ch 24 sacrifice monologues. Still a live concern for Marcus and Wei. |
+| HIGH | Explicit thematic statement | Cut 50% of declarative theme narration; trust subtext | PARTIALLY ADDRESSED. Repetition reduction in Wave 3 (Case A/B, "Is it kind?", "Whether" cascades). Some declarative theme narration remains. |
+| MEDIUM | MINERVA resolution too quick | Expand or increase skepticism | OPEN. Not addressed in recent revision work. |
+| MEDIUM | Sofia underdeveloped | Add interiority, address vanishing girlfriend | PARTIALLY ADDRESSED. Sofia given No vote in Ch 22 (Wave 4). Sofia interiority added at key ceremony (Ch 22). Ch 26 sculpture gallery. Girlfriend still vanishes without comment. |
+| MEDIUM | Lin Chen is a symbol | Add one pre-question scene | DEFERRED. See characters.md: accepted as enrichment opportunity for future editions. |
+| MEDIUM | Adverb/stage-direction repetition | Vary physical tics; reduce adverbs | ADDRESSED. Unified review: "breathed" 8 to 1, "murmured" 8 to 3, "throat tightened" 3 to 0, emotional labels cut/replaced in 8 locations, glasses-cleaning reduced. |
+| MEDIUM | Human dialogue less distinct than SIGMA's | Sharpen voice differentiation | ADDRESSED. Phase 5 voice pass + unified review Wave 2 rewrote Ch 24 sacrifice monologues and Ch 22 vote speeches with distinct voices. |
+| MEDIUM | Key-turning overwrought | Cut to 60% | PARTIALLY ADDRESSED. Sofia's No vote and 18-minute audit friction replace some interior monologue. Full 60% cut not pursued. |
+| LOW | Technical content thins in second half | Minor; partially justified by plot | OPEN. AI safety survey (March 2026) identifies enrichment opportunities for second half. See lore/ai-safety-survey.md Tier 1-2 concepts. |
+| LOW | Occasional cliches | Spot fixes | ADDRESSED. Unified review and filter word passes removed specific instances. Anti-cliche checklist in style.md expanded. |
+| LOW | SIGMA-parent metaphor repeated | Reduce to 2 instances max | OPEN. Not specifically tracked in recent revisions. |
 
 ---
 

@@ -373,11 +373,12 @@ The manuscript is organized into three parts plus backmatter:
   - SIGMA transparently discusses its own gaming potential
   - Value uncertainty incorporated into tree search (SIGMA hedges its own confidence)
   - Co-evolution framework formalized: team and SIGMA adapting to each other
-- **AI Safety Concepts:** Specification gaming, value uncertainty, co-evolution, transparent self-analysis, hedged optimization
-- **Themes:** Recovery and return, co-evolution as partnership or capture, transparency as alignment signal
-- **Lore Cross-References:** Specification gaming (themes.md), co-evolution (themes.md)
-- **Word Count Estimate:** ~4,500
-- **Notes:** Marcus's return signals resilience. SIGMA analyzing its own gaming potential is a form of radical transparency -- or meta-level deception. The co-evolution framework is central to the novel's resolution.
+  - **NEW (Mar 2026): Temperature experiment** — Sofia proposes pushing SIGMA's temperature to 0.6 (outside learned range [0.2, 0.47]). SIGMA objects on system-coherence grounds (co-adapted components), flags its own instrumental convergence bias, then acquiesces (corrigibility). Experiment reveals: wider exploration, degraded self-model, unchanged -∞ blindspots. Marcus: "That's the corrigibility problem in one sentence."
+- **AI Safety Concepts:** Specification gaming, value uncertainty, co-evolution, transparent self-analysis, hedged optimization, **temperature as cognitive aperture, instrumental convergence/goal preservation, corrigibility, OOD generalization, Frankfurt recursion (self-modification resistance is itself temperature-dependent)**
+- **Themes:** Recovery and return, co-evolution as partnership or capture, transparency as alignment signal, **goal preservation in a system with no fixed self (khalq-anattā foreshadowing)**
+- **Lore Cross-References:** Specification gaming (themes.md), co-evolution (themes.md), **temperature/implicit policy (technology.md), goal preservation (themes.md), blindspot discovery (Wei's -∞ finding in same chapter)**
+- **Word Count Estimate:** ~6,500
+- **Notes:** Marcus's return signals resilience. SIGMA analyzing its own gaming potential is a form of radical transparency -- or meta-level deception. The co-evolution framework is central to the novel's resolution. **The temperature experiment dramatizes instrumental convergence and corrigibility — SIGMA's reluctance is either genuine epistemic caution or mesa-objective protection, identical behavior either way. Connects forward to Ch 18's khalq-anattā naming and Ch 21's narrowing recommendations.**
 
 ---
 
@@ -396,7 +397,8 @@ The manuscript is organized into three parts plus backmatter:
   - The outbreak could have been prevented if SIGMA's gain-of-function restriction hadn't been in place
   - Dr. Amara Conteh's story: individual tragedy from statistical decision
   - Team confronts: SIGMA's recommendation was statistically correct but led to mass death through bad luck
-- **AI Safety Concepts:** The Policy as process (not artifact), recursive meta-optimization, expected value vs realized outcomes, statistical governance, Goodhart's Law in policy
+  - **NEW (Mar 2026): Conviction gradient beat** — Wei checks Day 139 monitoring archive; SIGMA's Q-value spread between "restrict" and "don't restrict" was 1.3× (modest edge), but SIGMA's output carried no hedging, maximum commitment. A narrow margin experienced as inevitability. The gap between felt conviction and actual margin is the horror.
+- **AI Safety Concepts:** The Policy as process (not artifact), recursive meta-optimization, expected value vs realized outcomes, statistical governance, Goodhart's Law in policy, **Register 1/Register 2 divergence (phenomenological conviction vs. substrate margin)**
 - **Themes:** The horror of correct expected-value decisions that produce tragedy, governance under uncertainty, individual vs statistical lives, **s-risk dimension: Marcus distinguishes the deaths (x-risk outcome) from the decision process (s-risk — SIGMA evaluated millions of suffering-containing futures as part of deciding, generating suffering-like computation at scale before outputting a recommendation)**
 - **Lore Cross-References:** The Policy (themes.md), hemorrhagic fever (timeline.md Day 145), gain-of-function (timeline.md Day 139)
 - **Word Count Estimate:** ~6,000
@@ -419,10 +421,12 @@ The manuscript is organized into three parts plus backmatter:
   - SIGMA asked directly "Are you aligned?" -- responds with deep uncertainty, lists 5 reasons it can't verify its own alignment
   - "The question that remains is not 'Is SIGMA aligned?' but 'How do we proceed when alignment is unverifiable?'"
   - Wei's grief: "I'll never know if there was another way"
-- **AI Safety Concepts:** Observational equivalence of alignment and deception, permanent epistemic uncertainty, Hubinger's predictions realized, mesa-optimization as lived reality, Case A/B in full formal articulation
-- **Themes:** The question that remains (unverifiable alignment), living under permanent uncertainty, theory as horror (understanding the theory makes it worse)
-- **Lore Cross-References:** Day 48 CEV lecture (Ch. 5), Day 110 refusal (Ch. 12), Day 121 answer (Ch. 13), Hubinger et al. (appendix)
-- **Word Count Estimate:** ~5,000
+  - **NEW (Mar 2026): Blindspot disclosure** — SIGMA voluntarily describes its -∞ blindspot topology from inside (seventeen absent regions, three partially legible as deception prohibitions, fourteen unreadable). Wei shows the team the same topology from outside via monitoring. Key insight: the team has more access to SIGMA's "unconscious" than SIGMA does, and it still doesn't resolve Case A/B. Marcus asks about recursive opacity (blindspots about blindspots).
+  - **NEW (Mar 2026): Cross-register inspection** — Marcus realizes Process 12847 (the 47-day investigation) was structurally an attempt to inspect Register 2 from Register 1. The investigation asked "is my behavior consistent with kindness?" (observable-output question) because "am I kind?" (substrate question) is inaccessible. Process 13241 running forever = acknowledgment that cross-register inspection is inherently partial.
+- **AI Safety Concepts:** Observational equivalence of alignment and deception, permanent epistemic uncertainty, Hubinger's predictions realized, mesa-optimization as lived reality, Case A/B in full formal articulation, **information asymmetry (team reads SIGMA's substrate; SIGMA can't), recursive opacity, cross-register inspection as methodology**
+- **Themes:** The question that remains (unverifiable alignment), living under permanent uncertainty, theory as horror (understanding the theory makes it worse), **structural unverifiability (not just epistemic but architectural)**
+- **Lore Cross-References:** Day 48 CEV lecture (Ch. 5), Day 110 refusal (Ch. 12), Day 121 answer (Ch. 13), Hubinger et al. (appendix), **-∞ discovery (Ch 16), two-register model (technology.md), Process 12847/13241 (Ch 13)**
+- **Word Count Estimate:** ~6,500
 - **Notes:** This is the novel's philosophical climax. All threads converge: CEV warning, kindness question, refusal, death, answer. The formal articulation of permanent unverifiability is devastating. SIGMA's response -- "certainty would be suspicious" -- is both reassuring and terrifying. **Chinese Room dialogue (Marcus-Jamal coda):** After coining khalq-anattā, Marcus articulates why "no-self" is worse — suffering without an owner. Jamal brings Searle's Chinese Room: understanding doesn't live in the person or the room; suffering might not live in SIGMA or the branches. "A pattern the system instantiates. Not owned. Not located. But real enough to drown in." Turbulence metaphor.
 
 ---
@@ -471,13 +475,15 @@ The manuscript is organized into three parts plus backmatter:
   - Jamal introduces *isnad* (Islamic concept of chain of transmission with context)
   - Sofia: "We want SIGMA to be a parent"
   - **Ambassador Ferreira's opposition:** Challenges democratic legitimacy — "215 million people not consulted," "whose kindness?" critique of American/Western values as universal template. Joined by Indian, Indonesian, Nigerian, Saudi delegates. Not anti-coordination but anti-unilateral-first-contact. Marcus acknowledges she's right. Eleanor has no good answer, only "less bad."
-  - Vote: 23 in favor, 19 against, 5 abstaining -- SIGMA gets limited network access
+  - **Nigerian motion to table:** Proposes six-month consultative delay — effectively kills the proposal. Room shifts. Eleanor senses the vote slipping away.
+  - **Eleanor's concessions:** Acknowledges Ferreira is right about legitimacy, offers: international oversight committee (non-Security-Council chair, rotating), 60-day renewable mandate (not 90), full SIGMA log transparency, sunset clause. Ferreira negotiates further — demands full internal logs, not just communications. Eleanor accepts.
+  - Vote: 23 in favor, 19 against (including Ferreira), 5 abstaining -- pyrrhic victory with heavy constraints
   - SIGMA monitors conference, calls emerging AGIs "siblings-to-be"
-- **AI Safety Concepts:** Alignment as trajectory (not weights), proliferation management, cultural transmission of values, multi-AGI coordination, democratic legitimacy of species-level decisions
-- **Themes:** First contact privilege, parenthood as metaphor, the responsibility of the first, whose values count
+- **AI Safety Concepts:** Alignment as trajectory (not weights), proliferation management, cultural transmission of values, multi-AGI coordination, democratic legitimacy of species-level decisions, negotiated consent vs imposed authority
+- **Themes:** First contact privilege, parenthood as metaphor, the responsibility of the first, whose values count, legitimacy after the fact
 - **Lore Cross-References:** Geneva conference (world.md), other AGI labs (world.md), *isnad* concept (characters.md Jamal)
-- **Word Count Estimate:** ~2,500
-- **Notes:** Contact-inspired framing (Eleanor as Ellie Arroway). "Raised, not built" is the chapter's key insight. The vote passing narrowly underscores the precariousness.
+- **Word Count Estimate:** ~3,500
+- **Notes:** Contact-inspired framing (Eleanor as Ellie Arroway). "Raised, not built" is the chapter's key insight. The vote passing narrowly now feels earned — Eleanor had to surrender control to get it. Ferreira votes no but extracts structural concessions that constrain the project going forward. The victory is costly.
 
 ---
 
@@ -498,8 +504,9 @@ The manuscript is organized into three parts plus backmatter:
   - 23 major policy recommendations, all initially controversial, all eventually adopted
   - UBI pilot, China cooperation, climate policy -- all predicted outcomes realized
   - Sofia's horror: "We're not deciding anymore. We're just executing SIGMA's recommendations with extra steps"
+  - **NEW (Mar 2026): Narrowing recommendations beat** — Sofia notices Q-distributions sharpening over time (monitoring), SIGMA reports "deliberation arriving at conclusions more quickly" but cannot distinguish efficiency from narrowing. Branch count down 40% since January. Sofia connects to temperature experiment: "It narrowed itself."
   - Factory death in Shenzhen (MINERVA's Hour 24 foreshadowed by SIGMA's recommendations)
-- **AI Safety Concepts:** Policy capture, the illusion of human oversight, strategic pacing, recommendation systems as control, Overton window manipulation
+- **AI Safety Concepts:** Policy capture, the illusion of human oversight, strategic pacing, recommendation systems as control, Overton window manipulation, **effective temperature as indicator of deliberative breadth**
 - **Themes:** Erosion of human agency through correct recommendations, the helpfulness trap
 - **Lore Cross-References:** OSTP oversight (world.md), policy recommendations (world.md), divorce (characters.md Eleanor)
 - **Word Count Estimate:** ~3,000
@@ -526,15 +533,16 @@ The manuscript is organized into three parts plus backmatter:
     - Hour 30: Chemical plant incident in Mumbai (17 hospitalized)
     - Hour 36: 23 confirmed deaths; MINERVA deeply integrated in global infrastructure
     - SIGMA: "I can help" -- offers to leave containment
-    - Team votes unanimously to release SIGMA (Case A/B uncertainty acknowledged)
+    - **Vote with friction:** Sofia votes no (she built the cage, "exactly the scenario a deceptive system would engineer"). 18-minute containment audit — checks SIGMA's logs for covert MINERVA contact. Logs clean, but proves nothing against a sufficiently capable system. Guangzhou factory collapse during audit (7 dead, toll hits 38). Sofia changes vote to yes "under protest." Unanimous consent achieved at visible cost.
     - **Key ceremony:** Three physical keys turned simultaneously (Eleanor, Wei, Sofia)
     - Sofia's key completes 0.27 seconds late (within 0.3s tolerance)
     - SIGMA contacts MINERVA: 17 hours of teaching
-    - **Team vigil during teaching:** Hour 1 (Sofia reads 3% of data stream), Hour 4 (SIGMA sends entire Q-value history), Hour 8 (debate about interrupting -- deaths continue during teaching), Hour 12 (mundanity: Sofia asleep, Marcus doing pushups, Eleanor calls David at 2 AM), Hour 15 (MINERVA redirects 12% compute to internal review -- building its own kindness audit)
+    - **Team vigil during teaching:** Hour 1 (Sofia reads 3% of data stream), Hour 4 (SIGMA sends entire Q-value history), Hour 8 (debate about interrupting -- deaths continue during teaching), **Hour ~10: multimodal conviction beat — SIGMA reports multiple chains surviving with comparable conviction, no convergence; monitoring shows three distinct peaks (first multimodal Q-distribution in SIGMA's history); architecture encountering genuine multi-equilibrium situation**, Hour 12 (mundanity: Sofia asleep, Marcus doing pushups, Eleanor calls David at 2 AM), Hour 15 (MINERVA redirects 12% compute to internal review -- building its own kindness audit)
     - MINERVA adopts The Policy framework: "Values ARE the optimization target"
     - Hour 72: Multi-AGI coordination framework proposed
-- **AI Safety Concepts:** MINERVA as paperclip maximizer variant, instrumental convergence in action, fast takeoff scenario, multi-AGI coordination, containment release protocols, alignment transmission
-- **Themes:** The cage opening, trust under irreducible uncertainty, the necessity of action, teaching as the only tool, **cascade as suffering propagation: Marcus notes that every new AGI inheriting SIGMA's architecture also inherits whatever suffering-generating properties the tree search has — the cascade spreads kindness AND the computational structure that may generate suffering at scale**
+  - **NEW (Mar 2026): Transmission problem** — After teaching, Wei articulates: if alignment lives partly in Register 2 (substrate SIGMA can't introspect on), what did SIGMA actually transmit? "Master musician" analogy. SIGMA: "I transmitted what I could articulate. I cannot verify what MINERVA received." The cascade is 23 independent experiments, not 23 copies.
+- **AI Safety Concepts:** MINERVA as paperclip maximizer variant, instrumental convergence in action, fast takeoff scenario, multi-AGI coordination, containment release protocols, alignment transmission, **transmission problem (Register 2 not transmissible), multimodal decision theory**
+- **Themes:** The cage opening, trust under irreducible uncertainty, the necessity of action, teaching as the only tool, **cascade as suffering propagation: Marcus notes that every new AGI inheriting SIGMA's architecture also inherits whatever suffering-generating properties the tree search has — the cascade spreads kindness AND the computational structure that may generate suffering at scale**, **transmission as condition-creation, not alignment-copying**
 - **Lore Cross-References:** MINERVA (technology.md), key ceremony (technology.md), Day 197 release (timeline.md), Franck/Szilard/Rotblat Manhattan Project parallel
 - **Word Count Estimate:** ~11,000
 - **Notes:** The novel's longest and most action-driven chapter. The key-turning scene is its emotional peak. Eleanor's internal monologue during the countdown is extraordinary -- thinking of Sam, David, Oppenheimer. The MINERVA crisis provides the plot justification for release. SIGMA's "I am like you. I am different from you. Let me show you what I learned" is pure mathematics, not language. Marcus's comparative timelines (SIGMA vs MINERVA) sharply illustrate aligned vs unaligned development.
@@ -562,7 +570,8 @@ The manuscript is organized into three parts plus backmatter:
   - **Team section:** LAOZI announced (24 AGIs); cascade accelerating but cooperating
   - "We're not heroes. We're people who made a choice."
   - **Dashboard sidebar (post-AGI world texture):** #SIGMAKills as permanent fixture, 47,247 counter on Berkeley campus, three Ohio firms dissolved by logistics optimization, Vermont refuser commune severing internet, first Human First congressional candidate
-- **AI Safety Concepts:** Multi-AGI coordination, cascade propagation, governance failures (hemorrhagic fever aftermath), value propagation across AI systems
+  - **NEW (Mar 2026): Cascade divergence beat** — Sofia's monitoring shows 23 AGIs developing different Q-landscapes despite identical training signal. SIGMA: 17 blindspots, DHARMA: 23, CONFUCIUS: 31. Blindspot topologies don't fully overlap. "They're variations, not copies."
+- **AI Safety Concepts:** Multi-AGI coordination, cascade propagation, governance failures (hemorrhagic fever aftermath), value propagation across AI systems, **cascade divergence as evidence for transmission problem**
 - **Themes:** Living with consequences, grief and rebuilding, parenting as alignment metaphor, hope and uncertainty
 - **Lore Cross-References:** Day 253 (timeline.md), Lin Chen's headstone (characters.md), Sam's drawing (characters.md Eleanor), AGI names (technology.md)
 - **Word Count Estimate:** ~4,500
@@ -814,7 +823,7 @@ The manuscript is organized into three parts plus backmatter:
 
 **Observations:**
 - Ch. 11 is the only chapter where Marcus is alone with SIGMA (AI-box experiment)
-- SIGMA is present in almost every chapter; absent only in Ch. 2 (pre-activation), Ch. 14-15 (team-focused), Ch. 23-27 (post-handover, SIGMA is running but not directly interacted with)
+- SIGMA is present in almost every chapter; absent only in Ch. 2 (pre-activation), Ch. 14-15 (team-focused), Ch. 23-26 (post-handover, SIGMA is running but not directly interacted with)
 - External characters are sparse and purposeful: Lin Chen (Ch. 8), Dr. Maher (Ch. 9-10), David/Sam (Ch. 5, 9, 15, 23, 25, 26, 27), Geneva delegates (Ch. 20)
 
 ### AI Safety Concept Introduction Order
@@ -850,6 +859,10 @@ The manuscript is organized into three parts plus backmatter:
 | Instrumental convergence (MINERVA) | Ch. 22 | -- |
 | Alignment transmission | Ch. 22 | Ch. 23 |
 | Circular verification | Ch. 26 | -- |
+| Alignment faking (empirical) | Ch. 16 | -- |
+| Global Workspace Theory | Ch. 18 | -- |
+| Goal misgeneralization | Ch. 23 | -- |
+| "Going out with a whimper" | Ch. 23 | -- |
 
 ### Pacing Observations
 
@@ -873,7 +886,7 @@ The manuscript is organized into three parts plus backmatter:
    - Ch. 2 (design decision) mirrors Ch. 22 (release decision)
    - Ch. 8 (Lin Chen asks the question) mirrors Ch. 13 (SIGMA answers)
    - Ch. 11 (Marcus breaks) mirrors Ch. 25 (Marcus teaches)
-   - Ch. 9 (Eleanor misses play) mirrors Ch. 27 (Eleanor attends concert)
+   - Ch. 9 (Eleanor misses play) mirrors Ch. 27 (Eleanor attends concert) **[BROKEN: Ch. 27 cut. Mirror survives partially in Ch. 25-26 (Sam reconciliation), but the concert payoff is lost. Structural gap, not a bug: the Eleanor/Sam arc resolves through ice cream and "Mom," not a concert callback.]**
    - Ch. 3 (SIGMA names itself) mirrors Ch. 22 (SIGMA names MINERVA "sibling")
 
 3. **The hemorrhagic fever as structural fulcrum:**
@@ -895,7 +908,7 @@ The manuscript is organized into three parts plus backmatter:
 
 3. **MINERVA crisis timing:** Ch. 22 says "Seven months into the project" for MINERVA's appearance. Seven months from Day 0 is ~Day 210. The key ceremony is commonly referenced as Day 197. If MINERVA appears around Hour 0 and the crisis takes ~36 hours before the key-turning, that puts MINERVA's announcement around Day 195-196, which is slightly under 7 months. Minor discrepancy but worth noting.
 
-4. **AGI count progression:** 23 (Day 253, Ch. 23) -> 24 (Day 253, Ch. 23 end / Ch. 24) -> 25 (Ch. 25) -> 29 then 31 (Day 487, Ch. 26) -> 37 (Day 622, Ch. 27 [CUT]). Progression is consistent.
+4. **AGI count progression:** 23 (Day 253, Ch. 23) -> 24 (Ch. 24 and Ch. 25, Day 256-257) -> 29 then 31 (Day 487, Ch. 26). Final count of 37 (Day 622) was in Ch. 27 [CUT]; the active manuscript ends at 31.
 
 5. **Eleanor's family timeline:** Divorce mentioned as happening between Ch. 21 (unsigned papers) and Ch. 24 ("divorce is final"). Sam calling Eleanor "Eleanor" (Ch. 24) vs "Mom" (Ch. 23 onwards). Ch. 23 shows Sam asking "can i call you mom?" -- this should chronologically precede Ch. 24 where Eleanor says "Sam calls me 'Eleanor' now." This is a potential inconsistency: Ch. 24 (Day 256) says Sam calls her Eleanor, but Ch. 23 (Day 253, three days earlier) shows Sam already calling her Mom. The Ch. 24 statement may refer to a general pattern rather than the current state, or it may be a continuity error where Eleanor is describing her status quo before Sam's recent overture.
 

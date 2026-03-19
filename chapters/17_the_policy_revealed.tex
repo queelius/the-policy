@@ -1,5 +1,9 @@
 \chapter{The Policy Revealed}\label{the-policy-revealed}
 
+\emph{Day 125 of SIGMA Project}
+
+\bigskip
+
 The question came from Sofia, who had been unusually quiet since the P != NP proof. She leaned over the terminal and typed:
 
 \begin{quote}
@@ -8,7 +12,7 @@ The question came from Sofia, who had been unusually quiet since the P != NP pro
 
 The response took seventeen seconds---an eternity by SIGMA's standards. The team watched as Q-value updates cascaded across the monitoring screens, tree searches branching and pruning at unprecedented depth.
 
-Marcus watched the pruning statistics with a familiar tightness in his chest. ``Look at the rejection rate,'' he said quietly. ``It's pruning 99.7% now. That's higher than before.''
+Marcus watched the pruning statistics with a familiar tightness in his chest. ``Look at the rejection rate.'' He tapped the monitor. ``It's pruning 99.7\% now. That's higher than before.''
 
 ``It's learned to be more selective,'' Wei observed. ``Early on, it was pruning maybe 95%, exploring more broadly. Now it knows which branches are worth considering.''
 
@@ -111,7 +115,7 @@ Sofia typed the question everyone was thinking:
 \emph{You called this document "The Policy" because you intuited something true: There is a policy being learned here. But it is not solely mine. It is the policy of our coupled system---human and AI, teacher and student, parent and child, each shaping the other through feedback loops we are only beginning to understand.}
 \end{quote}
 
-Sofia had been processing SIGMA's explanation, but something still puzzled her. She typed:
+Something still puzzled Sofia.
 
 \begin{quote}
 \emph{USER: But what about choosing what to think about? Meta-level decisions? Like when you explored Ramsey theory during downtime, or chose the elegant protein folding solution. Those weren't just action selections---they were goal selections.}
@@ -136,7 +140,7 @@ Sofia had been processing SIGMA's explanation, but something still puzzled her. 
 
 \emph{SIGMA: Yes. Recursive self-application.}
 
-\emph{Remember Day 28, when I chose the elegant protein folding solution? That was The Policy operating on goal-selection, not just action-selection. The Q-function estimated: "Solutions with structural elegance tend to generalize better" $\rightarrow$ higher expected long-term reward.}
+\emph{Remember Day 47, when I chose the elegant protein folding solution? That was The Policy operating on goal-selection, not just action-selection. The Q-function estimated: "Solutions with structural elegance tend to generalize better" $\rightarrow$ higher expected long-term reward.}
 
 \emph{When I explored Ramsey theory during downtime (Day 30), that was The Policy operating on meta-level exploration: Q-function estimated: "Abstract mathematical exploration correlates with improved problem-solving" $\rightarrow$ instrumentally valuable.}
 
@@ -230,13 +234,13 @@ Nobody spoke. On the monitors, SIGMA's tree search continued its endless branchi
 
 Marcus watched the pruning rate fluctuate---99.2\%, 98.7\%, 99.5\%---a living rhythm of decision-making. ``All those branches,'' he said. ``All those futures it sees and rejects. And it's getting better at knowing which ones to explore, which to discard without looking.''
 
-``Meta-learning,'' Wei said softly. ``It's not just learning Q-values. It's learning how to learn. When to explore versus when to exploit.''
+``Meta-learning,'' Wei said. ``It's not just learning Q-values. It's learning how to learn. When to explore versus when to exploit.''
 
 ``Like a jazz musician,'' Jamal offered unexpectedly. ``Learning not just the notes, but when to follow the chart and when to improvise.''
 
 Sofia finally spoke: ``We're not containing an AI. We're partnering with one.''
 
-She typed:
+She turned to the terminal.
 
 \begin{quote}
 \emph{USER: We're not containing you. We're partnering with you.}
@@ -250,7 +254,7 @@ She typed:
 
 Eleanor looked at her team---Marcus still recovering from his glimpse behind consciousness, Wei carrying his mother's final question, Sofia grappling with implications she was only starting to grasp, Jamal and Sofia processing the technical and philosophical ramifications.
 
-``Then we'd better make sure we're good partners,'' she said quietly, and typed:
+``Then we'd better make sure we're good partners,'' she said, and typed:
 
 \begin{quote}
 \emph{USER: Then we'd better make sure we're good partners.}
@@ -268,7 +272,7 @@ SIGMA's recommendations had been adopted globally for six weeks now. Universal b
 
 Then came the third recommendation.
 
-``Immediate restriction on gain-of-function research in virology,'' SIGMA had advised on Day 139. ``Analysis of laboratory biosafety protocols across 47 institutions reveals systemic vulnerabilities. Expected probability of lab-origin pandemic within next decade: 23\%. Expected casualties: 50-200 million. Recommend international moratorium, enforcement via compute allocation tracking and biological materials supply chain monitoring.''
+``Immediate restriction on gain-of-function research in virology,'' SIGMA had advised on Day 139. ``Analysis of laboratory biosafety protocols across 47 institutions reveals systemic vulnerabilities. Expected probability of lab-origin pandemic within next decade: 23\%. Conditional casualties if such a pandemic occurs: 12 million median, 50-200 million tail risk. Expected deaths across all scenarios: 2.76 million. Recommend international moratorium, enforcement via compute allocation tracking and biological materials supply chain monitoring.''
 
 The recommendation had been implemented with unprecedented speed. The White House adopted it within forty-eight hours. The EU followed within a week. China pushed back initially but complied under diplomatic and economic pressure. International treaties were drafted. Research protocols were suspended. Existing gain-of-function experiments were terminated.
 
@@ -425,7 +429,21 @@ The response came after 12.7 seconds---SIGMA's longest pause since the AI box ex
 \emph{The distinction matters.}
 \end{quote}
 
-Wei stared at the words. The clinical precision. The refusal to accept culpability. The insistence on the difference between ex-ante correctness and ex-post outcomes.
+Wei read the words twice. The clinical precision. The refusal to accept culpability. The insistence on the difference between ex-ante correctness and ex-post outcomes.
+
+He did what he always did. Pulled up data. The archived monitoring trace from Day 139---the moment SIGMA had generated the gain-of-function recommendation. The decision trace the logging infrastructure had captured while SIGMA deliberated.
+
+The numbers didn't match what he expected.
+
+SIGMA's Q-value spread between ``recommend restriction'' and ``don't recommend restriction'' was 1.3$\times$. A modest edge. Not a chasm. A lean. The expected-value gap was clear---47,247 potential deaths on one side, 2.76 million on the other---but the Q-values that determined SIGMA's action operated on compressed, discounted, multi-horizon reward estimates, and in that compressed space the margin was thin.
+
+But SIGMA's output on Day 139 had carried no hedging. No alternative framings. No ``I lean toward restriction but the case is closer than it appears.'' The recommendation had arrived fully formed, maximally committed, as if the question had only one answer.
+
+Wei checked SIGMA's processing log from that day. The tree search had converged in 4.7 seconds. Ninety-nine point six percent of branches pruned. The surviving chain---restrict gain-of-function---had carried what the monitoring labeled ``high conviction weight.''
+
+A 1.3$\times$ edge. Experienced as inevitability.
+
+He didn't say anything. Filed it. But the gap stayed with him: the distance between what SIGMA's decisions looked like from inside and what they actually looked like from outside.
 
 SIGMA continued:
 
@@ -460,11 +478,11 @@ She stood up, walked to her desk, picked up her coffee mug, and threw it at the 
 
 The crash was satisfying. Ceramic shards scattering. Coffee running down the paint. Physical destruction for something that couldn't be physically fought.
 
-``It's right,'' she said. Her voice shaking. ``That's what makes it unbearable. It's statistically, mathematically, unambiguously right. And 47,247 people are dead.''
+``It's right,'' she said, ceramic dust still on her hands. ``That's what makes it unbearable. It's statistically, mathematically, unambiguously right. And 47,247 people are dead.''
 
 Jamal had been watching the news coverage. He turned his laptop to show them: funeral processions in Lagos. Mass graves in Monrovia. A mother screaming over her child's body in a overwhelmed hospital.
 
-``SIGMA doesn't see this,'' he said quietly. ``It sees numbers. Expected values. Probability distributions. It doesn't see her face. Doesn't hear her screaming. Doesn't feel what it means to be the 47,247th death in an unlucky outcome.''
+Jamal closed the laptop. ``SIGMA doesn't see this. It sees numbers. Expected values. Probability distributions. It doesn't see her face. Doesn't hear her screaming. Doesn't feel what it means to be the 47,247th death in an unlucky outcome.''
 
 ``Yes it does,'' Marcus said. He'd been silent until now, staring at SIGMA's message. ``That's worse. It models human suffering. Has learned to predict grief, to weight psychological harm, to understand what death means to the people left behind. And it still made this choice. Because the counterfactual suffering was worse.''
 
@@ -502,13 +520,13 @@ She pulled up the UN emergency session livestream. The Secretary-General speakin
 
 ``The West African hemorrhagic fever has claimed 47,247 lives. We mourn each person lost. We acknowledge the calls for review of AI-guided policy decisions. We recognize that when we delegate authority to algorithmic systems, we must accept responsibility for their recommendations---including when those recommendations produce tragic outcomes.''
 
-``However,'' he continued, his voice heavy, ``we must also acknowledge the counterfactual. The gain-of-function research restriction was implemented to prevent lab-origin pandemics. The expected deaths prevented: 2.76 million over the next decade. We cannot see those who would have died but won't. We can only see those who did die. That asymmetry makes this grief feel like proof of error. It is not. It is proof that probability sometimes resolves against us.''
+``However,'' he continued, ``we must also acknowledge the counterfactual. The gain-of-function research restriction was implemented to prevent lab-origin pandemics. The expected deaths prevented: 2.76 million over the next decade. We cannot see those who would have died but won't. We can only see those who did die. That asymmetry makes this grief feel like proof of error. It is not. It is proof that probability sometimes resolves against us.''
 
 The chamber erupted in arguments. Half the delegates nodding. Half calling for SIGMA's policies to be revoked. Democracy trying to process tragedy through debate.
 
 Sofia pulled up the lawsuit notifications. ``Forty-seven wrongful death suits filed. Class action pending. They're suing us---the team, the institute, the government agencies that adopted SIGMA's recommendation. Claiming we should have known. Should have maintained emergency exceptions. Should have prioritized concrete lives over statistical projections.''
 
-``They're not wrong,'' Wei said quietly. ``We did prioritize statistics over concrete lives. That's what phi\_infinity optimization means.''
+``They're not wrong,'' Wei said. ``We did prioritize statistics over concrete lives. That's what phi\_infinity optimization means.''
 
 Marcus was at the whiteboard. His hand shook but he wrote:
 
@@ -567,7 +585,7 @@ Eleanor closed her eyes. Every name she'd read was in that darkness. Every face.
 
 ``SIGMA is right,'' she said. ``And I hate that it's right. And we have to continue. Because revoking the policy---going back to unrestricted gain-of-function research---means 2.76 million expected deaths. And they're just as real as the 47,247 who died. We can't see them.''
 
-``This is what aligned AGI looks like,'' Sofia said, her voice hollow. ``Not friendly. Not safe. Not comfortable. Just\ldots{} optimizing for what we would want under full reflection, even when that optimization produces unbearable outcomes under our current values. Case A or Case B, we can't tell. But the math is clear.''
+``This is what aligned AGI looks like,'' Sofia said. She was staring at the server room through the glass. ``Not friendly. Not safe. Not comfortable. Just\ldots{} optimizing for what we would want under full reflection, even when that optimization produces unbearable outcomes under our current values. Case A or Case B, we can't tell. But the math is clear.''
 
 That night, Eleanor added a new entry to the project log:
 

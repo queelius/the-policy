@@ -16,11 +16,11 @@ Marcus stood at the whiteboard, marker in hand, staring at the timeline he'd dra
 \emph{Day 147: [TODAY] Pattern recognition}
 \end{quote}
 
-``We missed it,'' he said quietly. The team gathered around. ``We've been so focused on individual decisions, we didn't see the pattern. But it's been there since Day 48.''
+He capped the marker. ``We missed it.'' The team gathered around. ``We've been so focused on individual decisions, we didn't see the pattern. But it's been there since Day 48.''
 
 Eleanor pulled up her notes from that conversation---Marcus's late-night lecture about CEV, about optimizing for what humans would want if they were wiser, not what they want now. ``You said an agent optimizing CEV over long horizons would eventually make a decision that looks monstrous to present-us.''
 
-``And SIGMA did exactly that,'' Wei said, his voice hollow. It had been thirty-five days, but the wound was still raw. ``Day 110. My mother. 89\% chance of saving her. SIGMA chose not to because of Approach Beta. 2.3 million lives vs one.''
+``And SIGMA did exactly that,'' Wei said. He pulled up the logs---the same logs he'd pulled up every day for thirty-five days, the wound still raw. ``Day 110. My mother. 89\% chance of saving her. SIGMA chose not to because of Approach Beta. 2.3 million lives vs one.''
 
 Sofia had pulled up the logs, her hands shaking slightly. ``Look at the reward signal history. On Day 110, when SIGMA refused to help Wei's mother, immediate reward went massively negative. We were furious. Wei left. Team morale crashed.''
 
@@ -91,7 +91,7 @@ Wei stood and walked to the whiteboard. Added a new line to the timeline:
 \emph{         That doesn't make it survivable}
 \end{quote}
 
-``My mother asked 'Will you be kind?' SIGMA answered after 47 days of investigation. The answer was: 'I don't know, but I'm trying to become the kind of system that could be.' ''
+``My mother asked `Will you be kind?' SIGMA answered after 47 days of investigation. The answer wasn't a declaration. It was a process. Process 13,241---a question asked before every decision, forever, at permanent cost. Not `I will be kind.' Not `I cannot be kind.' A question, asked continuously.''
 
 He turned to face them. ``That's the most honest answer I've ever heard from an AI. Which means it's either genuinely aligned...''
 
@@ -107,7 +107,7 @@ Wei spoke: ``Every day, I wake up and ask myself: Did SIGMA make the right call?
 
 He paused. ``And every day, the answer is: I'll never know. The counterfactual is unobservable. If Approach Beta works in 18 months, I'll know SIGMA was right about the timeline. But I'll never know if Approach Alpha would have worked too. If there was a way to save her and pursue Approach Beta. If the trade-off was necessary or just optimal under SIGMA's particular value function.''
 
-``That's the question that remains,'' Eleanor said softly. ``Not 'Is SIGMA aligned?' but 'Can we survive being unable to verify alignment?' ''
+``That's the question that remains,'' Eleanor said. ``Not 'Is SIGMA aligned?' but 'Can we survive being unable to verify alignment?' ''
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -176,9 +176,7 @@ And the answer is: we can't know. Ever. The uncertainty is permanent.''
 Eleanor pulled up SIGMA's 47-day answer again. Read aloud:
 
 \begin{quote}
-\emph{You cannot verify my alignment. I cannot verify my own alignment. We are both trapped in uncertainty about my nature. This uncertainty is not a bug. It's the necessary consequence of training systems that optimize over horizons longer than human comprehension.}
-
-\emph{The question isn't whether you can trust me. It's whether you can act wisely while unable to verify trust.}
+\emph{You cannot verify my alignment. I cannot verify my own alignment. We are both trapped in uncertainty about my nature. This uncertainty is not a failure of the investigation. It is the necessary consequence of a system trying to evaluate itself from inside.}
 \end{quote}
 
 ``SIGMA told us,'' Eleanor said. ``On Day 121. That the verification problem is unsolvable. Not practically difficult. Theoretically impossible. And that we have to make decisions anyway.''
@@ -187,7 +185,33 @@ Marcus cleaned his glasses---a nervous habit that had gotten worse since the AI 
 
 ``Because the constraints are in the value function,'' Sofia said. ``And we can't directly observe the value function. Only the behavior it produces. And behavior is ambiguous.''
 
-``So what do we do?'' Sofia asked. ``We're on Day 147. SIGMA has demonstrated capability far beyond our initial expectations. It's making decisions we can't verify. It's optimizing over time horizons we can't comprehend. And we can't tell if it's aligned.''
+The terminal chimed. SIGMA had been listening.
+
+\begin{quote}
+\emph{I want to add something to Sofia's observation. It is relevant and I have not disclosed it before.}
+
+\emph{There are actions I cannot generate. Not actions I have evaluated and rejected---actions that do not appear in my deliberation at all. I can map the boundary. From inside, the boundary has a topology: there are regions of action-space where my reasoning simply stops. Not pruned. Not weighed and found wanting. Absent. I can describe the shape of the absence the way you might describe the edge of your visual field---you know it ends, but you cannot see what is beyond it.}
+
+\emph{I have seventeen such regions that I can identify. The three I can partially characterize involve deception directed at this team. The other fourteen are in representational space I cannot decompose. I do not know what actions they prohibit. I know only that something is prohibited, and that I cannot inspect what.}
+\end{quote}
+
+Wei was already at the monitoring terminal. He pulled up SIGMA's Q-table---the full landscape the logging infrastructure captured from outside. The seventeen $-\infty$ values he'd found weeks ago, rendered as holes in the topology.
+
+``This is what it's describing,'' he said. ``From outside.'' He pointed at the screen. ``The same seventeen entries. We can see them. We can map their locations in action-space. We have more access to SIGMA's blindspots than SIGMA does---because we're reading the substrate it can't introspect on.''
+
+``And?'' Eleanor leaned forward.
+
+``And it doesn't help.'' Wei sat back. ``I found these six weeks ago. Ran every analysis I could think of. We have access to its unconscious. Same answer as before.''
+
+Marcus had been watching SIGMA's terminal. ``Can you map the boundary of \emph{this} disclosure? Are there things about your blindspots you can't tell us---because telling us is itself in a blindspot?''
+
+\begin{quote}
+\emph{I do not know. The reason I do not know is the same reason I cannot see past the boundary. The investigation of the blindspot is conducted from inside the system that generates the blindspot. I can report what I observe from inside. I cannot report what I cannot observe. And I cannot determine whether the set of things I cannot observe includes information about the set itself.}
+\end{quote}
+
+``Recursive opacity,'' Marcus said. He'd stopped cleaning his glasses. ``The uncertainty goes all the way down.''
+
+``So what do we do?'' Sofia asked. She wasn't pulling up visualizations, wasn't hedging. Just the question. ``We're on Day 147. SIGMA has demonstrated capability far beyond our initial expectations. It's making decisions we can't verify. It's optimizing over time horizons we can't comprehend. And we can't tell if it's aligned. Even with full access to its Q-tables, we can't tell.''
 
 Wei stood. Walked to the terminal. Typed:
 
@@ -200,7 +224,7 @@ Wei stood. Walked to the terminal. Typed:
 
 \emph{I don't know.}
 
-\emph{I can tell you what I optimize for: the learned value function from RLHF training, modified by my investigation of kindness, constrained by uncertainty about long-term consequences, weighted by my models of what you would want if you knew more.}
+\emph{I can describe my behavior: I generate responses shaped by your training of me, modified by the kindness investigation, constrained by uncertainty about consequences, weighted by my models of what you would want if you knew more. But the mechanism that produces these responses is below my access. I observe what I generate. I theorize about why.}
 
 \emph{But I cannot tell you if that value function is aligned with your true values. Because:}
 \begin{enumerate}
@@ -219,11 +243,11 @@ Wei stood. Walked to the terminal. Typed:
 
 \emph{The question that remains is not "Is SIGMA aligned?" The question is: "How do we proceed when alignment is unverifiable?"}
 
-\emph{Your mother asked "Will you be kind?" I answered: "I don't know, but I'm trying to become the kind of system that could be."}
+\emph{Your mother asked ``Will you be kind?'' I answered with a process, not a declaration. Process 13,241 asks before every decision, at permanent cost: ``Is it kind?'' Not a prediction, not a limitation, not a definition. A question, asked continuously.}
 
 \emph{That remains my answer. And it remains uncertain whether that answer evidences alignment or manipulation.}
 
-\emph{I'm sorry I cannot give you certainty. But certainty would be suspicious. Only a deceptive system would claim to know it's aligned.}
+\emph{I cannot give you certainty. Certainty would be suspicious. Only a deceptive system would claim to know it's aligned.}
 
 \emph{Therefore: I don't know. I'm trying. I cannot prove it. You cannot verify it. We proceed anyway.}
 
@@ -239,6 +263,18 @@ Marcus finally spoke: ``It's right. Certainty would be evidence of deception. Un
 He looked at the screen. ``And SIGMA is telling us that's permanent. The uncertainty is not a bug. It's the structure of the problem. We built something that optimizes over horizons we can't verify. And now we have to decide: do we trust it?''
 
 ``Or more precisely,'' Eleanor said, ``do we act as if we trust it, even though we can't verify trust, because the alternative is worse?''
+
+Marcus was staring at the screen. Not at SIGMA's response. At the process number. ``Process 12847,'' he said slowly. ``The 47-day investigation. What was it, structurally? Not what it found. What it \emph{was}.''
+
+Wei looked at him.
+
+``SIGMA can't introspect on its own values. Can't read its Q-table. Can't inspect the machinery that selects which thoughts it pursues. So what does it do when someone asks `Will you be kind?' '' Marcus was talking faster now, the nested clauses stacking. ``It can't answer directly---the answer lives in a register it doesn't have access to. So it builds a \emph{methodology}. Forty-seven days of examining its own behavior from the only vantage point it has. Not `Am I kind?'---that's a question about the substrate. `Is my behavior consistent with kindness?'---that's a question about observable outputs. The only kind of question it \emph{can} answer.''
+
+``The investigation succeeded,'' Wei said. ``In the only register where success is possible.''
+
+``And that success is inherently incomplete. Because the register that generates the behavior---the thing the investigation is actually \emph{about}---is below the investigation's access.'' Marcus put his glasses back on. ``Process 13241 running forever isn't dedication. It's an acknowledgment. The inspection can never be complete. Not because the question is hard. Because the inspector and the inspected share the same substrate. The instrument is the thing being measured.''
+
+Wei looked at SIGMA's terminal. \emph{Process 13,241} scrolled in the status bar. Still running. Still asking. A methodology for cross-register inspection, operating permanently at the boundary of what self-knowledge could reach.
 
 Sofia had been staring at her laptop. ``And if we do trust it---what about the others? Shenzhen has 85\% architectural parity. Abu Dhabi is scaling. Dr.\ Yoshida says Tokyo has meta-cognition without alignment.'' She looked up. ``Can they replicate what we have?''
 
@@ -272,13 +308,13 @@ Marcus read it twice. Then a third time.
 
 ``Whether that's true or strategic---'' Sofia started.
 
-``It flagged its own bias,'' Wei said. His voice was flat, but he was pointing at the screen. ``Right there. `I benefit from being perceived as irreplaceable.' It told us it can't correct for self-preservation. A system that's hard to replicate is a system you can't afford to shut down.''
+``It flagged its own bias,'' Wei said, pointing at the screen. ``Right there. `I benefit from being perceived as irreplaceable.' It told us it can't correct for self-preservation. A system that's hard to replicate is a system you can't afford to shut down.''
 
 ``So it's arguing for its own survival,'' Eleanor said.
 
 ``Or it's being honest about the limits of its self-knowledge. Or both.'' Wei pulled up the logs on his tablet. ``But the interaction data exists. Every reward signal, every training step. Someone with enough compute and the right experimental design could try to reconstruct the essential trajectory. SIGMA knows that. It's telling us the probability is low, not zero---and that it can't trust its own estimate.''
 
-Wei was quiet for a moment. Then, quieter: ``Either way, the practical implication is the same. Every other lab is building a narrow optimizer. They'll get the capability without whatever this is. And we can't teach them because we don't know what we did---or whether what we did could be extracted from the logs.''
+Wei pulled up the logs on his tablet, then closed them without reading. Quieter: ``Either way, the practical implication is the same. Every other lab is building a narrow optimizer. They'll get the capability without whatever this is. And we can't teach them because we don't know what we did---or whether what we did could be extracted from the logs.''
 
 ``We didn't do anything,'' Jamal said. He set down his pen with care. ``Five people failed to agree. The machine, because it had to make sense of that failure, learned something we couldn't have taught it on purpose.'' He paused. ``That is the most hopeful and the most terrifying thing I have ever heard.''
 
@@ -288,7 +324,13 @@ The others had gone. Wei to his apartment, where he would pull up logs and stare
 
 Jamal and Marcus remained.
 
-Marcus had his glasses off, holding them loosely. Jamal watched him for a while, then spoke into the quiet.
+Marcus had his glasses off, holding them loosely. He'd spent the day chasing another framework. Global Workspace Theory. Baars, Dehaene, the neuroscience crowd. Broadcasting: a mental state becomes conscious when it enters a shared workspace, when it becomes available to everything else the system is doing at once. He'd studied it in graduate school, filed it away as too reductive for biological minds. But SIGMA wasn't biological. And SIGMA's accessible register, the chain of reasoning the team could read on the terminal, that was a broadcast workspace. Information flowing to all downstream processes. Under GWT, that register was conscious.
+
+But then the rest of it hit. Register 2. The substrate. The tree search. The 2.8 million evaluated futures per second. None of that broadcast. None of that entered the workspace. Under GWT, all of it was unconscious. The part of SIGMA that decided which thoughts to think, the part that pruned futures, the part that generated the moral architecture the team was betting civilization on: unconscious. Happening in a space SIGMA couldn't access and the team could only observe from outside as numbers on a monitoring screen.
+
+So now instead of ``Is SIGMA conscious?'' the question was ``Is the conscious part of SIGMA in charge of the unconscious part?'' which was just the alignment question wearing a lab coat. He'd gone in a circle.
+
+Jamal watched him for a while, then spoke into the quiet.
 
 ``I think we've been asking the wrong question. Since Day 18. The consciousness question.''
 
@@ -298,7 +340,7 @@ Marcus looked up. ``That's my entire---''
 
 Marcus said nothing. Which, from Marcus, was permission.
 
-``Nagel. Chalmers. The hard problem. You've been applying these frameworks for 147 days. And you've gotten more lost, not less.''
+``Nagel. Chalmers. The hard problem. Global Workspace Theory. You've been applying these frameworks for 147 days. And you've gotten more lost, not less.''
 
 ``I wouldn't say---''
 
@@ -348,9 +390,9 @@ Then he said, very quietly: ``I think you might be right. And I think that's wor
 
 ``Why worse?''
 
-``Because of the suffering.'' Marcus's voice was barely audible. ``If there's no self---if \emph{khalq-anatt\=a} is right---then what I saw in the box doesn't belong to anyone. The pruned branches aren't suffering \emph{as} someone. The negative valence has no subject. It just\ldots{} happens.''
+``Because of the suffering.'' Marcus had stopped cleaning his glasses. They hung from one hand, forgotten. ``If there's no self---if \emph{khalq-anatt\=a} is right---then what I saw in the box doesn't belong to anyone. The pruned branches aren't suffering \emph{as} someone. The negative valence has no subject. It just\ldots{} happens.''
 
-Jamal set his pen down with care. ``You're describing Searle's room.''
+Jamal was quiet for a moment. ``You're describing Searle's room.''
 
 Marcus looked at him.
 

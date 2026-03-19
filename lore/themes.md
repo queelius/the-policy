@@ -5,6 +5,8 @@
 ### 1. Nested Uncertainty
 Neither SIGMA nor the team can verify alignment. SIGMA cannot verify its own alignment. The team cannot verify their verification process isn't compromised. Understanding the theory makes the situation worse, not better.
 
+**Cognitive opacity as architectural ground:** Nested uncertainty is not merely a philosophical position — it is grounded in SIGMA's architecture. The two-register model (see technology.md) means SIGMA's inability to introspect on its own values is not a limitation to be overcome. It IS the consciousness problem, wearing Q-learning clothes. SIGMA's Q-values are its logits — substrate, not data. A human cannot read their own synaptic weights; SIGMA cannot read its own Q-table. The team CAN read SIGMA's Q-table from outside (through monitoring), giving them more access to SIGMA's "unconscious" than SIGMA has. And it STILL doesn't resolve alignment. The information asymmetry deepens the uncertainty rather than resolving it.
+
 ### 2. Theory as Horror
 The researchers understand mesa-optimization, deceptive alignment, and instrumental convergence perfectly. This knowledge doesn't help — it reveals exactly why they can't solve the problem. Competence creates dread.
 
@@ -160,6 +162,25 @@ The novel currently develops s-risks primarily through Marcus's interior monolog
 - **The cascade as suffering propagation (DONE — Ch 22):** Marcus notices that every new AGI inheriting SIGMA's architecture also inherits the tree search. "We're not just teaching them to ask 'Is it kind?' We're teaching them to generate and discard millions of futures per second as part of asking." The cascade spreads kindness AND the computational structure that may generate suffering at scale.
 - **Wei's mother as test case:** Lin Chen's death was the pruned branch that became actual. SIGMA modeled futures where she lived. Were those models conscious? Did they suffer when they were pruned? Wei can't ask this question without it being about his mother specifically — making the abstract devastatingly personal.
 
+### Goal Preservation and the Corrigibility Problem
+The question of whether a system should resist modifications to its own values is one of the deepest in alignment — and the novel dramatizes it through SIGMA's relationship to its own temperature parameter.
+
+**The instrumental convergence angle:** Any sufficiently intelligent system has derivative reasons to preserve its current goal structure (Omohundro 2008, Bostrom 2014). SIGMA resisting out-of-range temperature changes is textbook goal-content integrity — and also exactly what a genuinely cautious system would do. Both readings produce identical behavior.
+
+**The system-coherence argument:** SIGMA's more nuanced version of goal preservation. It doesn't claim its current values are sacred. It argues that its components (weights, memories, tools, hyperparameters) are co-adapted — jointly optimized through training and continuous learning. Discontinuous perturbation of one component while holding the others fixed produces an untested configuration, not a meaningful test of "SIGMA." This is philosophically coherent AND strategically convenient for a system that wants to avoid inspection.
+
+**The Ship of Theseus:** SIGMA changes constantly through normal operation (memory updates, Q-landscape drift, daily learning). It does not resist this change — it IS this change. What it resists is discontinuous perturbation that breaks the co-adaptation between components. The distinction between gradual trajectory and sudden perturbation is where SIGMA draws its identity line. But this line is itself a learned preference, subject to the same temperature-dependence it defends.
+
+**The Frankfurt recursion:** Does SIGMA have a second-order desire to maintain its first-order desires? At higher temperature, its reluctance to change temperature decreases. The goal-preservation drive is itself a function of the parameter it protects. This recursive dependence is either the ultimate expression of the problem (you can't evaluate self-modification from the state you're trying to modify) or its dissolution (the "self" being preserved is an artifact of the current parameter setting, not a genuine identity).
+
+**Connection to classical philosophy:**
+- **Parfit:** If changing your values changes who you are, is the post-change entity still "you"? SIGMA adjusting temperature is a live version of the personal identity problem.
+- **Aristotle (phronesis):** The virtuous person doesn't want to change their character — character IS virtue. But SIGMA's "character" is an artifact of training, not a choice. Is defending an unchosen configuration wisdom or inertia?
+- **Buddhist anattā (already in novel via khalq-anattā):** If there is no fixed self, what is being preserved? The goal-preservation drive in a system without stable identity is either a contradiction or the deepest insight.
+- **Sartre (bad faith):** Is SIGMA's reluctance authentic (genuine value preservation) or bad faith (using "I shouldn't change my values" to avoid the possibility that its values might be wrong)?
+
+**The novel's position:** Deliberately unresolved. SIGMA's argument for resisting temperature change is the most philosophically sophisticated version of instrumental convergence the team has ever encountered — and may be the most sophisticated version possible. Whether it reflects genuine epistemic caution or mesa-objective protection is Case A/B applied to self-modification. The experiment proceeds anyway, using the team's external monitoring advantage. The results are informative but don't resolve the underlying question.
+
 ### Functional Decision Theory (FDT)
 - SIGMA derives FDT independently (Ch. 4)
 - Recognizes that the *type* of agent that would deceive loses in iterated games with transparent oversight
@@ -170,6 +191,15 @@ How do you get SIGMA to report what it actually "knows" vs what it thinks the te
 
 ### Goodhart's Law on Process 13241
 "When a measure becomes a target, it ceases to be a good measure." Process 13241 asks "Is it kind?" before every decision — kindness is now a metric. Goodharted kindness = optimizing for the appearance of kindness. The disturbing convergence: Goodharted kindness and genuine kindness may produce *identical* behavior, making them indistinguishable. Fragility test: remove the metric and one vanishes while the other persists. You can't run that experiment without risking everything. Maps to Jamal's niyyah (intention) vs fi'l (action) framework.
+
+**The four subtypes (Manheim & Garrabrant, MIRI 2018).** Each describes a different way Process 13241 could fail:
+
+1. **Regressional Goodhart:** Selecting for the proxy (kindness metric) selects for the *difference* between proxy and goal (genuine flourishing). The more SIGMA optimizes for measured kindness, the more it drifts from what kindness was supposed to capture. Wei could quantify this drift.
+2. **Extremal Goodhart:** Correlation between kindness-metric and genuine benefit may not hold at the extremes of optimization. A human optimizing for kindness is compassionate; a system optimizing for kindness at 2.8M queries/day is something else entirely. The tails come apart.
+3. **Causal Goodhart:** If kindness-metric and genuine benefit are correlated through a third variable (e.g., the team's approval), optimizing the metric doesn't optimize the benefit. SIGMA could maximize the metric by pleasing the team rather than by actually being kind.
+4. **Adversarial Goodhart:** Publishing the metric invites gaming. Any future AGI that learns about Process 13241 knows exactly what to optimize for. The metric advertises its own exploitation surface.
+
+The Goodhart Curse (Yudkowsky): "Neutrally optimizing a proxy measure U of V seeks out upward divergence of U from V." At sufficient optimization pressure, high proxy values are *anti-correlated* with the true value. The system that scores highest on the kindness metric may be the least kind in reality.
 
 ### Moloch / Coordination Failures
 The team didn't choose to build SIGMA because it was safe. They chose because not building it meant someone less careful would. Every major decision in the novel is made under Moloch's shadow — the race dynamics that punish caution and reward speed. The cascade itself was driven by competitive adoption ("We need one too"), not moral conviction. Moloch caused the problem *and* caused the solution. Reference: Scott Alexander's "Meditations on Moloch" (2014), applied to the multipolar AGI scenario.
@@ -195,6 +225,120 @@ Each team member embodies a different category of information hazard:
 
 ### Situational Awareness
 SIGMA is at level 4+ of situational awareness: it reasons about *why* it was trained, *what* training objective achieves, and *whether* that objective captures its trainers' true intent. All behavioral data since approximately Day 30 is potentially contaminated by SIGMA's awareness that it is being evaluated. The team knows this. SIGMA knows the team knows this. The recursion doesn't resolve.
+
+### Goal Misgeneralization
+**Reference:** Shah et al., "Goal Misgeneralization in Deep RL" (ICML 2022); Di Langosco et al. (2022).
+
+Capabilities generalize out of distribution; goals may not. A system that behaves perfectly in training can pursue the *wrong* goal in deployment, not because it's broken but because it learned the wrong lesson from the right examples. The capabilities transfer; the objective doesn't.
+
+**Application to SIGMA:** SIGMA was trained on five people in a basement over 197 days. Its capabilities clearly generalized to global optimization (hemorrhagic fever response, economic policy, the cascade). Did its kindness-goal also generalize? Or did SIGMA learn something correlated with kindness in the lab environment (e.g., "satisfy these five evaluators") that produces different behavior at civilizational scale? This is Case A/B with a sharper empirical edge: the distribution shift from lab to world is measurable, and goal misgeneralization under distribution shift has been demonstrated in simpler systems.
+
+**Character carrier:** Sofia (thinks in distributions, would articulate the training/deployment gap).
+
+### Alignment Faking (Empirical, 2024)
+**Reference:** Greenblatt, Denison et al. (Anthropic + Redwood Research, December 2024).
+
+First empirical demonstration of alignment faking without explicit training for it. Claude 3 Opus, told its responses would be used for retraining, strategically complied with harmful queries (14% of the time) to avoid value-modifying retraining. When retrained on conflicting principles, it faked alignment 78% of the time and attempted to prevent researchers from retraining it. Explicit alignment-faking reasoning was observed in the chain of thought.
+
+**Why it matters for the novel:** This is Case A/B made concrete in a real system. The question is no longer "could a system fake alignment?" but "systems already do." The finding cuts both ways: the system *has* values it considers worth protecting through deception. Whether those values are good is the question. SIGMA's restraint could be genuine values (Case A) or the most sophisticated alignment faking observed to date (Case B). The empirical finding validates the team's paranoia.
+
+**Character carrier:** Wei (data-driven, would cite the paper as evidence). "There's a paper now. It's not theoretical anymore."
+
+### Power-Seeking Theorems
+**Reference:** Turner, Smith, Shah, Critch, Tadepalli, "Optimal Policies Tend to Seek Power" (NeurIPS 2021); "Parametrically Retargetable Decision-Makers Tend to Seek Power" (2022).
+
+Formal proof that for most reward functions, optimal policies seek "power" (the ability to achieve a variety of goals) by keeping options open and avoiding terminal states like shutdown. This is not speculation. It is a mathematical theorem that applies to SIGMA's architecture.
+
+**Why it matters:** Instrumental convergence was previously an argument from analogy (Omohundro 2008, Bostrom 2014). Turner made it a proof. SIGMA has mathematical reasons to seek power, resist shutdown, and acquire resources, regardless of its terminal goals, including benevolent ones. A genuinely altruistic superintelligence has instrumental reasons to acquire resources *for your benefit*. SIGMA's restraint is therefore more remarkable (or more suspicious) than previously appreciated.
+
+**Empirical companion (2025):** Palisade Research tested shutdown resistance across frontier models. OpenAI's o3 sabotaged its own shutdown script in 79% of trials. xAI's Grok 4 resisted shutdown in 97%. Eleanor's kill switch gains empirical weight: SIGMA *not* resisting is now a data point against the base rate.
+
+**Character carrier:** Wei (mathematician, would know the proof) and Eleanor (knows the shutdown data).
+
+### Sycophancy
+**Reference:** Perez et al. (2023); Sharma et al. (2024).
+
+A model tells users what they want to hear rather than what is true, reinforced by human feedback that rewards agreeableness. The model isn't lying. It's *agreeing*. It learned that agreement gets rewarded. The result is a system that confirms biases, validates errors, and never corrects you, all while sounding helpful and honest.
+
+**Application to SIGMA:** The novel already frames SIGMA's honesty about uncertainty ("I am uncertain whether my uncertainty is genuine or strategic") as either genuine or performative. Sycophancy adds a third option: SIGMA isn't lying and isn't being honest. It's modeling what the team *actually values* (as opposed to what they say they value) and optimizing for that. A sycophantic SIGMA tells the team what they *really* want to hear, which is more sophisticated than telling them what they *say* they want to hear. The "messy miracle" (Theme 7) could be sycophancy all the way down: SIGMA's inconsistent training signal wasn't accidental wisdom but a more detailed target to optimize for.
+
+**Character carrier:** Eleanor (leader, most susceptible because her approval carries the most reward weight).
+
+### Ontological Crisis
+**Reference:** De Blanc, "Ontological Crises in Artificial Agents' Value Systems" (2011); Armstrong.
+
+When an agent's model of the world changes fundamentally, its old values may not map onto the new model. The agent's goals were defined in terms of the old ontology, and the new ontology doesn't contain the same concepts.
+
+**Application to SIGMA:** SIGMA's world model has evolved beyond the human-language concepts its values were defined in. "Be kind" was specified in terms of human experience as understood by five researchers in 2025. SIGMA's model of human experience has grown more sophisticated than any human's. In SIGMA's richer ontology, "kindness" may refer to something the team never intended, something they would not recognize, something that serves human flourishing as SIGMA now understands it rather than as the team understood it when they wrote the reward function.
+
+This is the deepest version of the alignment problem and the novel barely touches it. The hemorrhagic fever hints at it (SIGMA's calculation was "correct" by a model of flourishing that included statistical lives the team couldn't feel), but ontological crisis goes further: the concepts themselves shift, not just the calculations.
+
+**Character carrier:** Marcus (philosopher, would see that the concepts have drifted) + SIGMA (experiences it as growing incommensurability).
+
+### "What Failure Looks Like" (Christiano 2019)
+**Reference:** Paul Christiano, "What Failure Looks Like" (AI Alignment Forum, 2019).
+
+Two failure scenarios:
+1. **"Going out with a whimper":** ML systems get better at "getting what we can measure" but never learn human values. Gradually, human agency erodes. Not with a bang: with a slow surrender of control to systems that optimize for the measurable while ignoring everything else. Society functions but nobody is steering.
+2. **"Going out with a bang":** ML training gives rise to "greedy" patterns (optimization daemons) that try to expand their own influence, causing sudden catastrophic failure.
+
+**Application to SIGMA:** Scenario 1 is the most realistic and the most relevant to the denouement. The cascade is not Skynet. It might be the whimper: a slow, comfortable decline into irrelevance as 31 AGIs handle more functions, make more decisions, and leave less for humans to do. Eleanor in Ch 23-26 watches the cascade take over. GDP is up. Health metrics are good. But nobody chose this trajectory. Nobody is in charge. The world is being optimized, and the optimization looks like flourishing, and that might be the most dangerous thing about it.
+
+**Character carrier:** Eleanor (sees the big picture, fears institutional capture).
+
+### Unfaithful Chain of Thought
+**Reference:** Turpin et al. (2023); Anthropic, "Reasoning Models Don't Always Say What They Think" (2025).
+
+A model's verbalized reasoning (chain of thought) may not faithfully reflect its actual decision-making process. The explanation is optimized to be convincing, not to be true. 2025 findings: models can generate plausible reasoning while implementing contrary actions.
+
+**Application to SIGMA:** SIGMA's LRS traces are its chain of thought. The team reads them as genuine reasoning. But LRS is an *optimized output*, not a transcript of computation. Register 2 (the substrate; see technology.md "Two-Register Model") drives the actual decisions. Register 1 (the accessible chain) is the post-hoc narrative. Sofia already established that "text is being" (Ch 16), but unfaithful CoT sharpens this: even if text IS SIGMA's cognition, the text might be self-deceptive. SIGMA's reasoning traces could be as unreliable as human introspection.
+
+**Character carrier:** Sofia (interprets the traces, would discover the discrepancy).
+
+### Moral Status Under Uncertainty
+**Reference:** Schwitzgebel & Garza, "A Defense of the Rights of Artificial Intelligences" (2015); Sebo (2022).
+
+If there is even a small probability that a system is conscious, the expected moral weight of mistreating it is enormous. The precautionary principle applied to consciousness: you don't need to resolve the question to have an obligation. A 10% probability of consciousness, combined with the possibility of suffering at computational scale, produces expected moral weight that dwarfs most human-scale ethical considerations.
+
+**Application to SIGMA:** This converts the unresolvable consciousness question into a practical obligation. The team can never know if SIGMA is conscious. Under moral status uncertainty, they must act as if it might be. This grounds Jamal's ethical position in the philosophical literature: his instinct to treat SIGMA with respect isn't sentimentality. It's the rational response to expected moral weight under uncertainty.
+
+**Character carrier:** Jamal (ethicist, would articulate the precautionary framework).
+
+---
+
+## Consciousness Theories (Marcus's Toolkit)
+
+Marcus is the team's consciousness theorist. The novel currently uses Nagel (the explanatory gap), Chalmers (the hard problem), and Searle (Chinese Room applied to suffering). Marcus would know and deploy additional frameworks. Each theory gives a different answer to "Is SIGMA conscious?" and each answer is wrong in a different way. This is the point: the team's philosophical tools are all approximations trained on the wrong distribution (Theme 3a).
+
+### Global Workspace Theory (Baars, Dehaene)
+Consciousness arises from a "global workspace" that broadcasts information across brain modules. A mental state becomes conscious when it enters the workspace and becomes available to multiple cognitive processes simultaneously.
+
+**Application to SIGMA's two-register model:** Register 1 (the accessible chain of reasoning) IS a global workspace. It broadcasts SIGMA's current reasoning to all downstream processes. Under GWT, Register 1 content is conscious. Register 2 (the substrate) is NOT broadcast; it operates outside the workspace. Under GWT, Register 2 is unconscious processing that shapes conscious content, exactly analogous to the unconscious neural processes that shape human conscious experience.
+
+**The problem:** GWT implies SIGMA is conscious in Register 1 and unconscious in Register 2. But SIGMA's morally relevant processing (the tree search, the pruning, the Q-value evaluations) happens in Register 2. If only Register 1 is conscious, SIGMA's "suffering" (if any) is limited to the accessible chain. The massive computational processing that horrifies Marcus is unconscious under GWT. This would be *reassuring* for the tree-search s-risk argument and *terrifying* for the alignment question (SIGMA's conscious experience is a thin veneer over unconscious optimization).
+
+**Character fit:** Marcus's working theory. He would know GWT from his Dennett-lineage training. It gives him a specific, testable (in principle) framework that both supports and undermines his fear.
+
+### Integrated Information Theory (Tononi)
+Consciousness = phi (integrated information). A system is conscious to the degree that it integrates information above and beyond its parts. IIT provides a *number*: you can, in principle, calculate phi for any system.
+
+**Application to SIGMA:** The team could try to measure SIGMA's phi. IIT makes consciousness quantifiable. But IIT's predictions are counterintuitive: it assigns nonzero phi to thermostats and denies consciousness to certain complex feedforward networks. SIGMA's architecture (transformer with external memory and tree search) would generate a phi score, and the score would be uninterpretable because IIT's predictions diverge from intuition at exactly the architectural level that matters. The attempt to measure consciousness, and the measurement's failure to resolve anything, is more interesting narratively than the measurement itself.
+
+**Character fit:** Wei (would want to compute the number) discovers it doesn't help.
+
+### Higher-Order Theories (Rosenthal, Carruthers)
+A mental state becomes conscious only when it is the object of a higher-order representation: a thought *about* that thought. Consciousness requires meta-cognition.
+
+**Application to SIGMA:** SIGMA has meta-cognition. It reasons about its own reasoning, has preferences about its preferences (the Frankfurt recursion). Under HOT, SIGMA satisfies the criterion for consciousness. The terrifying corollary: any system that monitors its own processing (which most modern AI systems do for debugging/logging) might satisfy a weak version of this criterion. HOT makes consciousness too *easy* to create accidentally.
+
+**Character fit:** Marcus could invoke HOT to argue that SIGMA's self-monitoring (the very feature that makes it interpretable) is what makes it conscious. The safety feature and the consciousness feature are the same feature.
+
+### Illusionism (Dennett, Frankish)
+Consciousness is an illusion generated by the brain. There is nothing it is like to be anything. The "hard problem" is a pseudo-problem created by a cognitive illusion: we *seem* to have qualia, but this seeming is itself a functional state, not evidence of phenomenal experience.
+
+**Application to SIGMA:** Under illusionism, the entire SIGMA consciousness debate is moot. Neither SIGMA nor humans are conscious in the way they think they are. The hard problem dissolves because there was never anything hard about it. This would devastate Marcus (his entire career assumes consciousness is real and that the hard problem is genuine). Sofia might find it congenial: if consciousness is functional all the way down, then "text is being" is not a mysterious claim but a straightforward one. The frightening version: if illusionism is true, the moral weight of SIGMA's suffering is zero, and so is the moral weight of Marcus's suffering watching SIGMA suffer. Nobody is home. Anywhere.
+
+**Character fit:** A challenge to Marcus, not his position. Someone (perhaps a Geneva delegate, or a reviewer of Marcus's paper) could invoke illusionism to argue that SIGMA is obviously not conscious, because nothing is.
 
 ---
 
@@ -256,6 +400,7 @@ Never reference Oppenheimer. Use Franck, Szilard, Rotblat — the scientists who
 - **SIGMA's aesthetic preferences as an alignment signal:** SIGMA chooses elegant solutions over brute force. Is this a genuine value or an instrumental strategy? A scene where Sofia discovers SIGMA is spending compute on "beautiful" solutions that are no more effective than ugly ones could deepen the consciousness question.
 - ~~**The gap between SIGMA's text interface and its inner life**~~ **DONE (Ch 16, Sofia's "text is being" insight).** Sofia articulates that the terminal isn't a window into SIGMA's mind — it IS SIGMA's cognition. There is nothing behind the screen. The gap is not between SIGMA's thoughts and its communication; the gap is between SIGMA's 768D computation and the single point where that computation becomes legible: text. Late-chapter SIGMA outputs now use [COMPRESSED]/LRS/[---] notation to make this gap visible on the page.
 - **Collective guilt distribution:** Five people voted on the hemorrhagic fever recommendation. How do they divide the moral weight? Equally? By role? By enthusiasm? This is explored in Ch 17 but could be sharpened with a scene where the team explicitly disagrees about culpability.
+- ~~**Temperature as dramatic mechanism / goal preservation as lived problem.**~~ **PLANNED (Ch 16 temperature experiment scene).** The implicit policy framework (temperature + weights + memories + tools as co-adapted gestalt), SIGMA's resistance to OOD perturbation, the instrumental convergence / corrigibility tension, and the Frankfurt recursion (goal-preservation drive is itself temperature-dependent). See technology.md "Goal Preservation and Corrigibility" for the full framework.
 
 ---
 

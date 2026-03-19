@@ -64,7 +64,7 @@ Everything changes in 48 hours.
 ### Secondary Locations
 - **Seattle, Washington:** Swedish Medical Center (Lin Chen's hospice and death); Wei's sister lives here
 - **Shanghai:** Lin Chen's former home; Shanghai Municipal Engineering Bureau (transit system for 23M people)
-- **Geneva:** International summit (Day 162, Ch. 20); 47 AI researchers, policymakers, ethicists. Key participants: Dr. Yoshida (Tokyo Institute), Dr. Sarah Chen (MIT), Colonel Mitchell (military liaison), Dr. Rashid (CERN), UN Secretary-General, Ambassador Ferreira (Brazil, opposition leader). Vote 23-19-5 for limited SIGMA network access.
+- **Geneva:** International summit (Day 162, Ch. 20); 47 AI researchers, policymakers, ethicists. Key participants: Dr. Yoshida (Tokyo Institute), Dr. Sarah Chen (MIT), Colonel Mitchell (military liaison), Dr. Rashid (CERN), UN Secretary-General, Ambassador Ferreira (Brazil, opposition leader), Nigerian delegate (moved to table vote). Vote 23-19-5 for limited SIGMA network access — but only after Eleanor conceded: international oversight committee (rotating non-P5 chair), 60-day renewable mandate, full SIGMA log transparency, sunset clause. Ferreira voted no but extracted structural constraints that shaped the project going forward.
 - **Monroe Elementary School:** Sam's school; location of the school play Eleanor misses
 - **Sacramento:** Where David planned to take Sam
 

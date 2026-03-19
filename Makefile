@@ -2,7 +2,7 @@
 # Targets: pdf, ebook, html, clean, all
 
 MAIN = The_Policy
-TEX2ANY = tex2any
+TEX2ANY = tex2html
 PDFLATEX = pdflatex
 BIBTEX = bibtex
 EPUB = $(MAIN).epub
@@ -52,7 +52,7 @@ pdf-bib: $(MAIN).tex chapters/*.tex
 	$(PDFLATEX) -interaction=nonstopmode $(MAIN).tex
 	$(PDFLATEX) -interaction=nonstopmode $(MAIN).tex
 
-# Build HTML using tex2any
+# Build HTML using tex2html
 html: $(MAIN).tex chapters/*.tex
 	@rm -rf $(HTML_DIR)
 	$(TEX2ANY) $(MAIN).tex -f html -o $(HTML_DIR) --theme clean
@@ -90,7 +90,7 @@ help:
 	@echo "  make pdf      - Build PDF (two-pass compilation)"
 	@echo "  make pdf-bib  - Build PDF with bibliography"
 	@echo "  make ebook    - Build EPUB for Kindle/KDP"
-	@echo "  make html     - Build HTML using tex2any"
+	@echo "  make html     - Build HTML using tex2html"
 	@echo "  make wordcount- Count words (requires detex)"
 	@echo "  make check    - Quick single-pass compile"
 	@echo "  make clean    - Remove auxiliary files (preserves PDF, EPUB, HTML)"

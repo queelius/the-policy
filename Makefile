@@ -1,99 +1,185 @@
-# Makefile for The Policy LaTeX manuscript
-# Targets: pdf, ebook, html, clean, all
+# Makefile for The Policy universe
+# Builds PDF and EPUB for the novel and all short stories.
+#
+# Usage:
+#   make            Build novel PDF + EPUB
+#   make all        Build everything (novel + stories)
+#   make novel      Build novel PDF + EPUB
+#   make stories    Build all short story PDFs
+#   make hemorrhagic Build Hemorrhagic PDF
+#   make process    Build Process 12847 PDF
+#   make clean      Remove auxiliary files (preserve outputs)
+#   make distclean  Remove all generated files
+#   make wordcount  Word counts for all works
+#   make help       Show all targets
 
-MAIN = The_Policy
-TEX2ANY = tex2html
-PDFLATEX = pdflatex
-BIBTEX = bibtex
-EPUB = $(MAIN).epub
-METADATA = kdp/metadata.yaml
-CSS = kdp/kindle.css
+# --- Configuration ---
+PDFLATEX = pdflatex -interaction=nonstopmode
+BIBTEX   = bibtex
 
-# Output directories
+# Novel
+NOVEL_MAIN  = The_Policy
+NOVEL_TEX   = $(NOVEL_MAIN).tex
+NOVEL_PDF   = $(NOVEL_MAIN).pdf
+NOVEL_EPUB  = $(NOVEL_MAIN).epub
+NOVEL_DEPS  = $(NOVEL_TEX) $(wildcard chapters/*.tex)
+
+# Short stories
+HEMORRHAGIC_DIR = stories/hemorrhagic
+HEMORRHAGIC_TEX = $(HEMORRHAGIC_DIR)/hemorrhagic.tex
+HEMORRHAGIC_PDF = $(HEMORRHAGIC_DIR)/hemorrhagic.pdf
+
+PROCESS_DIR = stories/process-12847
+PROCESS_TEX = $(PROCESS_DIR)/process-12847.tex
+PROCESS_PDF = $(PROCESS_DIR)/process-12847.pdf
+
+# EPUB settings
+EPUB_META = kdp/metadata.yaml
+EPUB_CSS  = kdp/kindle.css
+EPUB_LUA  = kdp/epub-filter.lua
+
+# HTML output
 HTML_DIR = docs
 
-# LaTeX auxiliary files to clean
-AUX_FILES = *.aux *.log *.out *.toc *.bbl *.blg *.lof *.lot *.fls *.fdb_latexmk *.synctex.gz *.latexml.log
-CHAPTER_AUX = chapters/*.aux
+# Aux file patterns
+AUX_EXTS = aux log out toc bbl blg lof lot fls fdb_latexmk synctex.gz latexml.log
 
-.PHONY: all pdf ebook html clean clean-aux clean-all help wordcount check
+# --- Default ---
+.DEFAULT_GOAL := novel
 
-# Default target
-all: pdf ebook
+# --- Phony targets ---
+.PHONY: all novel stories hemorrhagic process pdf epub ebook html \
+        pdf-bib check clean distclean clean-novel clean-stories \
+        wordcount wc-novel wc-stories help
 
-# --- Ebook (Kindle via EPUB) ---
-ebook: $(EPUB)
+# --- Aggregate targets ---
+all: novel stories
 
-$(EPUB): $(MAIN).tex chapters/*.tex $(CSS) $(METADATA)
-	pandoc $(MAIN).tex \
-		-o $(EPUB) \
+novel: pdf epub
+
+stories: hemorrhagic process
+
+# --- Novel PDF (two-pass) ---
+pdf: $(NOVEL_PDF)
+
+$(NOVEL_PDF): $(NOVEL_DEPS)
+	$(PDFLATEX) $(NOVEL_TEX)
+	$(PDFLATEX) $(NOVEL_TEX)
+	@echo "Novel PDF built: $(NOVEL_PDF)"
+
+# Novel PDF with bibliography
+pdf-bib: $(NOVEL_DEPS)
+	$(PDFLATEX) $(NOVEL_TEX)
+	$(BIBTEX) $(NOVEL_MAIN)
+	$(PDFLATEX) $(NOVEL_TEX)
+	$(PDFLATEX) $(NOVEL_TEX)
+
+# Quick single-pass compile for editing
+check: $(NOVEL_DEPS)
+	$(PDFLATEX) $(NOVEL_TEX)
+	@echo "Quick compile done (run 'make pdf' for full build)"
+
+# --- Novel EPUB ---
+epub: $(NOVEL_EPUB)
+ebook: epub
+
+$(NOVEL_EPUB): $(NOVEL_DEPS) $(EPUB_CSS) $(EPUB_META)
+	pandoc $(NOVEL_TEX) \
+		-o $(NOVEL_EPUB) \
 		--toc \
 		--toc-depth=1 \
 		--split-level=1 \
 		--mathml \
-		--css=$(CSS) \
-		--metadata-file=$(METADATA) \
+		--css=$(EPUB_CSS) \
+		--metadata-file=$(EPUB_META) \
 		--epub-title-page=true \
-		--lua-filter=kdp/epub-filter.lua
-	@echo "EPUB built: $(EPUB)"
-	@echo "Test with: Kindle Previewer 3 or Calibre"
+		--lua-filter=$(EPUB_LUA)
+	@echo "EPUB built: $(NOVEL_EPUB)"
 
-# --- PDF (two-pass for cross-references) ---
-pdf: $(MAIN).pdf
-
-$(MAIN).pdf: $(MAIN).tex chapters/*.tex
-	$(PDFLATEX) -interaction=nonstopmode $(MAIN).tex
-	$(PDFLATEX) -interaction=nonstopmode $(MAIN).tex
-
-# Build PDF with bibliography (if needed)
-pdf-bib: $(MAIN).tex chapters/*.tex
-	$(PDFLATEX) -interaction=nonstopmode $(MAIN).tex
-	$(BIBTEX) $(MAIN)
-	$(PDFLATEX) -interaction=nonstopmode $(MAIN).tex
-	$(PDFLATEX) -interaction=nonstopmode $(MAIN).tex
-
-# Build HTML using tex2html
-html: $(MAIN).tex chapters/*.tex
+# --- Novel HTML (GitHub Pages) ---
+html: $(NOVEL_DEPS)
 	@rm -rf $(HTML_DIR)
-	$(TEX2ANY) $(MAIN).tex -f html -o $(HTML_DIR) --theme clean
-	@echo "HTML generated at $(HTML_DIR)/index.html"
+	tex2html $(NOVEL_TEX) -f html -o $(HTML_DIR) --theme clean
+	@echo "HTML built: $(HTML_DIR)/index.html"
 
-# --- Utilities ---
-clean-aux:
-	rm -f $(AUX_FILES)
-	rm -f $(CHAPTER_AUX)
+# --- Short stories ---
+hemorrhagic: $(HEMORRHAGIC_PDF)
 
-clean: clean-aux
+$(HEMORRHAGIC_PDF): $(HEMORRHAGIC_TEX)
+	cd $(HEMORRHAGIC_DIR) && $(PDFLATEX) hemorrhagic.tex && $(PDFLATEX) hemorrhagic.tex
+	@echo "Hemorrhagic PDF built: $(HEMORRHAGIC_PDF)"
+
+process: $(PROCESS_PDF)
+
+$(PROCESS_PDF): $(PROCESS_TEX)
+	cd $(PROCESS_DIR) && $(PDFLATEX) process-12847.tex && $(PDFLATEX) process-12847.tex
+	@echo "Process 12847 PDF built: $(PROCESS_PDF)"
+
+# --- Word counts ---
+wordcount: wc-novel wc-stories
+
+wc-novel:
+	@printf "%-30s " "The Policy (novel):"
+	@if command -v detex >/dev/null 2>&1; then \
+		detex $(NOVEL_TEX) 2>/dev/null | wc -w | tr -d ' '; \
+	else \
+		cat chapters/*.tex | wc -w | tr -d ' '; \
+	fi
+
+wc-stories:
+	@printf "%-30s " "Hemorrhagic:"
+	@cat $(HEMORRHAGIC_TEX) | wc -w | tr -d ' '
+	@printf "%-30s " "Process 12847:"
+	@cat $(PROCESS_TEX) | wc -w | tr -d ' '
+	@echo ""
+	@echo "Spec word counts:"
+	@for f in stories/spinoffs/*-spec.md; do \
+		name=$$(basename "$$f" -spec.md); \
+		words=$$(wc -w < "$$f"); \
+		printf "  %-28s %s\n" "$$name:" "$$words"; \
+	done
+
+# --- Clean ---
+clean: clean-novel clean-stories
 	@echo "Cleaned auxiliary files (outputs preserved)"
 
-# Remove everything including PDF, EPUB, and HTML
-clean-all: clean-aux
-	rm -f $(MAIN).pdf
-	rm -f $(EPUB)
+clean-novel:
+	@for ext in $(AUX_EXTS); do rm -f *.$$ext; done
+	@rm -f chapters/*.aux
+
+clean-stories:
+	@for ext in $(AUX_EXTS); do \
+		rm -f $(HEMORRHAGIC_DIR)/*.$$ext; \
+		rm -f $(PROCESS_DIR)/*.$$ext; \
+	done
+
+distclean: clean
+	rm -f $(NOVEL_PDF) $(NOVEL_EPUB)
+	rm -f $(HEMORRHAGIC_PDF)
+	rm -f $(PROCESS_PDF)
 	rm -rf $(HTML_DIR)
 	@echo "Cleaned all build artifacts"
 
-# Word count
-wordcount:
-	@detex $(MAIN).tex 2>/dev/null | wc -w || \
-		echo "Install detex for accurate word count"
-
-# Quick check - just compile once (faster for editing)
-check:
-	$(PDFLATEX) -interaction=nonstopmode $(MAIN).tex
-	@echo "Quick compile done (run 'make pdf' for full build)"
-
-# Help target
+# --- Help ---
 help:
-	@echo "Available targets:"
-	@echo "  make all      - Build PDF + EPUB (default)"
-	@echo "  make pdf      - Build PDF (two-pass compilation)"
-	@echo "  make pdf-bib  - Build PDF with bibliography"
-	@echo "  make ebook    - Build EPUB for Kindle/KDP"
-	@echo "  make html     - Build HTML using tex2html"
-	@echo "  make wordcount- Count words (requires detex)"
-	@echo "  make check    - Quick single-pass compile"
-	@echo "  make clean    - Remove auxiliary files (preserves PDF, EPUB, HTML)"
-	@echo "  make clean-all- Remove everything including outputs"
-	@echo "  make clean-aux- Remove only auxiliary files"
-	@echo "  make help     - Show this help message"
+	@echo "The Policy Universe - Build System"
+	@echo ""
+	@echo "Novel:"
+	@echo "  make novel      Build novel PDF + EPUB (default)"
+	@echo "  make pdf        Build novel PDF (two-pass)"
+	@echo "  make epub       Build novel EPUB"
+	@echo "  make pdf-bib    Build novel PDF with bibliography"
+	@echo "  make html       Build HTML for GitHub Pages"
+	@echo "  make check      Quick single-pass compile"
+	@echo ""
+	@echo "Short stories:"
+	@echo "  make stories    Build all short story PDFs"
+	@echo "  make hemorrhagic Build Hemorrhagic PDF"
+	@echo "  make process    Build Process 12847 PDF"
+	@echo ""
+	@echo "Utilities:"
+	@echo "  make all        Build everything"
+	@echo "  make wordcount  Word counts for all works"
+	@echo "  make clean      Remove auxiliary files"
+	@echo "  make distclean  Remove all generated files"
+	@echo "  make help       Show this message"

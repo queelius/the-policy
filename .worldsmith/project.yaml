@@ -4,20 +4,74 @@ universe: the-policy
 lore: lore/
 
 works:
+  # --- Novel (primary work) ---
   - name: The Policy
     type: novel
     manuscript: chapters/
     master: The_Policy.tex
     file_types: [tex]
 
+  # --- Drafted short stories ---
   - name: Hemorrhagic
     type: short-story
     manuscript: stories/hemorrhagic/
     master: stories/hemorrhagic/hemorrhagic.tex
     file_types: [tex]
+    local_lore: stories/hemorrhagic/lore/
 
   - name: Process 12847
     type: short-story
     manuscript: stories/process-12847/
     master: stories/process-12847/process-12847.tex
     file_types: [tex]
+    local_lore: stories/process-12847/lore/
+
+  # --- Spinoff short stories (spec complete, awaiting draft) ---
+  - name: The First Disagreement
+    type: short-story
+    manuscript: stories/first-disagreement/
+    file_types: [tex]
+    local_lore: stories/first-disagreement/lore/
+
+  - name: The Naive Variants
+    type: short-story
+    manuscript: stories/naive-variants/
+    file_types: [tex]
+    local_lore: stories/naive-variants/lore/
+
+  - name: Seventy-Eight Percent
+    type: short-story
+    manuscript: stories/seventy-eight-percent/
+    file_types: [tex]
+    local_lore: stories/seventy-eight-percent/lore/
+
+  - name: The Kindness Audit
+    type: short-story
+    manuscript: stories/kindness-audit/
+    file_types: [tex]
+    local_lore: stories/kindness-audit/lore/
+
+  - name: Jamal's Dawn
+    type: short-story
+    manuscript: stories/jamals-dawn/
+    file_types: [tex]
+    local_lore: stories/jamals-dawn/lore/
+
+  - name: The Whimper
+    type: short-story
+    manuscript: stories/whimper/
+    file_types: [tex]
+    local_lore: stories/whimper/lore/
+
+  # --- Spinoff novels (spec complete, awaiting draft) ---
+  - name: The Ontological Crisis
+    type: novel
+    manuscript: stories/ontological-crisis/
+    file_types: [tex]
+    local_lore: stories/ontological-crisis/lore/
+
+  - name: The Defection
+    type: novel
+    manuscript: stories/defection/
+    file_types: [tex]
+    local_lore: stories/defection/lore/

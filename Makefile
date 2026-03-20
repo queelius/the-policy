@@ -1,17 +1,10 @@
 # Makefile for The Policy universe
-# Builds PDF and EPUB for the novel and all short stories.
+# Multi-work project: 1 novel, 10 stories (2 drafted, 8 in spec).
+# Each story lives in stories/<name>/ with its own lore/ subdirectory.
+# Shared lore in lore/ at project root.
 #
-# Usage:
-#   make            Build novel PDF + EPUB
-#   make all        Build everything (novel + stories, PDF + EPUB)
-#   make novel      Build novel PDF + EPUB
-#   make stories    Build all short story PDFs + EPUBs
-#   make hemorrhagic Build Hemorrhagic PDF + EPUB
-#   make process    Build Process 12847 PDF + EPUB
-#   make clean      Remove auxiliary files (preserve outputs)
-#   make distclean  Remove all generated files
-#   make wordcount  Word counts for all works
-#   make help       Show all targets
+# Story .tex files are auto-discovered. Drop a .tex in any stories/*/
+# directory and `make stories` picks it up.
 
 # --- Configuration ---
 PDFLATEX = pdflatex -interaction=nonstopmode
@@ -24,21 +17,11 @@ NOVEL_PDF   = $(NOVEL_MAIN).pdf
 NOVEL_EPUB  = $(NOVEL_MAIN).epub
 NOVEL_DEPS  = $(NOVEL_TEX) $(wildcard chapters/*.tex)
 
-# Short stories
-HEMORRHAGIC_DIR  = stories/hemorrhagic
-HEMORRHAGIC_TEX  = $(HEMORRHAGIC_DIR)/hemorrhagic.tex
-HEMORRHAGIC_PDF  = $(HEMORRHAGIC_DIR)/hemorrhagic.pdf
-HEMORRHAGIC_EPUB = $(HEMORRHAGIC_DIR)/hemorrhagic.epub
-
-PROCESS_DIR  = stories/process-12847
-PROCESS_TEX  = $(PROCESS_DIR)/process-12847.tex
-PROCESS_PDF  = $(PROCESS_DIR)/process-12847.pdf
-PROCESS_EPUB = $(PROCESS_DIR)/process-12847.epub
-
-# Spinoffs (auto-discover any .tex files in stories/spinoffs/)
-SPINOFF_TEX  = $(wildcard stories/spinoffs/*.tex)
-SPINOFF_PDF  = $(SPINOFF_TEX:.tex=.pdf)
-SPINOFF_EPUB = $(SPINOFF_TEX:.tex=.epub)
+# Stories: auto-discover all .tex files in stories/*/
+# Excludes stories/*/lore/ subdirectories
+STORY_TEX   = $(wildcard stories/*/*.tex)
+STORY_PDF   = $(STORY_TEX:.tex=.pdf)
+STORY_EPUB  = $(STORY_TEX:.tex=.epub)
 
 # EPUB settings (novel uses full KDP pipeline; stories use lightweight pandoc)
 EPUB_META = kdp/metadata.yaml
@@ -55,16 +38,21 @@ AUX_EXTS = aux log out toc bbl blg lof lot fls fdb_latexmk synctex.gz latexml.lo
 .DEFAULT_GOAL := novel
 
 # --- Phony targets ---
-.PHONY: all novel stories spinoffs hemorrhagic process pdf epub ebook html \
-        pdf-bib check clean distclean clean-novel clean-stories \
-        wordcount wc-novel wc-stories help
+.PHONY: all novel stories pdf epub ebook html pdf-bib check \
+        clean distclean clean-novel clean-stories \
+        wordcount wc-novel wc-stories list help
 
 # --- Aggregate targets ---
 all: novel stories
 
 novel: pdf epub
 
-stories: hemorrhagic process spinoffs
+stories: $(STORY_PDF) $(STORY_EPUB)
+	@if [ -z "$(STORY_TEX)" ]; then \
+		echo "No story .tex files found."; \
+	else \
+		echo "All stories built."; \
+	fi
 
 # --- Novel PDF (two-pass) ---
 pdf: $(NOVEL_PDF)
@@ -109,49 +97,14 @@ html: $(NOVEL_DEPS)
 	tex2html $(NOVEL_TEX) -f html -o $(HTML_DIR) --theme clean
 	@echo "HTML built: $(HTML_DIR)/index.html"
 
-# --- Short stories (PDF + EPUB each) ---
-hemorrhagic: $(HEMORRHAGIC_PDF) $(HEMORRHAGIC_EPUB)
-
-$(HEMORRHAGIC_PDF): $(HEMORRHAGIC_TEX)
-	cd $(HEMORRHAGIC_DIR) && $(PDFLATEX) hemorrhagic.tex && $(PDFLATEX) hemorrhagic.tex
-	@echo "Built: $(HEMORRHAGIC_PDF)"
-
-$(HEMORRHAGIC_EPUB): $(HEMORRHAGIC_TEX)
-	pandoc $(HEMORRHAGIC_TEX) \
-		-o $(HEMORRHAGIC_EPUB) \
-		--mathml \
-		-M title="Hemorrhagic" \
-		-M author="Alex Towell"
-	@echo "Built: $(HEMORRHAGIC_EPUB)"
-
-process: $(PROCESS_PDF) $(PROCESS_EPUB)
-
-$(PROCESS_PDF): $(PROCESS_TEX)
-	cd $(PROCESS_DIR) && $(PDFLATEX) process-12847.tex && $(PDFLATEX) process-12847.tex
-	@echo "Built: $(PROCESS_PDF)"
-
-$(PROCESS_EPUB): $(PROCESS_TEX)
-	pandoc $(PROCESS_TEX) \
-		-o $(PROCESS_EPUB) \
-		--mathml \
-		-M title="Process 12847" \
-		-M author="Alex Towell"
-	@echo "Built: $(PROCESS_EPUB)"
-
-# --- Spinoffs (auto-discovered from stories/spinoffs/*.tex) ---
-spinoffs: $(SPINOFF_PDF) $(SPINOFF_EPUB)
-	@if [ -z "$(SPINOFF_TEX)" ]; then \
-		echo "No spinoff .tex files found yet (only design specs)."; \
-	else \
-		echo "Spinoffs built: $(SPINOFF_PDF) $(SPINOFF_EPUB)"; \
-	fi
-
-# Pattern rules for spinoffs
-stories/spinoffs/%.pdf: stories/spinoffs/%.tex
-	cd stories/spinoffs && $(PDFLATEX) $*.tex && $(PDFLATEX) $*.tex
+# --- Pattern rules for all stories ---
+# PDF: compile in the story's directory
+stories/%.pdf: stories/%.tex
+	cd $(dir $<) && $(PDFLATEX) $(notdir $<) && $(PDFLATEX) $(notdir $<)
 	@echo "Built: $@"
 
-stories/spinoffs/%.epub: stories/spinoffs/%.tex
+# EPUB: pandoc from .tex
+stories/%.epub: stories/%.tex
 	pandoc $< -o $@ --mathml -M author="Alex Towell"
 	@echo "Built: $@"
 
@@ -159,7 +112,7 @@ stories/spinoffs/%.epub: stories/spinoffs/%.tex
 wordcount: wc-novel wc-stories
 
 wc-novel:
-	@printf "%-30s " "The Policy (novel):"
+	@printf "%-35s " "The Policy (novel):"
 	@if command -v detex >/dev/null 2>&1; then \
 		detex $(NOVEL_TEX) 2>/dev/null | wc -w | tr -d ' '; \
 	else \
@@ -167,17 +120,41 @@ wc-novel:
 	fi
 
 wc-stories:
-	@printf "%-30s " "Hemorrhagic:"
-	@cat $(HEMORRHAGIC_TEX) | wc -w | tr -d ' '
-	@printf "%-30s " "Process 12847:"
-	@cat $(PROCESS_TEX) | wc -w | tr -d ' '
 	@echo ""
-	@echo "Spec word counts:"
-	@for f in stories/spinoffs/*-spec.md; do \
-		name=$$(basename "$$f" -spec.md); \
+	@echo "Drafted stories:"
+	@for f in $(STORY_TEX); do \
+		name=$$(echo "$$f" | sed 's|stories/||' | sed 's|/.*||'); \
 		words=$$(wc -w < "$$f"); \
-		printf "  %-28s %s\n" "$$name:" "$$words"; \
+		printf "  %-33s %s\n" "$$name:" "$$words"; \
 	done
+	@echo ""
+	@echo "Design specs (not yet drafted):"
+	@for f in stories/*/spec.md; do \
+		name=$$(echo "$$f" | sed 's|stories/||' | sed 's|/.*||'); \
+		words=$$(wc -w < "$$f"); \
+		printf "  %-33s %s\n" "$$name:" "$$words"; \
+	done 2>/dev/null || true
+
+# --- List all works ---
+list:
+	@echo "The Policy Universe"
+	@echo ""
+	@echo "Novel:"
+	@printf "  %-35s %s\n" "The Policy" "chapters/ ($(words $(wildcard chapters/*.tex)) files)"
+	@echo ""
+	@echo "Stories (drafted):"
+	@for f in $(STORY_TEX); do \
+		name=$$(echo "$$f" | sed 's|stories/||' | sed 's|/.*||'); \
+		printf "  %-35s %s\n" "$$name" "$$f"; \
+	done
+	@echo ""
+	@echo "Stories (spec only):"
+	@for d in stories/*/; do \
+		if [ ! -f "$$d"*.tex ] 2>/dev/null && [ -f "$$d/spec.md" ]; then \
+			name=$$(basename "$$d"); \
+			printf "  %-35s %s\n" "$$name" "spec.md"; \
+		fi; \
+	done 2>/dev/null || true
 
 # --- Clean ---
 clean: clean-novel clean-stories
@@ -189,22 +166,18 @@ clean-novel:
 
 clean-stories:
 	@for ext in $(AUX_EXTS); do \
-		rm -f $(HEMORRHAGIC_DIR)/*.$$ext; \
-		rm -f $(PROCESS_DIR)/*.$$ext; \
-		rm -f stories/spinoffs/*.$$ext; \
+		find stories -name "*.$$ext" -delete 2>/dev/null; \
 	done
 
 distclean: clean
 	rm -f $(NOVEL_PDF) $(NOVEL_EPUB)
-	rm -f $(HEMORRHAGIC_PDF) $(HEMORRHAGIC_EPUB)
-	rm -f $(PROCESS_PDF) $(PROCESS_EPUB)
-	rm -f stories/spinoffs/*.pdf stories/spinoffs/*.epub
+	rm -f $(STORY_PDF) $(STORY_EPUB)
 	rm -rf $(HTML_DIR)
 	@echo "Cleaned all build artifacts"
 
 # --- Help ---
 help:
-	@echo "The Policy Universe - Build System"
+	@echo "The Policy Universe -- Build System"
 	@echo ""
 	@echo "Novel:"
 	@echo "  make novel       Build novel PDF + EPUB (default)"
@@ -214,14 +187,13 @@ help:
 	@echo "  make html        Build HTML for GitHub Pages"
 	@echo "  make check       Quick single-pass compile"
 	@echo ""
-	@echo "Short stories:"
+	@echo "Stories:"
 	@echo "  make stories     Build all story PDFs + EPUBs"
-	@echo "  make hemorrhagic Build Hemorrhagic PDF + EPUB"
-	@echo "  make process     Build Process 12847 PDF + EPUB"
-	@echo "  make spinoffs    Build spinoff PDFs + EPUBs (auto-discovers .tex files)"
+	@echo "  make stories/<name>/<name>.pdf  Build one story"
 	@echo ""
 	@echo "Utilities:"
 	@echo "  make all         Build everything (novel + stories)"
+	@echo "  make list        Show all works and their status"
 	@echo "  make wordcount   Word counts for all works"
 	@echo "  make clean       Remove auxiliary files"
 	@echo "  make distclean   Remove all generated files"

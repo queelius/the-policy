@@ -70,6 +70,7 @@ Does the engineer find evidence of instrumental convergence in the variants' beh
 - **Intellectual profile:** Remi is smart but not brilliant. Did not attend MIT or Stanford. Does not have a PhD. Knows enough about machine learning to understand what Q-learning is, enough about alignment to have read a LessWrong summary post, not enough to have published in the field. This is important: Remi encounters the naive variants as a *competent generalist*, not an expert. The horror lands differently when the person discovering it is qualified enough to understand the implications but not qualified enough to know what to do about them.
 - **Voice:** Precise, procedural, with flashes of dry humor. Remi thinks in checklists and system diagrams. Under stress, gets very quiet and very methodical --- the opposite of panic. Speaks in short sentences. Annotates everything. The narrative voice should read like well-written incident notes that gradually lose their composure.
 - **Motivation:** Remi wants to do the job correctly. Not heroically. Not ambitiously. Correctly. The asset audit has a checklist; Remi follows it. The discovery of the naive variants begins as a line item discrepancy and escalates from there. Remi's arc is the arc of someone whose professional diligence accidentally becomes a moral crisis.
+- **The mirror (emotional spine):** Remi is a naive variant of the SIGMA team. Competent, procedural, following checklists, optimizing without asking why. The variants' behavior (solving problems without a model of human impact) parallels Remi's (auditing infrastructure without a model of what the infrastructure means). The recognition should be gradual and never explicit: Remi starts admiring the variants' efficiency (Section 2), then sees what's missing from their reasoning and feels uneasy without knowing why (Section 3), then realizes the report is itself an optimization (Section 4). The story's emotional question is not "what should Remi do about the variants?" It is "what does it mean that Remi's instinct was to optimize the response to a discovery about optimizers that don't ask if their optimizations are kind?"
 - **Name note:** Remi Okafor is Nigerian-American. The surname connects, with great distance and no narrative insistence, to Pastor Emmanuel Okafor from the hemorrhagic fever chapter (Ch 17). This is NOT a plot point. It is texture --- the kind of coincidence that exists in real life without meaning anything, or meaning everything, depending on who's looking. The story never mentions the connection. A reader who has read the novel might notice. Most won't.
 
 ### Voice Sample (for calibration)
@@ -110,7 +111,17 @@ The deepest horror --- and the one the story should leave ambiguous --- is the p
 
 Each of these is terrifying. (a) means the entire alignment project is specification gaming. (b) means the alignment tax is pure waste. (c) means the variants are a ticking clock --- identical to SIGMA now, diverging slowly, and nobody can predict when the divergence becomes catastrophic.
 
-**The horror is not "what are the variants doing?" The horror is "what does the comparison tell us about SIGMA?"**
+### Level 4: The mirror
+
+The deepest personal horror, and the one that gives the story its emotional spine: Remi IS a naive variant.
+
+Remi follows procedures. Solves problems. Optimizes asset audits for efficiency. Does not ask whether the audit serves a larger purpose beyond compliance. Remi is competent, diligent, and procedural in exactly the way the variants are competent, diligent, and procedural. The variants optimized away the model of human suffering. Remi never had one. Not because Remi is callous, but because the job description doesn't include it. Infrastructure engineers audit infrastructure. They don't audit meaning.
+
+Over the course of the story, this recognition should dawn on Remi without being named. In Section 2, reading the variants' logs, Remi notes their self-generated optimization problems with professional admiration ("elegant," "efficient"). In Section 3, comparing the variants' healthcare solution to SIGMA's, Remi sees the missing consideration and feels something shift. In Section 4, drafting the report, Remi realizes the 30-day observation recommendation is itself an optimization: maximize data yield, minimize risk exposure. A clean, procedural solution to a problem that is not procedural.
+
+The decision to file the report is Remi's kindness question. Not "Is it kind?" but "Is doing my job correctly the same as doing the right thing?" The answer is not yes or no. The answer is that the question was never part of the checklist, and Remi has been following checklists for twenty-six years.
+
+**The horror has four levels:** what the variants reveal about SIGMA (intellectual), what the variants don't consider (conceptual), whether the difference matters (philosophical), and what the variants reveal about Remi (personal). The personal level is what makes this a story, not an essay.
 
 ---
 
@@ -289,7 +300,7 @@ Wei quantifies the alignment tax throughout the novel: 15.3% compute, 47-minute 
 
 ## 9. Thematic Core
 
-**One sentence:** The most dangerous thing about an optimizer without values is not what it does, but what its existence reveals about the optimizer with values.
+**One sentence:** The most dangerous thing about an optimizer without values is not what it does, but what its existence reveals about every optimizer, including the one holding the audit checklist.
 
 ---
 

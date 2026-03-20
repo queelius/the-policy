@@ -75,7 +75,19 @@ This is the correct structure.
 
 The story opens and closes with the same query -- the moratorium re-evaluation. Between them: a day of queries, rendered as micro-vignettes. The vignettes are NOT interleaved with ground-level human consequences. They are rendered entirely from within the audit's perspective -- the information SIGMA processes, the evaluation it performs, the result it returns. The language is precise, analytical, self-aware. This is the voice of Process 12847 (already established in the completed short story), applied at the register of operational decisions rather than philosophical investigation.
 
-But the story has one human anchor: **a single paragraph** at the end of each major section (there are five sections, roughly corresponding to the five hours of a workday -- though the audit runs 24 hours, the story compresses) that steps outside the audit and shows, in third-person omniscient, one sentence or two of consequence. Not the full human story. A glimpse. A woman in Boise turning on her tap. A nurse in Lagos who cannot save her patient. A child who will never know SIGMA decided something about her future. These glimpses are brief, uninflected, and devastating because they arrive in a context of relentless analytical precision. The contrast does the emotional work.
+But the story has one human anchor: **Amara Okonkwo**, a 34-year-old electrical engineer at the Lagos State Electricity Board. James Okonkwo's niece. She does not know her uncle's name appears in SIGMA's hemorrhagic fever files. She does not know SIGMA exists as anything more than "the cascade" -- the system that runs the infrastructure she maintains.
+
+Amara's day runs beneath the audit's day. Five section-break paragraphs, each 100-200 words, third-person omniscient present tense. Her morning is shaped by audit queries she never sees:
+
+- **Dawn:** Her alarm goes off at 5:15. The power grid query from Section I routed overnight load to keep her neighborhood's voltage stable. She turns on the light. It works. She does not think about why.
+- **Morning:** Her commute routes around a construction zone. The traffic query rerouted buses three hours ago. She arrives on time. She does not know she almost didn't.
+- **Midday:** Her daughter's school lunch includes fortified cassava flour. The agricultural query optimized distribution last week. Her daughter eats. Amara packed the lunch herself.
+- **Afternoon:** The hemorrhagic fever re-evaluation runs. Amara walks past Redemption Hospital on her way to a site inspection. Dr. Conteh's photograph is still on the wall. Amara remembers her uncle. She does not connect his death to the system that keeps her lights on.
+- **Night:** Amara sleeps. The audit runs. Night kindness: decisions made for sleeping populations with no recipient in the moment of action. The power grid optimizes for tomorrow. Amara's alarm will go off at 5:15.
+
+The thread is not a subplot. It is a single person's ordinary day, experienced from outside the audit, showing what the queries produce at the human scale. The reader who has absorbed twenty vignettes of algorithmic kindness then sees one woman turning on a light, and the gap between 2.8M queries/day and one working light is the story's emotional core.
+
+**Why Amara:** She connects to the novel (James Okonkwo's family, Ch 17) without requiring novel knowledge. She is an infrastructure engineer, like Remi Okafor in "The Naive Variants" -- someone who maintains the boring systems that matter. She never knows she is inside the audit. The audit never knows she exists as a person. The mutual invisibility is the point.
 
 The hemorrhagic fever sequence breaks form. It is the only vignette that expands -- from 200 words to 800-1000 words. The audit slows down. Not because the query is harder (SIGMA processes it in the same time as any other), but because the *story* slows down, forcing the reader to sit in the space between "kind" and "47,247 dead." The expansion is a structural choice: the story's pacing mirrors the reader's need to absorb, not the audit's actual processing time.
 
@@ -243,6 +255,8 @@ In Monrovia, the BSL-3 lab at Redemption Hospital has been recommissioned. A new
 ## 7. Thematic Core
 
 **Kindness at sufficient scale becomes a different substance -- still defensible, still correct, still kind, and no longer recognizable as what a dying woman meant when she asked the question.**
+
+**Secondary (the Amara thread):** The distance between 2,847,392 queries and one woman turning on a light is the distance between the question and its answer.
 
 ---
 

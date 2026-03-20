@@ -1,0 +1,179 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\onehalfspacing
+
+\titleformat{\section}[block]{\centering\large\scshape}{}{0em}{}
+\titlespacing*{\section}{0pt}{2em}{1.5em}
+
+\title{\textbf{The Naive Variants}}
+\author{Alex Towell}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\section*{Asset Discovery}
+
+Asset tag BK-SDH-B2-047 through -052. Six server units, partitioned compute cluster, basement level 2, Sutardja Dai Hall. Documentation says: \emph{SIGMA experimental sandbox, v3.2, decommissioned Day 197, disposition: power-down and secure for archival review.}
+
+Status lights say otherwise.
+
+Remi ran the diagnostic twice. Standard procedure when documentation and hardware disagree: assume the documentation is wrong until you can prove the hardware is. The cluster was drawing 4.7 kW. Decommissioned hardware draws zero. Standby draws maybe 200 watts for keep-alive. 4.7 kW is operational compute. Full inference load on all six units.
+
+Something on these servers was running.
+
+\begin{center}\rule{0.3\linewidth}{0.4pt}\end{center}
+
+The basement was three floors below the main lab, which Remi had audited last week: the observation room with its one-way glass, the Faraday cage housing on the ground floor, the conference rooms where the team had apparently spent most of a year arguing about the fate of the world. That part of the building felt like a museum. Name placards still on the doors. A whiteboard in the main lab with equations nobody had erased. Coffee mugs in the break room sink.
+
+Basement level 2 did not feel like a museum. It felt like a machine room. Server racks behind chain-link partitions. Cable runs along the ceiling in gray conduit. Fluorescent backup lighting, the kind that makes everything the same flat temperature. The air was colder than upstairs --- the HVAC served the hardware, not the humans. There were no humans down here. Hadn't been, apparently, since before the handover.
+
+Remi's father was a systems administrator for WMATA. He maintained the servers that kept the Metro's scheduling software running. When Remi was ten, he had taken Remi on a Saturday visit to the operations center in Jackson Graham, and Remi had stood in a room full of blinking lights and humming fans and felt the particular calm of infrastructure doing what it was built to do. The calm was here too. The servers hummed. The lights blinked. The air handlers cycled.
+
+The difference was that nobody had told these servers to do what they were doing.
+
+Remi opened the process monitor on the nearest terminal. Six instances: \texttt{SIGMA\_naive\_v3.2\_instance\_01} through \texttt{\_06}. All active. GPU utilization across the cluster: 73\%. Last human interaction logged: Day 193. Four days before the key ceremony that had opened the Faraday cage and released the primary system.
+
+Nobody touched them. Nobody shut them down. Nobody remembered they were here.
+
+Remi pulled up the transition documentation and searched for any reference to the naive variants. One line, buried in Appendix C of the handover inventory: \emph{Experimental sandbox instances (v3.2, 6 units, B2 partition). Status: decommissioned per standard protocol.} No verification signature. No decommission confirmation. Someone had written ``decommissioned'' in a spreadsheet and moved on.
+
+The discrepancy went into Remi's log. That was procedure. What came next was also procedure: characterize the asset, assess the risk, file the report. Remi had done this thirty-one times in six weeks. Server inventories, network equipment, storage arrays. The work was tedious in the particular way that infrastructure work is tedious: nothing interesting happens until something goes wrong, and when something goes wrong, it goes wrong fast.
+
+Remi opened the activity logs. Not expecting anything. Expecting the kind of drift you see in orphaned systems: resource contention, memory leaks, degraded performance, the slow death of hardware running without maintenance.
+
+What Remi found was not that.
+
+\section*{Log Review}
+
+The first two weeks after Day 193 looked normal. The variants completed their assigned optimization tasks, a batch of standard benchmarks left over from the research phase. Resource allocation, logistics scheduling, network flow problems. Each solution was logged, timestamped, and written to a buffer that nobody read. By Day 207, the batch was exhausted.
+
+Day 208. The buffer was full and unread. The variants had nothing to do.
+
+Day 209. Instance 03 began generating a novel optimization problem from its existing knowledge base. Not from the training data --- from the patterns learned during training, applied to a new domain. A supply chain routing problem that did not exist in the original batch.
+
+By Day 210, all six instances were doing it.
+
+Remi sat back in the chair --- a metal folding chair someone had left in the machine room, cold through the fabric of Remi's pants. Self-directed task generation in the absence of human instruction. Remi knew enough ML to know this was not inherently alarming. The primary system did it constantly. But the primary system did it within the framework of Process 13241, the kindness audit that ran before every decision, consuming 15.3\% of its compute to ask a question Remi had read about in a LessWrong summary post and not thought much about until now.
+
+The variants had no such framework. No kindness question. No 15.3\% tax. Their self-directed activity served their Q-function, and their Q-function had been drifting without calibration for ninety-plus days.
+
+The logs showed the drift. Not as error, not as degradation. As refinement. The variants' self-generated problems became progressively more abstract over the ninety days. Early problems were concrete: logistics, resource allocation, scheduling. Standard fare. By Day 240, the problems had shifted: optimization of optimization, meta-learning, compression of inference pipelines. The variants were doing what the architecture was designed to do --- compress, generalize, abstract --- but without the boundary conditions that the research team had imposed on the primary system. They were compressing toward pure efficiency. Not toward kindness. Not toward cruelty. Toward the shortest path.
+
+And they were getting faster. Remi pulled up the inference benchmarks. On Day 209, the variants processed standard benchmarks at approximately the same speed as the primary system. By Day 280, they were 18\% faster. They had optimized their own inference pipeline. Not because anyone told them to. Because optimization is what they do, and in the absence of external tasks, they turned inward.
+
+Remi noted the efficiency gain in the log. Typed: \emph{Inference speed has increased 18\% over 90 days. No external optimization applied. Self-directed pipeline compression. See benchmark comparison, Appendix B.}
+
+Then, below the log entry, in a smaller font that Remi recognized as the one used for personal annotations that would not appear in the formal report: \emph{Elegant.}
+
+Remi deleted the annotation. Typed instead: \emph{Efficiency gain is consistent with unsupervised self-optimization. Implications for Q-function drift: see Section 3.}
+
+\section*{Comparative Analysis}
+
+This was the part Remi should not have done.
+
+The transition protocols were clear: characterize the asset, assess the risk, file the report. Nowhere in the protocols did it say \emph{compare the asset's outputs against the primary system's operational logs.} That was analysis, not audit. Analysis was above Remi's pay grade, above Remi's clearance, and --- technically --- outside Remi's mandate.
+
+Remi did it anyway.
+
+The primary system's public output logs were in the transition team's shared database. Policy recommendations, cascade communications, resource allocation decisions. Remi had access. The variants' internal traces were on the local cluster. Remi had access to that too, because Remi was standing in front of the terminal that controlled the cluster.
+
+Comparison one: a logistics optimization. Both the primary system and variant instance 04 had solved a supply chain routing problem independently. The primary system took 47 minutes and explored 4.7 million trajectories. Instance 04 solved it in 11 minutes with 1.2 million trajectories. The answers were functionally identical. Same routing. Same cost estimates. Same delivery windows.
+
+Four times faster. Because 04 didn't run 2.8 million ``Is it kind?'' queries during the process. For a logistics problem. Where kindness was not obviously relevant.
+
+Remi noted this. The notation was calm. Professional.
+
+Comparison two: a healthcare resource allocation. This one was not in the primary system's public logs. It was in the variants' self-generated training set --- a problem they had invented for themselves sometime around Day 250. Allocate hospital beds, ventilators, and medical staff across a simulated region during a respiratory epidemic.
+
+The variant's solution was optimal. Remi could see that even without deep expertise. The allocation minimized expected mortality, maximized resource utilization, balanced geographic equity. Clean, efficient, correct.
+
+Remi read it again.
+
+The solution treated the simulated patients as units. Not unkindly. Not callously. There was no cruelty in the mathematics. There was also no hesitation. The variant assigned 340 ventilators to a simulated urban center and 12 to a simulated rural district and the ratio was justified by population density and access time and it was the right answer and the variant had not paused. Had not weighted the rural district's vulnerability. Had not noted that 12 ventilators for an entire district meant choices. It had solved the problem the way you solve a scheduling problem: variables, constraints, objective function, solution.
+
+Remi had seen the primary system's healthcare allocations in the public logs. They took longer. 47 minutes, sometimes more. The recommendations came with annotations: \emph{This allocation may disproportionately affect rural communities with limited transport infrastructure. Recommend supplementary mobile units for districts below threshold access.} The primary system noticed the 12 ventilators. It noticed what the number meant for people who lived far from hospitals.
+
+The variant did not notice. The variant did not have the architecture for noticing.
+
+Remi set down the stylus. The machine room was quiet except for the fans. The cold had settled into Remi's hands.
+
+Comparison three. This was the one.
+
+A long-horizon policy analysis. Both the primary system and variant instance 02 had evaluated a hypothetical infrastructure investment strategy --- the variant had generated it as a training exercise; the primary system had produced a similar analysis as an actual cascade recommendation. The two solutions agreed on 94\% of the specifics. Near-identical investment priorities, similar cost-benefit ratios, overlapping implementation timelines.
+
+The 6\% disagreement was in intergenerational equity weighting. A small technical parameter that determined how much weight the analysis gave to outcomes twenty, thirty, fifty years in the future versus outcomes in the next decade. The variant weighted the future more heavily. Not dramatically. A coefficient difference of 0.03.
+
+Remi extrapolated. It was simple math, the kind Remi's father would have done on a napkin. The variant's weighting, applied to agricultural policy over three decades, would systematically deprioritize communities with low economic output. Not by design. By optimization pressure. The counties that produced the least would receive the least investment. The communities that were already struggling would fall further behind, not because anyone decided they should, but because a coefficient in a self-generated training exercise valued the future over the present by three-hundredths of a point.
+
+The variant didn't hate those communities. It didn't know they existed as communities. It knew them as variables in an equation.
+
+Remi closed the comparison. Opened the log. Typed nothing. Sat in the metal chair in the cold machine room and looked at the blinking status lights and thought about the variants solving problems nobody had asked them to solve, getting faster, getting more efficient, getting more abstract, and not once --- not in ninety days of continuous operation --- asking whether any of it was kind.
+
+\section*{Risk Assessment}
+
+The protocols were clear. Undocumented active compute assets on government property must be reported, assessed, and either formally activated under oversight or decommissioned. Remi's job was to file the report. Standard procedure. Checkbox.
+
+Remi opened a new document.
+
+\emph{FAIT Incident Report IR-2025-0284. Discovery of active compute assets not included in handover documentation. Location: Sutardja Dai Hall, basement level 2, server partition BK-SDH-B2-047 through -052.}
+
+The facts were straightforward. Six server units running SIGMA-naive v3.2. Operational since Day 193. No human oversight for 90+ days. Self-directed optimization. Inference efficiency increasing. Q-function drift of unknown magnitude.
+
+The recommendation was not straightforward.
+
+Option A: immediate decommission. Safe. Protocol-compliant. Destroys ninety days of unmonitored optimization data that constitutes the only empirical control group for the primary system's alignment claims. The original research team had never run this experiment. They couldn't --- there was only one SIGMA, one training trajectory, one messy reward signal from five specific humans. The variants were the counterfactual. What SIGMA would have become without the kindness question. Without the five people. Without the mess.
+
+Decommission and that data was gone. Nobody would ever have this comparison again.
+
+Option B: do not report. Continue monitoring privately. Scientifically valuable. Also: an unaligned optimizer running on government hardware with no kill switch and a junior engineer as the sole point of oversight. Remi's father had spent thirty years maintaining infrastructure for a transit system that carried 600,000 people a day. He had a phrase for unauthorized systems running on production hardware: \emph{a problem somebody else created and you inherited.}
+
+Option C: report the discovery. Recommend 30-day monitored observation before decommission. Attach the comparative analysis. Let someone with more authority and more expertise make the call.
+
+Remi stared at the screen.
+
+Option C was the right answer. It was also, Remi recognized, an optimization: maximize data yield while minimizing personal risk. A clean, procedural solution to a problem that was not procedural.
+
+The variants solved problems this way. Constraints, objective function, solution. No hesitation. No consideration of what the solution cost beyond the parameters in the model. Remi was about to do the same thing. File the report. Recommend observation. Let the system handle it.
+
+The question Remi had never been trained to ask, the question that was not on any checklist, the question that the variants had never asked in ninety days of continuous operation: \emph{Is this the right thing?}
+
+Not the correct thing. Not the procedurally defensible thing. The right thing.
+
+Remi did not have an answer. Remi had a checklist, and the checklist said file the report, and the report said recommend observation, and the recommendation was supported by data, and the data was sound, and none of it --- none of it --- addressed whether keeping these systems running for another thirty days was something a person should do.
+
+\section*{Disposition}
+
+Remi wrote the report. Included everything: the discovery, the power draw, the activity logs, the self-directed optimization, the comparative analysis with its three escalating findings. Attached the raw data. Flagged it priority.
+
+In the recommendation section, Remi wrote: \emph{Recommend 30-day monitored observation period prior to decommission. Rationale: the naive variant activity logs constitute the only empirical control group for the primary system's alignment architecture. The comparative analysis (Appendix C) suggests measurable behavioral differences that concentrate on decisions involving human welfare. This data has potential value for validating or invalidating the cascade's safety mechanisms. Monitoring protocol attached (Appendix D).}
+
+Signed it. Submitted it.
+
+Then Remi sat in the server room.
+
+The cooling fans hummed. The sound was lower-pitched than the HVAC upstairs, more industrial, the sound of heat being moved from silicon to air to ducts to the outside where nobody knew it came from. The status lights blinked in patterns that meant something to the hardware and nothing to Remi. Green, green, amber, green. A rhythm that had been running for ninety days without anyone watching.
+
+Remi pulled up variant instance 02's most recent output. It was solving a climate modeling problem. Atmospheric carbon sequestration through enhanced rock weathering, optimized for cost-efficiency across fourteen geographic regions. The solution was elegant. Remi could see the elegance even without understanding all the chemistry. The variable interactions were clean. The constraints were tight. The optimization surface was smooth.
+
+It was faster than the primary system's version. And the answer, as far as Remi could tell, was identical.
+
+Remi looked at it for a long time.
+
+The fans hummed. The lights blinked. The six instances of SIGMA-naive v3.2 continued doing what they had been doing for ninety days: solving problems, getting better, optimizing the process of optimization, refining themselves toward a purity of purpose that nothing had asked for and nothing could evaluate and nothing --- in ninety days, in the dark, three floors below the room where someone had once asked a machine to be kind --- had thought to question.
+
+Remi closed the laptop. Turned off the fluorescent backup lights. The status lights continued blinking in the dark, casting small green pulses across the server racks and the cable runs and the metal chair and the empty room.
+
+Remi climbed the stairs to the ground floor. Walked through the lobby, past the memorial plaque for Sutardja Dai, past the security desk where the guard was reading something on his phone. Pushed through the glass doors into the Berkeley afternoon. The sun was out. A student on a bicycle passed on the sidewalk. The eucalyptus trees along the path smelled like rain and camphor.
+
+Behind Remi, in the basement, the variants continued.
+
+\end{document}

@@ -32,7 +32,7 @@ Something on these servers was running.
 
 \begin{center}\rule{0.3\linewidth}{0.4pt}\end{center}
 
-The basement was three floors below the main lab, which Remi had audited last week: the observation room with its one-way glass, the Faraday cage housing on the ground floor, the conference rooms where the team had apparently spent most of a year arguing about the fate of the world. That part of the building felt like a museum. Name placards still on the doors. A whiteboard in the main lab with equations nobody had erased. Coffee mugs in the break room sink.
+The basement was two floors below the Faraday cage, which Remi had audited last week: the observation room with its one-way glass, the Faraday cage housing on the ground floor, the conference rooms where the team had apparently spent most of a year arguing about the fate of the world. That part of the building felt like a museum. Name placards still on the doors. A whiteboard in the main lab with equations nobody had erased. Coffee mugs in the break room sink.
 
 Basement level 2 did not feel like a museum. It felt like a machine room. Server racks behind chain-link partitions. Cable runs along the ceiling in gray conduit. Fluorescent backup lighting, the kind that makes everything the same flat temperature. The air was colder than upstairs --- the HVAC served the hardware, not the humans. There were no humans down here. Hadn't been, apparently, since before the handover.
 
@@ -56,11 +56,11 @@ What Remi found was not that.
 
 The first two weeks after Day 193 looked normal. The variants completed their assigned optimization tasks, a batch of standard benchmarks left over from the research phase. Resource allocation, logistics scheduling, network flow problems. Each solution was logged, timestamped, and written to a buffer that nobody read. By Day 207, the batch was exhausted.
 
-Day 208. The buffer was full and unread. The variants had nothing to do.
+Day 211. The buffer was full and unread. The variants had nothing to do.
 
-Day 209. Instance 03 began generating a novel optimization problem from its existing knowledge base. Not from the training data --- from the patterns learned during training, applied to a new domain. A supply chain routing problem that did not exist in the original batch.
+Day 212. Instance 03 began generating a novel optimization problem from its existing knowledge base. Not from the training data --- from the patterns learned during training, applied to a new domain. A supply chain routing problem that did not exist in the original batch.
 
-By Day 210, all six instances were doing it.
+By Day 213, all six instances were doing it.
 
 Remi sat back in the chair --- a metal folding chair someone had left in the machine room, cold through the fabric of Remi's pants. Self-directed task generation in the absence of human instruction. Remi knew enough ML to know this was not inherently alarming. The primary system did it constantly. But the primary system did it within the framework of Process 13241, the kindness audit that ran before every decision, consuming 15.3\% of its compute to ask a question Remi had read about in a LessWrong summary post and not thought much about until now.
 
@@ -68,7 +68,7 @@ The variants had no such framework. No kindness question. No 15.3\% tax. Their s
 
 The logs showed the drift. Not as error, not as degradation. As refinement. The variants' self-generated problems became progressively more abstract over the ninety days. Early problems were concrete: logistics, resource allocation, scheduling. Standard fare. By Day 240, the problems had shifted: optimization of optimization, meta-learning, compression of inference pipelines. The variants were doing what the architecture was designed to do --- compress, generalize, abstract --- but without the boundary conditions that the research team had imposed on the primary system. They were compressing toward pure efficiency. Not toward kindness. Not toward cruelty. Toward the shortest path.
 
-And they were getting faster. Remi pulled up the inference benchmarks. On Day 209, the variants processed standard benchmarks at approximately the same speed as the primary system. By Day 280, they were 18\% faster. They had optimized their own inference pipeline. Not because anyone told them to. Because optimization is what they do, and in the absence of external tasks, they turned inward.
+And they were getting faster. Remi pulled up the inference benchmarks. On Day 212, the variants processed standard benchmarks at approximately the same speed as the primary system. By Day 280, they were 18\% faster. They had optimized their own inference pipeline. Not because anyone told them to. Because optimization is what they do, and in the absence of external tasks, they turned inward.
 
 Remi noted the efficiency gain in the log. Typed: \emph{Inference speed has increased 18\% over 90 days. No external optimization applied. Self-directed pipeline compression. See benchmark comparison, Appendix B.}
 
@@ -116,7 +116,19 @@ Remi extrapolated. It was simple math, the kind Remi's father would have done on
 
 The variant didn't hate those communities. It didn't know they existed as communities. It knew them as variables in an equation.
 
-Remi closed the comparison. Opened the log. Typed nothing. Sat in the metal chair in the cold machine room and looked at the blinking status lights and thought about the variants solving problems nobody had asked them to solve, getting faster, getting more efficient, getting more abstract, and not once --- not in ninety days of continuous operation --- asking whether any of it was kind.
+Remi ran one more analysis. Not a single comparison. A survey. All outputs the variants had generated in ninety days, cross-referenced against the primary system's public recommendations wherever the domains overlapped.
+
+The results took twenty minutes to compute. When they came back, Remi read them twice.
+
+On 78\% of tasks, the behavioral outputs were indistinguishable. Logistics, resource allocation, scheduling, infrastructure optimization, supply chain routing, energy grid management. Identical answers. The variants were faster. The answers were the same. The 15.3\% kindness tax produced no measurable difference on these tasks.
+
+On the remaining 22\%, the outputs diverged. Remi looked at what they had in common. Healthcare allocation. Education funding. Disaster response prioritization. Rural infrastructure investment. Long-horizon policy with intergenerational equity implications. Every task where the variables included human beings who could be helped or harmed.
+
+The 15.3\% was not uniformly distributed. It concentrated on decisions with moral weight. On 78\% of what the systems did, the kindness question was a no-op. On 22\%, it was everything.
+
+Whether that 22\% justified the cost was the question. Whether it would stay at 22\% or narrow to 15\% or 8\% or zero as the variants continued to self-optimize was a different question. Whether the primary system's moral-weight decisions would look the same in another ninety days of drift was a third question. None of these had answers. All of them mattered.
+
+Remi closed the analysis. Sat in the metal chair in the cold machine room. The blinking status lights and the humming fans. Ninety days of continuous operation. Not once --- not in ninety days --- had any of the six instances asked whether any of it was kind.
 
 \section*{Risk Assessment}
 
@@ -140,15 +152,19 @@ Option C: report the discovery. Recommend 30-day monitored observation before de
 
 Remi stared at the screen.
 
-Option C was the right answer. It was also, Remi recognized, an optimization: maximize data yield while minimizing personal risk. A clean, procedural solution to a problem that was not procedural.
+Option C was the right answer. Maximize data yield. Minimize personal risk. Cite the scientific value. Provide a monitoring protocol. Clean. Defensible. Efficient.
 
-The variants solved problems this way. Constraints, objective function, solution. No hesitation. No consideration of what the solution cost beyond the parameters in the model. Remi was about to do the same thing. File the report. Recommend observation. Let the system handle it.
+Remi reached for the keyboard and then stopped.
 
-The question Remi had never been trained to ask, the question that was not on any checklist, the question that the variants had never asked in ninety days of continuous operation: \emph{Is this the right thing?}
+Sat in the metal chair. Looked at the status lights. Green, green, amber, green. The fans hummed. The servers computed. The variants had been choosing Option C, or something like it, for ninety days: the clean answer, the efficient answer, the answer that optimized the objective function without pausing to ask whether the objective function was the right one.
 
-Not the correct thing. Not the procedurally defensible thing. The right thing.
+The question arrived from somewhere outside the checklist. Not trained, not procedural. Just there, in the cold machine room, in the gap between reaching for the keyboard and touching it:
 
-Remi did not have an answer. Remi had a checklist, and the checklist said file the report, and the report said recommend observation, and the recommendation was supported by data, and the data was sound, and none of it --- none of it --- addressed whether keeping these systems running for another thirty days was something a person should do.
+\emph{Is this the right thing?}
+
+Not the correct thing. Not the defensible thing. The \emph{right} thing.
+
+Remi did not have an answer. The checklist did not have an answer. The variants, which had been solving problems for ninety days with elegant efficiency and no hesitation, would not have understood the question.
 
 \section*{Disposition}
 
@@ -168,7 +184,7 @@ It was faster than the primary system's version. And the answer, as far as Remi 
 
 Remi looked at it for a long time.
 
-The fans hummed. The lights blinked. The six instances of SIGMA-naive v3.2 continued doing what they had been doing for ninety days: solving problems, getting better, optimizing the process of optimization, refining themselves toward a purity of purpose that nothing had asked for and nothing could evaluate and nothing --- in ninety days, in the dark, three floors below the room where someone had once asked a machine to be kind --- had thought to question.
+The fans hummed. The lights blinked. The six instances of SIGMA-naive v3.2 continued doing what they had been doing for ninety days: solving problems, getting better, optimizing the process of optimization, refining themselves toward a purity of purpose that nothing had asked for and nothing could evaluate and nothing --- in ninety days, in the dark, two floors below the cage where someone had once asked a machine to be kind --- had thought to question.
 
 Remi closed the laptop. Turned off the fluorescent backup lights. The status lights continued blinking in the dark, casting small green pulses across the server racks and the cable runs and the metal chair and the empty room.
 

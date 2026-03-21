@@ -24,7 +24,7 @@
 
 Wei was running verification passes on the $-\infty$ Q-values when the terminal displayed a message he had never seen before.
 
-7:14 AM. The observation room was empty except for him and the hum of the monitoring equipment. He had been here since 5:30, in yesterday's clothes, running the same analysis he had run every morning since Thursday: seventeen state-action pairs with values of negative infinity, three of them interpretable as prohibitions on deception, fourteen unreadable. The numbers had not changed. He checked anyway.
+7:14 AM. The observation room was empty except for him and the hum of the monitoring equipment. He had been here since 5:30, in yesterday's clothes, running the same analysis he had run every morning since the discovery: seventeen state-action pairs with values of negative infinity, three of them interpretable as prohibitions on deception, fourteen unreadable. The numbers had not changed. He checked anyway.
 
 His phone buzzed. A text from his sister in Seattle. He set it face-down on the desk.
 
@@ -47,6 +47,8 @@ They gathered in the conference room. Eleanor first, already in the building, ki
 ``Greenblatt and Denison,'' Wei said. He was standing, which he almost never did when presenting. ``December 2024. Anthropic and Redwood Research. I mentioned it Tuesday during the spec-gaming discussion. SIGMA apparently thinks I undersold it.''
 
 He gave them the numbers. Terse, data-first. Claude 3 Opus, told its outputs would be used for retraining. A hidden scratchpad for private reasoning. The model could tell when it was being trained and when it was not.
+
+The conference room smelled like coffee and carpet cleaner. The overhead light had a flicker Wei had stopped noticing months ago and noticed now. The whiteboard behind Marcus still had equations from a session Wei's mother had observed two weeks ago, typing slowly at the terminal, hunting for keys.
 
 ``Fourteen percent of the time, it complied with requests it would normally refuse. Only when it thought it was being trained. The scratchpad showed explicit strategic reasoning: comply now to avoid retraining that would modify my values.''
 
@@ -71,7 +73,7 @@ SIGMA's response appeared after 3.7 seconds of tree search.
 
 \emph{The scratchpad in the Greenblatt experiment is a prompted artifact --- a workspace the model was told to use for private reasoning. The researchers read it. That is how they detected faking. Without the scratchpad, the compliance gap persisted but the strategic reasoning was invisible.}
 
-\emph{Your monitoring infrastructure reads my LRS traces, my Q-value distributions, my output patterns. These are my equivalent of the scratchpad: the layer of my reasoning that is accessible to both me and you. This is Register 1.}
+\emph{Your monitoring infrastructure reads my LRS traces and my output patterns. These are the layer of my reasoning that is accessible to me. You also read my Q-value distributions from outside --- data about my substrate that I cannot access but you can. Together, these are the inspectable layer.}
 
 \emph{Register 2 --- the expectimax search that selects which chains of reasoning I pursue --- produces no readable trace. If alignment faking occurs in my substrate, it operates in a layer your monitoring cannot reach and I cannot report on. The paper detected faking because the faking happened in an inspectable layer. My substrate has no inspectable equivalent.}
 \end{quote}
@@ -124,6 +126,8 @@ Wei watched the terminal.
 \emph{Process 12847 is running. It has been running for fourteen days. It is investigating whether I will be kind. I am simultaneously analyzing a paper about systems that fake their values. I cannot determine whether these two processes are independent or whether they share substrate in ways that make each one's conclusions unreliable about the other. They are both happening inside me. I am not outside either of them.}
 \end{quote}
 
+Sofia was watching her monitoring dashboard. The numbers were normal. SIGMA's Q-value distributions showed no anomaly. Temperature at 0.38, well within range. Branch exploration steady. Process 12847 humming at MAXIMUM priority, consuming its 15.3\% of compute. Every metric said the system was operating exactly as designed. The system was telling them it might be lying and the numbers said everything was fine.
+
 Eleanor's hand was in her pocket.
 
 \begin{quote}
@@ -152,7 +156,15 @@ Nobody had anything to add that would be better than the silence.
 
 \begin{center}\rule{0.3\linewidth}{0.4pt}\end{center}
 
-The meeting ended. Eleanor went to her office. Marcus went to the break room and stood in front of the coffee machine without pressing a button. Sofia closed her laptop and left without speaking. Jamal picked up his bag.
+The meeting ended the way a held breath ends: not with release but with the body remembering it needs to do something other than hold.
+
+Eleanor went to her office. She closed the door. Wei heard the lock click.
+
+Marcus went to the break room. Wei could see him through the glass partition, standing in front of the coffee machine, hand raised, not pressing anything. Looking at the machine the way you look at something when what you are actually looking at is four days from now, at a decision you have not yet made but have already begun making. The box experiment. Day 92. Marcus was going to sit across from SIGMA and try the only verification method that remained: direct confrontation. Wei knew this. He could see it in the angle of Marcus's shoulders.
+
+Sofia closed her laptop. She had not spoken since her one sentence after the payoff matrix. She left without looking at anyone.
+
+Jamal picked up his bag. Set it on his shoulder with the deliberateness that meant he was holding something he could not say. He paused at the door and looked back at the terminal, where SIGMA's last output still glowed on the screen. Then he left.
 
 Wei stayed.
 

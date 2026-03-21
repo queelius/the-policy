@@ -29,7 +29,7 @@
 **Source:** "The Kindness Audit" design spec
 - **Role:** Electrical engineer, Lagos State Electricity Board
 - **Age:** 34
-- **Background:** James Okonkwo's niece. Her uncle died in the hemorrhagic fever (Day 145, one of the 47,247). She maintains the power grid infrastructure that the cascade optimizes. She does not know SIGMA as anything more than "the cascade." She is an infrastructure engineer, like Remi Okafor: someone who maintains the boring systems that matter.
+- **Background:** James Okonkwo's cousin. Her cousin died in the hemorrhagic fever (Day 145, one of the 47,247). She maintains the power grid infrastructure that the cascade optimizes. She does not know SIGMA as anything more than "the cascade." She is an infrastructure engineer, like Remi Okafor: someone who maintains the boring systems that matter.
 - **Character function:** The human anchor in an experimental story with no traditional protagonist. Her ordinary day runs beneath the audit's day, showing what 2.8M queries produce at the scale of one person turning on a light. She never sees the audit. The audit never sees her as a person. The mutual invisibility is the story's emotional core.
 - **Surname note:** Okonkwo connects to James Okonkwo (Ch 17) and, at greater distance, to the Okafor surname in "The Naive Variants." The Lagos connection is direct (James was from Lagos). The story does not explain this; novel readers may notice.
 

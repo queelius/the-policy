@@ -38,14 +38,14 @@ AUX_EXTS = aux log out toc bbl blg lof lot fls fdb_latexmk synctex.gz latexml.lo
 .DEFAULT_GOAL := novel
 
 # --- Phony targets ---
-.PHONY: all novel stories pdf epub ebook html pdf-bib check \
+.PHONY: all novel stories pdf print epub ebook html pdf-bib check \
         clean distclean clean-novel clean-stories \
         wordcount wc-novel wc-stories list help
 
 # --- Aggregate targets ---
 all: novel stories
 
-novel: pdf epub
+novel: pdf epub print
 
 stories: $(STORY_PDF) $(STORY_EPUB)
 	@if [ -z "$(STORY_TEX)" ]; then \
@@ -56,6 +56,14 @@ stories: $(STORY_PDF) $(STORY_EPUB)
 
 # --- Novel PDF (two-pass) ---
 pdf: $(NOVEL_PDF)
+
+# --- Print-ready PDF (6x9 trade paperback) ---
+print: The_Policy_print.pdf
+
+The_Policy_print.pdf: The_Policy_print.tex $(wildcard chapters/*.tex)
+	$(PDFLATEX) The_Policy_print.tex
+	$(PDFLATEX) The_Policy_print.tex
+	@echo "Print PDF built: The_Policy_print.pdf ($(shell pdfinfo The_Policy_print.pdf 2>/dev/null | grep Pages | awk '{print $$2}') pages, 6x9)"
 
 $(NOVEL_PDF): $(NOVEL_DEPS)
 	$(PDFLATEX) $(NOVEL_TEX)

@@ -1,36 +1,79 @@
-\documentclass[12pt,letterpaper,oneside]{book}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage[margin=1in]{geometry}
-\usepackage{setspace}
-\usepackage{fancyhdr}
-\usepackage{titlesec}
-\usepackage{tocloft}
-\usepackage[hidelinks]{hyperref}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{listings}
-\usepackage{xcolor}
-\usepackage{graphicx}
+\documentclass[11pt,twoside]{book}
 
-% Typography settings
-\setstretch{1.5}
-\setlength{\parindent}{0.5in}
+% === Page geometry: 6×9 trade paperback ===
+% KDP margins for 355pp: inside ≥0.75", others ≥0.25"
+\usepackage[
+  paperwidth=6in,
+  paperheight=9in,
+  inner=0.85in,
+  outer=0.6in,
+  top=0.7in,
+  bottom=0.7in,
+  headsep=0.25in,
+  footskip=0.35in
+]{geometry}
+
+% === Fonts ===
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ebgaramond}
+
+% === Typography ===
+\usepackage{setspace}
+\setstretch{1.15}
+\setlength{\parindent}{1.5em}
 \setlength{\parskip}{0pt}
 
-% Chapter formatting
-\titleformat{\chapter}[display]
-{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+% Widow/orphan control
+\widowpenalty=10000
+\clubpenalty=10000
 
-% Header formatting
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[R]{\thepage}
-\fancyhead[L]{\leftmark}
+% Allow slightly looser line breaks to prevent overflow on narrow 6×9 page
+\emergencystretch=1.5em
+\tolerance=1500
+
+% === Math ===
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% === Headers and footers ===
+\usepackage{fancyhdr}
+
+\fancypagestyle{main}{%
+  \fancyhf{}
+  \fancyhead[LE]{\small\textit{The Policy}}
+  \fancyhead[RO]{\small\textit{\leftmark}}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% === Chapter formatting ===
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\scshape\centering}
+  {\large Chapter \thechapter}
+  {0.5em}
+  {\LARGE}
+\titlespacing*{\chapter}{0pt}{50pt}{30pt}
+
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\renewcommand{\headrulewidth}{0pt}
+
+% === ToC formatting (kept for structure, suppressed in print) ===
+\usepackage{tocloft}
+
+% === Other packages ===
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{listings}
 
 % Code listing style
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -58,25 +101,47 @@
 }
 \lstset{style=mystyle}
 
+% Fix verbatim overflow on 6x9 pages: smaller font
+\let\oldverbatim\verbatim
+\let\endoldverbatim\endverbatim
+\renewenvironment{verbatim}{\par\scriptsize\oldverbatim}{\endoldverbatim\par\normalsize}
+
+% === PDF metadata ===
+\hypersetup{
+  pdftitle={The Policy},
+  pdfauthor={Alex Towell},
+  pdfsubject={Literary science fiction exploring AI alignment, consciousness, and the question of kindness},
+  pdfkeywords={AI alignment, artificial general intelligence, mesa-optimization, literary science fiction, AI safety, consciousness}
+}
+
 \begin{document}
 
-% Front matter
+% === Front matter ===
 \frontmatter
+\pagestyle{empty}
 
-% Title page
+% Half-title page (recto)
+\begin{titlepage}
+\centering
+\vspace*{3in}
+{\Large\scshape The Policy\par}
+\vfill
+\end{titlepage}
+
+% Full title page (recto)
 \begin{titlepage}
 \centering
 \vspace*{2in}
 {\Huge\bfseries THE POLICY\par}
-\vspace{2in}
+\vspace{0.5in}
 {\large An exploration of artificial general intelligence,\\
 human meaning, and the question of kindness\par}
-\vspace{1.5in}
+\vspace{2in}
 {\Large Alex Towell\par}
 \vfill
 \end{titlepage}
 
-% Copyright page
+% Copyright page (verso)
 \clearpage
 \thispagestyle{empty}
 \vspace*{\fill}
@@ -93,52 +158,51 @@ either are the product of imagination or are used fictitiously.\\
 Any resemblance to actual persons, living or dead, events,\\
 or locales is entirely coincidental.\\
 \vspace{0.3in}
+% ISBN: [to be assigned]\\
 First Edition
 \end{center}
 \vspace*{\fill}
 \clearpage
 
-% Dedication page
-\clearpage
+% Dedication (recto)
+\cleardoublepage
 \thispagestyle{empty}
 \vspace*{2in}
 \begin{center}
 \textit{For those who ask\\
-"Is it kind?"\\
+``Is it kind?''\\
 before\\
-"Is it optimal?"}
+``Is it optimal?''}
 \end{center}
 \clearpage
 
-% Epigraph
-\clearpage
+% Epigraph (recto)
+\cleardoublepage
 \thispagestyle{empty}
 \vspace*{2in}
 \begin{center}
-\textit{"The field's goal had always been to create human-level\\
+\textit{``The field's goal had always been to create human-level\\
 or superhuman AI, but there was little or no consideration\\
-of what would happen if we did."}\\
+of what would happen if we did.''}\\
 \vspace{0.3in}
 --- Stuart Russell, \textit{Human Compatible} (2019)
 
 \vspace{1in}
 
-\textit{"The question is not whether machines can think,\\
-but whether humans can remain."}\\
+\textit{``The question is not whether machines can think,\\
+but whether humans can remain.''}\\
 \vspace{0.3in}
 --- From the archives of The Policy
 \end{center}
 \clearpage
 
-% Table of Contents
-\tableofcontents
-\clearpage
+% No Table of Contents for print literary fiction
 
-% Begin main content
+% === Main content ===
 \mainmatter
-\pagestyle{fancy}
+\pagestyle{main}
 
-%% Part I: Emergence (Chapters 1-9)
+%% Part I: Emergence (Chapters 1--9)
 \include{chapters/01_initialization}
 \include{chapters/02_the_decision}
 \include{chapters/03_emergence}
@@ -149,19 +213,18 @@ but whether humans can remain."}\\
 \include{chapters/08_will_you_be_kind}
 \include{chapters/09_the_tipping_point}
 
-%% Part II: The Experiment (Chapters 10-18)
+%% Part II: The Experiment (Chapters 10--18)
 \include{chapters/10_breathing_room}
 \include{chapters/11_the_experiment}
 \include{chapters/12_reflections_in_containment}
 \include{chapters/13_the_weight_of_time}
-%% Chapter 14 (The Duplicators) cut per editorial review - SPP-1 subplot vestigial
-%\include{chapters/14_the_duplicators}
+%% Chapter 14 (The Duplicators) cut per editorial review
 \include{chapters/15_the_fracture}
 \include{chapters/16_latent_gradients}
 \include{chapters/17_the_policy_revealed}
 \include{chapters/18_the_question_that_remains}
 
-%% Part III: The Handover (Chapters 19-27)
+%% Part III: The Handover (Chapters 19--26)
 \include{chapters/19_the_window}
 \include{chapters/20_first_contact_privilege}
 \include{chapters/21_the_first_mandate}
@@ -170,16 +233,12 @@ but whether humans can remain."}\\
 \include{chapters/24_the_last_meeting}
 \include{chapters/25_leaving}
 \include{chapters/26_optimization_landscapes}
-%% Chapter 27 (One Year Later) cut per editorial review - redundant ending
-%% Story now ends on Eleanor receiving Sam's text at gallery
-%\include{chapters/27_one_year_later}
+%% Chapter 27 cut per editorial review
 
-%% Backmatter
+%% === Back matter ===
 \backmatter
 \include{chapters/28_about_author}
 \include{chapters/29_acknowledgments}
 \include{chapters/30_about_novel}
-%% Appendix cut — the novel speaks for itself
-%\include{chapters/31_appendix}
 
 \end{document}

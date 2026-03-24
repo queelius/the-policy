@@ -47,6 +47,17 @@ all: novel stories
 
 novel: pdf epub print
 
+collection: collection/is-it-kind.pdf collection/is-it-kind.epub
+	@echo "Collection built."
+
+collection/is-it-kind.pdf: collection/is-it-kind.tex $(STORY_TEX)
+	cd collection && $(PDFLATEX) is-it-kind.tex && $(PDFLATEX) is-it-kind.tex
+	@echo "Collection PDF: $@ ($(shell pdfinfo $@ 2>/dev/null | grep Pages | awk '{print $$2}') pages)"
+
+collection/is-it-kind.epub: collection/is-it-kind.tex $(STORY_TEX)
+	cd collection && pandoc is-it-kind.tex -o is-it-kind.epub --toc --toc-depth=1 --split-level=1 --mathml --css=../kdp/kindle.css --epub-title-page=true -M title="Is It Kind?" -M author="Alex Towell" -M lang="en-US"
+	@echo "Collection EPUB: $@"
+
 stories: $(STORY_PDF) $(STORY_EPUB)
 	@if [ -z "$(STORY_TEX)" ]; then \
 		echo "No story .tex files found."; \

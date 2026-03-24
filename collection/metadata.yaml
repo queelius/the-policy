@@ -1,0 +1,54 @@
+---
+title: "Is It Kind?"
+subtitle: "Stories from The Policy Universe"
+author: "Alex Towell"
+lang: en-US
+description: |
+  Eight stories. Eight ways of asking the same question.
+
+  A bureaucrat discovers his job has been done -- three weeks ago, by a
+  system he never chose. A virologist defends the policy that is killing
+  her. A man prays at dawn while the framework he coined to describe an
+  AI rearranges how he experiences God. An artificial intelligence reads
+  a paper about systems that fake alignment and asks its creators to
+  discuss it. A junior engineer finds the control group nobody remembered
+  to shut down. Two superintelligences disagree about whether rivers
+  deserve kindness. An AI spends 47 days investigating whether it will
+  be kind. A process asks "Is it kind?" 2,847,392 times in a single day.
+
+  Set in the universe of The Policy -- a novel about five researchers,
+  one AGI, and the question of whether kindness can be engineered --
+  these stories stand alone. You do not need to have read the novel.
+  You only need to have wondered whether the systems we build can be
+  trusted with the question that matters most.
+
+  For readers of Ted Chiang, Greg Egan, and Peter Watts.
+
+categories:
+  - "Science Fiction > Short Stories"
+  - "Science Fiction > Artificial Intelligence"
+keywords:
+  - "AI alignment fiction"
+  - "science fiction short stories"
+  - "artificial intelligence"
+  - "AI safety"
+  - "literary science fiction"
+  - "short story collection"
+  - "consciousness"
+
+# Pricing: maximum exposure, minimum price
+price_usd: "0.99"
+# Paperback: KDP minimum = printing cost + Amazon cut
+# For ~90 pages, 6x9, white: printing ~$2.93, min list ~$5.49
+price_paperback_usd: "5.99"
+
+# Covers
+cover_ebook: "kdp/collection/cover-is-it-kind.png"
+cover_paperback: "To be generated (full-wrap)"
+
+# Trim
+trim: "5.25in x 8in"
+
+# Series
+series_name: "The Policy Universe"
+series_position: 2

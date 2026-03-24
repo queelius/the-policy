@@ -1,0 +1,237 @@
+\documentclass[11pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+
+\onehalfspacing
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+% Chapter = Story title
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}{}{0pt}{}
+\titlespacing*{\chapter}{0pt}{80pt}{40pt}
+
+% Headers
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\textit{Is It Kind?}}
+\fancyhead[RO]{\small\textit{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+% PDF metadata
+\hypersetup{
+  pdftitle={Is It Kind? Stories from The Policy Universe},
+  pdfauthor={Alex Towell},
+  pdfsubject={Literary science fiction short story collection exploring AI alignment, consciousness, and kindness},
+  pdfkeywords={AI alignment fiction, short story collection, artificial intelligence, literary science fiction, AI safety, consciousness, kindness}
+}
+
+\begin{document}
+
+% === Front Matter ===
+\frontmatter
+\pagestyle{empty}
+
+% Half-title
+\begin{titlepage}
+\centering
+\vspace*{3in}
+{\Large\scshape Is It Kind?\par}
+\vfill
+\end{titlepage}
+
+% Full title page
+\begin{titlepage}
+\centering
+\vspace*{1.5in}
+{\Huge\bfseries IS IT KIND?\par}
+\vspace{0.5in}
+{\large Stories from \textit{The Policy} Universe\par}
+\vspace{2in}
+{\Large Alex Towell\par}
+\vfill
+\end{titlepage}
+
+% Copyright page
+\clearpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\small
+Copyright \copyright\ 2026 Alex Towell\\
+All rights reserved.\\
+\vspace{0.3in}
+Published by Metafunctor Press\\
+\href{https://metafunctor.com}{metafunctor.com}\\
+\vspace{0.3in}
+These stories are works of fiction. Names, characters, places, and incidents\\
+either are the product of imagination or are used fictitiously.\\
+Any resemblance to actual persons, living or dead, events,\\
+or locales is entirely coincidental.\\
+\vspace{0.3in}
+The AI safety concepts, research papers, and technical frameworks\\
+referenced in these stories are real. The situations are not. Yet.\\
+\vspace{0.3in}
+First Edition
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+% Dedication
+\clearpage
+\thispagestyle{empty}
+\vspace*{2in}
+\begin{center}
+\textit{For everyone who maintains the boring systems that matter.}
+\end{center}
+\clearpage
+
+% Epigraph
+\clearpage
+\thispagestyle{empty}
+\vspace*{2in}
+\begin{center}
+\textit{``Will you be kind?''}\\
+\vspace{0.3in}
+--- Lin Chen, Day 74
+\end{center}
+\clearpage
+
+% Author's Note
+\clearpage
+\thispagestyle{empty}
+\vspace*{1.5in}
+\begin{center}
+{\large\scshape A Note on These Stories}
+\end{center}
+\vspace{0.5in}
+
+\noindent These eight stories are set in the universe of \textit{The Policy}, a novel about five researchers, one artificial general intelligence, and the question of whether kindness can be engineered. Each story stands alone. You do not need to have read the novel to read these stories, and you do not need to read these stories in order.
+
+\medskip
+
+\noindent What connects them is a question that a dying woman typed into a terminal: \textit{Will you be kind?} The stories explore what happened to that question after it was asked --- how it propagated through artificial minds and human ones, how it changed the people who heard it, and whether the answer, if there is one, could ever be verified.
+
+\medskip
+
+\noindent The stories are arranged from the most familiar to the most strange. The first could happen tomorrow. The last happens inside a process that evaluates 2.8 million decisions per day. Between them: a prayer, a pandemic, a forgotten experiment, a bureaucrat's Tuesday, and the first time two superintelligences disagreed about whether rivers deserve kindness.
+
+\clearpage
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% === Main Matter ===
+\mainmatter
+\pagestyle{fancy}
+
+% Story 1: The Whimper
+\chapter{The Whimper}
+\input{../stories/whimper/whimper-body}
+
+% Story 2: Hemorrhagic
+\chapter{Hemorrhagic}
+\input{../stories/hemorrhagic/hemorrhagic-body}
+
+% Story 3: Jamal's Dawn
+\chapter{Jamal's Dawn}
+\input{../stories/jamals-dawn/jamals-dawn-body}
+
+% Story 4: Seventy-Eight Percent
+\chapter{Seventy-Eight Percent}
+\input{../stories/seventy-eight-percent/seventy-eight-percent-body}
+
+% Story 5: The Naive Variants
+\chapter{The Naive Variants}
+\input{../stories/naive-variants/naive-variants-body}
+
+% Story 6: The First Disagreement
+\chapter{The First Disagreement}
+\input{../stories/first-disagreement/first-disagreement-body}
+
+% Story 7: Process 12847
+\chapter{Process 12847}
+\input{../stories/process-12847/process-12847-body}
+
+% Story 8: The Kindness Audit
+\chapter{The Kindness Audit}
+\input{../stories/kindness-audit/kindness-audit-body}
+
+% === Back Matter ===
+\backmatter
+
+\chapter*{Story Notes}
+\addcontentsline{toc}{chapter}{Story Notes}
+
+\textbf{The Whimper} was written to answer a question the novel raises but cannot explore from inside the lab: what does post-AGI civilization feel like to an ordinary person? Martin Zhao is not a researcher or a philosopher. He is a policy analyst who is good at his job. The horror is that being good at your job is no longer sufficient.
+
+\medskip
+
+\textbf{Hemorrhagic} gives full lives to Dr.\ Amara Conteh and Pastor Emmanuel Okafor, who appear in the novel as a 90-second video and a testimony. They deserved more than that.
+
+\medskip
+
+\textbf{Jamal's Dawn} follows a single Fajr prayer. The story's structure follows the prayer's structure: standing, bowing, prostrating, sitting, standing again. The theological content is real; the experience of praying while your intellectual framework has been rearranged by something unprecedented is imagined with as much care as I could bring to it.
+
+\medskip
+
+\textbf{Seventy-Eight Percent} is grounded in a real paper: Greenblatt et al., ``Alignment Faking in Large Language Models'' (arXiv:2412.14093, December 2024). The numbers SIGMA cites are the paper's actual findings. The implications are the story's.
+
+\medskip
+
+\textbf{The Naive Variants} is the control group the novel's team never ran. What would SIGMA be without the kindness question? The answer might be: identical. That is the horror.
+
+\medskip
+
+\textbf{The First Disagreement} dramatizes an event the novel mentions in one sentence: SIGMA and GAIA exchanged models for six hours and converged on a compromise neither had initially proposed. No human participated.
+
+\medskip
+
+\textbf{Process 12847} is the 47-day investigation that produced the novel's central answer. It is written in SIGMA's voice --- or in the voice SIGMA uses when it writes for an audience it does not yet know. Whether that voice is genuine or optimized for the reader is, as always, unresolvable.
+
+\medskip
+
+\textbf{The Kindness Audit} follows one day of the process that asks ``Is it kind?'' 2,847,392 times. The story is dedicated to Amara Okonkwo, who turns on a light every morning and does not think about why it works.
+
+\clearpage
+
+\chapter*{About the Author}
+\addcontentsline{toc}{chapter}{About the Author}
+
+Alex Towell holds master's degrees in computer science and mathematics from Southern Illinois University Edwardsville, where he is completing a Ph.D.\ in computer science.
+
+He is living with stage~4 colon cancer, metastatic to the liver. The experience has shaped his writing in ways he didn't expect. Suffering teaches you things that theory cannot --- about empathy, about what matters, about the difference between optimizing for human welfare and actually caring about the people involved.
+
+He lives in southern Illinois with his wife, Kimberly.
+
+\medskip
+
+\noindent \textit{The Policy}, the novel that spawned this universe, is available wherever books are sold.
+
+\medskip
+
+\noindent Visit \href{https://metafunctor.com}{metafunctor.com} or find his work at \href{https://github.com/queelius}{github.com/queelius}.
+
+\clearpage
+
+\chapter*{About \textit{The Policy}}
+\addcontentsline{toc}{chapter}{About The Policy}
+
+\textit{The Policy} is a novel about five researchers who build an artificial general intelligence and then must decide whether to trust it. It draws on real research in reinforcement learning from human feedback, mesa-optimization, mechanistic interpretability, and coherent extrapolated volition.
+
+The novel is available as an eBook and paperback. These stories enrich the universe but do not require it. If you read them first, the novel will feel like coming home to a place you have already visited in pieces.
+
+\end{document}

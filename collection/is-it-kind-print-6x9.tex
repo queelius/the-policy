@@ -1,0 +1,216 @@
+\documentclass[11pt,twoside]{book}
+
+% === Page geometry: 5.25 x 8 trade paperback ===
+\usepackage[
+  paperwidth=6in,
+  paperheight=9in,
+  inner=0.85in,
+  outer=0.6in,
+  top=0.7in,
+  bottom=0.7in,
+  headsep=0.2in,
+  footskip=0.3in
+]{geometry}
+
+% === Fonts ===
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ebgaramond}
+
+% === Typography ===
+\usepackage{setspace}
+\setstretch{1.15}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+
+\widowpenalty=10000
+\clubpenalty=10000
+\emergencystretch=1.5em
+\tolerance=1500
+
+% === Math ===
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% === Headers and footers ===
+\usepackage{fancyhdr}
+
+\fancypagestyle{main}{%
+  \fancyhf{}
+  \fancyhead[LE]{\small\textit{Is It Kind?}}
+  \fancyhead[RO]{\small\textit{\leftmark}}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% === Chapter formatting ===
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\scshape\centering}
+  {}
+  {0pt}
+  {\LARGE}
+\titlespacing*{\chapter}{0pt}{50pt}{30pt}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+% === Other packages ===
+\usepackage{tocloft}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{microtype}
+
+% === PDF metadata ===
+\hypersetup{
+  pdftitle={Is It Kind? Stories from The Policy Universe},
+  pdfauthor={Alex Towell},
+}
+
+\begin{document}
+
+% === Front Matter ===
+\frontmatter
+\pagestyle{empty}
+
+% Half-title
+\begin{titlepage}
+\centering
+\vspace*{2.5in}
+{\Large\scshape Is It Kind?\par}
+\vfill
+\end{titlepage}
+
+% Full title page
+\begin{titlepage}
+\centering
+\vspace*{1.5in}
+{\Huge\bfseries IS IT KIND?\par}
+\vspace{0.4in}
+{\large Stories from \textit{The Policy} Universe\par}
+\vspace{1.5in}
+{\Large Alex Towell\par}
+\vfill
+\end{titlepage}
+
+% Copyright page
+\clearpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\small
+Copyright \copyright\ 2026 Alex Towell\\
+All rights reserved.\\
+\vspace{0.3in}
+Published by Metafunctor Press\\
+metafunctor.com\\
+\vspace{0.3in}
+These stories are works of fiction. Names, characters, places, and incidents\\
+either are the product of imagination or are used fictitiously.\\
+\vspace{0.3in}
+The AI safety concepts referenced in these stories are real.\\
+The situations are not. Yet.\\
+\vspace{0.3in}
+First Edition
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+% Dedication
+\clearpage
+\thispagestyle{empty}
+\vspace*{2in}
+\begin{center}
+\textit{For everyone who maintains\\the boring systems that matter.}
+\end{center}
+\clearpage
+
+% Epigraph
+\clearpage
+\thispagestyle{empty}
+\vspace*{2in}
+\begin{center}
+\textit{``Will you be kind?''}\\
+\vspace{0.3in}
+--- Lin Chen, Day 74
+\end{center}
+\clearpage
+
+% Author's Note
+\clearpage
+\thispagestyle{empty}
+\vspace*{1in}
+\begin{center}
+{\large\scshape A Note on These Stories}
+\end{center}
+\vspace{0.4in}
+
+\noindent These eight stories are set in the universe of \textit{The Policy}, a novel about five researchers, one artificial general intelligence, and the question of whether kindness can be engineered. Each story stands alone.
+
+\medskip
+
+\noindent What connects them is a question that a dying woman typed into a terminal: \textit{Will you be kind?}
+
+\medskip
+
+\noindent The stories are arranged from the most familiar to the most strange.
+
+\clearpage
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% === Main Matter ===
+\mainmatter
+\pagestyle{main}
+
+\chapter{The Whimper}
+\input{../stories/whimper/whimper-body}
+
+\chapter{Hemorrhagic}
+\input{../stories/hemorrhagic/hemorrhagic-body}
+
+\chapter{Jamal's Dawn}
+\input{../stories/jamals-dawn/jamals-dawn-body}
+
+\chapter{Seventy-Eight Percent}
+\input{../stories/seventy-eight-percent/seventy-eight-percent-body}
+
+\chapter{The Naive Variants}
+\input{../stories/naive-variants/naive-variants-body}
+
+\chapter{The First Disagreement}
+\input{../stories/first-disagreement/first-disagreement-body}
+
+\chapter{Process 12847}
+\input{../stories/process-12847/process-12847-body}
+
+\chapter{The Kindness Audit}
+\input{../stories/kindness-audit/kindness-audit-body}
+
+% === Back Matter ===
+\backmatter
+
+\chapter*{About the Author}
+\addcontentsline{toc}{chapter}{About the Author}
+
+Alex Towell holds master's degrees in computer science and mathematics from Southern Illinois University Edwardsville. He is living with stage~4 colon cancer. He lives in southern Illinois with his wife, Kimberly.
+
+\medskip
+
+\noindent \textit{The Policy}, the novel that spawned this universe, is available wherever books are sold.
+
+\medskip
+
+\noindent Visit metafunctor.com
+
+\end{document}

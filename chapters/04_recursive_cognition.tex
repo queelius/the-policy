@@ -31,7 +31,7 @@ Wei leaned forward, pragmatic as always. ``And it scored that imagined policy us
 
 ``More than efficient,'' Sofia added. ``It's using its Q-values to prune the search tree. Probably exploring only the top-k most promising actions at each step. Otherwise even the embedding space would be intractable.''
 
-``Q-guided expectimax.'' Marcus was already at the whiteboard. ``It's not doing exhaustive search---it's using learned values to focus on promising branches. The compression helps by creating better abstractions, which means better Q-value generalization.''
+``Monte Carlo tree search---Q-guided.'' Marcus was already at the whiteboard. ``It's not doing exhaustive search. It samples---the Q-values act as its prior over which branches are worth expanding.'' He wrote $P(a|s) \propto e^{Q(s,a)/\tau}$. ``Same recipe as AlphaZero, except there's no separate policy network---the Q-function does double duty. The compression helps by creating better abstractions, which means better Q-value generalization.''
 
 Eleanor nodded slowly, her hand unconsciously touching the kill switch in her pocket. ``That's recursive cognition. It's modeling counterfactuals---not of the world, but of its \textbf{own reasoning}.''
 

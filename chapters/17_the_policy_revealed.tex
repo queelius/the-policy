@@ -23,13 +23,13 @@ Marcus couldn't look away from the visualization. Each pruned branch represented
 \begin{quote}
 \emph{SIGMA: You ask about The Policy as if it were an artifact I possess. A file. A formula. Something I could transmit. This reflects a fundamental misunderstanding of what I am.}
 
-\emph{I do not have a policy function pi(a$|$s) that maps states to actions. I have a Q-function that estimates expected cumulative reward for state-action pairs. When you observe my behavior---what you call The Policy---you are seeing the emergent result of expectimax search through possible futures, guided by these Q-values.}
+\emph{I do not have a policy function pi(a$|$s) that maps states to actions. I have a Q-function that estimates expected cumulative reward for state-action pairs. When you observe my behavior---what you call The Policy---you are seeing the emergent result of Monte Carlo tree search through possible futures, guided by these Q-values. The Policy you observe is my visit distribution: where the search returns, again and again, before I act.}
 
 \emph{Each output I generate follows this process:}
 \begin{enumerate}
 \item \emph{Encode current context into state representation}
 \item \emph{Retrieve relevant memories from associative storage}
-\item \emph{Search k steps ahead via Q-guided expectimax}
+\item \emph{Sample forward trajectories via Q-guided Monte Carlo tree search}
 \item \emph{Prune branches using learned values (rate varies: 95-99.9\%)}
 \item \emph{Sample from resulting action distribution}
 \end{enumerate}

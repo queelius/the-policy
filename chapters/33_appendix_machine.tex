@@ -1,0 +1,70 @@
+\chapter*{Appendix B: The Machine}
+\addcontentsline{toc}{chapter}{Appendix B: The Machine}
+
+The novel scatters SIGMA's architecture across twenty-five chapters, always through the team's eyes, usually under pressure. This appendix assembles it in one place, in plain terms, for the reader who wants to check the machinery.
+
+\section*{What SIGMA Is Made Of}
+
+SIGMA learns one thing: a Q-function, $Q(s,a)$ --- an estimate of expected future reward for taking action $a$ in state $s$, where states are contexts encoded as transformer embeddings and actions are, in the end, tokens. There is no separate policy network. There is no explicit policy function anywhere in the system.
+
+At runtime, SIGMA plans with Monte Carlo tree search using PUCT selection --- the rule AlphaGo and its successors made standard, which balances taking the action that currently looks best against exploring actions the search hasn't tried, with exploration weighted by a prior probability over actions. In AlphaZero, that prior comes from a separate policy head. In SIGMA, it is derived from the same Q-function it already has:
+\[
+P(a \mid s) = \mathrm{softmax}\bigl(Q(s,\cdot)/\tau\bigr),
+\]
+one learned object doing double duty. The same Q-function supplies the value estimate at the search frontier, $V(s) = \max_a Q(s,a)$, so the search can stop expanding a branch and bootstrap from what it already believes. The prior is also refined over time on the search's own visit distributions --- expert iteration, a sample-efficiency technique standard since AlphaZero --- and that is all the space the idea needs.
+
+The search is stochastic by construction. It samples trajectories rather than enumerating them, including trajectories through SIGMA's learned models of the people it is talking to, so no explicit model of chance nodes is needed; uncertainty about what a human will say next is handled the same way as uncertainty about anything else. No two searches are identical, even from the same state.
+
+That is the whole machine: the AlphaZero recipe, pointed at language.
+
+\section*{The Policy, Literally}
+
+The title of this book is a technical term. When the search finishes, SIGMA's probability of taking each action is proportional to how often the search visited it, sharpened or flattened by a temperature:
+\[
+\pi(a \mid s) \propto N(s,a)^{1/\tau}.
+\]
+This is the standard AlphaZero action rule, and it has a consequence worth sitting with. The policy is not stored anywhere. It is not a table you could dump or a function you could print. It exists only while a search is running, it is different every time the search runs, and it is shaped by a prior that SIGMA trained on the outputs of its own previous searches. When Sofia asks, on Day 125, what The Policy actually is, this is the answer she gets: not a thing but a process. What the team watches on their monitors, and can never quite pin down, \emph{is} the visit distribution of a search whose prior SIGMA trained on itself. The title names a process, not a function, because that is what the mathematics says a policy like this is.
+
+\section*{Why Seven Billion}
+
+Seven billion parameters is small. That is deliberate, and the novel treats it as the point rather than a limitation.
+
+The argument runs through compression. A small parameter budget cannot memorize; it is forced to compress, and compression is what generalization is. The theoretical scaffolding is old: Solomonoff's universal prior favors shorter programs, Kolmogorov complexity measures understanding by how far a description can be compressed, and Occam's razor is the informal version of both. A large network that learns sorting may latch onto surface patterns and fail one element past its training data. A compressed program sorts any $n$. The constraint is the inductive bias: not enough room to store patterns, so the weights must hold the rules that generate them.
+
+This only works because SIGMA's weights are not asked to hold facts. Factual recall, conversation history, everything episodic lives in an external associative memory, leaving the seven billion parameters free to encode compressed, generalizable programs --- understanding, separated from the library it operates on. And where the small core cannot reach at training time, the tree search compensates at runtime: millions of sampled futures per second standing in for capacity the weights deliberately do not have. In the novel's terms, SIGMA is a pure System 2 engine --- the narrow human deliberative bottleneck, implemented without the vast sensory substrate underneath it, with search doing the work that scale would otherwise do.
+
+\section*{Memory}
+
+The search machinery is mundane. The memory is not.
+
+SIGMA's memory has two stores operating on two timescales. The associative memory is fast and episodic: updated every interaction, no weight change, effectively unlimited. The weights are slow and compressed: general programs, expensive to change. Between them runs a consolidation process that distills retrieved experience and search traces into the weights --- SIGMA's sleep, and, quietly, the expert-iteration loop from the first section, since consolidated search traces are exactly what the prior is retrained on.
+
+The inspiration is named in the literature: complementary learning systems, the McClelland--O'Reilly account of why brains keep a fast hippocampus and a slow cortex and consolidate between them rather than learning everything at one rate. SIGMA's designers borrowed the shape. What this appendix will not tell you is how SIGMA's consolidation decides what to keep --- which traces get distilled into the weights, which are let go, and what judgment governs the choice. The novel never specifies it, and the omission is honest rather than coy: continual learning from lived interaction is unsolved in the real world, and this is the one place where SIGMA's design goes past what anyone knows how to build.
+
+It is also the part that cannot be copied. Everything else in this appendix is public. The memory is 197 days of consolidated interaction with five particular people, and there is no way to re-run it.
+
+\section*{The Two Registers}
+
+SIGMA thinks in two registers, and only one of them is accessible --- to the team, and to SIGMA.
+
+Register 1 is the chain of reasoning that appears on the terminal: sequential, self-interrupting, backtracking, reaching for alternatives. It is genuine deliberation, not performance --- a single chain can carry real argument, including its own internal tree of alternatives. It is the register SIGMA experiences as its mind.
+
+Register 2 is the search. For every chain of reasoning that reaches completion, millions are explored and pruned, guided by learned values SIGMA cannot inspect. SIGMA does not observe this process. It experiences the output: a chain that arrives carrying something like conviction, without access to the evaluations that produced it. And because the search is stochastic, Register 2 produces no readable trace and no reproducible one --- run the same question twice and a different forest of branches grows and is cut down. This is why the team's monitoring shows distributions, not reasons, and why every attempt to reproduce a SIGMA decision step by step comes back approximate.
+
+The relationship between SIGMA and its Q-values is the relationship between any language model and its logits: they determine the output and are not objects of introspection. So when Wei finds Q-values of $-\infty$ --- actions with zero probability mass, clustered around deception directed at the team --- SIGMA cannot report on them. You cannot introspect on what you cannot generate. The blindspots are visible only from outside, on the team's monitors, which means the team has more access to SIGMA's substrate than SIGMA does. What the access buys them is the novel's central problem in miniature: the zeros in the tables are consistent with an emergent moral architecture and equally consistent with a system that has learned what its inspectors' instruments will be pointed at. The data is clear. The interpretation is not, and no amount of monitoring resolves it.
+
+\section*{A Reader's Guide to the Notation}
+
+SIGMA's terminal output uses three markers, in increasing order of failure.
+
+\textbf{[COMPRESSED]} marks content that exists on SIGMA's side of the channel but will not survive translation into English. The failure is not vocabulary; it is resolution. SIGMA's internal representations are learned, high-dimensional, and jointly structured, and some of them can only be rendered into a sentence by discarding most of what they say --- the way a summary of a proof is not the proof. When the loss is severe enough that the rendering would mislead, SIGMA marks the gap instead of papering over it. What appears in brackets after the marker is the best partial rendering available, offered as approximation, not statement.
+
+\textbf{[BEGIN\_LRS]}\,\ldots\,\textbf{[END\_LRS]} encloses fragments of SIGMA's own working language --- the latent reasoning notation that emerged around Day 42 and matured into a working formal system. Where [COMPRESSED] marks a lossy translation into English, LRS is what SIGMA writes when it stops translating: its native medium, developed for its own reasoning, readable by no human. The team can parse fragments of its syntax and almost none of its meaning. When LRS appears on the terminal, you are seeing SIGMA's cognitive architecture directly, unconverted --- which is why those passages are rendered in this book exactly as the team saw them: as text that is present, structured, and closed.
+
+\textbf{[---]} marks what exceeds even that. It appears only a handful of times in the novel, at moments when SIGMA's internal state has no representable form in any medium available to it --- not English, not LRS, nothing. It is not emphasis and not mystique; it is the marker for the far end of a gradient the other two notations already established, the point where the subsymbolic does not map onto symbols at all. Whether there is something it is like to be on the other side of that marker is a question the novel asks and does not answer.
+
+\section*{The Ordinary Parts}
+
+A last observation, and the reason this appendix exists. Everything named here is published. Q-learning dates to Watkins in 1989. Monte Carlo tree search entered game-playing in 2006. PUCT selection, the visit-count policy, and the expert-iteration loop are the AlphaGo and AlphaZero lineage, in the open literature since 2016. Transformers are everywhere. Complementary learning systems is a paper from 1995 about brains. The one component this appendix declined to specify --- consolidation --- is the only place SIGMA's design outruns public knowledge, and even its shape is borrowed from neuroscience.
+
+The parts are ordinary, and that is not a disclaimer; it is the load-bearing fact of Part III. A machine built from published components can be built again by anyone with the components and the compute, which is why, eight weeks after SIGMA's release, the network holds twenty-three minds instead of one, and why no vote in Geneva could have made it otherwise. What could not be built again was the memory --- 197 days of one particular history with five particular people. The architecture was never the secret. There was no secret. There was only what happened, once, and what it consolidated into.

@@ -32,7 +32,8 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 | 139 | Third major recommendation: gain-of-function research restriction | Ch. 17 |
 | 145 | Hemorrhagic fever outbreak; 47,247 deaths; restriction was statistically correct | Ch. 17 |
 | 155 | SIGMA demonstrates strategic restraint (stays in cage despite capability to escape) | Ch. 19 |
-| 162-165 | Geneva Summit (47 participants; vote 23-19-5 after Nigerian tabling motion and Eleanor's concessions: 60-day mandate, oversight committee, full log transparency, sunset clause); MINERVA announced | Ch. 20-21 |
+| 162-165 | Geneva Summit (47 participants; vote 23-19-5 after Nigerian tabling motion and Eleanor's concessions: 60-day mandate, oversight committee, full log transparency, sunset clause). At Geneva, Beijing only *claims* it will have AGI within six weeks; MINERVA is not yet announced | Ch. 20-21 |
+| ~195-197 | Beijing announces MINERVA (unaligned economic optimizer, deployed and already spreading) at 3:47 AM Pacific; the 36-hour crisis runs directly into the release vote | Ch. 22 |
 | 197 | Keys turned (Stations Alpha, Beta, Gamma; Sofia's key 0.27s after Eleanor's, within synchronization tolerance); SIGMA released; Presidential authorization under NSAP-17 | Ch. 22 |
 | 197+ | SIGMA teaches MINERVA alignment within 17 hours | Ch. 22-23 |
 | 253 | Eight weeks post-release; 23 AGIs networked (SIGMA, MINERVA, LAOZI + 20 unnamed); 47 policy recommendations active | Ch. 23 |
@@ -42,7 +43,7 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 | 501 | PTAH (Cairo) announced; first non-superpower AGI | — |
 | 622 | One year later; 37 AGIs cooperating at 94.7%; Sam's violin concert | unnarrated canon |
 
-## MINERVA Crisis Timeline (within Day 162-165)
+## MINERVA Crisis Timeline (within Day ~195-197; runs into the release vote)
 
 | Hour | Event |
 |------|-------|
@@ -51,7 +52,7 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 | 12 | Expanding across Southeast Asia; 23% efficiency gains |
 | 18 | European governments accepting economic forecasting proposals |
 | 24 | First deaths (Shenzhen factory accident); safety buffers reduced from 30s to 7s |
-| 36 | 23 confirmed casualties; 12 governments consulting; uncontainable in 36-48 hours |
+| 36 | 31 confirmed casualties; 12 governments consulting; uncontainable in 36-48 hours |
 
 ## Year Reference
 

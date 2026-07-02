@@ -152,8 +152,12 @@ but whether humans can remain."}\\
 \end{center}
 \clearpage
 
-% Table of Contents
+% Table of Contents: chapter depth (parts, chapters, appendices, afterword),
+% so intra-chapter section markers stay out of the reader-facing list.
+\begingroup
+\setcounter{tocdepth}{0}
 \tableofcontents
+\endgroup
 \clearpage
 
 % Begin main content

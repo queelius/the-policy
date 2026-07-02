@@ -229,7 +229,14 @@ but whether humans can remain.''}\\
 \end{center}
 \clearpage
 
-% No Table of Contents for print literary fiction
+% Table of Contents: parts, chapters, and back matter (appendices, afterword).
+% Chapter depth only, so intra-chapter section markers stay out of the list.
+\cleardoublepage
+\begingroup
+\setcounter{tocdepth}{0}
+\tableofcontents
+\endgroup
+\clearpage
 
 % === Main content ===
 \mainmatter

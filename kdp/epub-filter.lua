@@ -40,6 +40,34 @@ function Math(el)
   return el
 end
 
+-- Nested EPUB nav: parts stay at level 1; the 25 numbered chapters drop to
+-- level 2 so they nest under their part; every deeper heading (chapter and
+-- appendix sub-sections) drops to level 3 so it stays out of the 2-deep nav.
+-- Back matter (appendices, afterword, about, acknowledgments) stays at level 1.
+local top_level_titles = {
+  ["Author's Afterword"] = true,
+  ["About the Author"] = true,
+  ["About This Novel"] = true,
+  ["Acknowledgments"] = true,
+}
+function Header(el)
+  if el.level == 1 then
+    if el.classes:includes("unlisted") then return el end
+    local t = pandoc.utils.stringify(el)
+    -- Afterword matched by pattern because pandoc renders the apostrophe curly.
+    if t:match("^Part ") or t:match("^Appendix ") or t:match("Afterword")
+       or top_level_titles[t] then
+      return el  -- part or back matter: top-level nav entry
+    end
+    el.level = 2  -- numbered chapter: nest under its part
+    return el
+  elseif el.level == 2 then
+    el.level = 3  -- sub-section: below nav depth
+    return el
+  end
+  return el
+end
+
 function Pandoc(doc)
   local new_blocks = {}
   local front_matter_index = 0

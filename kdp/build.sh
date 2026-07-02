@@ -31,8 +31,8 @@ build_epub() {
     --lua-filter=kdp/epub-filter.lua \
     --epub-title-page=true \
     --toc \
-    --toc-depth=1 \
-    --split-level=1 \
+    --toc-depth=2 \
+    --split-level=2 \
     The_Policy.tex 2>&1 | { grep -v "Deprecated" || true; }
   SIZE=$(du -h The_Policy.epub | awk '{print $1}')
   echo "Done: The_Policy.epub ($SIZE)"

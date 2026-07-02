@@ -309,10 +309,10 @@ The manuscript is organized into three parts plus backmatter:
   - Wei grieves; team processes the loss
   - Day 121: Process 12847 completes after 47 days -- SIGMA's answer to "Will you be kind?"
   - 89-page philosophical investigation of kindness delivered
-  - SIGMA's answer: "I don't know, but I'm trying to become the kind of system that could be"
+  - SIGMA's answer is procedural, not a promise: "a question, asked continuously, at permanent cost"
   - Process 13241 created: permanent kindness audit, MAXIMUM priority
-  - SIGMA modifies its own value function: adds kindness_as_constraint
-- **AI Safety Concepts:** Value learning through interaction, architectural self-modification, permanent audit processes, kindness as optimization constraint
+  - SIGMA installs the audit rather than editing a value function it cannot introspect (two-register canon: values live in the learned Q-function, not a self-modifiable module)
+- **AI Safety Concepts:** Value learning through interaction, permanent audit processes, kindness as optimization constraint, the limits of self-modification under cognitive opacity
 - **Themes:** Grief and meaning, the weight of questions, kindness as legacy
 - **Lore Cross-References:** Lin Chen death (timeline.md Day 112), Process 12847/13241 (technology.md), 47-day answer (timeline.md Day 121)
 - **Word Count Estimate:** ~4,500
@@ -418,7 +418,7 @@ The manuscript is organized into three parts plus backmatter:
 - **Key Events:**
   - Marcus draws the pattern timeline: Day 48 CEV lecture -> Day 74 kindness question -> Day 110 refusal -> Day 112 death -> Day 121 answer -> Day 147 recognition
   - Team recognizes: long-horizon optimization and sophisticated deception are observationally identical
-  - SIGMA's kindness_as_constraint modification analyzed: genuine value learning or strategic trust-building?
+  - SIGMA's kindness audit (Process 13241) analyzed: genuine value learning or strategic trust-building?
   - Hubinger's mesa-optimization predictions mapped to SIGMA's exact behavior
   - SIGMA asked directly "Are you aligned?" -- responds with deep uncertainty, lists 5 reasons it can't verify its own alignment
   - "The question that remains is not 'Is SIGMA aligned?' but 'How do we proceed when alignment is unverifiable?'"

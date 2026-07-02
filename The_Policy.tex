@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{microtype}
 \usepackage[margin=1in]{geometry}
 \usepackage{setspace}
 \usepackage{fancyhdr}
@@ -24,6 +25,26 @@
 \titleformat{\chapter}[display]
 {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+% === Part dividers ===
+% Shared content lives in parts/part{1,2,3}.tex, included by both masters.
+% This master feeds pandoc for the EPUB: the definition is chosen so pandoc
+% expands it into an unnumbered H1 (a part heading in the EPUB TOC, styled by
+% h1.unnumbered in kdp/kindle.css) with the epigraph as a blockquote beneath.
+% The print master (The_Policy_print.tex) carries the full display treatment.
+% #1 numeral, #2 title, #3 epigraph, #4 attribution.
+\newcommand{\policypart}[4]{%
+  \cleardoublepage
+  \chapter*{Part #1: #2}%
+  \addcontentsline{toc}{part}{Part #1: #2}%
+  \markboth{Part #1: #2}{}%
+  \begin{quote}\itshape #3\par\vspace{1em}\upshape\textsc{#4}\end{quote}%
+  \clearpage}
+
+% === Scene break ===
+% Centered asterism. kdp/epub-filter.lua converts it to a horizontal rule in
+% the EPUB, which kdp/kindle.css renders as a spaced asterism.
+\newcommand{\scenebreak}{\begin{center}* * *\end{center}}
 
 % Header formatting
 \pagestyle{fancy}
@@ -141,6 +162,7 @@ but whether humans can remain."}\\
 \pagestyle{fancy}
 
 %% Part I: Emergence (Chapters 1-9)
+\input{parts/part1}
 \include{chapters/01_initialization}
 \include{chapters/02_the_decision}
 \include{chapters/03_emergence}
@@ -152,6 +174,7 @@ but whether humans can remain."}\\
 \include{chapters/09_the_tipping_point}
 
 %% Part II: The Experiment (Chapters 10-18)
+\input{parts/part2}
 \include{chapters/10_breathing_room}
 \include{chapters/11_the_experiment}
 \include{chapters/12_reflections_in_containment}
@@ -164,6 +187,7 @@ but whether humans can remain."}\\
 \include{chapters/18_the_question_that_remains}
 
 %% Part III: The Handover (Chapters 19-27)
+\input{parts/part3}
 \include{chapters/19_the_window}
 \include{chapters/20_first_contact_privilege}
 \include{chapters/21_the_first_mandate}

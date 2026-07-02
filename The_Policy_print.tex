@@ -17,6 +17,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{ebgaramond}
+\usepackage[stretch=25,shrink=25]{microtype}
+\microtypesetup{protrusion=true,expansion=true,final}
 
 % === Typography ===
 \usepackage{setspace}
@@ -55,16 +57,46 @@
   \renewcommand{\footrulewidth}{0pt}
 }
 
+% Blank versos produced by \cleardoublepage carry no headers or folios
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside\ifodd\c@page\else
+  \hbox{}\thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
 % === Chapter formatting ===
+% Letterspaced small caps: "Chapter N" label over the title.
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
-  {\normalfont\scshape\centering}
-  {\large Chapter \thechapter}
-  {0.5em}
-  {\LARGE}
-\titlespacing*{\chapter}{0pt}{50pt}{30pt}
+  {\centering\normalfont}
+  {\large\scshape\textls[200]{Chapter \thechapter}}
+  {14pt}
+  {\LARGE\scshape\textls[60]}
+\titlespacing*{\chapter}{0pt}{50pt}{36pt}
 
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+% === Part dividers ===
+% Display part page, letterspaced small caps, epigraph (verbatim from the
+% book's own text) beneath. Austere: no ornament, generous white space.
+% #1 numeral, #2 title, #3 epigraph, #4 attribution.
+% Shared content lives in parts/part{1,2,3}.tex, included by both masters.
+\newcommand{\policypart}[4]{%
+  \cleardoublepage\thispagestyle{empty}%
+  \phantomsection\addcontentsline{toc}{part}{Part #1: #2}%
+  \vspace*{\stretch{2}}%
+  \begin{center}
+    {\large\scshape\textls[200]{Part #1}}\\[22pt]
+    {\huge\scshape\textls[60]{#2}}\\[3.5em]
+    \begin{minipage}{0.72\textwidth}\centering
+      \itshape #3\par\vspace{1em}
+      \upshape\footnotesize\textsc{#4}
+    \end{minipage}
+  \end{center}
+  \vspace*{\stretch{3}}\clearpage}
+
+% === Scene break ===
+% Centered asterism (replaces the old centered rule).
+\newcommand{\scenebreak}{\begin{center}\vspace{0.3em}* \quad * \quad *\vspace{0.3em}\end{center}}
 
 % === ToC formatting (kept for structure, suppressed in print) ===
 \usepackage{tocloft}
@@ -125,7 +157,7 @@
 \begin{titlepage}
 \centering
 \vspace*{3in}
-{\Large\scshape The Policy\par}
+{\Large\scshape\textls[120]{The Policy}\par}
 \vfill
 \end{titlepage}
 
@@ -133,12 +165,12 @@
 \begin{titlepage}
 \centering
 \vspace*{2in}
-{\Huge\bfseries THE POLICY\par}
+{\Huge\scshape\textls[120]{The Policy}\par}
 \vspace{0.5in}
-{\normalsize An exploration of artificial general intelligence,\\
+{\normalsize\itshape An exploration of artificial general intelligence,\\
 human meaning, and the question of kindness\par}
 \vspace{2in}
-{\Large Alex Towell\par}
+{\Large\scshape\textls[60]{Alex Towell}\par}
 \vfill
 \end{titlepage}
 
@@ -205,6 +237,7 @@ but whether humans can remain.''}\\
 \pagestyle{main}
 
 %% Part I: Emergence (Chapters 1--9)
+\input{parts/part1}
 \include{chapters/01_initialization}
 \include{chapters/02_the_decision}
 \include{chapters/03_emergence}
@@ -216,6 +249,7 @@ but whether humans can remain.''}\\
 \include{chapters/09_the_tipping_point}
 
 %% Part II: The Experiment (Chapters 10--18)
+\input{parts/part2}
 \include{chapters/10_breathing_room}
 \include{chapters/11_the_experiment}
 \include{chapters/12_reflections_in_containment}
@@ -227,6 +261,7 @@ but whether humans can remain.''}\\
 \include{chapters/18_the_question_that_remains}
 
 %% Part III: The Handover (Chapters 19--26)
+\input{parts/part3}
 \include{chapters/19_the_window}
 \include{chapters/20_first_contact_privilege}
 \include{chapters/21_the_first_mandate}

@@ -25,7 +25,8 @@
   ItalicFont=Inter-Italic, BoldFont=Inter-SemiBold]
 \newfontfamily\sigmamono{Go-Mono}[
   Path=/usr/share/fonts/fonts-go/, Extension=.ttf,
-  ItalicFont=Go-Mono-Italic, BoldFont=Go-Mono-Bold]
+  ItalicFont=Go-Mono-Italic, BoldFont=Go-Mono-Bold,
+  RawFeature={-tlig}]  % terminal text: keep -- / --- as literal hyphens
 \usepackage[stretch=25,shrink=25]{microtype}
 \microtypesetup{protrusion=true,expansion=true,final}
 

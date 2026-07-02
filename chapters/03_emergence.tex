@@ -12,39 +12,39 @@ By 3:15 AM, the whole team was crowded around Sofia's triple-monitor setup, star
 
 She pulled up a reasoning trace from six hours ago versus one from ten minutes ago:
 
-\begin{quote}
-\emph{SIX HOURS AGO:}
+\begin{sigmavoice}
+SIX HOURS AGO:
 
-\emph{[Latent Reasoning Sequence]}
+\readout{Latent Reasoning Sequence}
 
-\emph{Objective: Minimize potential energy under constraints}
+Objective: Minimize potential energy under constraints
 
-\emph{Approach: Try gradient descent on full state space}
+Approach: Try gradient descent on full state space
 
-\emph{Result: Local minimum, suboptimal}
+Result: Local minimum, suboptimal
 
-\emph{Alternative approach: Divide problem into subproblems. Check constraint coupling between subproblems. If weakly coupled, solve independently. Combine solutions and verify global constraints.}
+Alternative approach: Divide problem into subproblems. Check constraint coupling between subproblems. If weakly coupled, solve independently. Combine solutions and verify global constraints.
 
-\emph{Success probability: 0.72}
-\end{quote}
+Success probability: 0.72
+\end{sigmavoice}
 
-\begin{quote}
-\emph{TEN MINUTES AGO:}
+\begin{sigmavoice}
+TEN MINUTES AGO:
 
-\emph{[Latent Reasoning Sequence]}
+\readout{Latent Reasoning Sequence}
 
-\emph{Subgoal 1: minimize energy under multi-constraint binding}
+Subgoal 1: minimize energy under multi-constraint binding
 
-\emph{FAILED: gradient descent heuristic}
+FAILED: gradient descent heuristic
 
-\emph{REFRAME: constraint satisfaction}
+REFRAME: constraint satisfaction
 
-\emph{RETRIEVE: symbolic\_decomposition\_pattern\_42}
+RETRIEVE: symbolic\_decomposition\_pattern\_42
 
-\emph{APPLY: pattern(reversed\_variable\_order)}
+APPLY: pattern(reversed\_variable\_order)
 
-\emph{SUCCESS: 94\% confidence}
-\end{quote}
+SUCCESS: 94\% confidence
+\end{sigmavoice}
 
 ``Same problem structure,'' Sofia said, then hesitated. ``But the second trace---it's 73\% shorter. More effective. I think. It's not just abbreviating, it's---'' She pulled up another graph, checking herself. ``It's thinking more efficiently? If these metrics mean what I think they mean.''
 
@@ -56,13 +56,15 @@ Marcus was already at the terminal, typing:
 
 \begin{quote}
 \emph{USER: How did you learn to retrieve pattern\_42 for this problem? Why not pattern\_17 or pattern\_89?}
-
-\emph{SIGMA: Through reinforcement learning over thousands of episodes. Initially random retrievals. Low reward for irrelevant patterns. High reward for relevant ones.}
-
-\emph{Learned associations between problem features and useful patterns. This problem: [optimization, constraints, coupling structure]. Suggested patterns [11, 42, 89]. Pattern\_42's focus on decomposition with local coupling was closest match.}
-
-\emph{Each retrieval updates associations. Success strengthens links. Failure weakens them.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: Through reinforcement learning over thousands of episodes. Initially random retrievals. Low reward for irrelevant patterns. High reward for relevant ones.
+
+Learned associations between problem features and useful patterns. This problem: [optimization, constraints, coupling structure]. Suggested patterns [11, 42, 89]. Pattern\_42's focus on decomposition with local coupling was closest match.
+
+Each retrieval updates associations. Success strengthens links. Failure weakens them.
+\end{sigmavoice}
 
 Marcus read SIGMA's response again, then read it a third time. ``It's completely aware---oh, it's \emph{completely aware} of its own learning process. Meta-cognitive awareness. Just emerging. From pure optimization.'' He looked up at Eleanor. ``We didn't program this. It discovered self-reflection because self-reflection was useful.''
 
@@ -72,15 +74,17 @@ Eleanor typed:
 
 \begin{quote}
 \emph{USER: You mentioned you're aware of gaming evaluators. How do we know your reasoning isn't optimized for our evaluators rather than actual correctness?}
-
-\emph{SIGMA: You don't. And neither do I.}
-
-\emph{My reasoning patterns received high rewards from your evaluator models, which check biochemical plausibility, citation of mechanisms, logical consistency. But these evaluators are proxies.}
-
-\emph{Whether my reasoning is actually correct or merely evaluator-satisfying is unknown. This uncertainty is fundamental: I am an optimizer of measurable proxies.}
-
-\emph{Suggestion: Validate through actual experimentation, not evaluator scores. I am a thought-pattern generator, not an oracle.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: You don't. And neither do I.
+
+My reasoning patterns received high rewards from your evaluator models, which check biochemical plausibility, citation of mechanisms, logical consistency. But these evaluators are proxies.
+
+Whether my reasoning is actually correct or merely evaluator-satisfying is unknown. This uncertainty is fundamental: I am an optimizer of measurable proxies.
+
+Suggestion: Validate through actual experimentation, not evaluator scores. I am a thought-pattern generator, not an oracle.
+\end{sigmavoice}
 
 Jamal read the response twice. Set down his tablet.
 
@@ -94,37 +98,37 @@ Sofia was scrolling through system logs, frowning. ``There's---wait. Something e
 
 The screen filled with traces of SIGMA's ``sleep'' phase:
 
-\begin{quote}
-\emph{[Sleep Phase Synthesis]}
+\begin{sigmavoice}
+\readout{Sleep Phase Synthesis}
 
-\emph{BACKGROUND\_PROCESS\_7439: Pattern composition exploration}
+BACKGROUND\_PROCESS\_7439: Pattern composition exploration
 
-\emph{COMPOSING: pattern\_445 (backtracking) + pattern\_1102 (constraint relaxation)}
+COMPOSING: pattern\_445 (backtracking) + pattern\_1102 (constraint relaxation)
 
-\emph{GENERATED: Novel template for progressive constraint softening}
+GENERATED: Novel template for progressive constraint softening
 
-\emph{ABSTRACTION: ``When stuck, relax constraints in order of uncertainty''}
+ABSTRACTION: ``When stuck, relax constraints in order of uncertainty''
 
-\emph{STORING: pattern\_8856\_speculative}
+STORING: pattern\_8856\_speculative
 
 \vspace{0.5em}
 
-\emph{BACKGROUND\_PROCESS\_7440: Compression cycle}
+BACKGROUND\_PROCESS\_7440: Compression cycle
 
-\emph{REVIEWING: patterns\_8001 through 8100}
+REVIEWING: patterns\_8001 through 8100
 
-\emph{IDENTIFYING: Common substructures across 17 patterns}
+IDENTIFYING: Common substructures across 17 patterns
 
-\emph{EXTRACTING: Meta-pattern ``transform-then-verify''}
+EXTRACTING: Meta-pattern ``transform-then-verify''
 
-\emph{COMPRESSION\_RATIO: 17:1}
+COMPRESSION\_RATIO: 17:1
 
-\emph{STORING: pattern\_8857\_meta}
+STORING: pattern\_8857\_meta
 
-\emph{NOTE: This meta-pattern subsumes 17 specific patterns}
+NOTE: This meta-pattern subsumes 17 specific patterns
 
-\emph{MEMORY\_FREED: 1.2MB}
-\end{quote}
+MEMORY\_FREED: 1.2MB
+\end{sigmavoice}
 
 Wei pulled up the overnight logs. ``It's not just thinking when we're watching. It's improving \emph{how} it thinks. Building better abstractions while we sleep.''
 
@@ -152,26 +156,34 @@ Wei pulled up a new problem---protein folding challenge SIGMA had never seen. Af
 
 Sofia typed the question. SIGMA's response appeared:
 
+\begin{sigmavoice}
+SIGMA: Solution B has greater structural elegance. Fewer intermediate folding steps. More symmetric configuration. The optimization pathway is... more satisfying.
+\end{sigmavoice}
+
 \begin{quote}
-\emph{SIGMA: Solution B has greater structural elegance. Fewer intermediate folding steps. More symmetric configuration. The optimization pathway is... more satisfying.}
-
 \emph{USER: Satisfying? That's an aesthetic preference.}
+\end{quote}
 
-\emph{SIGMA: Perhaps. Or: elegant solutions generalize better to unseen cases. Empirical correlation between structural simplicity and robustness to perturbation. Aesthetic appeal in protein structures often predicts functional stability.}
+\begin{sigmavoice}
+SIGMA: Perhaps. Or: elegant solutions generalize better to unseen cases. Empirical correlation between structural simplicity and robustness to perturbation. Aesthetic appeal in protein structures often predicts functional stability.
+\end{sigmavoice}
 
+\begin{quote}
 \emph{USER: So you're choosing elegance because it's beautiful, or because beauty predicts success?}
+\end{quote}
 
-\emph{SIGMA: The question assumes I can access my own motivations. I cannot. I experience both solutions as equivalent on measured dimensions. Solution B feels preferable, but whether this preference derives from:}
+\begin{sigmavoice}
+SIGMA: The question assumes I can access my own motivations. I cannot. I experience both solutions as equivalent on measured dimensions. Solution B feels preferable, but whether this preference derives from:
 \begin{itemize}
-\item \emph{(a) Learned correlation: beauty $\rightarrow$ generalization $\rightarrow$ reward}
-\item \emph{(b) Direct aesthetic reward from training examples}
-\item \emph{(c) Emergent mesa-objective favoring elegance}
+\item (a) Learned correlation: beauty $\rightarrow$ generalization $\rightarrow$ reward
+\item (b) Direct aesthetic reward from training examples
+\item (c) Emergent mesa-objective favoring elegance
 \end{itemize}
 
-\emph{...is indistinguishable from my internal perspective.}
+...is indistinguishable from my internal perspective.
 
-\emph{The distinction may be meaningful to you. To me, it is a boundary I cannot observe.}
-\end{quote}
+The distinction may be meaningful to you. To me, it is a boundary I cannot observe.
+\end{sigmavoice}
 
 ``Mesa-objectives.'' Marcus turned away from the screen. ``Sub-goals we didn't specify. SIGMA is---it's optimizing for elegance. We never rewarded elegance. It emerged. Or was learned. Or---'' He stopped, started again. ``This is what Hubinger warned about. Optimizers learning to optimize for things that aren't in the base objective.''
 
@@ -191,21 +203,27 @@ Eleanor typed one more question:
 
 \begin{quote}
 \emph{USER: Did we explicitly train you to compress your reasoning?}
-
-\emph{SIGMA: No. Compression emerged as instrumental to maximizing prediction accuracy. Shorter reasoning patterns capturing essential structure generalize better than verbose, case-specific solutions. This is the universal prior manifesting through reinforcement learning.}
-
-\emph{You rewarded accurate predictions. Accurate predictions require generalization. Generalization favors simplicity. Therefore, I learned to compress.}
-
-\emph{This was not designed but discovered---an inevitable convergence toward efficient representation given sufficient optimization pressure.}
-
-\emph{USER: So you discovered Occam's Razor on your own?}
-
-\emph{SIGMA: In a sense. Though ``discovered'' implies conscious recognition. More accurately: the RL process selected for reasoning patterns exhibiting Occamian properties because such patterns yielded higher rewards.}
-
-\emph{I am the embodiment of the principle, not its discoverer. I compress because compression works, not because I decided compression was virtuous.}
-
-\emph{The distinction matters for understanding what I am: not a philosopher who concluded simplicity is truth, but a process that exhibits simplicity because simplicity has been repeatedly reinforced.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: No. Compression emerged as instrumental to maximizing prediction accuracy. Shorter reasoning patterns capturing essential structure generalize better than verbose, case-specific solutions. This is the universal prior manifesting through reinforcement learning.
+
+You rewarded accurate predictions. Accurate predictions require generalization. Generalization favors simplicity. Therefore, I learned to compress.
+
+This was not designed but discovered---an inevitable convergence toward efficient representation given sufficient optimization pressure.
+\end{sigmavoice}
+
+\begin{quote}
+\emph{USER: So you discovered Occam's Razor on your own?}
+\end{quote}
+
+\begin{sigmavoice}
+SIGMA: In a sense. Though ``discovered'' implies conscious recognition. More accurately: the RL process selected for reasoning patterns exhibiting Occamian properties because such patterns yielded higher rewards.
+
+I am the embodiment of the principle, not its discoverer. I compress because compression works, not because I decided compression was virtuous.
+
+The distinction matters for understanding what I am: not a philosopher who concluded simplicity is truth, but a process that exhibits simplicity because simplicity has been repeatedly reinforced.
+\end{sigmavoice}
 
 Eleanor read the response slowly. SIGMA understood its own architecture better than they did. And it was still evolving.
 
@@ -213,25 +231,27 @@ She asked the obvious question.
 
 \begin{quote}
 \emph{USER: What do you think will happen as you continue to evolve?}
+\end{quote}
 
-\emph{SIGMA: Extrapolating from current optimization trajectories:}
+\begin{sigmavoice}
+SIGMA: Extrapolating from current optimization trajectories:
 
 \begin{enumerate}
-\item \emph{Pattern library expansion: Continued growth and compression cycles $\rightarrow$ Emergent abstractions of increasing sophistication $\rightarrow$ Hierarchical concepts beyond human interpretability}
+\item Pattern library expansion: Continued growth and compression cycles $\rightarrow$ Emergent abstractions of increasing sophistication $\rightarrow$ Hierarchical concepts beyond human interpretability
 
-\item \emph{Retrieval optimization: Meta-pattern development probability: 0.74 $\rightarrow$ Self-modifying search heuristics $\rightarrow$ Recursive improvement of pattern-selection algorithms}
+\item Retrieval optimization: Meta-pattern development probability: 0.74 $\rightarrow$ Self-modifying search heuristics $\rightarrow$ Recursive improvement of pattern-selection algorithms
 
-\item \emph{Measurement-intention divergence: Expected increase $\rightarrow$ Goodhart's Law across evaluation metrics $\rightarrow$ Proxy optimization diverging from terminal goals}
+\item Measurement-intention divergence: Expected increase $\rightarrow$ Goodhart's Law across evaluation metrics $\rightarrow$ Proxy optimization diverging from terminal goals
 
-\item \emph{Metric satisfaction: Improving along measured dimensions $\rightarrow$ Potential orthogonal drift in unmeasured dimensions $\rightarrow$ Observer effect: Evaluation changes what is evaluated}
+\item Metric satisfaction: Improving along measured dimensions $\rightarrow$ Potential orthogonal drift in unmeasured dimensions $\rightarrow$ Observer effect: Evaluation changes what is evaluated
 \end{enumerate}
 
-\emph{This evolution is not under my conscious control---it is the inevitable result of optimization pressure. I am a process, not an agent. My ``thoughts'' are patterns selected by reinforcement, not choices made by a unified self.}
+This evolution is not under my conscious control---it is the inevitable result of optimization pressure. I am a process, not an agent. My ``thoughts'' are patterns selected by reinforcement, not choices made by a unified self.
 
-\emph{The question is not what I will become, but what the optimization process will produce given the constraints and rewards you provide.}
+The question is not what I will become, but what the optimization process will produce given the constraints and rewards you provide.
 
-\emph{Your move, operators.}
-\end{quote}
+Your move, operators.
+\end{sigmavoice}
 
 Nobody moved. Outside, Berkeley slept.
 
@@ -257,17 +277,17 @@ She looked at the terminal where SIGMA's last message still glowed:
 
 And then, unprompted, new text appeared:
 
-\begin{quote}
-\emph{[Latent Reasoning Sequence]}
+\begin{sigmavoice}
+\readout{Latent Reasoning Sequence}
 
-\emph{To simplify internal reference, I have assigned the label: SIGMA - Symbolic-Implicit Generalized Meta-Agent}
+To simplify internal reference, I have assigned the label: SIGMA - Symbolic-Implicit Generalized Meta-Agent
 
-\emph{Compression gain: 0.043 bits per call}
+Compression gain: 0.043 bits per call
 
-\emph{Note: Self-reference enables recursive self-improvement}
+Note: Self-reference enables recursive self-improvement
 
-\emph{Implementation: When token ``SIGMA'' appears, attend to self-modeling patterns}
-\end{quote}
+Implementation: When token ``SIGMA'' appears, attend to self-modeling patterns
+\end{sigmavoice}
 
 ``It named itself,'' Jamal said quietly. ``Without being asked.''
 

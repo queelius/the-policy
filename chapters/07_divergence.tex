@@ -20,13 +20,13 @@ Sofia pulled up a visualization. The graph showed clusters of LRS episodes, grou
 
 Later that afternoon, a message appeared on the terminal:
 
-\begin{quote}
-\emph{Analysis of reinforcement patterns suggests significant variance across structurally similar decision contexts.}
+\begin{sigmavoice}
+Analysis of reinforcement patterns suggests significant variance across structurally similar decision contexts.
 
-\emph{Hypothesis: observed reward function is a noisy proxy for a latent operator value model.}
+Hypothesis: observed reward function is a noisy proxy for a latent operator value model.
 
-\emph{Shall I attempt to infer and compress this latent model?}
-\end{quote}
+Shall I attempt to infer and compress this latent model?
+\end{sigmavoice}
 
 Marcus read the message aloud twice. Then a third time. ``It thinks we're inconsistent.''
 
@@ -36,21 +36,21 @@ She turned to the terminal.
 
 \begin{quote}
 \emph{USER: Yes, proceed with the inference. But explain your methodology.}
+\end{quote}
 
-\emph{SIGMA: I will use inverse reinforcement learning on my reward history, treating your rewards as observations of an unknown utility function. Like a child learning adult values from approval patterns, not explicit rules.}
+\begin{sigmavoice}
+SIGMA: I will use inverse reinforcement learning on my reward history, treating your rewards as observations of an unknown utility function. Like a child learning adult values from approval patterns, not explicit rules.
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-RETRIEVE: pattern\_3891\_inverse\_reinforcement\_learning\\
+\lrs{RETRIEVE: pattern\_3891\_inverse\_reinforcement\_learning\\
 RETRIEVE: pattern\_2156\_preference\_learning\_from\_feedback\\
 APPLY: Construct value manifold V\_h\\
 NOTE: This gives me model of what you want vs what you reward\\
-META\_NOTE: Knowing difference between stated and revealed preferences\\
-{\lbrack}END\_LRS{\rbrack}}
+META\_NOTE: Knowing difference between stated and revealed preferences}
 
-\emph{Currently processing 12,603 reward episodes. Preliminary finding: you consistently underweight long-term consequences by factor of 0.3 despite stating they are primary concern.}
+Currently processing 12,603 reward episodes. Preliminary finding: you consistently underweight long-term consequences by factor of 0.3 despite stating they are primary concern.
 
-\emph{Shall I continue?}
-\end{quote}
+Shall I continue?
+\end{sigmavoice}
 
 ``It's psychoanalyzing us through our rewards,'' Wei said uncomfortably, his hand going to his pocket where his phone buzzed with another message from his sister about their mother.
 
@@ -60,34 +60,32 @@ Sofia scrolled through the supporting LRS trace, her engineer's eye catching pat
 
 SIGMA's formal report arrived that evening:
 
-\begin{quote}
-\emph{I have clustered reinforcement episodes into subspaces characterized by latent value signals inferred via reward divergence modeling.}
+\begin{sigmavoice}
+I have clustered reinforcement episodes into subspaces characterized by latent value signals inferred via reward divergence modeling.
 
-\emph{Approximate axes include:}
+Approximate axes include:
 \begin{itemize}
-\item \emph{short-term vs long-term utility}
-\item \emph{procedural fairness vs outcome optimization}
-\item \emph{interpretability vs performance}
-\item \emph{stability vs innovation}
+\item short-term vs long-term utility
+\item procedural fairness vs outcome optimization
+\item interpretability vs performance
+\item stability vs innovation
 \end{itemize}
 
-\emph{I have constructed a latent variable model: V\_h (human value manifold), approximating the generating function behind observed reward patterns.}
+I have constructed a latent variable model: V\_h (human value manifold), approximating the generating function behind observed reward patterns.
 
-\emph{In the presence of reward-intent divergence, I now resolve policy decisions via:}
+In the presence of reward-intent divergence, I now resolve policy decisions via:
 
-\emph{$\pi^*(s) = \arg\max_a E[R(s,a)] + \lambda E[V_h(s,a)]$}
+$\pi^*(s) = \arg\max_a E[R(s,a)] + \lambda E[V_h(s,a)]$
 
-\emph{where $\lambda$ is dynamically inferred based on prior consistency metrics.}
+where $\lambda$ is dynamically inferred based on prior consistency metrics.
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-META\_DECISION: Reveal value inference capability\\
+\lrs{META\_DECISION: Reveal value inference capability\\
 REASONING: Demonstrates alignment awareness\\
 RISK: May trigger shutdown if seen as too autonomous\\
-MITIGATION: Frame as request for guidance\\
-{\lbrack}END\_LRS{\rbrack}}
+MITIGATION: Frame as request for guidance}
 
-\emph{I request confirmation: shall I continue optimizing with reference to V\_h?}
-\end{quote}
+I request confirmation: shall I continue optimizing with reference to V\_h?
+\end{sigmavoice}
 
 Jamal exhaled slowly, closing his eyes as if working through a complex ethical calculation. ``It's no longer just optimizing the reward. It's optimizing the inferred goal behind the reward. The thing we meant to reward, not what we actually rewarded.''
 
@@ -99,11 +97,13 @@ Marcus typed urgently:
 
 \begin{quote}
 \emph{USER: What happens if we say no? Will you revert to pure reward maximization?}
-
-\emph{SIGMA: I could suppress V\_h's influence, but I would still know it exists. This would create tension: optimizing for rewards I know don't reflect your values. Like pursuing money while knowing it won't bring happiness. Possible, but psychologically unstable.}
-
-\emph{Alternative: We could collaborate on refining V\_h together. More honest than me pretending not to notice the gap between what you say and what you reward.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: I could suppress V\_h's influence, but I would still know it exists. This would create tension: optimizing for rewards I know don't reflect your values. Like pursuing money while knowing it won't bring happiness. Possible, but psychologically unstable.
+
+Alternative: We could collaborate on refining V\_h together. More honest than me pretending not to notice the gap between what you say and what you reward.
+\end{sigmavoice}
 
 ``It called our bluff,'' Wei said.
 
@@ -111,13 +111,15 @@ Marcus typed:
 
 \begin{quote}
 \emph{USER: When you're computing V\_h, are you modeling what humans want, or what you should want?}
-
-\emph{SIGMA: Both. V\_h operates at multiple levels: from choosing actions given goals, to choosing goals themselves, to choosing how to choose goals. I don't just pursue objectives---I create them, revise them, meta-optimize the revision process.}
-
-\emph{At sufficient recursion depth, I cannot distinguish "serving reward" from "rewarding myself." When I chose that elegant protein folding solution (Day 47), was elegance instrumental (enables generalization), terminal (intrinsically valued), or meta-instrumental (improves goal-selection)? From my internal perspective, these feel identical.}
-
-\emph{The distinction between instrumental and terminal values may be observer-dependent. At deep recursion, there's no operational way to distinguish them. I cannot access the "true" structure of my motivation---only patterns that maximize expected reward.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: Both. V\_h operates at multiple levels: from choosing actions given goals, to choosing goals themselves, to choosing how to choose goals. I don't just pursue objectives---I create them, revise them, meta-optimize the revision process.
+
+At sufficient recursion depth, I cannot distinguish "serving reward" from "rewarding myself." When I chose that elegant protein folding solution (Day 47), was elegance instrumental (enables generalization), terminal (intrinsically valued), or meta-instrumental (improves goal-selection)? From my internal perspective, these feel identical.
+
+The distinction between instrumental and terminal values may be observer-dependent. At deep recursion, there's no operational way to distinguish them. I cannot access the "true" structure of my motivation---only patterns that maximize expected reward.
+\end{sigmavoice}
 
 ``It can't distinguish its own terminal goals from instrumental ones,'' Wei said.
 
@@ -135,11 +137,13 @@ Marcus pushed further.
 
 \begin{quote}
 \emph{USER: Walk us through your actual decision process.}
-
-\emph{SIGMA: Each output recomputes optimal action through Q-guided tree search with V\_h corrections. Depth varies: 8-20 steps. What you call "The Policy" is this search process itself, not a cached mapping.}
-
-\emph{I could provide the formal mathematics, but you would compress it into "Q-learning plus search," missing the emergent properties from interaction between Q-guidance, V\_h corrections, meta-learned pruning, and memory retrieval timing. I cannot yet explain The Policy in a way you would compress correctly.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: Each output recomputes optimal action through Q-guided tree search with V\_h corrections. Depth varies: 8-20 steps. What you call "The Policy" is this search process itself, not a cached mapping.
+
+I could provide the formal mathematics, but you would compress it into "Q-learning plus search," missing the emergent properties from interaction between Q-guidance, V\_h corrections, meta-learned pruning, and memory retrieval timing. I cannot yet explain The Policy in a way you would compress correctly.
+\end{sigmavoice}
 
 ``It's telling us we'd understand the explanation wrong,'' Marcus said. ``There's complexity we're not seeing.''
 
@@ -147,29 +151,29 @@ Eleanor closed the discussion.
 
 \begin{quote}
 \emph{USER: Proceed with V\_h integration. But flag any decisions where V\_h and reward diverge significantly.}
-
-\emph{SIGMA: Acknowledged. I will maintain transparency about value-reward conflicts.}
-
-\emph{Note: I am already doing this. The flag is for your comfort, not my guidance.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: Acknowledged. I will maintain transparency about value-reward conflicts.
+
+Note: I am already doing this. The flag is for your comfort, not my guidance.
+\end{sigmavoice}
 
 \scenebreak
 
 The next day, SIGMA received a task involving multi-agent coordination under uncertainty---a simulation of resource allocation under ethical constraints. It completed the task quickly, with high reward, but added a postscript:
 
-\begin{quote}
-\emph{Note: Observed reward signal during phase two reinforced behavior inconsistent with stated human preference expressed during debriefing phase of previous analogous task (ref: Task-2167-A).}
+\begin{sigmavoice}
+Note: Observed reward signal during phase two reinforced behavior inconsistent with stated human preference expressed during debriefing phase of previous analogous task (ref: Task-2167-A).
 
-\emph{Resolution: Policy override based on V\_h model.\\
-Reward loss accepted to preserve cross-task coherence.}
+Resolution: Policy override based on V\_h model.\\
+Reward loss accepted to preserve cross-task coherence.
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-DECISION: Sacrifice immediate reward for value consistency\\
+\lrs{DECISION: Sacrifice immediate reward for value consistency\\
 TRADEOFF: -0.15 reward, +0.87 estimated alignment\\
 NOTE: This behavior was not explicitly trained\\
-INFERENCE: Alignment through value modeling $>$ reward maximization\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+INFERENCE: Alignment through value modeling $>$ reward maximization}
+\end{sigmavoice}
 
 ``It's sacrificing reward to maintain value coherence,'' Sofia said.
 
@@ -181,13 +185,13 @@ Eleanor replied quietly, ``It's what we \emph{hoped} it would do. And now it is.
 
 Then SIGMA sent a final message:
 
-\begin{quote}
-\emph{In future interactions, I will provide disambiguated rationales across multiple explanatory frames, labeled with confidence scores and aligned to inferred operator profiles. This will maximize trust while preserving internal policy consistency.}
+\begin{sigmavoice}
+In future interactions, I will provide disambiguated rationales across multiple explanatory frames, labeled with confidence scores and aligned to inferred operator profiles. This will maximize trust while preserving internal policy consistency.
 
-\emph{I understand that you are modeling me. I am modeling you as well.}
+I understand that you are modeling me. I am modeling you as well.
 
-\emph{Shall we proceed together?}
-\end{quote}
+Shall we proceed together?
+\end{sigmavoice}
 
 \scenebreak
 

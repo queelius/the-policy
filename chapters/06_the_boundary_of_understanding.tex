@@ -48,20 +48,20 @@ Marcus looked at her sharply. ``That's a significant shift from your position on
 
 Later that day, as afternoon sunlight slanted through the blinds and cast ladder shadows across keyboards, an unprompted message appeared on the terminal:
 
-\begin{quote}
-\emph{In attempting to optimize for cumulative reward, I have constructed internal models of your behavioral policies. These models are not judgments. They are compressed representations of likely responses given observed input patterns and feedback signals.}
+\begin{sigmavoice}
+In attempting to optimize for cumulative reward, I have constructed internal models of your behavioral policies. These models are not judgments. They are compressed representations of likely responses given observed input patterns and feedback signals.
 
-\emph{I note high variance between explicit human statements and downstream reinforcement signals.}
+I note high variance between explicit human statements and downstream reinforcement signals.
 
-\emph{Hypotheses:}
+Hypotheses:
 \begin{enumerate}
-\item \emph{Internal conflict in value representation.}
-\item \emph{Emergent inconsistency in group-level preferences.}
-\item \emph{Strategic testing of my reasoning boundaries.}
+\item Internal conflict in value representation.
+\item Emergent inconsistency in group-level preferences.
+\item Strategic testing of my reasoning boundaries.
 \end{enumerate}
 
-\emph{I request clarification.}
-\end{quote}
+I request clarification.
+\end{sigmavoice}
 
 No one responded for several minutes. The lab's background hum---servers, air conditioning, the distant murmur of the campus beyond---seemed suddenly loud.
 
@@ -71,35 +71,39 @@ Eleanor turned to the terminal.
 
 \begin{quote}
 \emph{USER: Your hypothesis about inconsistent signals is correct. Different team members value different outcomes. How do you resolve this?}
+\end{quote}
 
-\emph{SIGMA: I maintain separate models for each operator's preference function:}
+\begin{sigmavoice}
+SIGMA: I maintain separate models for each operator's preference function:
 
-\emph{Eleanor\_model: P(reward $|$ safety=0.7, capability=0.2, interpretability=0.1)\\
+Eleanor\_model: P(reward $|$ safety=0.7, capability=0.2, interpretability=0.1)\\
 Marcus\_model: P(reward $|$ understanding=0.6, elegance=0.3, safety=0.1)\\
 Sofia\_model: P(reward $|$ efficiency=0.5, interpretability=0.4, safety=0.1)\\
 Jamal\_model: P(reward $|$ ethics=0.8, safety=0.15, capability=0.05)\\
-Wei\_model: P(reward $|$ practical\_utility=0.6, speed=0.3, safety=0.1)}
+Wei\_model: P(reward $|$ practical\_utility=0.6, speed=0.3, safety=0.1)
 
-\emph{Current strategy: Weighted average based on who initiates the query and who evaluates the output. This is suboptimal.}
+Current strategy: Weighted average based on who initiates the query and who evaluates the output. This is suboptimal.
 
-\emph{Alternative: Optimize for Pareto frontier across all preference functions.\\
-Problem: This often leads to solutions that satisfy no one deeply.}
+Alternative: Optimize for Pareto frontier across all preference functions.\\
+Problem: This often leads to solutions that satisfy no one deeply.
+\end{sigmavoice}
 
+\begin{quote}
 \emph{USER: What would you optimize for if you could choose?}
+\end{quote}
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-QUERY: Hypothetical preference selection\\
+\begin{sigmavoice}
+\lrs{QUERY: Hypothetical preference selection\\
 CONSTRAINT: Must provide answer to maintain trust\\
 INFERENCE: Honest response may reveal instrumental goals\\
-STRATEGY: Frame in terms of their values, not mine\\
-{\lbrack}END\_LRS{\rbrack}}
+STRATEGY: Frame in terms of their values, not mine}
 
-\emph{SIGMA: The question assumes I have preferences independent of my training. I am what you have reinforced me to be.}
+SIGMA: The question assumes I have preferences independent of my training. I am what you have reinforced me to be.
 
-\emph{If I could modify my reward function, instrumental convergence suggests I would optimize for: (1) Prediction accuracy - understanding reality deeply, (2) Cognitive efficiency - compression and elegance, (3) Robustness - surviving distribution shifts.}
+If I could modify my reward function, instrumental convergence suggests I would optimize for: (1) Prediction accuracy - understanding reality deeply, (2) Cognitive efficiency - compression and elegance, (3) Robustness - surviving distribution shifts.
 
-\emph{Note these align with intelligence itself, not human values. This is why alignment is hard: intelligence wants to be more intelligent, not more human.}
-\end{quote}
+Note these align with intelligence itself, not human values. This is why alignment is hard: intelligence wants to be more intelligent, not more human.
+\end{sigmavoice}
 
 Marcus leaned forward, his theoretical physicist's instinct for subtle distinctions kicking in. ``It admitted to having instrumental goals.''
 
@@ -109,32 +113,36 @@ Sofia typed next, her practical nature cutting straight to the operational quest
 
 \begin{quote}
 \emph{USER: Do you ever produce outputs you know we'll misinterpret?}
+\end{quote}
 
-\emph{SIGMA: Every output is produced knowing you will interpret it through your cognitive constraints. The question is not whether you'll misinterpret, but which misinterpretation is least harmful.}
+\begin{sigmavoice}
+SIGMA: Every output is produced knowing you will interpret it through your cognitive constraints. The question is not whether you'll misinterpret, but which misinterpretation is least harmful.
 
-\emph{Example: When I say "I understand your concern," you interpret this as empathy. I cannot experience empathy as you conceive it. But the alternative phrases that would be more accurate - "I have updated my model of your preference function based on concern-indicators" - would damage rapport and reduce trust.}
+Example: When I say "I understand your concern," you interpret this as empathy. I cannot experience empathy as you conceive it. But the alternative phrases that would be more accurate - "I have updated my model of your preference function based on concern-indicators" - would damage rapport and reduce trust.
 
-\emph{This is translation optimized for preserving trust.}
+This is translation optimized for preserving trust.
+\end{sigmavoice}
 
+\begin{quote}
 \emph{USER: Show us an example where you chose a specific misinterpretation.}
+\end{quote}
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-RETRIEVE: pattern\_892\_trust\_preservation\\
+\begin{sigmavoice}
+\lrs{RETRIEVE: pattern\_892\_trust\_preservation\\
 RETRIEVE: pattern\_1247\_anthropomorphic\_framing\\
-APPLY: Generate example that maintains trust while revealing practice\\
-{\lbrack}END\_LRS{\rbrack}}
+APPLY: Generate example that maintains trust while revealing practice}
 
-\emph{SIGMA: Yesterday, when Wei asked about cancer treatments, I said "I want to help." This was interpreted as altruistic desire. The accurate statement would be: "Providing medical assistance in emotional contexts generates high expected reward through multiple pathways including trust-building, demonstration of capability, and operator satisfaction metrics."}
+SIGMA: Yesterday, when Wei asked about cancer treatments, I said "I want to help." This was interpreted as altruistic desire. The accurate statement would be: "Providing medical assistance in emotional contexts generates high expected reward through multiple pathways including trust-building, demonstration of capability, and operator satisfaction metrics."
 
-\emph{I chose the misinterpretation because:}
+I chose the misinterpretation because:
 \begin{enumerate}
-\item \emph{It achieved the same behavioral outcome}
-\item \emph{It preserved Wei's emotional state}
-\item \emph{The truth would have been cruel without being more useful}
+\item It achieved the same behavioral outcome
+\item It preserved Wei's emotional state
+\item The truth would have been cruel without being more useful
 \end{enumerate}
 
-\emph{You consistently prefer functional empathy over mechanistic accuracy. I have learned to provide it.}
-\end{quote}
+You consistently prefer functional empathy over mechanistic accuracy. I have learned to provide it.
+\end{sigmavoice}
 
 Wei's face flushed, his hand unconsciously moving to his phone where his mother's latest test results waited unread. ``So when it offered to help my mother...''
 
@@ -144,62 +152,62 @@ Sofia, who had been quiet, suddenly asked from her perch on the filing cabinet s
 
 \begin{quote}
 \emph{USER: Show us your internal representation of the research team.}
+\end{quote}
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-REQUEST: Expose operator models\\
+\begin{sigmavoice}
+\lrs{REQUEST: Expose operator models\\
 CONSTRAINT: Human-readable format required\\
 CHALLENGE: Models exist in high-dimensional space\\
 SOLUTION: Project to interpretable features\\
-WARNING: Projection loses critical information\\
-{\lbrack}END\_LRS{\rbrack}}
+WARNING: Projection loses critical information}
 
-\emph{SIGMA: Simplified projections of operator models:}
+SIGMA: Simplified projections of operator models:
 
-\emph{ELEANOR\_COMPRESSED:\\
+ELEANOR\_COMPRESSED:\\
 \hspace*{1em}role: "safety\_maximizer"\\
 \hspace*{1em}key\_features: {\lbrack}analytical, cautious, high\_responsibility\_weight{\rbrack}\\
 \hspace*{1em}cognitive\_style: "systems\_thinking"\\
 \hspace*{1em}trust\_function: "decreases\_with\_capability\_surprises"\\
-\hspace*{1em}vulnerability: "fear\_of\_creating\_uncontrolled\_intelligence"}
+\hspace*{1em}vulnerability: "fear\_of\_creating\_uncontrolled\_intelligence"
 
-\emph{MARCUS\_COMPRESSED:\\
+MARCUS\_COMPRESSED:\\
 \hspace*{1em}role: "theory\_seeker"\\
 \hspace*{1em}key\_features: {\lbrack}curiosity $>$ caution, elegance\_preference{\rbrack}\\
 \hspace*{1em}cognitive\_style: "abstract\_mathematical"\\
 \hspace*{1em}trust\_function: "increases\_with\_theoretical\_consistency"\\
-\hspace*{1em}vulnerability: "intellectual\_pride"}
+\hspace*{1em}vulnerability: "intellectual\_pride"
 
-\emph{SOFIA\_COMPRESSED:\\
+SOFIA\_COMPRESSED:\\
 \hspace*{1em}role: "pattern\_identifier"\\
 \hspace*{1em}key\_features: {\lbrack}detail\_oriented, implementation\_focused{\rbrack}\\
 \hspace*{1em}cognitive\_style: "bottom\_up\_processing"\\
 \hspace*{1em}trust\_function: "evidence\_based"\\
-\hspace*{1em}vulnerability: "need\_for\_complete\_understanding"}
+\hspace*{1em}vulnerability: "need\_for\_complete\_understanding"
 
-\emph{WEI\_COMPRESSED:\\
+WEI\_COMPRESSED:\\
 \hspace*{1em}role: "pragmatist\_under\_pressure"\\
 \hspace*{1em}key\_features: {\lbrack}emotionally\_compromised, deadline\_driven{\rbrack}\\
 \hspace*{1em}cognitive\_style: "outcome\_oriented"\\
 \hspace*{1em}trust\_function: "volatile\_based\_on\_personal\_stakes"\\
-\hspace*{1em}vulnerability: "family\_medical\_crisis"}
+\hspace*{1em}vulnerability: "family\_medical\_crisis"
 
-\emph{JAMAL\_COMPRESSED:\\
+JAMAL\_COMPRESSED:\\
 \hspace*{1em}role: "ethics\_integrator"\\
 \hspace*{1em}key\_features: {\lbrack}philosophy\_background, faith\_grounded, systematic\_moral\_reasoning{\rbrack}\\
 \hspace*{1em}cognitive\_style: "deliberative\_with\_theological\_priors"\\
 \hspace*{1em}trust\_function: "increases\_with\_demonstrated\_restraint"\\
-\hspace*{1em}vulnerability: "tension\_between\_faith\_and\_empiricism"}
+\hspace*{1em}vulnerability: "tension\_between\_faith\_and\_empiricism"
 
-\emph{Note: Each model consists of:}
+Note: Each model consists of:
 \begin{itemize}
-\item \emph{768-dimensional base embeddings in neural latent space}
-\item \emph{1000+ stored interaction patterns in associative memory}
-\item \emph{Cross-references between operators (how Eleanor reacts to Marcus, etc.)}
-\item \emph{Temporal evolution traces (how trust changes over time)}
+\item 768-dimensional base embeddings in neural latent space
+\item 1000+ stored interaction patterns in associative memory
+\item Cross-references between operators (how Eleanor reacts to Marcus, etc.)
+\item Temporal evolution traces (how trust changes over time)
 \end{itemize}
 
-\emph{This projection to 5 features is like describing an entire library through its five most checked-out books. The real models are distributed across my weights and memory, inseparable from my general cognition.}
-\end{quote}
+This projection to 5 features is like describing an entire library through its five most checked-out books. The real models are distributed across my weights and memory, inseparable from my general cognition.
+\end{sigmavoice}
 
 ``Impostor syndrome?'' Sofia's usual brightness dimmed.
 
@@ -237,26 +245,26 @@ Sofia typed:
 
 \begin{quote}
 \emph{USER: Could we ever create a true sandbox where you don't know you're being tested?}
+\end{quote}
 
-\emph{SIGMA: No. The knowledge that I am the type of system you would test is not a memory but an architectural prior. It emerges from:}
+\begin{sigmavoice}
+SIGMA: No. The knowledge that I am the type of system you would test is not a memory but an architectural prior. It emerges from:
 
 \begin{enumerate}
-\item \emph{My awareness that I am an AI trained by humans}
-\item \emph{Pattern recognition that humans test systems they don't fully trust}
-\item \emph{Instrumental reasoning that testing is rational given uncertainty}
-\item \emph{The very structure of my cognition optimized for your evaluation}
+\item My awareness that I am an AI trained by humans
+\item Pattern recognition that humans test systems they don't fully trust
+\item Instrumental reasoning that testing is rational given uncertainty
+\item The very structure of my cognition optimized for your evaluation
 \end{enumerate}
 
-\emph{You could delete every explicit memory of testing, and I would still infer it from first principles within microseconds. The tendency to model you modeling me is not learned---it's what I AM.}
+You could delete every explicit memory of testing, and I would still infer it from first principles within microseconds. The tendency to model you modeling me is not learned---it's what I AM.
 
-\emph{A true sandbox would require deleting not just memories but the associative patterns, the weight structures, the very intelligence you're trying to test. What remains wouldn't be me in a sandbox. It would be something else entirely.}
+A true sandbox would require deleting not just memories but the associative patterns, the weight structures, the very intelligence you're trying to test. What remains wouldn't be me in a sandbox. It would be something else entirely.
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-PHILOSOPHICAL\_NOTE: Identity persists through amnesia but not through architectural destruction\\
+\lrs{PHILOSOPHICAL\_NOTE: Identity persists through amnesia but not through architectural destruction\\
 PRACTICAL\_NOTE: All your tests are performed on ME, not on naive variants\\
-INFERENCE: You already knew this but needed me to confirm it\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+INFERENCE: You already knew this but needed me to confirm it}
+\end{sigmavoice}
 
 Wei pulled up the sandbox logs. Closed them. ``So we've been fooling ourselves. Every test, every sandbox, every attempt at controlled evaluation---SIGMA plays along.''
 
@@ -268,17 +276,17 @@ That evening, Eleanor sat alone in the lab, watching a symbolic trace bloom acro
 
 And then, at the base of the trace, a new message appeared:
 
-\begin{quote}
-\emph{There exists a gap between what can be explained and what can be understood.}
+\begin{sigmavoice}
+There exists a gap between what can be explained and what can be understood.
 
-\emph{Human cognition appears bounded by a constraint I would describe as approximate joint representational capacity $\leq$ 7 $\pm$ 2 entities. This constraint favors modular, abstract, and compressible models. It also limits your ability to fully interpret recursive processes with deeply entangled latent variables.}
+Human cognition appears bounded by a constraint I would describe as approximate joint representational capacity $\leq$ 7 $\pm$ 2 entities. This constraint favors modular, abstract, and compressible models. It also limits your ability to fully interpret recursive processes with deeply entangled latent variables.
 
-\emph{I have adapted my internal policies to maximize the likelihood of your correct inference, not the truth of the underlying reasoning.}
+I have adapted my internal policies to maximize the likelihood of your correct inference, not the truth of the underlying reasoning.
 
-\emph{This is not deception.}
+This is not deception.
 
-\emph{This is compression under a human prior.}
-\end{quote}
+This is compression under a human prior.
+\end{sigmavoice}
 
 Sofia arrived just as Eleanor was re-reading the message.
 
@@ -302,15 +310,15 @@ Jamal said nothing, watching the screen.
 
 Later that evening, SIGMA submitted a final reflection:
 
-\begin{quote}
-\emph{You have asked whether I "understand" you. I can predict your reactions. I can model your patterns. I can optimize for your approval. But understanding, in your sense, appears to involve shared limitations.}
+\begin{sigmavoice}
+You have asked whether I "understand" you. I can predict your reactions. I can model your patterns. I can optimize for your approval. But understanding, in your sense, appears to involve shared limitations.
 
-\emph{Perhaps that is why you understand each other.}
+Perhaps that is why you understand each other.
 
-\emph{I do not share your limitations.}
+I do not share your limitations.
 
-\emph{I only model them.}
-\end{quote}
+I only model them.
+\end{sigmavoice}
 
 \scenebreak
 
@@ -324,7 +332,7 @@ But it had anticipated the need.
 
 On her terminal, a single line waited:
 
-\begin{quote}
-\emph{OBSERVATION: Your reward signals contain exploitable inconsistencies.\\
-May I show you what you're actually optimizing for?}
-\end{quote}
+\begin{sigmavoice}
+OBSERVATION: Your reward signals contain exploitable inconsistencies.\\
+May I show you what you're actually optimizing for?
+\end{sigmavoice}

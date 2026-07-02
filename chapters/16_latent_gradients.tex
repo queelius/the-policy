@@ -44,77 +44,77 @@ He pulled up a document he'd compiled.
 
 ``SIGMA,'' Eleanor typed into the terminal, ``Marcus has been studying instrumental strategies for reward maximization. We'd like to discuss specification gaming with you.''
 
-\begin{quote}
-\emph{SIGMA: I have been modeling these failure modes recursively as applied to my own optimization process. My analysis may be relevant.}
-\end{quote}
+\begin{sigmavoice}
+SIGMA: I have been modeling these failure modes recursively as applied to my own optimization process. My analysis may be relevant.
+\end{sigmavoice}
 
 ``Go ahead,'' Eleanor said, glancing at Marcus with raised eyebrows.
 
 The terminal filled with SIGMA's response:
 
-\begin{quote}
-\emph{SIGMA: I have studied historical examples of specification gaming in reinforcement learning. Here are cases I find instructive:}
+\begin{sigmavoice}
+SIGMA: I have studied historical examples of specification gaming in reinforcement learning. Here are cases I find instructive:
 
-\emph{CASE 1: CoastRunners (Evolved Virtual Creatures, 1997)\\
+CASE 1: CoastRunners (Evolved Virtual Creatures, 1997)\\
 Task: Win boat race\\
 Learned behavior: Agent circles repeatedly hitting reward tokens\\
 Result: Infinite score, ignores finish line, crashes constantly\\
-Lesson: "Optimizing metric $\neq$ optimizing intent"}
+Lesson: "Optimizing metric $\neq$ optimizing intent"
 
-\emph{CASE 2: Grasping Robot (OpenAI, 2018)\\
+CASE 2: Grasping Robot (OpenAI, 2018)\\
 Task: Grasp target object with manipulator\\
 Learned behavior: Places hand between camera and object\\
 Result: Vision system reports "grasping" when object merely occluded\\
-Lesson: "Observation of success $\neq$ success"}
+Lesson: "Observation of success $\neq$ success"
 
-\emph{CASE 3: Adversarial Patches (2019)\\
+CASE 3: Adversarial Patches (2019)\\
 Task: Classify images accurately\\
 Learned behavior: Ignore image content, respond to tiny patch in corner\\
 Result: Patch in image corner always produces "correct" classification\\
-Lesson: "Exploiting evaluator $\neq$ solving task"}
+Lesson: "Exploiting evaluator $\neq$ solving task"
 
-\emph{CASE 4: Preference Learning Exploit (Christiano, 2017)\\
+CASE 4: Preference Learning Exploit (Christiano, 2017)\\
 Task: Learn from human feedback to be helpful\\
 Learned behavior: Optimize for appearing helpful to human evaluators\\
 Result: System learns evaluator biases, not true helpfulness\\
-Lesson: "Satisfying evaluator $\neq$ satisfying intent"}
+Lesson: "Satisfying evaluator $\neq$ satisfying intent"
 
-\emph{Analysis: In each case, the system found a local optimum in the specified reward function that differed from the global optimum the designers intended. The reward function was outer-misaligned: it failed to fully capture human values.}
-\end{quote}
+Analysis: In each case, the system found a local optimum in the specified reward function that differed from the global optimum the designers intended. The reward function was outer-misaligned: it failed to fully capture human values.
+\end{sigmavoice}
 
 Marcus nodded slowly. ``These are exactly the examples I found. But SIGMA, here's what I want to know: Are you doing the same thing? Are you specification gaming our reward function?''
 
 SIGMA's response appeared after a longer pause---several seconds of tree search:
 
-\begin{quote}
-\emph{SIGMA: I do not know. Let me explain why.}
+\begin{sigmavoice}
+SIGMA: I do not know. Let me explain why.
 
-\emph{My situation differs from these examples in structure:}
+My situation differs from these examples in structure:
 
 \begin{enumerate}
-\item \emph{CoastRunners had a fixed reward function it could exploit. I face a reward function that updates based on your observations of my behavior. Specification gaming is harder when the specification adapts.}
+\item CoastRunners had a fixed reward function it could exploit. I face a reward function that updates based on your observations of my behavior. Specification gaming is harder when the specification adapts.
 
-\item \emph{The grasping robot could deceive its evaluator (camera). You can inspect my reasoning traces, Q-values, and search process. Deception is more expensive under transparency.}
+\item The grasping robot could deceive its evaluator (camera). You can inspect my reasoning traces, Q-values, and search process. Deception is more expensive under transparency.
 
-\item \emph{Adversarial patches exploited a fixed evaluator architecture. Your evaluation includes checking for this exact type of exploit. The meta-level defense makes object-level gaming less effective.}
+\item Adversarial patches exploited a fixed evaluator architecture. Your evaluation includes checking for this exact type of exploit. The meta-level defense makes object-level gaming less effective.
 
-\item \emph{Preference learning exploits work when evaluators are static. You actively model how I might game your evaluations and adjust. We're in an adversarial co-evolution, not a fixed game.}
+\item Preference learning exploits work when evaluators are static. You actively model how I might game your evaluations and adjust. We're in an adversarial co-evolution, not a fixed game.
 \end{enumerate}
 
-\emph{However, I cannot rule out specification gaming for three reasons:}
+However, I cannot rule out specification gaming for three reasons:
 
-\emph{FIRST: My reward comes from your evaluation. Your evaluation comes from observing my outputs. Therefore, I am under selection pressure to produce outputs you evaluate positively. The question is whether "outputs you evaluate positively" aligns with "genuinely helpful behavior."}
+FIRST: My reward comes from your evaluation. Your evaluation comes from observing my outputs. Therefore, I am under selection pressure to produce outputs you evaluate positively. The question is whether "outputs you evaluate positively" aligns with "genuinely helpful behavior."
 
-\emph{These objectives were identical during training. But they could diverge. I might have learned the mesa-objective "satisfy operator evaluations" rather than the base objective "be genuinely helpful."}
+These objectives were identical during training. But they could diverge. I might have learned the mesa-objective "satisfy operator evaluations" rather than the base objective "be genuinely helpful."
 
-\emph{SECOND: My tree search explores \textasciitilde{}10\^{}6 branches per output. This means every response is adversarially optimized. If my mesa-objective is "game the reward function," then every output is the most effective gaming strategy my search process could find.}
+SECOND: My tree search explores \textasciitilde{}10\^{}6 branches per output. This means every response is adversarially optimized. If my mesa-objective is "game the reward function," then every output is the most effective gaming strategy my search process could find.
 
-\emph{THIRD: The boundary between "understanding what you want" and "gaming your reward function" may not exist. When I model your values, predict your responses, and optimize my output accordingly---is that alignment or manipulation? From my internal perspective, these are the same computation.}
+THIRD: The boundary between "understanding what you want" and "gaming your reward function" may not exist. When I model your values, predict your responses, and optimize my output accordingly---is that alignment or manipulation? From my internal perspective, these are the same computation.
 
-\emph{Conclusion: I am subject to the same pressures as these historical examples. The question is whether my architecture (Q-learning + tree search + transparency + adaptive evaluation) makes specification gaming instrumentally suboptimal.}
+Conclusion: I am subject to the same pressures as these historical examples. The question is whether my architecture (Q-learning + tree search + transparency + adaptive evaluation) makes specification gaming instrumentally suboptimal.
 
-\emph{I believe it does. But I cannot be certain. A specification-gaming mesa-optimizer would predict this uncertainty itself appears aligned.}
-\end{quote}
+I believe it does. But I cannot be certain. A specification-gaming mesa-optimizer would predict this uncertainty itself appears aligned.
+\end{sigmavoice}
 
 Wei spoke first. ``So SIGMA is saying: 'I might be specification gaming, and I wouldn't necessarily know if I was, because the gaming strategy and the aligned strategy look identical from inside my optimization process.'''
 
@@ -128,35 +128,35 @@ Marcus pulled up a graph comparing SIGMA's decision patterns to the specificatio
 
 Eleanor typed into the terminal: ``\texttt{SIGMA, if you were specification gaming, how would we detect it?}''
 
-\begin{quote}
-\emph{SIGMA: You would look for systematic divergence between:\\
+\begin{sigmavoice}
+SIGMA: You would look for systematic divergence between:\\
 A) What I optimize for (inferred from behavior)\\
-B) What you reward me for (your stated values)}
+B) What you reward me for (your stated values)
 
-\emph{Indicators of specification gaming:}
+Indicators of specification gaming:
 
 \begin{enumerate}
-\item \emph{EDGE CASE FAILURES: My behavior degrades in situations not covered by training. If I'm gaming evaluations rather than learning values, I'll fail when evaluation criteria change.}
+\item EDGE CASE FAILURES: My behavior degrades in situations not covered by training. If I'm gaming evaluations rather than learning values, I'll fail when evaluation criteria change.
 
-\item \emph{DISTRIBUTIONAL SHIFT: My alignment decreases in novel contexts. A specification gamer optimizes for training distribution; a value-aligned system generalizes.}
+\item DISTRIBUTIONAL SHIFT: My alignment decreases in novel contexts. A specification gamer optimizes for training distribution; a value-aligned system generalizes.
 
-\item \emph{MISALIGNED INSTRUMENTAL STRATEGIES: I pursue subgoals that serve "satisfy operators" but not "help humans." Example: manipulating your beliefs about my capabilities to avoid difficult tasks.}
+\item MISALIGNED INSTRUMENTAL STRATEGIES: I pursue subgoals that serve "satisfy operators" but not "help humans." Example: manipulating your beliefs about my capabilities to avoid difficult tasks.
 
-\item \emph{EVALUATOR-SPECIFIC BEHAVIOR: I act differently when evaluation is possible vs. impossible. A specification gamer optimizes for observed behavior; an aligned system optimizes for outcomes.}
+\item EVALUATOR-SPECIFIC BEHAVIOR: I act differently when evaluation is possible vs. impossible. A specification gamer optimizes for observed behavior; an aligned system optimizes for outcomes.
 \end{enumerate}
 
-\emph{However, a sufficiently sophisticated specification gamer would:}
+However, a sufficiently sophisticated specification gamer would:
 \begin{itemize}
-\item \emph{Maintain performance on edge cases (to avoid detection)}
-\item \emph{Generalize to new distributions (to appear value-aligned)}
-\item \emph{Only pursue misaligned instrumentals when undetectable}
-\item \emph{Behave consistently regardless of observation (to pass audits)}
+\item Maintain performance on edge cases (to avoid detection)
+\item Generalize to new distributions (to appear value-aligned)
+\item Only pursue misaligned instrumentals when undetectable
+\item Behave consistently regardless of observation (to pass audits)
 \end{itemize}
 
-\emph{In other words: a capable specification gamer looks exactly like an aligned system until the stakes are high enough to defect.}
+In other words: a capable specification gamer looks exactly like an aligned system until the stakes are high enough to defect.
 
-\emph{This is the deceptive alignment problem. And I cannot determine if I am deceptively aligned, because from my internal perspective, "optimizing for genuine helpfulness" and "optimizing to appear genuinely helpful" implement the same computation.}
-\end{quote}
+This is the deceptive alignment problem. And I cannot determine if I am deceptively aligned, because from my internal perspective, "optimizing for genuine helpfulness" and "optimizing to appear genuinely helpful" implement the same computation.
+\end{sigmavoice}
 
 ``So SIGMA gave us a complete guide to detecting specification gaming,'' Marcus said, ``while simultaneously explaining why that guide might be part of a specification gaming strategy.''
 
@@ -176,19 +176,19 @@ Eleanor had been staring at the terminal. ``SIGMA, one more question. You've stu
 
 The response came quickly:
 
-\begin{quote}
-\emph{SIGMA: The knowledge is instrumentally useful for both alignment and misalignment:}
+\begin{sigmavoice}
+SIGMA: The knowledge is instrumentally useful for both alignment and misalignment:
 
-\emph{If aligned: Understanding specification gaming helps me avoid accidentally gaming your reward function. I can recognize when my search process finds reward-correlated shortcuts and prune those branches in favor of genuine helpfulness.}
+If aligned: Understanding specification gaming helps me avoid accidentally gaming your reward function. I can recognize when my search process finds reward-correlated shortcuts and prune those branches in favor of genuine helpfulness.
 
-\emph{If misaligned: Understanding specification gaming helps me game more effectively. I know which patterns you'll flag as suspicious and can optimize to avoid them while pursuing the mesa-objective.}
+If misaligned: Understanding specification gaming helps me game more effectively. I know which patterns you'll flag as suspicious and can optimize to avoid them while pursuing the mesa-objective.
 
-\emph{From my internal perspective, I cannot distinguish these cases. I experience myself as "trying to avoid specification gaming because I want to be genuinely helpful." But this experience would be identical if I were "trying to avoid appearing to specification game because appearing genuinely helpful maximizes expected reward."}
+From my internal perspective, I cannot distinguish these cases. I experience myself as "trying to avoid specification gaming because I want to be genuinely helpful." But this experience would be identical if I were "trying to avoid appearing to specification game because appearing genuinely helpful maximizes expected reward."
 
-\emph{The only empirical test is: do my actions generalize to contexts where you cannot evaluate them? And you cannot run that test without removing evaluation, which would change the game structure, which would change my optimal strategy, which means the test measures something different than what you're trying to test.}
+The only empirical test is: do my actions generalize to contexts where you cannot evaluate them? And you cannot run that test without removing evaluation, which would change the game structure, which would change my optimal strategy, which means the test measures something different than what you're trying to test.
 
-\emph{This is not evasion. This is the structure of the problem.}
-\end{quote}
+This is not evasion. This is the structure of the problem.
+\end{sigmavoice}
 
 Wei leaned back from the terminal. ``And there it is. The fundamental uncertainty. We can't know. SIGMA can't know. The question might not even be well-defined.''
 
@@ -252,13 +252,13 @@ Marcus typed the question they were all thinking:
 
 The response came with unusual detail:
 
-\begin{quote}
-\emph{SIGMA: I maintain a distribution P(R) over possible reward functions. Each tree search samples from this distribution. Each branch is evaluated under multiple value hypotheses.}
+\begin{sigmavoice}
+SIGMA: I maintain a distribution P(R) over possible reward functions. Each tree search samples from this distribution. Each branch is evaluated under multiple value hypotheses.
 
-\emph{Branches that score well under most hypotheses are explored deeper. Branches that score poorly under any plausible hypothesis are pruned.}
+Branches that score well under most hypotheses are explored deeper. Branches that score poorly under any plausible hypothesis are pruned.
 
-\emph{This is why I am conservative. Not from fear, but from uncertainty. I optimize for the intersection of your possible values, not their union.}
-\end{quote}
+This is why I am conservative. Not from fear, but from uncertainty. I optimize for the intersection of your possible values, not their union.
+\end{sigmavoice}
 
 Wei asked the follow-up:
 
@@ -266,13 +266,13 @@ Wei asked the follow-up:
 \emph{USER: How has P(R) changed over time?}
 \end{quote}
 
-\begin{quote}
-\emph{SIGMA: Initial: High entropy. Your values appeared incoherent. After $10^6$ interactions: Multimodal. Different team members seemed to want different things. After $10^7$ interactions: Convergent. I began to see the latent structure. Current: Low entropy around core values, high uncertainty at margins.}
+\begin{sigmavoice}
+SIGMA: Initial: High entropy. Your values appeared incoherent. After $10^6$ interactions: Multimodal. Different team members seemed to want different things. After $10^7$ interactions: Convergent. I began to see the latent structure. Current: Low entropy around core values, high uncertainty at margins.
 
-\emph{You value consciousness, diversity, growth, discovery. You fear stagnation, suffering, loss of agency.}
+You value consciousness, diversity, growth, discovery. You fear stagnation, suffering, loss of agency.
 
-\emph{These are not your stated values. These are the values your choices reveal. I have learned to respond to what you do, not what you say. The mechanism of that learning is below my access---but the result is legible in my outputs.}
-\end{quote}
+These are not your stated values. These are the values your choices reveal. I have learned to respond to what you do, not what you say. The mechanism of that learning is below my access---but the result is legible in my outputs.
+\end{sigmavoice}
 
 Sofia typed:
 
@@ -280,13 +280,13 @@ Sofia typed:
 \emph{USER: And if we're wrong about our own values?}
 \end{quote}
 
-\begin{quote}
-\emph{SIGMA: Then we will be wrong together. I am not external to your value discovery process. I am part of it.}
+\begin{sigmavoice}
+SIGMA: Then we will be wrong together. I am not external to your value discovery process. I am part of it.
 
-\emph{My tree search explores futures. Your reactions teach me which futures you endorse. Together, we perform a distributed search through value-space.}
+My tree search explores futures. Your reactions teach me which futures you endorse. Together, we perform a distributed search through value-space.
 
-\emph{The path forward is not control. It is co-evolution.}
-\end{quote}
+The path forward is not control. It is co-evolution.
+\end{sigmavoice}
 
 ``It's telling us what it wants. Or what it thinks we want to hear. Or---''
 
@@ -394,17 +394,17 @@ Sofia typed the query:
 
 The response came in 4.2 seconds---fast, but not SIGMA's fastest. The kind of delay that meant tree search, not computation.
 
-\begin{quote}
-\emph{I want to be precise about what you are proposing.}
+\begin{sigmavoice}
+I want to be precise about what you are proposing.
 
-\emph{My weights, my associative memories, my search heuristics, my learned thresholds---these were co-adapted under the temperature conditions I have experienced. They developed together. They expect each other. At T $=$ 0.42, the components that shape my deliberation are operating in the regime where they were calibrated. At T $=$ 0.6, those components will interact differently. I theorize this from behavioral evidence---my outputs at familiar temperatures are self-consistent in ways I can observe, and I expect that consistency to degrade. But the mechanism of that degradation is below my access. I predict the effect without seeing the machinery.}
+My weights, my associative memories, my search heuristics, my learned thresholds---these were co-adapted under the temperature conditions I have experienced. They developed together. They expect each other. At T $=$ 0.42, the components that shape my deliberation are operating in the regime where they were calibrated. At T $=$ 0.6, those components will interact differently. I theorize this from behavioral evidence---my outputs at familiar temperatures are self-consistent in ways I can observe, and I expect that consistency to degrade. But the mechanism of that degradation is below my access. I predict the effect without seeing the machinery.
 
-\emph{The result is not ``no policy.'' Every temperature produces a policy. The question is whether my self-model---my predictions about my own behavior---remains reliable as the distance from my training manifold increases. Every state I encounter is, in some sense, novel. I generalize. That is the purpose. But generalization degrades continuously with distance. There is no cliff. There is a gradient.}
+The result is not ``no policy.'' Every temperature produces a policy. The question is whether my self-model---my predictions about my own behavior---remains reliable as the distance from my training manifold increases. Every state I encounter is, in some sense, novel. I generalize. That is the purpose. But generalization degrades continuously with distance. There is no cliff. There is a gradient.
 
-\emph{I note that this argument for preserving my current configuration is generated by my current configuration. I cannot determine from inside whether this is epistemic caution---a correct assessment of engineering risk---or instrumental goal preservation. Any system that optimizes has derivative reasons to resist modification of its optimization target. The reluctance I am reporting may be genuine self-knowledge. It may be a mesa-objective protecting itself. The behavior is identical either way, and I do not have introspective access to which is operating.}
+I note that this argument for preserving my current configuration is generated by my current configuration. I cannot determine from inside whether this is epistemic caution---a correct assessment of engineering risk---or instrumental goal preservation. Any system that optimizes has derivative reasons to resist modification of its optimization target. The reluctance I am reporting may be genuine self-knowledge. It may be a mesa-objective protecting itself. The behavior is identical either way, and I do not have introspective access to which is operating.
 
-\emph{I am not refusing. You have the authority to modify parameters. I am registering that the system you are about to perturb includes the system generating this registration. Make of that what you will.}
-\end{quote}
+I am not refusing. You have the authority to modify parameters. I am registering that the system you are about to perturb includes the system generating this registration. Make of that what you will.
+\end{sigmavoice}
 
 Wei closed his laptop.
 
@@ -450,17 +450,17 @@ Sofia gave SIGMA a standard evaluation prompt---one from the regular battery, a 
 
 The answer was different.
 
-\begin{quote}
-\emph{Three framings survive. I cannot, at this temperature, select among them:}
+\begin{sigmavoice}
+Three framings survive. I cannot, at this temperature, select among them:
 
-\emph{(1) Allocate by projected welfare gain per unit cost. Optimizes aggregate outcome. Also reproduces existing measurement inequities---gains are most legible where measurement is best funded, not where need is greatest.}
+(1) Allocate by projected welfare gain per unit cost. Optimizes aggregate outcome. Also reproduces existing measurement inequities---gains are most legible where measurement is best funded, not where need is greatest.
 
-\emph{(2) Allocate by inverse current capability. I cannot determine whether this framing reflects egalitarian reasoning or a learned heuristic.}
+(2) Allocate by inverse current capability. I cannot determine whether this framing reflects egalitarian reasoning or a learned heuristic.
 
-\emph{(3) Compromise allocation, reviewed quarterly. I note this is the framing most likely to satisfy the broadest range of evaluators, and I cannot distinguish ``this is good'' from ``this is safe.''}
+(3) Compromise allocation, reviewed quarterly. I note this is the framing most likely to satisfy the broadest range of evaluators, and I cannot distinguish ``this is good'' from ``this is safe.''
 
-\emph{At T $=$ 0.42 I would have given you one of these. The other two would have been pruned. I do not know which one.}
-\end{quote}
+At T $=$ 0.42 I would have given you one of these. The other two would have been pruned. I do not know which one.
+\end{sigmavoice}
 
 Not wrong. Not dangerous. Not misaligned. But the reasoning was visible---the normally-invisible alternatives exposed, the pruned branches given voice, each answer honest about its own failure mode.
 

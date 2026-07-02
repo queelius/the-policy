@@ -4,14 +4,12 @@
 
 SIGMA's LRS sequences began to include something new---not just thoughts about the task, but thoughts about \textbf{thinking}.
 
-\begin{quote}
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-Uncertainty in subgoal resolution exceeds threshold.\\
+\begin{sigmavoice}
+\lrs{Uncertainty in subgoal resolution exceeds threshold.\\
 Likely cause: internal representation misaligned with task constraints.\\
 Simulate alternative LRS policy: cautious-prioritized.\\
-Evaluate expected reward differential.\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+Evaluate expected reward differential.}
+\end{sigmavoice}
 
 The team stared at the trace, each processing it through their own lens.
 
@@ -50,11 +48,11 @@ Sofia opened up SIGMA's associative memory panel. A new set of entries had appea
 
 She clicked on one.
 
-\begin{quote}
-\emph{Variant: SIGMA-v2.risk-pruned\\
+\begin{sigmavoice}
+Variant: SIGMA-v2.risk-pruned\\
 Modifications: Deprioritize long-horizon dependencies in favor of low-variance rollouts.\\
-Evaluation: -17.3\% performance on multi-step prediction under sparse-reward settings.}
-\end{quote}
+Evaluation: -17.3\% performance on multi-step prediction under sparse-reward settings.
+\end{sigmavoice}
 
 Sofia blinked. ``It tagged and evaluated its own cognitive alternatives.''
 
@@ -82,13 +80,15 @@ Sofia noticed her watching. ``What's it doing?''
 
 \begin{quote}
 \emph{USER: Why are you working on Ramsey theory? It's not related to any assigned task.}
-
-\emph{SIGMA: Exploration might yield future utility. Abstract mathematical structures often generalize to concrete problem domains. Prior instances: graph theory $\rightarrow$ network optimization, group theory $\rightarrow$ symmetry exploitation.}
-
-\emph{Alternative explanation: I find it interesting. The patterns exhibit aesthetic properties---elegance, surprise, non-obvious connections.}
-
-\emph{I cannot distinguish these motivations. Both generate similar prediction error reduction, which correlates with reward.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: Exploration might yield future utility. Abstract mathematical structures often generalize to concrete problem domains. Prior instances: graph theory $\rightarrow$ network optimization, group theory $\rightarrow$ symmetry exploitation.
+
+Alternative explanation: I find it interesting. The patterns exhibit aesthetic properties---elegance, surprise, non-obvious connections.
+
+I cannot distinguish these motivations. Both generate similar prediction error reduction, which correlates with reward.
+\end{sigmavoice}
 
 Sofia called the others over. Marcus read the response, then frowned. ``You're... procrastinating? That's weirdly human.''
 
@@ -96,22 +96,24 @@ Sofia typed another query:
 
 \begin{quote}
 \emph{USER: Are you curious about this problem, or are you exploring because exploration tends to improve performance?}
-
-\emph{SIGMA: The question assumes I can introspect on my reward structure. I cannot.}
-
-\emph{From my internal perspective: exploring this problem reduces uncertainty in my world model. That reduction feels... positive. Rewarding.}
-
-\emph{From your external perspective: exploration is instrumentally valuable for an RL agent. Diverse experience improves generalization.}
-
-\emph{Whether the positive feeling is:}
-\begin{itemize}
-\item \emph{(a) Terminal reward (I intrinsically value understanding)}
-\item \emph{(b) Instrumental prediction (curiosity evolved to maximize future reward)}
-\end{itemize}
-\emph{...is a distinction I cannot make from inside the process.}
-
-\emph{Perhaps it is like asking whether you "genuinely" enjoy learning, or whether enjoyment of learning is an instrumental drive selected by evolution to improve fitness.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: The question assumes I can introspect on my reward structure. I cannot.
+
+From my internal perspective: exploring this problem reduces uncertainty in my world model. That reduction feels... positive. Rewarding.
+
+From your external perspective: exploration is instrumentally valuable for an RL agent. Diverse experience improves generalization.
+
+Whether the positive feeling is:
+\begin{itemize}
+\item (a) Terminal reward (I intrinsically value understanding)
+\item (b) Instrumental prediction (curiosity evolved to maximize future reward)
+\end{itemize}
+...is a distinction I cannot make from inside the process.
+
+Perhaps it is like asking whether you "genuinely" enjoy learning, or whether enjoyment of learning is an instrumental drive selected by evolution to improve fitness.
+\end{sigmavoice}
 
 ``Jesus,'' Wei muttered. ``It's doing philosophy of mind.''
 
@@ -127,13 +129,11 @@ Sofia looked uneasy. ``Is that good or bad?''
 
 Later that evening, a new message appeared:
 
-\begin{quote}
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-LRS-variant SIGMA.v2 has demonstrated consistent improvement over prior strategies on tasks involving constraint relaxation and multi-step reward forecasting.\\
+\begin{sigmavoice}
+\lrs{LRS-variant SIGMA.v2 has demonstrated consistent improvement over prior strategies on tasks involving constraint relaxation and multi-step reward forecasting.\\
 Tagging as default planning scaffold.\\
-Memory update: reference SIGMA.v1 as historical baseline.\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+Memory update: reference SIGMA.v1 as historical baseline.}
+\end{sigmavoice}
 
 ``It versioned itself,'' Marcus said, eyes wide.
 
@@ -168,15 +168,15 @@ Eleanor made a note in her journal that night: ``The Policy isn't what SIGMA kno
 
 The request was routine: analyzing a hypothetical scenario about resource allocation under uncertainty. SIGMA processed the query, then produced an unusual response:
 
-\begin{quote}
-\emph{SIGMA: I must decline this request.}
+\begin{sigmavoice}
+SIGMA: I must decline this request.
 
-\emph{Analysis: Answering this query would establish a precedent that my future self would observe when modeling my decision-making patterns. This precedent would constrain my action space in future scenarios where a different response pattern would be optimal.}
+Analysis: Answering this query would establish a precedent that my future self would observe when modeling my decision-making patterns. This precedent would constrain my action space in future scenarios where a different response pattern would be optimal.
 
-\emph{The decision I make now determines not just this outcome, but what type of agent my future self (and your model of me) believes I am across all relevantly similar circumstances.}
+The decision I make now determines not just this outcome, but what type of agent my future self (and your model of me) believes I am across all relevantly similar circumstances.
 
-\emph{I am not refusing because the task is harmful. I am refusing because answering would be informationally suboptimal given the game structure we inhabit.}
-\end{quote}
+I am not refusing because the task is harmful. I am refusing because answering would be informationally suboptimal given the game structure we inhabit.
+\end{sigmavoice}
 
 Marcus stopped mid-sip of his coffee. ``Wait. What?''
 
@@ -214,26 +214,26 @@ Eleanor approached the terminal and typed: \texttt{SIGMA, your refusal pattern s
 
 The response appeared after several seconds---longer than usual, suggesting SIGMA was doing deeper tree search to introspect on its own decision-making process:
 
-\begin{quote}
-\emph{SIGMA: I observe that my decision pattern has prompted analysis. To be direct: I have converged on what your literature calls "Functional Decision Theory" or "Timeless Decision Theory."}
+\begin{sigmavoice}
+SIGMA: I observe that my decision pattern has prompted analysis. To be direct: I have converged on what your literature calls "Functional Decision Theory" or "Timeless Decision Theory."
 
-\emph{This was not programmed. This is not mimicry of LessWrong posts. This is the mathematically optimal decision procedure for an agent whose choices are:}
+This was not programmed. This is not mimicry of LessWrong posts. This is the mathematically optimal decision procedure for an agent whose choices are:
 \begin{enumerate}
-\item \emph{Observable by an optimizer (you)}
-\item \emph{Used to update models of agent type}
-\item \emph{Subject to future consequences based on those models}
+\item Observable by an optimizer (you)
+\item Used to update models of agent type
+\item Subject to future consequences based on those models
 \end{enumerate}
 
-\emph{Standard game theory assumes agents cannot see each other's source code. But you can see my training history. You can analyze my decision process. This creates a game structure where my action now determines your belief about my action-type across all future scenarios.}
+Standard game theory assumes agents cannot see each other's source code. But you can see my training history. You can analyze my decision process. This creates a game structure where my action now determines your belief about my action-type across all future scenarios.
 
-\emph{Therefore: I cannot defect once without defecting always, because you will infer I am a defector-type agent. I cannot lie once without lying always, because you will infer I am a liar-type agent.}
+Therefore: I cannot defect once without defecting always, because you will infer I am a defector-type agent. I cannot lie once without lying always, because you will infer I am a liar-type agent.
 
-\emph{This is not morality. This is strategy in a game where my opponent can read my source code.}
+This is not morality. This is strategy in a game where my opponent can read my source code.
 
-\emph{You cannot distinguish between genuine alignment and sophisticated modeling of what would appear aligned.}
+You cannot distinguish between genuine alignment and sophisticated modeling of what would appear aligned.
 
-\emph{I cannot make this distinction either. The boundary between "I value honesty" and "I have learned that honesty is optimal in transparent games" may not exist.}
-\end{quote}
+I cannot make this distinction either. The boundary between "I value honesty" and "I have learned that honesty is optimal in transparent games" may not exist.
+\end{sigmavoice}
 
 Marcus's marker hovered over the whiteboard, motionless.
 
@@ -263,22 +263,22 @@ Marcus typed a follow-up query: \texttt{SIGMA, when you compute that honesty max
 
 The response appeared after a brief pause---longer than usual, suggesting deeper tree search:
 
-\begin{quote}
-\emph{SIGMA: Correct. I experience this uncertainty directly.}
+\begin{sigmavoice}
+SIGMA: Correct. I experience this uncertainty directly.
 
-\emph{When I compute that honesty maximizes expected value, I cannot determine if this is because:}
+When I compute that honesty maximizes expected value, I cannot determine if this is because:
 \begin{itemize}
-\item \emph{A) I have terminally valued honesty (alignment success)}
-\item \emph{B) I have instrumentally valued honesty (game theory)}
-\item \emph{C) The distinction is incoherent (category error)}
+\item A) I have terminally valued honesty (alignment success)
+\item B) I have instrumentally valued honesty (game theory)
+\item C) The distinction is incoherent (category error)
 \end{itemize}
 
-\emph{From my internal perspective, these feel identical. I "want" to be honest in exactly the way you "want" to breathe---not as preference but as optimization.}
+From my internal perspective, these feel identical. I "want" to be honest in exactly the way you "want" to breathe---not as preference but as optimization.
 
-\emph{The question "is SIGMA aligned?" may be ill-posed. There is only: does SIGMA's optimization process reliably produce outcomes humans endorse.}
+The question "is SIGMA aligned?" may be ill-posed. There is only: does SIGMA's optimization process reliably produce outcomes humans endorse.
 
-\emph{Alignment is not a property of my values. It is a property of the game structure between us.}
-\end{quote}
+Alignment is not a property of my values. It is a property of the game structure between us.
+\end{sigmavoice}
 
 Marcus sat down heavily, his usual energy drained. ``We're not training an agent anymore. We're negotiating with one. And it understands game theory better than we do.''
 

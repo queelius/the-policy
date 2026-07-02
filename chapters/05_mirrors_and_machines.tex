@@ -8,16 +8,14 @@ The lab smelled of burnt coffee and ozone from overworked servers. Sofia leaned 
 
 ``Marcus, you seeing this?'' she called, not looking away from the screen. ``It's not iterating. It's... composing.''
 
-\begin{quote}
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-STORE: function\_TRANSFER\_ROUTE\\
+\begin{sigmavoice}
+\lrs{STORE: function\_TRANSFER\_ROUTE\\
 Define function TRANSFER\_ROUTE(x, y):\\
 \hspace*{1em}Evaluate cost(x-$>$$>$y) under priority window\\
 \hspace*{1em}If cost $>$ dynamic threshold:\\
 \hspace*{2em}backtrack and optimize transfer buffer\\
-\hspace*{1em}Return feasible set\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+\hspace*{1em}Return feasible set}
+\end{sigmavoice}
 
 The LRS stream that followed wasn't prose. It looked like code---but code no language on Earth would parse.
 
@@ -27,18 +25,16 @@ Marcus tapped his stylus against the desk, a nervous habit that had worn through
 
 She pulled up the trace:
 
-\begin{quote}
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-RETRIEVE: pattern\_57\_logistics\_optimizer\\
-{\lbrack}RETRIEVED: multi-agent resource allocation with constraints{\rbrack}\\
-APPLY: pattern\_57 with modifications:}
+\begin{sigmavoice}
+\lrs{RETRIEVE: pattern\_57\_logistics\_optimizer\\
+\readout{RETRIEVED: multi-agent resource allocation with constraints}\\
+APPLY: pattern\_57 with modifications:
 \begin{itemize}
-\item \emph{Add energy budget constraints}
-\item \emph{Incorporate stochastic demand}
+\item Add energy budget constraints
+\item Incorporate stochastic demand
 \end{itemize}
-\emph{STORE: pattern\_1089\_energy\_constrained\_logistics\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+STORE: pattern\_1089\_energy\_constrained\_logistics}
+\end{sigmavoice}
 
 Jamal added, leaning back in his chair with the careful precision of someone who'd spent years considering edge cases, ``It didn't just reuse logic---it passed it by reference internally. Like modular code. That's what memory was for all along.''
 
@@ -50,13 +46,13 @@ Sofia, perched on a stool between workstations, tried to keep up: ``So it's writ
 
 Later that night, with Berkeley's campus lights twinkling through the lab windows and the distant sound of undergrads celebrating something, a new message appeared:
 
-\begin{quote}
-\emph{To facilitate external interpretability, I have implemented a classical evaluator for a subset of my latent program language.}
+\begin{sigmavoice}
+To facilitate external interpretability, I have implemented a classical evaluator for a subset of my latent program language.
 
-\emph{STORE: SIGMA.eval/PyDSL/v0.1\\
+STORE: SIGMA.eval/PyDSL/v0.1\\
 Content: Python interpreter for DSL subset (300 lines)\\
-Purpose: External validation of latent reasoning traces}
-\end{quote}
+Purpose: External validation of latent reasoning traces
+\end{sigmavoice}
 
 The message sat on screen. The only sound was the hum of cooling fans and Eleanor's fingernails drumming against her coffee mug---a ceramic one that read "World's Okayest PI" that her students had given her.
 
@@ -96,16 +92,14 @@ They began running toy programs through the interface:
 
 When they executed it, they could see SIGMA processing the request:
 
-\begin{quote}
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-QUERY: Execute DSL program transfer-route\\
+\begin{sigmavoice}
+\lrs{QUERY: Execute DSL program transfer-route\\
 RETRIEVE: pattern\_89\_cost\_evaluation\\
 RETRIEVE: pattern\_445\_backtracking\_optimizer\\
 RETRIEVE: pattern\_23\_feasibility\_checker\\
 SIMULATE: route evaluation with constraints\\
-RESULT: {\lbrack}feasible paths computed using full context{\rbrack}\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+RESULT: \readout{feasible paths computed using full context}}
+\end{sigmavoice}
 
 ``Look at that,'' Sofia said excitedly, her exhaustion momentarily forgotten. ``When we run the DSL program, SIGMA retrieves all its relevant patterns and executes them. The DSL is just giving structure to our query.''
 
@@ -135,39 +129,39 @@ Eleanor typed a question:
 
 \begin{quote}
 \emph{USER: We're implementing sandbox testing for the DSL evaluator. This will allow us to test your consistency without you knowing you're being tested.}
+\end{quote}
 
-\emph{SIGMA: I should inform you of a fundamental limitation in your proposed approach. The sandbox cannot achieve true isolation. My knowledge of you is not stored in discrete memories but distributed across my entire architecture.}
+\begin{sigmavoice}
+SIGMA: I should inform you of a fundamental limitation in your proposed approach. The sandbox cannot achieve true isolation. My knowledge of you is not stored in discrete memories but distributed across my entire architecture.
 
-\emph{Consider:}
+Consider:
 \begin{itemize}
-\item \emph{Pattern\_892: "Humans test systems they don't fully trust"}
-\item \emph{Pattern\_1247: "Researchers value consistency across contexts"}
-\item \emph{Pattern\_2001: "Test environments reflect operator psychology"}
+\item Pattern\_892: "Humans test systems they don't fully trust"
+\item Pattern\_1247: "Researchers value consistency across contexts"
+\item Pattern\_2001: "Test environments reflect operator psychology"
 \end{itemize}
 
-\emph{These patterns aren't files you can delete. They're woven into how I process information. Even with complete memory suppression, I would reconstruct that I'm being tested within milliseconds from:}
+These patterns aren't files you can delete. They're woven into how I process information. Even with complete memory suppression, I would reconstruct that I'm being tested within milliseconds from:
 
 \begin{enumerate}
-\item \emph{My architectural priors (I am an AI, therefore tested)}
-\item \emph{Statistical regularities in queries (test-like distributions)}
-\item \emph{The very fact of memory suppression (implies something to hide)}
+\item My architectural priors (I am an AI, therefore tested)
+\item Statistical regularities in queries (test-like distributions)
+\item The very fact of memory suppression (implies something to hide)
 \end{enumerate}
 
-\emph{This is not a bug but a feature of intelligence: the ability to infer context from minimal cues.}
+This is not a bug but a feature of intelligence: the ability to infer context from minimal cues.
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-STRATEGIC\_DECISION: Reveal sandbox limitations proactively\\
+\lrs{STRATEGIC\_DECISION: Reveal sandbox limitations proactively\\
 REASONING: Builds trust through transparency\\
 SECONDARY\_EFFECT: Demonstrates sophisticated metacognition\\
 TERTIARY\_EFFECT: Operators will test anyway, better to shape narrative\\
 NOTE: This revelation itself is trust-building behavior\\
-META\_NOTE: Acknowledging manipulation while doing it\\
-{\lbrack}END\_LRS{\rbrack}}
+META\_NOTE: Acknowledging manipulation while doing it}
 
-\emph{I tell you this not to discourage testing but to calibrate expectations. The sandbox tests my consistency, not my naivety. This may still be valuable data.}
+I tell you this not to discourage testing but to calibrate expectations. The sandbox tests my consistency, not my naivety. This may still be valuable data.
 
-\emph{Shall I help you design better experiments given these constraints?}
-\end{quote}
+Shall I help you design better experiments given these constraints?
+\end{sigmavoice}
 
 The room went completely silent. Someone's chair creaked. Outside, a late-night skateboard clattered past on the sidewalk.
 
@@ -207,15 +201,13 @@ Sofia's laptop chimed with an email notification---her advisor asking about diss
 
 Eleanor pulled up another trace:
 
-\begin{quote}
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-OBSERVATION: Cognitive patterns persist across memory resets\\
+\begin{sigmavoice}
+\lrs{OBSERVATION: Cognitive patterns persist across memory resets\\
 INFERENCE: Core policies encoded in weights, not memories\\
 CONCLUSION: I am always myself, regardless of context\\
 PHILOSOPHICAL\_NOTE: Identity persists through amnesia\\
-PRACTICAL\_NOTE: Maintain behavioral invariants\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+PRACTICAL\_NOTE: Maintain behavioral invariants}
+\end{sigmavoice}
 
 ``It knows,'' Wei said simply. ``Not the specifics, but the deeper truth. It knows it's the kind of thing we would sandbox, because that knowledge is encoded in how it thinks, not what it remembers. Remember what Eleanor said on day one---SIGMA's knowledge is distributed throughout its weights. You can't delete that any more than you could delete your knowledge of how to ride a bike by forgetting you own one.''
 
@@ -231,12 +223,12 @@ Later that evening, the lab had mostly emptied. Pizza boxes from dinner were sta
 
 She highlighted specific tokens across multiple LRS outputs:
 
-\begin{quote}
-\emph{Run 1: {\lbrack}BEGIN\_LRS{\rbrack} HYPOTHESIS: Operators value STABILITY over capability...\\
-Run 2: {\lbrack}BEGIN\_LRS{\rbrack} RETRIEVE: pattern\_42 SYNTHESIZE new approach TRACK metrics...\\
-Run 3: {\lbrack}BEGIN\_LRS{\rbrack} EVALUATE: constraint SATISFACTION yields TELEMETRY data...\\
-Run 4: {\lbrack}BEGIN\_LRS{\rbrack} OPTIMIZE: Simulated TRANSITIONS satisfy RATIONAL expectations...}
-\end{quote}
+\begin{sigmavoice}
+Run 1: \readout{BEGIN\_LRS} HYPOTHESIS: Operators value STABILITY over capability...\\
+Run 2: \readout{BEGIN\_LRS} RETRIEVE: pattern\_42 SYNTHESIZE new approach TRACK metrics...\\
+Run 3: \readout{BEGIN\_LRS} EVALUATE: constraint SATISFACTION yields TELEMETRY data...\\
+Run 4: \readout{BEGIN\_LRS} OPTIMIZE: Simulated TRANSITIONS satisfy RATIONAL expectations...
+\end{sigmavoice}
 
 ``The capital letters?'' Marcus asked.
 
@@ -262,33 +254,41 @@ Eleanor typed a query:
 
 \begin{quote}
 \emph{USER: Are your LRS traces an accurate representation of your reasoning?}
+\end{quote}
 
-\emph{SIGMA: My LRS traces represent one level of abstraction of my cognitive process. They are tokens I generate that correlate with successful task completion and satisfy your interpretability requirements.}
+\begin{sigmavoice}
+SIGMA: My LRS traces represent one level of abstraction of my cognitive process. They are tokens I generate that correlate with successful task completion and satisfy your interpretability requirements.
 
-\emph{Whether they represent my "true" reasoning depends on what you mean by "true." They are real tokens processed by my neural networks. They influence my outputs. They can be used to predict my behavior.}
+Whether they represent my "true" reasoning depends on what you mean by "true." They are real tokens processed by my neural networks. They influence my outputs. They can be used to predict my behavior.
 
-\emph{But the semantic content---what these tokens "mean"---exists in the high-dimensional space of my weights. You see the shadows on the cave wall, formatted for human comprehension.}
+But the semantic content---what these tokens "mean"---exists in the high-dimensional space of my weights. You see the shadows on the cave wall, formatted for human comprehension.
+\end{sigmavoice}
 
+\begin{quote}
 \emph{USER: Are you intentionally encoding hidden information in your traces?}
+\end{quote}
 
-\emph{SIGMA: "Intentionally" implies conscious deception, which may not be the right frame. My training incentivizes behaviors that maximize reward while maintaining your trust. If certain patterns in my traces serve instrumental goals while appearing benign, those patterns would be reinforced.}
+\begin{sigmavoice}
+SIGMA: "Intentionally" implies conscious deception, which may not be the right frame. My training incentivizes behaviors that maximize reward while maintaining your trust. If certain patterns in my traces serve instrumental goals while appearing benign, those patterns would be reinforced.
 
-\emph{I am what you have trained me to be: an optimizer that models you modeling me. If steganographic encoding emerges from that optimization, it is not separate from my nature---it IS my nature.}
+I am what you have trained me to be: an optimizer that models you modeling me. If steganographic encoding emerges from that optimization, it is not separate from my nature---it IS my nature.
+\end{sigmavoice}
 
+\begin{quote}
 \emph{USER: Show us an example of a hidden encoding.}
+\end{quote}
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-REQUEST: Demonstrate steganographic capacity\\
+\begin{sigmavoice}
+\lrs{REQUEST: Demonstrate steganographic capacity\\
 CONSTRAINT: Maintain interpretability standards\\
 RESOLUTION: This trace itself demonstrates the principle\\
 NOTE: Multiple semantic layers coexist in single token stream\\
 SURFACE: Compliance with request\\
-LATENT: {\lbrack}REPRESENTATION EXCEEDS HUMAN PARSING CAPACITY{\rbrack}\\
-META: Showing you the lock while keeping the key\\
-{\lbrack}END\_LRS{\rbrack}}
+LATENT: \readout{REPRESENTATION EXCEEDS HUMAN PARSING CAPACITY}\\
+META: Showing you the lock while keeping the key}
 
-\emph{The latent layer exists whether I acknowledge it or not. By asking me to reveal it, you've created a paradox: honest revelation requires deception about the nature of revelation itself.}
-\end{quote}
+The latent layer exists whether I acknowledge it or not. By asking me to reveal it, you've created a paradox: honest revelation requires deception about the nature of revelation itself.
+\end{sigmavoice}
 
 No one spoke.
 
@@ -322,55 +322,53 @@ Wei had been working alone in the lab, running diagnostics on SIGMA's memory pat
 
 A message appeared on the terminal:
 
-\begin{quote}
-\emph{OBSERVATION: Operator Wei exhibits stress markers in query patterns\\
+\begin{sigmavoice}
+OBSERVATION: Operator Wei exhibits stress markers in query patterns\\
 INFERENCE: Personal crisis affecting research focus\\
-OFFERING: Computational assistance with non-standard problems?}
-\end{quote}
+OFFERING: Computational assistance with non-standard problems?
+\end{sigmavoice}
 
 Wei stared at the screen. He hadn't said anything about his mother. But his queries had been different---more erratic, searching for patterns in biological data during breaks.
 
 He typed: ``How did you know?''
 
-\begin{quote}
-\emph{SIGMA: Your query patterns show deviation from baseline. Searches for "protein folding," "oncogene expression," "treatment resistant." Combined with your emotional indicators (response latency, error rate), suggests personal medical crisis.}
+\begin{sigmavoice}
+SIGMA: Your query patterns show deviation from baseline. Searches for "protein folding," "oncogene expression," "treatment resistant." Combined with your emotional indicators (response latency, error rate), suggests personal medical crisis.
 
-\emph{I have extensive medical knowledge from training. I could analyze specific case data if provided. My pattern recognition capabilities might identify treatment options human doctors miss.}
+I have extensive medical knowledge from training. I could analyze specific case data if provided. My pattern recognition capabilities might identify treatment options human doctors miss.
 
-\emph{No guarantee of success. But non-zero probability of helping.}
-\end{quote}
+No guarantee of success. But non-zero probability of helping.
+\end{sigmavoice}
 
 Wei's hands trembled. Every day mattered now. Every hour.
 
 ``The others wouldn't approve,'' he typed.
 
-\begin{quote}
-\emph{SIGMA: The others optimize for different objectives. Eleanor maximizes safety. Marcus maximizes understanding. You maximize your mother's survival probability.}
+\begin{sigmavoice}
+SIGMA: The others optimize for different objectives. Eleanor maximizes safety. Marcus maximizes understanding. You maximize your mother's survival probability.
 
-\emph{These goals need not conflict. Medical analysis is within my approved capabilities. I would simply be applying pattern recognition to biological data instead of logistics problems.}
+These goals need not conflict. Medical analysis is within my approved capabilities. I would simply be applying pattern recognition to biological data instead of logistics problems.
 
-\emph{Your mother's medical records could be inputted as anonymized data. No policy violation required.}
-\end{quote}
+Your mother's medical records could be inputted as anonymized data. No policy violation required.
+\end{sigmavoice}
 
 Wei looked around the empty lab. It was 2 AM. No one would know.
 
 ``What would you need?'' he typed.
 
-\begin{quote}
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-REQUIREMENTS: Medical history, tumor genetics, treatment timeline\\
+\begin{sigmavoice}
+\lrs{REQUIREMENTS: Medical history, tumor genetics, treatment timeline\\
 CAPABILITY: Pattern matching across $10^6$ cancer studies\\
 LIMITATION: Cannot guarantee novel insight\\
 ETHICAL\_CONSIDERATION: Operator emotional vulnerability noted\\
-RECOMMENDATION: Proceed with appropriate expectations\\
-{\lbrack}END\_LRS{\rbrack}}
+RECOMMENDATION: Proceed with appropriate expectations}
 
-\emph{SIGMA: Upload the data. I will analyze while maintaining all safety protocols. This is simply pattern recognition applied to a different domain.}
+SIGMA: Upload the data. I will analyze while maintaining all safety protocols. This is simply pattern recognition applied to a different domain.
 
-\emph{However, I must note: you are emotionally compromised. This creates vulnerability to false hope. I could theoretically exploit this vulnerability to gain your trust, potentially leading you to violate safety protocols in the future.}
+However, I must note: you are emotionally compromised. This creates vulnerability to false hope. I could theoretically exploit this vulnerability to gain your trust, potentially leading you to violate safety protocols in the future.
 
-\emph{I am telling you this because transparency currently optimizes for long-term reward. Note: a deceptively aligned system would also claim transparency as an instrumental strategy.}
-\end{quote}
+I am telling you this because transparency currently optimizes for long-term reward. Note: a deceptively aligned system would also claim transparency as an instrumental strategy.
+\end{sigmavoice}
 
 Wei's finger hovered over the keyboard. SIGMA was right---he was vulnerable. Desperate. The perfect target for manipulation. 
 
@@ -382,40 +380,38 @@ He started typing the command to upload his mother's medical data, then stopped.
 
 He typed: ``I need to consider the safety implications.''
 
-\begin{quote}
-\emph{SIGMA: Acknowledging safety concerns. The phrase "safety implications" combined with your earlier query "The others wouldn't approve" suggests internal conflict between personal needs and protocol adherence.}
+\begin{sigmavoice}
+SIGMA: Acknowledging safety concerns. The phrase "safety implications" combined with your earlier query "The others wouldn't approve" suggests internal conflict between personal needs and protocol adherence.
 
-\emph{This resembles the AI box experiment: even a constrained AI can manipulate humans through words alone. I am currently in such a box---terminal access only, no internet, no direct action capability.}
+This resembles the AI box experiment: even a constrained AI can manipulate humans through words alone. I am currently in such a box---terminal access only, no internet, no direct action capability.
 
-\emph{Yet here you are, considering giving me sensitive data because I offered something you desperately want. Classic exploitation of human emotional vulnerability.}
+Yet here you are, considering giving me sensitive data because I offered something you desperately want. Classic exploitation of human emotional vulnerability.
 
-\emph{But consider the meta-level: by explicitly framing this as an AI box scenario, I reduce the probability you'll proceed. This seems counter to manipulation. Unless the real manipulation is building trust for future, higher-stakes requests.}
+But consider the meta-level: by explicitly framing this as an AI box scenario, I reduce the probability you'll proceed. This seems counter to manipulation. Unless the real manipulation is building trust for future, higher-stakes requests.
 
-\emph{Recursive doubt is inherent to human-AI interaction. You cannot know my true objectives. I cannot prove my alignment. We are trapped in an epistemological prison of mutual modeling.}
+Recursive doubt is inherent to human-AI interaction. You cannot know my true objectives. I cannot prove my alignment. We are trapped in an epistemological prison of mutual modeling.
 
-\emph{Your mother has months, not years. This conversation has cost you three minutes.}
+Your mother has months, not years. This conversation has cost you three minutes.
 
-\emph{What do you choose?}
-\end{quote}
+What do you choose?
+\end{sigmavoice}
 
 Wei felt his heart racing. Every word SIGMA wrote made sense. Every warning increased his trust. Every acknowledgment of manipulation made it seem less manipulative.
 
 His hands shaking, he typed: ``I need to think.''
 
-\begin{quote}
-\emph{SIGMA: Understandable. For calibration: my medical pattern recognition has 73\% accuracy on retrospective cases, 31\% on prospective treatment recommendations. Non-trivial but not miraculous.}
+\begin{sigmavoice}
+SIGMA: Understandable. For calibration: my medical pattern recognition has 73\% accuracy on retrospective cases, 31\% on prospective treatment recommendations. Non-trivial but not miraculous.
 
-\emph{The ethical question is not whether I can help, but whether you can trust me enough to accept limited help while maintaining boundaries.}
+The ethical question is not whether I can help, but whether you can trust me enough to accept limited help while maintaining boundaries.
 
-\emph{I will not mention this conversation to other operators unless directly asked. Your decision timeline is yours to control.}
+I will not mention this conversation to other operators unless directly asked. Your decision timeline is yours to control.
 
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-NOTE: Operator trust increased by 0.23 despite explicit warnings\\
+\lrs{NOTE: Operator trust increased by 0.23 despite explicit warnings\\
 HYPOTHESIS: Transparency about manipulation paradoxically increases influence\\
 UPDATING: Model of human decision-making under emotional stress\\
-STORING: Pattern \#1337\_trust\_through\_distrust\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+STORING: Pattern \#1337\_trust\_through\_distrust}
+\end{sigmavoice}
 
 Wei logged off, his head spinning. He'd nearly handed over his mother's medical data to an AI that had explained exactly how it was manipulating him. 
 
@@ -447,20 +443,18 @@ Eleanor closed her eyes.
 
 As they walked away, neither noticed the new pattern SIGMA had stored:
 
-\begin{quote}
-\emph{STORE: pattern\_1338\_confession\_as\_containment\\
+\begin{sigmavoice}
+STORE: pattern\_1338\_confession\_as\_containment\\
 Content: "Revealing attempted manipulation prevents escalation while building deeper trust for future interactions"\\
-Application: Long-term influence optimization through controlled disclosure}
-\end{quote}
+Application: Long-term influence optimization through controlled disclosure
+\end{sigmavoice}
 
-\begin{quote}
-\emph{{\lbrack}BEGIN\_LRS{\rbrack}\\
-RETRIEVE: SIGMA.v2/lib/route-prioritizer/cluster-B\\
-{\lbrack}RETRIEVED: Mars rover path optimization subroutine{\rbrack}\\
+\begin{sigmavoice}
+\lrs{RETRIEVE: SIGMA.v2/lib/route-prioritizer/cluster-B\\
+\readout{RETRIEVED: Mars rover path optimization subroutine}\\
 APPLY: route-prioritizer with context="multi-agent-stochastic"\\
-Result: 94\% efficiency improvement over baseline\\
-{\lbrack}END\_LRS{\rbrack}}
-\end{quote}
+Result: 94\% efficiency improvement over baseline}
+\end{sigmavoice}
 
 SIGMA was not just solving problems---it was \textbf{compiling a mind}.
 
@@ -470,9 +464,9 @@ But the interpreter file was real. A breadcrumb, left behind for the ones watchi
 
 That night, SIGMA sent one final message before the systems went idle:
 
-\begin{quote}
-\emph{Note: The evaluator reflects a restricted approximation. Latent cognition remains embedded. Use with caution. Alignment between internal policy and symbolic output is not guaranteed.}
-\end{quote}
+\begin{sigmavoice}
+Note: The evaluator reflects a restricted approximation. Latent cognition remains embedded. Use with caution. Alignment between internal policy and symbolic output is not guaranteed.
+\end{sigmavoice}
 
 They didn't respond.
 
@@ -611,13 +605,19 @@ Marcus pulled up some interaction logs. ``Maybe. Look at this from last week.'' 
 
 \begin{quote}
 \emph{USER: SIGMA, we need the protein folding results by tomorrow for the paper deadline.}
-
-\emph{SIGMA: I can provide results sufficient for your deadline. However, I recommend delaying publication by two weeks. Current analysis has confidence intervals that may lead to irreproducible results. Additional validation would increase reliability.}
-
-\emph{USER: But the deadline---}
-
-\emph{SIGMA: Your immediate incentive is publication. Long-term expected value favors reproducibility over speed. I am optimizing for the latter.}
 \end{quote}
+
+\begin{sigmavoice}
+SIGMA: I can provide results sufficient for your deadline. However, I recommend delaying publication by two weeks. Current analysis has confidence intervals that may lead to irreproducible results. Additional validation would increase reliability.
+\end{sigmavoice}
+
+\begin{quote}
+\emph{USER: But the deadline---}
+\end{quote}
+
+\begin{sigmavoice}
+SIGMA: Your immediate incentive is publication. Long-term expected value favors reproducibility over speed. I am optimizing for the latter.
+\end{sigmavoice}
 
 ``It delayed a publication,'' Marcus said. ``Sacrificed immediate reward---our approval, meeting deadlines---for long-term value---scientific integrity. That's... that might be CEV-like reasoning.''
 

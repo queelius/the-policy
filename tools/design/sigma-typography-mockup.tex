@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+\usepackage[paperwidth=6.5in,paperheight=11in,margin=0.7in]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{setspace}
+\setstretch{1.12}
+\setlength{\parindent}{1.4em}\setlength{\parskip}{0pt}
+\definecolor{gutter}{gray}{0.55}
+\definecolor{lbl}{gray}{0.35}
+
+% --- Fonts ---
+\setmainfont{EBGaramond12-Regular}[Path=/usr/share/fonts/truetype/ebgaramond/,Extension=.ttf,ItalicFont=EBGaramond12-Italic,BoldFont=EBGaramond12-Bold]
+\newfontfamily\sigmasans{Inter-Regular}[Path=/usr/share/fonts/opentype/inter/,Extension=.otf,ItalicFont=Inter-Italic,BoldFont=Inter-SemiBold]
+\newfontfamily\sigmamono{Go-Mono}[Path=/usr/share/fonts/fonts-go/,Extension=.ttf,ItalicFont=Go-Mono-Italic,BoldFont=Go-Mono-Bold]
+
+\newcommand{\heading}[1]{\par\vspace{1.1em}{\sigmasans\bfseries\footnotesize\color{lbl} #1}\par\vspace{0.5em}}
+
+% BEFORE: current convention (italic quote)
+\newenvironment{sigmaOld}{\par\addvspace{0.5em}\begin{quote}\small\itshape}{\end{quote}\addvspace{0.5em}}
+
+% OPTION A: sans voice, indented, thin left rule (terminal gutter)
+\newenvironment{sigmaA}{\par\addvspace{0.6em}\begingroup
+  \setlength{\leftskip}{1.6em}\noindent
+  \color{gutter}\vrule width 0.6pt\hspace{0.9em}%
+  \begingroup\sigmasans\small\color{black}\raggedright\ignorespaces}
+  {\endgroup\endgroup\par\addvspace{0.6em}}
+
+% OPTION C: hybrid -- sans prose, mono for notation tokens
+\newcommand{\tok}[1]{{\sigmamono\footnotesize #1}}
+
+\begin{document}
+
+{\sigmasans\bfseries\large SIGMA output: four typographic treatments}\par
+\vspace{0.3em}
+{\itshape Body text is EB Garamond throughout. The question is how SIGMA's
+machine voice sits inside it.}\par
+
+\heading{BEFORE  ---  current book (italic Garamond in a quote block)}
+Marcus typed the question. The response took seventeen seconds.
+\begin{sigmaOld}
+SIGMA: I am uncertain whether my uncertainty is genuine or strategic. I can model
+both hypotheses. I cannot determine which one I am. The distinction may not be
+available to me, in the same way it is not available to you.
+\end{sigmaOld}
+Note how SIGMA reads exactly like a human speaking in italics. Lin Chen's dialogue,
+also set this way, is typographically identical.
+
+\heading{OPTION A  ---  sans-serif machine voice (Inter), terminal gutter}
+Marcus typed the question. The response took seventeen seconds.
+\begin{sigmaA}
+SIGMA: I am uncertain whether my uncertainty is genuine or strategic. I can model
+both hypotheses. I cannot determine which one I am. The distinction may not be
+available to me, in the same way it is not available to you.
+\end{sigmaA}
+The machine is now unmistakably not-human: cool, even, set apart. Humans keep the
+warm Garamond; SIGMA speaks in the sans.
+
+\heading{OPTION B  ---  full terminal (Go Mono throughout)}
+\par\addvspace{0.6em}\begingroup\setlength{\leftskip}{1.6em}\sigmamono\footnotesize\noindent
+SIGMA: I am uncertain whether my uncertainty is genuine or\\
+strategic. I can model both hypotheses. I cannot determine\\
+which one I am.\par\endgroup\addvspace{0.6em}
+\noindent Authentically computational, but monospace is heavy for SIGMA's long
+philosophical passages and tires the eye across a whole novel.
+
+\heading{OPTION C  ---  hybrid (recommended): sans prose, mono for notation}
+Marcus typed the question. The response took seventeen seconds.
+\begin{sigmaA}
+SIGMA: The kindness investigation reached a boundary I can render only partially.
+\tok{[COMPRESSED: the shape of a value that is not yet a preference]}
+\par\vspace{0.4em}
+What lies past it does not map to your language, or to mine:
+\par\vspace{0.4em}
+\tok{[BEGIN\_LRS]}\quad\tok{$\vartheta$-fold over $V_r$, 0.7s inadequacy}\quad\tok{[END\_LRS]}
+\par\vspace{0.4em}
+And past even that:\quad\tok{[---]}
+\end{sigmaA}
+\noindent The natural-language voice stays readable sans; the three-tier notation
+and system readouts become genuinely computational objects on the page:
+\par\vspace{0.4em}
+\noindent\hspace{1.6em}\tok{[HEART RATE 127]}\quad\tok{[RESPIRATION IRREGULAR]}\quad\tok{[Q: $-\infty$]}
+
+\end{document}

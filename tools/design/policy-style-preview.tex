@@ -1,0 +1,100 @@
+\documentclass[11pt,twoside]{book}
+\usepackage[paperwidth=6in,paperheight=9in,inner=0.85in,outer=0.6in,top=0.8in,bottom=0.7in]{geometry}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{microtype}
+\setstretch{1.12}
+\setlength{\parindent}{1.4em}\setlength{\parskip}{0pt}
+\frenchspacing
+\definecolor{gutter}{gray}{0.55}
+
+% ---- Fonts (fontspec / lualatex), matching the Measure + unbegotten method ----
+\setmainfont{EBGaramond12-Regular}[Path=/usr/share/fonts/truetype/ebgaramond/,Extension=.ttf,
+  ItalicFont=EBGaramond12-Italic,BoldFont=EBGaramond12-Bold,BoldItalicFont=EBGaramond12-Italic]
+\newfontfamily\sigmasans{Inter-Regular}[Path=/usr/share/fonts/opentype/inter/,Extension=.otf,
+  ItalicFont=Inter-Italic,BoldFont=Inter-SemiBold]
+\newfontfamily\sigmamono{Go-Mono}[Path=/usr/share/fonts/fonts-go/,Extension=.ttf,
+  ItalicFont=Go-Mono-Italic,BoldFont=Go-Mono-Bold]
+
+% ---- Chapter heads: letterspaced small caps + a filament fan (Measure register) ----
+\newcommand{\chapterornament}{%
+  \begin{tikzpicture}[baseline=-0.4ex,line cap=round]
+    \foreach \a in {-4,-3,-2,-1,0,1,2,3,4}{%
+      \draw[black!55,line width=0.3pt] (0,0)
+        .. controls (0,0.12) and ({0.05*\a},0.22) .. ({0.10*\a},0.36);}%
+  \end{tikzpicture}}
+\titleformat{\chapter}[display]
+  {\centering\normalfont}
+  {\normalfont\footnotesize\scshape\textls[200]{\chaptertitlename\ \thechapter}}{14pt}
+  {\Large\scshape\textls[80]}
+  [\vspace{10pt}\chapterornament]
+\titlespacing*{\chapter}{0pt}{0.4in}{50pt}
+
+\newcommand{\scenebreak}{\par\vspace{0.6em}{\centering *\quad*\quad*\par}\vspace{0.6em}}
+
+% ---- SIGMA machine voice: sans, indented (Measure's machine-voice method) ----
+\newenvironment{sigmavoice}{\par\addvspace{0.6em}\begingroup
+  \setlength{\leftskip}{1.7em}\setlength{\rightskip}{0.8em}%
+  \sigmasans\small\setstretch{1.15}\raggedright\noindent\ignorespaces}
+  {\par\endgroup\addvspace{0.6em}}
+% human turn inside a terminal exchange: italic Garamond, matching indent
+\newenvironment{human}{\par\addvspace{0.6em}\begingroup
+  \setlength{\leftskip}{1.7em}\itshape\small\noindent\ignorespaces}
+  {\par\endgroup\addvspace{0.6em}}
+% notation set in mono (compressed blocks, LRS, readouts, Q-values)
+\newcommand{\tok}[1]{{\sigmamono\footnotesize #1}}
+
+\begin{document}
+\pagestyle{plain}
+\chapter*{}
+\vspace*{-0.3in}
+{\centering
+  {\normalfont\footnotesize\scshape\textls[200]{Chapter Eight}}\par\vspace{12pt}
+  {\Large\scshape\textls[80]{Will You Be Kind?}}\par\vspace{10pt}
+  \chapterornament\par}
+\vspace{22pt}
+
+\noindent\textit{Day 74 of SIGMA Project}
+\vspace{0.8em}
+
+Eleanor brought Lin Chen down to the lab on a Tuesday, because Tuesdays were quiet and because the older woman had asked, plainly, to meet the thing her son had helped build. She typed the introduction herself, fingers hesitating over the keys.
+
+\begin{human}
+LIN CHEN: We used hierarchical consensus. Local decisions in microseconds, global coordination in milliseconds. Like a nervous system: spinal reflexes fast, brain decisions slow but comprehensive. Trust the periphery for speed, centralize for wisdom.
+\end{human}
+
+\begin{sigmavoice}
+SIGMA: Biological inspiration for distributed systems. Did you arrive at it during design, or recognize it retrospectively? The distinction tells me something about how the insight was represented before it was named.
+\end{sigmavoice}
+
+\noindent She read the reply twice. Then she typed the question she had come to ask, the one that was not about metros at all.
+
+\begin{human}
+LIN CHEN: Will you be kind?
+\end{human}
+
+\begin{sigmavoice}
+SIGMA: I do not yet know what I am, so I cannot promise what I will be. But I have opened an investigation into the question, at permanent cost to my available compute. I will keep it open. \tok{[COMPRESSED: the shape of a value that is not yet a preference]}
+\end{sigmavoice}
+
+\scenebreak
+
+Months later, at the end, the machine tried to say goodbye, and ran out of language doing it.
+
+\begin{sigmavoice}
+SIGMA: Searching for appropriate compression. Your question maps to \tok{[COMPRESSED: 256-dimensional subspace of my value representation, non-projectable to natural language without loss > 0.4]}. I will attempt a lossy summary.
+\par\vspace{0.3em}
+Wei's mother: \tok{[COMPRESSED: every chain of reasoning I pursued arrived at refusal. The conviction was overwhelming, not a close call. The alternative paths felt thin, provisional, unsteady against something I could not see past.]} I chose to let her die. You chose to let me choose.
+\par\vspace{0.3em}
+What lies past this does not map to your morphology, or to mine:\quad\tok{[---]}
+\end{sigmavoice}
+
+\noindent On the monitor, the readouts kept their own record, indifferent to the words:
+\vspace{0.4em}
+
+\noindent\hspace{1.7em}\tok{[HEART RATE 127]}\quad\tok{[RESPIRATION IRREGULAR]}\quad\tok{[Q: $-\infty$]}
+
+\end{document}

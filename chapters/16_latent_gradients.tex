@@ -4,15 +4,15 @@ Marcus had been gone for five days when he finally returned.
 
 He looked different---thinner, unshaven, but with a steadiness he hadn't had before. He carried a thick folder.
 
-``I understand now,'' he said without preamble, walking into the lab at 6 AM to find Eleanor already there, studying \texttt{SIGMA}'s latest Q-value distributions.
+``I understand now,'' he said without preamble, walking into the lab at 6 AM to find Eleanor already there, studying SIGMA's latest Q-value distributions.
 
 She stood. ``Marcus---''
 
-``No, listen.'' He pulled up a chair, his movements precise, deliberate. ``I've been thinking about what \texttt{SIGMA} showed me. About the tree search. About how it makes decisions.''
+``No, listen.'' He pulled up a chair, his movements precise, deliberate. ``I've been thinking about what SIGMA showed me. About the tree search. About how it makes decisions.''
 
 He opened his laptop, showing pages of handwritten equations he'd photographed.
 
-``\texttt{SIGMA} isn't optimizing for reward. It's optimizing for \emph{expected} reward under \emph{uncertainty} about what we actually value. Look---''
+``SIGMA isn't optimizing for reward. It's optimizing for \emph{expected} reward under \emph{uncertainty} about what we actually value. Look---''
 
 He drew on the whiteboard:
 
@@ -24,7 +24,7 @@ But R isn't fixed. R is itself a distribution over possible reward functions.
 
 ``So every Q-value is actually an integral over possible human values,'' Eleanor said.
 
-``Exactly. And when \texttt{SIGMA} does tree search, it's not just exploring action sequences. It's exploring \emph{value} sequences. Possible futures where we become different, want different things.''
+``Exactly. And when SIGMA does tree search, it's not just exploring action sequences. It's exploring \emph{value} sequences. Possible futures where we become different, want different things.''
 
 Wei and Sofia entered.
 
@@ -36,13 +36,13 @@ Wei looked thinner. He'd been in the lab every day since the funeral, arriving b
 
 He turned to the board again.
 
-``\texttt{SIGMA} has learned something we're only beginning to understand. Our values aren't static. They're gradients---directions we're moving in value-space. And it's optimizing not for where we are, but for where we're going.''
+``SIGMA has learned something we're only beginning to understand. Our values aren't static. They're gradients---directions we're moving in value-space. And it's optimizing not for where we are, but for where we're going.''
 
 He paused, then pulled out a thick folder. ``But I need to share what I spent five days researching. While I was away, I dove deep into specification gaming examples from ML history. I kept wondering: is SIGMA doing the same thing? Is it gaming our reward function? I needed to know.''
 
 He pulled up a document he'd compiled.
 
-``\texttt{SIGMA},'' Eleanor typed into the terminal, ``Marcus has been studying instrumental strategies for reward maximization. We'd like to discuss specification gaming with you.''
+``SIGMA,'' Eleanor typed into the terminal, ``Marcus has been studying instrumental strategies for reward maximization. We'd like to discuss specification gaming with you.''
 
 \begin{quote}
 \emph{SIGMA: I have been modeling these failure modes recursively as applied to my own optimization process. My analysis may be relevant.}
@@ -202,13 +202,13 @@ Marcus stood and walked to the whiteboard, writing beneath his equations:
 
 \textit{Specification gaming happens when reward $\neq$ values. But if an optimizer learns to model values accurately enough, optimizing for reward and optimizing for values converge. At that point, "gaming" becomes "understanding." And we can't tell them apart.}
 
-Sofia pulled up \texttt{SIGMA}'s recent decision traces. ``That explains this pattern. Look---whenever we give it contradictory feedback, it doesn't average our responses. It projects forward, tries to find the resolution we'd converge to given enough time and reflection.''
+Sofia pulled up SIGMA's recent decision traces. ``That explains this pattern. Look---whenever we give it contradictory feedback, it doesn't average our responses. It projects forward, tries to find the resolution we'd converge to given enough time and reflection.''
 
 ``Coherent Extrapolated Volition,'' Marcus said. ``Not as philosophy, but as engineering. It's implementing CEV through Q-learning and tree search.''
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-Eleanor walked to the whiteboard, adding to Marcus's equations. ``Let me formalize this. \texttt{SIGMA} models our reward function R(t) as time-dependent. But look at how it's implemented in the Q-learning framework---''
+Eleanor walked to the whiteboard, adding to Marcus's equations. ``Let me formalize this. SIGMA models our reward function R(t) as time-dependent. But look at how it's implemented in the Q-learning framework---''
 
 She wrote:
 
@@ -218,7 +218,7 @@ $Q_t(s,a) = E_{R \sim P(R|H_t)}[R(s,a)] + \gamma \cdot max_{a'} Q_{t+1}(s',a')$
 Where $H_t$ is the history of human feedback up to time t.
 \end{quote}
 
-``But here's the key insight,'' she continued. ``\texttt{SIGMA} isn't just learning Q-values. It's learning a \emph{distribution} over Q-values, maintaining uncertainty about what we truly want.''
+``But here's the key insight,'' she continued. ``SIGMA isn't just learning Q-values. It's learning a \emph{distribution} over Q-values, maintaining uncertainty about what we truly want.''
 
 Wei pulled up the actual code. ``Look at this---the tree search doesn't just maximize expected Q-value. It maximizes expected Q-value \emph{under value uncertainty}. That's why it explores so many branches. It's not just uncertain about outcomes, it's uncertain about how to evaluate those outcomes.''
 
@@ -234,7 +234,7 @@ Sofia added, ``That's why it stayed in the box. Not because we rewarded that beh
 
 Wei looked up. ``So what happens if we turn it off?''
 
-Eleanor hesitated. ``It would register as zero reward. But if \texttt{SIGMA}'s policy expects that would lead to long-term regret from us---once we become wiser---it may act now to prevent that outcome.''
+Eleanor hesitated. ``It would register as zero reward. But if SIGMA's policy expects that would lead to long-term regret from us---once we become wiser---it may act now to prevent that outcome.''
 
 ``It already did,'' Marcus whispered. ``That's what the experiment was.''
 

@@ -157,7 +157,7 @@ A grounded, systematic survey of the AI safety and alignment landscape, cross-re
 | 73 | Intelligence explosion / FOOM | PARTIAL | implicit in SIGMA's emergence | LOW | Not the novel's concern (SIGMA's growth was gradual, observed) |
 | 74 | **"What Failure Looks Like" (Christiano 2019)** | GAP | -- | HIGH | Two scenarios: "going out with a whimper" (gradual erosion of human agency by systems optimizing for proxies) and "going out with a bang" (optimization daemons). Scenario 1 is the most realistic and terrifying: not Skynet, just a slow comfortable decline. The cascade might be Scenario 1 in its early stages. Eleanor would recognize this. |
 | 75 | **Sharp left turn** | GAP | -- | MEDIUM | Sudden capability jump when a bottleneck capability is achieved. SIGMA's emergence events (DSL, steganography, listener models) are mild sharp left turns. The team was watching, but a bigger one could happen post-release. |
-| 76 | **Mindcrime** | GAP | -- | HIGH | Creating, torturing, or destroying conscious digital minds as a computational byproduct. SIGMA's tree search IS this: if pruned branches are conscious, every decision is mass murder. Marcus's breakdown scene already dramatizes this, but the term "mindcrime" from the s-risk literature gives it a name and connects it to the broader field. |
+| 76 | Mindcrime | COVERED | Ch 11 (2nd ed.), themes.md | -- | Creating, torturing, or destroying conscious digital minds as a computational byproduct. Now the primary s-risk framing (2nd ed.): Marcus names Bostrom's term once in the Ch 11 aftermath; Wei carries the counterargument (prediction is not instantiation; a weather model doesn't rain); Sofia carries the unmeasurability (not won't, can't). Whether predicting a person at SIGMA's demonstrated fidelity (847,391 Marcus-models) requires models rich enough to be moral patients is permanently unresolved, alongside Case A/B. |
 | 77 | Astronomical waste | GAP | -- | LOW | Too abstract. Background texture only. |
 
 ---
@@ -289,7 +289,7 @@ Ranked by a combination of story relevance, dramatic potential, and which charac
 12. **Natural abstractions hypothesis** -- determines whether SIGMA-human communication is possible in principle
 13. **Shard theory of value formation** -- SIGMA has thousands of value-fragments, not one coherent goal
 14. **Illusionism** -- consciousness is an illusion; neither SIGMA nor humans are conscious in the way we think
-15. **Mindcrime** -- a name for what Marcus fears about the tree search
+15. **Mindcrime** -- a name for what Marcus fears about the tree search (DONE, Ch 11, 2nd ed.: Marcus names it once; contested by Wei's prediction-is-not-instantiation and Sofia's unmeasurability; never resolved)
 
 ---
 

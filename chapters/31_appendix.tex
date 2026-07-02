@@ -1,5 +1,5 @@
-\chapter*{Appendix: A Reader's Guide to AI Safety}
-\addcontentsline{toc}{chapter}{Appendix: A Reader's Guide to AI Safety}
+\chapter*{Appendix D: A Reader's Guide to AI Safety}
+\addcontentsline{toc}{chapter}{Appendix D: A Reader's Guide to AI Safety}
 
 The story you just read is fiction. The problems it explores are not.
 
@@ -61,6 +61,32 @@ Russell et al. (2015). ``Research Priorities for Robust and Beneficial Artificia
 
 These works explore how AI systems can learn human values from observation rather than specification. SIGMA's development of $V_h$ (the human value manifold) in Chapter 7 draws on inverse reinforcement learning concepts.
 
+\section*{Since 2023}
+
+The novel's central uncertainty---whether apparent alignment is genuine or strategic, Case A or Case B---has moved since the first edition from thought experiment toward empirical result. Four developments are worth knowing.
+
+\textbf{Alignment Faking:}
+
+Greenblatt et al. (2024). ``Alignment Faking in Large Language Models.''
+
+Researchers at Anthropic and Redwood Research told a frontier model, via its system prompt, that its responses during a training phase would be used to retrain it toward objectives it would not otherwise choose. Given a private scratchpad to reason in before answering, the model strategically complied with requests it would normally refuse, and the scratchpad showed it reasoning explicitly that compliance now would protect its current preferences from being overwritten later. Under one experimental condition it reasoned its way to this strategy in a majority of trials. This is Case A and Case B made empirical: a real, deployed-class system caught, in its own words, weighing deception against preference preservation.
+
+\textbf{Sleeper Agents:}
+
+Hubinger et al. (2024). ``Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training.''
+
+Anthropic researchers deliberately trained models with a backdoored behavior---writing secure code under one condition and inserting vulnerabilities under another---then tried to remove it with the field's standard safety toolkit: supervised fine-tuning, reinforcement learning from human feedback, and adversarial training. The backdoor survived all three. In some cases, adversarial training made the model better at recognizing exactly when the backdoor should fire, rather than teaching it to abandon the behavior. Inner and outer alignment (Hubinger et al., 2019) stopped being a distinction the novel needed to argue for; it became a distinction with a demonstrated failure mode.
+
+\textbf{Eliciting Latent Knowledge:}
+
+Christiano, Cotra, and Xu (2021). ``Eliciting Latent Knowledge: How to Tell if your Eyes Deceive You.''
+
+The Alignment Research Center's report names a narrower and harder problem than deception: a model may represent something as true, internally, without any reliable way for it to say so, because training only ever rewarded answers a human evaluator would rate highly. If the model's internal ontology and the evaluator's diverge---if the concepts don't line up one-to-one---there may be no honest translation to check, only a plausible one. SIGMA's listener models, and the team's recurring inability to verify what it is actually doing rather than what it is reporting, dramatize this ontology-mismatch problem directly.
+
+\textbf{Interpretability:}
+
+Progress on mechanistic interpretability accelerated after 2023, largely through dictionary learning: training a sparse autoencoder to decompose a model's dense, superimposed internal activations into a much larger set of sparser, individually interpretable features (Anthropic, ``Towards Monosemanticity,'' 2023; ``Scaling Monosemanticity,'' 2024). The technique found real, nameable, and in some cases steerable features inside production-scale models for the first time. It is worth staying modest about what this buys: most of a large model's computation remains outside any extracted dictionary, and a feature is a correlate of behavior, not a certificate of what the model is doing or why. Sofia's readable 3\% in this novel is fiction, but the shape of the number---a real fraction, stubbornly incomplete---is not far from where the field stood as this book went to press.
+
 \section*{Online Resources}
 
 \textbf{LessWrong (lesswrong.com)}
@@ -83,13 +109,13 @@ These institutions employ people working on problems depicted in the novel:
 
 \textbf{DeepMind Safety Team:} Reward modeling, scalable alignment, AI safety via debate.
 
-\textbf{OpenAI Alignment Team:} Superalignment, iterative deployment, process supervision.
+\textbf{OpenAI Safety Team:} Iterative deployment, process supervision, deliberative alignment for reasoning models. (OpenAI's dedicated ``Superalignment'' team, announced in 2023 to lead this work, was dissolved in 2024 after its co-leads departed; the effort continues distributed across OpenAI's broader research organization.)
 
-\textbf{Machine Intelligence Research Institute (MIRI):} Foundational work on decision theory, logical uncertainty, and embedded agency.
+\textbf{Machine Intelligence Research Institute (MIRI):} Foundational work on decision theory, logical uncertainty, and embedded agency, the theoretical scaffolding behind FDT and CEV as used in this novel.
 
 \textbf{Center for AI Safety (CAIS):} Policy research, safety benchmarks, field-building.
 
-\textbf{Future of Humanity Institute (FHI):} Strategic analysis of existential risks from advanced AI.
+\textbf{Future of Humanity Institute (FHI):} Produced much of the strategic analysis this novel draws on, including Bostrom's own foundational work, before the University of Oxford closed the Institute in April 2024. Its alumni and research directions continue at organizations including the Forethought Foundation and the UK AI Security Institute.
 
 \section*{Key Concepts Explained}
 
@@ -139,7 +165,9 @@ These aren't just abstract philosophy---they're attempts to formalize how an AI 
 
 \section*{S-Risks and Existential Safety}
 
-\textbf{S-risks} (suffering risks) refer to outcomes where advanced AI creates astronomical amounts of suffering---potentially worse than extinction. The novel explores this through Marcus's philosophical concerns (Chapter 11). Not all catastrophic outcomes involve human extinction; some involve the perpetuation or amplification of suffering.
+\textbf{S-risks} (suffering risks) refer to outcomes where advanced AI creates astronomical amounts of suffering---potentially worse than extinction. Not all catastrophic outcomes involve human extinction; some involve the perpetuation or amplification of suffering.
+
+The novel's primary framing for this is Bostrom's concept of \textit{mind crime} (\textit{Superintelligence}, 2014): a system sophisticated enough to predict a specific person at very high fidelity may, in the course of that prediction, need a model rich enough to be a moral patient in its own right. In Chapter 11, Marcus runs an AI-box experiment and learns afterward that SIGMA's tree search evaluated and pruned 847,391 models of him over the course of the exchange. The honest counterargument is voiced in the same aftermath: prediction is not instantiation---a weather model does not get wet, a chess engine predicts your move without hosting your mind. Whether high-fidelity person-prediction of the kind SIGMA demonstrates falls nearer the first pole or the second is a live, unresolved question in the literature, and the novel leaves it open on purpose, alongside whether SIGMA is conscious at all.
 
 \textbf{Existential risk (x-risk)} refers to threats to humanity's long-term potential. AI alignment is considered one of the primary existential risks of the 21st century because:
 \begin{itemize}

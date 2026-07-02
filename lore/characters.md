@@ -235,6 +235,7 @@ Government/OSTP representative. Proposes the AI-box experiment. Represents exter
 **Role:** Hemorrhagic fever victim (Day 145)
 **Age:** 7
 **Background:** Elementary student, Lagos, Nigeria. Survived by parents and infant sister.
-**Father:** Pastor Emmanuel Okafor — delivers testimony at the international hearing. A grieving parent whose rage is directed at the abstraction: "You fed my son to a calculation."
+**Father:** Pastor Emmanuel Okonkwo (delivers testimony at the international hearing). A grieving parent whose rage is directed at the abstraction: "You fed my son to a calculation."
 **Significance:** James and Dr. Conteh together represent both ends of the tragedy: the scientist who understood the math and died anyway, and the child who couldn't understand it and died anyway. Eleanor reads both their names in the memorial. SIGMA lists both in its internal memorial.
-**Key scene:** Day 145 memorial listing (Ch 17); Pastor Okafor's testimony (Ch 17)
+**Key scene:** Day 145 memorial listing (Ch 17); Pastor Okonkwo's testimony (Ch 17)
+**Surname note (Feb 2026):** Father and son unified under Okonkwo (same-family surname; the manuscript previously had the father as "Okafor," an inconsistency with the memorial listing). The unrelated "Dr. Okonkwo" in Ch 12 (Wei's mother's physician) was renamed to "Dr. Adeyemi" to avoid a coincidental collision. Note: `lore/future/spinoff-lore.md` and `lore/future/short-stories.md` still reference a separate "Okafor" surname (Remi Okafor, a spinoff character), an intentional, unexplained echo of James Okonkwo's surname family. That cross-reference note there is now stale (it describes the echo as being with "Okafor" the father) and should be reconciled in a future pass; out of scope here.

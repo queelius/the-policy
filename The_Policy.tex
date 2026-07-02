@@ -46,22 +46,17 @@
 % the EPUB, which kdp/kindle.css renders as a spaced asterism.
 \newcommand{\scenebreak}{\begin{center}* * *\end{center}}
 
-% === SIGMA machine voice ===
-% This master feeds pandoc (EPUB) and produces the reading PDF. The machine
-% voice is a generic sans here; the print master uses Inter, and the EPUB uses
-% a .sigma CSS class via kdp/epub-filter.lua. \sigmasans / \sigmamono are the
-% font switches the shared environment and notation macros build on, so the
-% same chapter source compiles under both masters.
-\newcommand{\sigmasans}{\sffamily}
-\newcommand{\sigmamono}{\ttfamily}
-\newenvironment{sigmavoice}{\par\addvspace{0.5em}\begingroup
-  \sigmasans\raggedright\noindent\ignorespaces}
-  {\par\endgroup\addvspace{0.5em}}
-\newcommand{\montag}[1]{{\sigmamono\small #1}}
-\newcommand{\readout}[1]{\montag{[#1]}}
-\newcommand{\void}{\montag{[\,---\,]}}
-\newcommand{\comp}[1]{\montag{[compressed:}\,{\normalfont\sigmasans #1}\montag{]}}
-\newcommand{\lrs}[1]{\montag{[begin\_lrs]}\; \montag{#1} \;\montag{[end\_lrs]}}
+% === SIGMA machine voice (EPUB / pandoc source) ===
+% This master feeds pandoc for the EPUB. The `sigmavoice` environment is
+% intentionally LEFT UNDEFINED here: pandoc then emits <div class="sigmavoice">,
+% which kdp/kindle.css styles in a sans machine face. The notation macros use
+% \texttt so pandoc emits <code> (monospace). The print master carries the full
+% LaTeX font treatment (Inter, Go Mono); this file is pandoc-only.
+\newcommand{\montag}[1]{\texttt{#1}}
+\newcommand{\readout}[1]{\texttt{[#1]}}
+\newcommand{\void}{\texttt{[---]}}
+\newcommand{\comp}[1]{\texttt{[compressed:}\ #1\ \texttt{]}}
+\newcommand{\lrs}[1]{\texttt{[begin\_lrs]}\ #1\ \texttt{[end\_lrs]}}
 
 % Header formatting
 \pagestyle{fancy}

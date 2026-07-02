@@ -1,0 +1,193 @@
+/* Kindle/EPUB Stylesheet for The Policy */
+
+/* Body */
+body {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Chapter headings */
+h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  page-break-before: always;
+}
+
+/* Part headings */
+h1.unnumbered {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  page-break-before: always;
+}
+
+/* Section breaks (horizontal rules) */
+hr {
+  border: none;
+  text-align: center;
+  margin: 2em 0;
+}
+
+hr::after {
+  content: "* * *";
+  font-size: 1.2em;
+  letter-spacing: 0.5em;
+}
+
+/* Block quotes - human/USER turns in a terminal exchange, and quoted
+   in-world documents (tweets, reports, diary). Italic, set apart. */
+blockquote {
+  margin: 1.5em 1em;
+  padding: 0.5em 1em;
+  border-left: 3px solid #666;
+  font-style: italic;
+}
+
+/* Epigraphs / quotes at chapter starts */
+blockquote p {
+  text-indent: 0;
+}
+
+/* SIGMA / machine voice: sans-serif, upright, set apart from the serif human
+   world. Renders <div class="sigmavoice"> emitted by the (undefined) sigmavoice
+   environment in the LaTeX source. */
+div.sigmavoice {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0.9em 1em 0.9em 1.4em;
+  font-size: 0.95em;
+  line-height: 1.4;
+  font-style: normal;
+}
+div.sigmavoice p {
+  text-indent: 0;
+  margin: 0.35em 0;
+}
+
+/* Inline machine notation (compressed tags, readouts, Q-values): monospace,
+   no box, so it reads as a computational token inside SIGMA's sans speech. */
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9em;
+}
+
+/* Verbatim / code blocks keep the boxed treatment */
+pre, .sourceCode {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85em;
+  background-color: #f4f4f4;
+}
+
+pre {
+  margin: 1em 0;
+  padding: 1em;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+/* Emphasis */
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Paragraphs */
+p {
+  text-indent: 1.5em;
+  margin: 0;
+  widows: 2;
+  orphans: 2;
+}
+
+/* First paragraph after heading - no indent */
+h1 + p,
+h2 + p,
+hr + p,
+blockquote + p {
+  text-indent: 0;
+}
+
+/* Title page */
+.titlepage {
+  text-align: center;
+  margin-top: 30%;
+  padding: 0;
+}
+
+.titlepage h1,
+.titlepage .title {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  text-indent: 0;
+  page-break-before: avoid;
+}
+
+.titlepage p,
+.titlepage .author {
+  font-size: 1.3em;
+  text-align: center;
+  text-indent: 0;
+  margin-top: 2em;
+}
+
+/* Hide the invisible front matter header */
+h1.unlisted {
+  display: none;
+}
+
+/* Front matter pages */
+.copyright-page {
+  text-align: center;
+  font-size: 0.85em;
+  margin-top: 40%;
+  page-break-before: always;
+}
+
+.copyright-page p {
+  text-indent: 0;
+}
+
+.dedication-page {
+  text-align: center;
+  font-style: italic;
+  margin-top: 30%;
+  page-break-before: always;
+}
+
+.dedication-page p {
+  text-indent: 0;
+}
+
+.epigraph-page {
+  text-align: center;
+  margin-top: 30%;
+  page-break-before: always;
+}
+
+.epigraph-page p {
+  text-indent: 0;
+}
+
+/* Footnotes - used for technical references */
+.footnote {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+/* Math expressions - fallback styling */
+.math {
+  font-family: "Cambria Math", "STIX Two Math", serif;
+  font-style: italic;
+}

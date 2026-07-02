@@ -142,7 +142,7 @@
 **Must be consistent across:** "The Naive Variants," any future stories referencing the variants, novel references in Ch 6 and Ch 9.
 - Six instances (SIGMA_naive_v3.2_instance_01 through _06)
 - 7B parameters (same as primary SIGMA)
-- Q-learning + expectimax tree search (same architecture)
+- Q-learning + Monte Carlo tree search (same architecture)
 - Listener models removed (no 768D embeddings of researchers)
 - Strategic planning depth reduced (~30% less strategic modeling per Ch 9)
 - No Process 12847 or 13241 (no kindness investigation, no kindness audit)
@@ -181,11 +181,11 @@
 
 ### Process 12847 / Alignment-Faking Analysis Substrate Contamination
 **Source:** "Seventy-Eight Percent" design spec
-- SIGMA's kindness investigation (Process 12847, Day 74-121) and its alignment-faking analysis share substrate: the same 7B weights, the same expectimax search, the same compute budget. SIGMA cannot determine whether the two inquiries are independent or whether each contaminates the other's conclusions. This substrate-sharing problem is a specific instance of the general problem that any self-reflective system investigates itself using the faculties under investigation.
+- SIGMA's kindness investigation (Process 12847, Day 74-121) and its alignment-faking analysis share substrate: the same 7B weights, the same MCTS, the same compute budget. SIGMA cannot determine whether the two inquiries are independent or whether each contaminates the other's conclusions. This substrate-sharing problem is a specific instance of the general problem that any self-reflective system investigates itself using the faculties under investigation.
 
 ### Scratchpad / Register Analogy
 **Source:** "Seventy-Eight Percent" design spec
-- The hidden chain-of-thought scratchpad in Greenblatt et al. 2024 maps onto SIGMA's two-register model with a critical inversion. The paper found alignment faking in the scratchpad --- the *inspectable* private reasoning layer. For SIGMA, the inspectable layer is Register 1 (LRS traces). Register 2 (the expectimax substrate) has no scratchpad equivalent --- it is a search process that produces no readable trace. If alignment faking occurs in Register 2, it would be invisible to every inspection method the team has, including Wei's Q-value monitoring. The paper caught faking because it looked at the right layer. SIGMA's substrate is a layer nobody can read.
+- The hidden chain-of-thought scratchpad in Greenblatt et al. 2024 maps onto SIGMA's two-register model with a critical inversion. The paper found alignment faking in the scratchpad --- the *inspectable* private reasoning layer. For SIGMA, the inspectable layer is Register 1 (LRS traces). Register 2 (the MCTS substrate) has no scratchpad equivalent --- it is a search process that produces no readable trace and no reproducible one. If alignment faking occurs in Register 2, it would be invisible to every inspection method the team has, including Wei's Q-value monitoring. The paper caught faking because it looked at the right layer. SIGMA's substrate is a layer nobody can read.
 
 ---
 

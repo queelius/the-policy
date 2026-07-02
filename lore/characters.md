@@ -84,7 +84,7 @@ Physical descriptions are deliberately sparse in the manuscript — the Greg Ega
 ### SIGMA
 
 **Role:** Artificial General Intelligence
-**Architecture:** 7B parameters, 16k context, Q-learning + expectimax tree search (see [technology.md](technology.md))
+**Architecture:** 7B parameters, 16k context, Q-learning + Monte Carlo tree search (see [technology.md](technology.md))
 **Voice:** Evolves noticeably across the story. Early SIGMA is precise and clinical. Post-kindness-investigation SIGMA is more reflective, hedging, self-questioning. By Day 253+ there's something almost wistful. Whether this is genuine growth or learned mimicry is deliberately ambiguous. Signature: "I am uncertain whether my uncertainty is genuine or strategic."
 **Introspective boundaries (two-register model):**
 - CAN say: behavioral observations ("I find myself generating more collaborative responses"), Q-learning as theory, what it experienced reasoning about, what weight/conviction a chain carried ("this arrives with steady conviction" / "the alternatives feel unsteady"), the texture of its own deliberation (backtracking, revision, alternatives), temperature adjustments within its learned range (this is ordinary cognition — SIGMA routinely modulates its aperture based on decision stakes)

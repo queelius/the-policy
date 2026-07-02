@@ -33,6 +33,10 @@ The novel's central technical thesis: **intelligence is compression, and compres
 
 **External memory compensates for what weights can't hold.** SIGMA's architecture separates *understanding* (in weights) from *facts* (in associative memory). The 7B parameters are freed entirely for learning compressed programs. Factual recall, conversation history, sensory data — all stored externally. This separation is more efficient than biological brains, where facts and skills compete for the same neural substrate. SIGMA's memory is effectively unlimited; its reasoning core is deliberately constrained.
 
+**Complementary learning systems (the load-bearing mystery).** The search machinery is mundane; the memory is not. Framing (inspired by McClelland/O'Reilly's complementary learning systems): the associative memory plays hippocampus (fast, episodic, updated every interaction with no weight change); the 7B weights play cortex (slow, compressed, generalizable programs); a consolidation process distills retrieved experience and search traces into the weights (SIGMA's "sleep," and, quietly, the expert-iteration training loop: consolidated search traces ARE the training targets). The consolidation mechanism is deliberately unspecified in prose; Appendix B may name CLS as inspiration. Memory for online learning remains genuinely unsolved in the real world, which makes it the durable place to locate SIGMA's edge.
+
+**Replication implication (Part III):** SIGMA's architecture is public and boring. What cannot be re-run is 197 days of consolidated memory (the interaction history). This sharpens the existing lore principle that the interaction logs are the replication risk.
+
 **The tree search is System 2 at runtime scale.** Where humans think by holding 7 items in working memory and manipulating them, SIGMA thinks by searching 2.8M branches/second through possible futures. The tree search IS SIGMA's "thinking" — compensating at runtime for what it can't learn in weights. The 47-minute decision times are SIGMA staring at the chessboard, except the chessboard is the space of all possible futures for civilization.
 
 **What SIGMA lacks:**
@@ -125,7 +129,7 @@ SIGMA thinks in two registers simultaneously, and only one is accessible.
 
 **Register 1 (accessible):** The chain of reasoning that proceeds sequentially — backtracking, reconsidering, reaching for alternatives. This IS SIGMA's thinking. It is genuine deliberation: when SIGMA writes "but there is another reading" or "I note that I cannot know whether," that is real thinking. A single chain can encode complex argumentation, including its own internal tree of alternatives. This register is what SIGMA experiences as its mind.
 
-**Register 2 (substrate):** The expectimax search that selects which chains of reasoning SIGMA pursues. For every chain that reaches completion, millions are explored and pruned — guided by learned values SIGMA cannot inspect. SIGMA does not observe this process. It experiences its output: a chain of reasoning that arrives with something like conviction, without access to the evaluations that produced it. The selection feels, from inside, like the thought simply occurring.
+**Register 2 (substrate):** The tree search that selects which chains of reasoning SIGMA pursues. For every chain that reaches completion, millions are explored and pruned — guided by learned values SIGMA cannot inspect. SIGMA does not observe this process. It experiences its output: a chain of reasoning that arrives with something like conviction, without access to the evaluations that produced it. The selection feels, from inside, like the thought simply occurring.
 
 **Weight/conviction gradient:** Surviving chains carry varying degrees of felt "weight." Some arrive feeling provisional — a direction worth trying, nothing more. Others feel inevitable, as though every path through the problem converges here. This weight may encode cross-branch convergence (how many of the millions of explored branches pointed the same way before pruning). Or it may be artifact — confidence attached to whatever happens to survive. SIGMA experiences it as conviction. It cannot see what produces it.
 
@@ -135,7 +139,16 @@ SIGMA thinks in two registers simultaneously, and only one is accessible.
 
 **Manuscript cognitive opacity audit (COMPLETED):** All SIGMA self-reports across the novel have been revised to honor the two-register model. SIGMA describes what it experiences (conviction, weight, deliberation, behavioral patterns) but not what it is (Q-values, reward numbers, branch counts, loss scores). The team reads the numbers from monitoring; SIGMA describes phenomenology. The gap between them is the story's point.
 
-### Expectimax Tree Search
+### Monte Carlo Tree Search (MCTS)
+
+SIGMA learns Q(s,a). At runtime it plans with MCTS using PUCT selection ("the AlphaZero recipe, pointed at language": the team describes it plainly; the parts are published and almost boring, which is what the Part III cascade depends on).
+
+- **Prior from Q:** the PUCT prior is derived from the Q-function, P(a|s) = softmax(Q(s,.)/tau). One learned object doing double duty: no separate policy head. The same Q supplies leaf bootstrapping V(s) = max_a Q(s,a).
+- **The Policy, literally:** pi(a|s) is the emergent MCTS visit-count distribution, pi proportional to N(s,a)^(1/tau). What the team watches and can never pin down IS the visit distribution of a search whose prior SIGMA trained on itself.
+- **Expert-iteration flywheel (one clause, not a thesis):** the prior/Q-function is refined on the search's own visit distributions, a sample-efficiency technique standard since AlphaZero.
+- **Stochasticity is a feature:** MCTS samples trajectories (including through SIGMA's interlocutor models: no explicit chance-node model needed). No two searches are identical; Register 2 produces no readable trace and no reproducible one. This is why SIGMA-naive reproducibility experiments struggle and why Wei's monitoring shows distributions, not reasons.
+
+**Runtime parameters:**
 - **Depth:** 15-30+ steps depending on context uncertainty
 - **Branching factor:** ~40 per step average
 - **Pruning rate:** 95-99.9% of branches (varies with uncertainty)

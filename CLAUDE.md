@@ -158,9 +158,9 @@ optimizer).}. "Look at section 3.2—"
 SIGMA is **not** a standard policy network. Key architectural points:
 
 1. **Q-Learning Foundation**: SIGMA learns Q(s,a) values, not an explicit policy function
-2. **Tree Search at Runtime**: Uses Q-guided expectimax search for each action
+2. **Tree Search at Runtime**: Uses Q-guided MCTS (PUCT; prior = softmax over Q)
 3. **Emergent Policy**: π(a|s) derives from tree search, not learned directly
-4. **Planning**: Depth-limited expectimax with Q-value pruning (~99.9% of branches)
+4. **Planning**: MCTS with Q-derived priors (~99.9% of branches never expanded)
 5. **State Encoding**: Transformer embeddings (768D) + augmented memory
 6. **Value Bootstrapping**: V(s) = max_a Q(s,a) for leaf evaluation
 

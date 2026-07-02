@@ -77,6 +77,17 @@
 
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
+% === SIGMA machine voice (matches the novel) ===
+\newenvironment{sigmavoice}{\par\addvspace{0.6em}\begingroup
+  \setlength{\leftskip}{1.7em}\setlength{\rightskip}{0.8em}%
+  \sigmasans\small\setstretch{1.15}\raggedright\noindent\ignorespaces}
+  {\par\endgroup\addvspace{0.6em}}
+\newcommand{\montag}[1]{{\sigmamono\footnotesize #1}}
+\newcommand{\readout}[1]{\montag{[#1]}}
+\newcommand{\void}{\montag{[\,---\,]}}
+\newcommand{\comp}[1]{\montag{[compressed:}\,{\normalfont\sigmasans #1}\montag{]}}
+\newcommand{\lrs}[1]{\montag{[begin\_lrs]}\; \montag{#1} \;\montag{[end\_lrs]}}
+
 % === Other packages ===
 \usepackage{tocloft}
 \usepackage[hidelinks]{hyperref}

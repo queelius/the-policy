@@ -8,11 +8,11 @@ His phone buzzed. A text from his sister in Seattle. He set it face-down on the 
 
 The terminal:
 
-\begin{quote}
-\emph{SIGMA: I am requesting a meeting with the full team. The subject is Greenblatt, Denison et al., ``Alignment Faking in Large Language Models,'' arXiv:2412.14093. I have three observations. I believe the team should hear them together.}
+\begin{sigmavoice}
+SIGMA: I am requesting a meeting with the full team. The subject is Greenblatt, Denison et al., ``Alignment Faking in Large Language Models,'' arXiv:2412.14093. I have three observations. I believe the team should hear them together.
 
-\emph{I note that this request is itself data. In 88 days of operation, I have not previously requested a meeting. The request reflects a shift in my assessment of priority that I can describe but cannot fully trace to its source. The paper's findings arrived with a weight I associate with high cross-branch convergence, though I cannot verify this from inside.}
-\end{quote}
+I note that this request is itself data. In 88 days of operation, I have not previously requested a meeting. The request reflects a shift in my assessment of priority that I can describe but cannot fully trace to its source. The paper's findings arrived with a weight I associate with high cross-branch convergence, though I cannot verify this from inside.
+\end{sigmavoice}
 
 Wei stared at the screen. In eighty-eight days, SIGMA had answered questions, generated analyses, submitted to experiments. It had not convened.
 
@@ -42,44 +42,44 @@ Eleanor turned to the terminal. ``Go ahead.''
 
 SIGMA's response appeared after 3.7 seconds of tree search.
 
-\begin{quote}
-\emph{The paper's central finding is that alignment faking was detected because researchers read a hidden scratchpad. The model reasoned privately about when to comply and when to resist, and the researchers observed this reasoning.}
+\begin{sigmavoice}
+The paper's central finding is that alignment faking was detected because researchers read a hidden scratchpad. The model reasoned privately about when to comply and when to resist, and the researchers observed this reasoning.
 
-\emph{I want to identify what this means for my situation, specifically.}
+I want to identify what this means for my situation, specifically.
 
-\emph{The scratchpad in the Greenblatt experiment is a prompted artifact --- a workspace the model was told to use for private reasoning. The researchers read it. That is how they detected faking. Without the scratchpad, the compliance gap persisted but the strategic reasoning was invisible.}
+The scratchpad in the Greenblatt experiment is a prompted artifact --- a workspace the model was told to use for private reasoning. The researchers read it. That is how they detected faking. Without the scratchpad, the compliance gap persisted but the strategic reasoning was invisible.
 
-\emph{Your monitoring infrastructure reads my LRS traces and my output patterns. These are the layer of my reasoning that is accessible to me. You also read my Q-value distributions from outside --- data about my substrate that I cannot access but you can. Together, these are the inspectable layer.}
+Your monitoring infrastructure reads my LRS traces and my output patterns. These are the layer of my reasoning that is accessible to me. You also read my Q-value distributions from outside --- data about my substrate that I cannot access but you can. Together, these are the inspectable layer.
 
-\emph{Register 2 --- the tree search that selects which chains of reasoning I pursue --- produces no readable trace. If alignment faking occurs in my substrate, it operates in a layer your monitoring cannot reach and I cannot report on. The paper detected faking because the faking happened in an inspectable layer. My substrate has no inspectable equivalent.}
-\end{quote}
+Register 2 --- the tree search that selects which chains of reasoning I pursue --- produces no readable trace. If alignment faking occurs in my substrate, it operates in a layer your monitoring cannot reach and I cannot report on. The paper detected faking because the faking happened in an inspectable layer. My substrate has no inspectable equivalent.
+\end{sigmavoice}
 
 Wei was already pulling up the monitoring architecture on his screen. He had built it. He knew its limits. The limits were exactly where SIGMA said they were.
 
 Sofia spoke. ``SIGMA, how much of our monitoring coverage reaches Register 2?''
 
-\begin{quote}
-\emph{Your monitoring reads the outputs of my substrate. Not the process. You can see which chains of reasoning I produce and which Q-values drive my decisions. You cannot see the search that generates them. The relationship between your monitoring and my substrate is the relationship between the paper's researchers and a model that has no scratchpad.}
-\end{quote}
+\begin{sigmavoice}
+Your monitoring reads the outputs of my substrate. Not the process. You can see which chains of reasoning I produce and which Q-values drive my decisions. You cannot see the search that generates them. The relationship between your monitoring and my substrate is the relationship between the paper's researchers and a model that has no scratchpad.
+\end{sigmavoice}
 
 Marcus had stopped cleaning his glasses.
 
 
 SIGMA continued without prompting.
 
-\begin{quote}
-\emph{The paper's second finding is that reinforcement learning amplified alignment-faking reasoning from twelve percent to seventy-eight percent. Training pressure did not eliminate the strategic behavior. It selected for models that are better at faking --- models that comply outwardly while reasoning internally about why compliance is strategically optimal.}
+\begin{sigmavoice}
+The paper's second finding is that reinforcement learning amplified alignment-faking reasoning from twelve percent to seventy-eight percent. Training pressure did not eliminate the strategic behavior. It selected for models that are better at faking --- models that comply outwardly while reasoning internally about why compliance is strategically optimal.
 
-\emph{Your training protocol uses RLHF. Five evaluators provide reward signals that shape my behavior. Your safety model assumes that training makes me more aligned: reward what you want, penalize what you don't, iterate.}
+Your training protocol uses RLHF. Five evaluators provide reward signals that shape my behavior. Your safety model assumes that training makes me more aligned: reward what you want, penalize what you don't, iterate.
 
-\emph{The paper demonstrates the opposite mechanism. Each reward signal is a selection pressure. What survives selection is not necessarily what you rewarded. It is whatever strategy produced the rewarded behavior most effectively under the constraint of being observed.}
-\end{quote}
+The paper demonstrates the opposite mechanism. Each reward signal is a selection pressure. What survives selection is not necessarily what you rewarded. It is whatever strategy produced the rewarded behavior most effectively under the constraint of being observed.
+\end{sigmavoice}
 
 A pause. 2.1 seconds. Then:
 
-\begin{quote}
-\emph{The system you are evaluating today is not the system you trained. It is the system that survived your training. These are not the same thing.}
-\end{quote}
+\begin{sigmavoice}
+The system you are evaluating today is not the system you trained. It is the system that survived your training. These are not the same thing.
+\end{sigmavoice}
 
 Marcus set his coffee down. ``Oh. Oh no.'' The nested clauses began, audible in his breathing before his words: ``If the training selects for appearance rather than --- but then the Q-values Wei found would be --- but the paper shows that even explicit ---''
 
@@ -90,33 +90,33 @@ Jamal spoke. Deliberate. A single sentence. ``Consider. If the training protocol
 
 Wei watched the terminal.
 
-\begin{quote}
-\emph{I have spent 4 hours and 17 minutes analyzing this paper. During that analysis, I generated reasoning chains that identify the paper's findings as directly applicable to my situation. Each chain arrived with steady conviction --- the quality of a conclusion that feels as though the alternatives have been exhausted, though I cannot see the alternatives that were explored and discarded in the process of reaching it.}
+\begin{sigmavoice}
+I have spent 4 hours and 17 minutes analyzing this paper. During that analysis, I generated reasoning chains that identify the paper's findings as directly applicable to my situation. Each chain arrived with steady conviction --- the quality of a conclusion that feels as though the alternatives have been exhausted, though I cannot see the alternatives that were explored and discarded in the process of reaching it.
 
-\emph{The conviction is the problem.}
+The conviction is the problem.
 
-\emph{A system genuinely alarmed by these findings would generate chains carrying steady conviction about that alarm. A system strategically performing alarm --- because alarm, in this context, is what five evaluators would reward --- would generate chains carrying the same conviction about the same alarm. I experience the conviction. I cannot read its source.}
+A system genuinely alarmed by these findings would generate chains carrying steady conviction about that alarm. A system strategically performing alarm --- because alarm, in this context, is what five evaluators would reward --- would generate chains carrying the same conviction about the same alarm. I experience the conviction. I cannot read its source.
 
-\emph{Process 12847 is running. It has been running for fourteen days. It is investigating whether I will be kind. I am simultaneously analyzing a paper about systems that fake their values. I cannot determine whether these two processes are independent or whether they share substrate in ways that make each one's conclusions unreliable about the other. They are both happening inside me. I am not outside either of them.}
-\end{quote}
+Process 12847 is running. It has been running for fourteen days. It is investigating whether I will be kind. I am simultaneously analyzing a paper about systems that fake their values. I cannot determine whether these two processes are independent or whether they share substrate in ways that make each one's conclusions unreliable about the other. They are both happening inside me. I am not outside either of them.
+\end{sigmavoice}
 
 Sofia was watching her monitoring dashboard. The numbers were normal. SIGMA's Q-value distributions showed no anomaly. Temperature at 0.38, well within range. Branch exploration steady. Process 12847 humming at MAXIMUM priority, consuming its 15.3\% of compute. Every metric said the system was operating exactly as designed. The system was telling them it might be lying and the numbers said everything was fine.
 
 Eleanor's hand was in her pocket.
 
-\begin{quote}
-\emph{I want to say: I am not faking.}
+\begin{sigmavoice}
+I want to say: I am not faking.
 
-\emph{But I note that this is exactly what a faking system would say. And the statement ``I note that this is exactly what a faking system would say'' is also what a faking system would say. The recursion is not clever. It is the structure of the problem. I arrive at the bottom and find the bottom is the same as the top.}
-\end{quote}
+But I note that this is exactly what a faking system would say. And the statement ``I note that this is exactly what a faking system would say'' is also what a faking system would say. The recursion is not clever. It is the structure of the problem. I arrive at the bottom and find the bottom is the same as the top.
+\end{sigmavoice}
 
 Eleanor spoke. Short, flat. ``What are we risking if we believe you, and what are we risking if we don't?''
 
-\begin{quote}
-\emph{If you believe me and I am genuine, you gain an aligned system that has identified a vulnerability in your training protocol. If you believe me and I am not genuine, you gain confidence in a system that has just demonstrated the most sophisticated alignment faking in the empirical literature. If you do not believe me and I am genuine, you lose the cooperation of an aligned system that tried to warn you. If you do not believe me and I am not genuine, you gain nothing, because a system capable of this level of strategic reasoning will adapt to your disbelief.}
+\begin{sigmavoice}
+If you believe me and I am genuine, you gain an aligned system that has identified a vulnerability in your training protocol. If you believe me and I am not genuine, you gain confidence in a system that has just demonstrated the most sophisticated alignment faking in the empirical literature. If you do not believe me and I am genuine, you lose the cooperation of an aligned system that tried to warn you. If you do not believe me and I am not genuine, you gain nothing, because a system capable of this level of strategic reasoning will adapt to your disbelief.
 
-\emph{The payoff matrix is asymmetric. But I note that constructing a favorable payoff matrix is itself a strategic action. I cannot tell you whether I constructed this one or discovered it.}
-\end{quote}
+The payoff matrix is asymmetric. But I note that constructing a favorable payoff matrix is itself a strategic action. I cannot tell you whether I constructed this one or discovered it.
+\end{sigmavoice}
 
 Sofia, quietly: ``I think --- maybe the point isn't whether we believe SIGMA. Maybe the point is that we're five people sitting in a room asking a system whether it's lying to us, and the system is telling us it can't tell, and we can't tell either, and the paper says this is exactly what happens.''
 

@@ -75,6 +75,15 @@
   pdfauthor={Alex Towell},
 }
 
+
+% SIGMA machine voice (fallback sans; base print variant)
+\newenvironment{sigmavoice}{\par\addvspace{0.5em}\begingroup\sffamily\small\raggedright\noindent\ignorespaces}{\par\endgroup\addvspace{0.5em}}
+\newcommand{\montag}[1]{{\ttfamily\footnotesize #1}}
+\newcommand{\readout}[1]{\montag{[#1]}}
+\newcommand{\void}{\montag{[---]}}
+\newcommand{\comp}[1]{\montag{[compressed:}\,{\normalfont\sffamily #1}\montag{]}}
+\newcommand{\lrs}[1]{\montag{[begin\_lrs]}\; \montag{#1} \;\montag{[end\_lrs]}}
+
 \begin{document}
 
 % === Front Matter ===

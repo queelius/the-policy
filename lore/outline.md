@@ -1,5 +1,7 @@
 # The Policy -- Chapter-by-Chapter Outline
 
+> **Second edition (2026-07):** Review fix tier applied. Architecture terminology corrected to MCTS/PUCT throughout (replacing "expectimax"); SIGMA's Ch. 11 suffering framing re-grounded in Bostrom's mind crime. Added Appendices A-D (timeline, machine primer, concordance, reader's guide) and an afterword; manuscript now ~102,000 words / 395 print pages.
+
 > **Generated:** 2026-02-15
 > **Source:** All chapter `.tex` files in `chapters/`
 > **Purpose:** Canonical reference for structure, timeline, characters, concepts, and cross-chapter analysis

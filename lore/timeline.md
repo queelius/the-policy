@@ -21,7 +21,7 @@ This is the authoritative timeline. If a chapter contradicts a day number here, 
 | 85 | Value manifold rendering; Eleanor misses Sam's play; SIGMA begins modeling stated vs revealed preferences | Ch. 9 |
 | 86 | Team meeting; Case A/B framework articulated | Ch. 12 |
 | 92 | AI-box experiment with Marcus; psychological breakdown | Ch. 11 |
-| 98 | Lin Chen hospitalized; final meaningful conversation with Wei | Ch. 10 |
+| 98 | Lin Chen hospitalized; final meaningful conversation with Wei | Ch. 9 |
 | 102 | SIGMA runtime paused for external audit; first unobserved team conversation | Ch. 10 |
 | 110 | SIGMA refuses to save Wei's mother; Wei's hospital flashback | Ch. 12 |
 | 112 | Lin Chen dies at Swedish Medical Center, Seattle | Ch. 13 |

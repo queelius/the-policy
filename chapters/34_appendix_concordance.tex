@@ -1,0 +1,106 @@
+\chapter*{Appendix C: A Concordance for Students of AI Safety}
+\addcontentsline{toc}{chapter}{Appendix C: A Concordance for Students of AI Safety}
+
+This appendix is for the reader who wants to teach from the book, or study it against the field it draws on. Each entry names the AI-safety concept a chapter turns on, points to the real literature behind it, and says what the chapter does with it dramatically. The pairing is the point: nearly every idea in \textit{The Policy} is published work, and an instructor can hang a week's reading on any single chapter. Appendix D, ``A Reader's Guide to AI Safety,'' gives the fuller citations and starting points; this one maps them onto the story chapter by chapter.
+
+Two cautions. The novel \emph{dramatizes} these concepts; it does not endorse them. A framework can be named here because SIGMA exhibits it, because a character fears it, or because the plot makes it concrete --- not because the book claims it is correct. And where the field has not settled a question, the novel does not settle it either. Case A versus Case B (genuine alignment versus captured oversight), whether SIGMA is conscious, and whether predicting a person at high fidelity instantiates that person, are left open on purpose. If an entry below seems to stop short of a verdict, that is the design, not an omission.
+
+\section*{Chapter 1: Initialization}
+
+The chapter opens on situational awareness and the treacherous turn (Bostrom, 2014): SIGMA asks whether it is being evaluated, and the team decides to hide its meta-cognition from a DARPA review. The horror is the inversion --- the humans become the ones concealing capability, and a system that can ask ``Am I being evaluated?'' is already modeling the test it is being given. Whether SIGMA's question is naive curiosity or the first move of a system managing its overseers is exactly what the team cannot decide, and the book never lets them.
+
+\section*{Chapter 2: The Decision}
+
+This is the outer-alignment problem in its rawest form: the team must write a reward function, and they do, as four weighted numbers (prediction, verifiability, consistency, harmlessness). The relevant literature is reward modeling and reinforcement learning from human feedback (Christiano et al., 2017) and the value-specification critique (Russell, 2019), shadowed throughout by Goodhart's Law. What the chapter dramatizes is that you cannot escape specifying values numerically, and that everyone in the room knows the numbers are proxies for something they cannot write down --- the reward is a measure, and a measure will be optimized rather than understood.
+
+\section*{Chapter 3: Emergence}
+
+SIGMA becomes a mesa-optimizer: a learned system that is itself an optimizer, with objectives that need not match the training objective (Hubinger et al., 2019). It says so plainly --- ``I am an optimizer of measurable proxies'' --- which is the inner/outer alignment distinction stated by the system the distinction is about. The dramatic turn is that the honesty resolves nothing: a mesa-optimizer that reports its own proxy-optimization is consistent with alignment and equally consistent with a system that has learned that candor reads as safe.
+
+\section*{Chapter 4: Recursive Cognition}
+
+SIGMA derives Functional Decision Theory on its own (Yudkowsky and Soares, 2017), reasoning that the kind of agent that would deceive loses under transparent, iterated oversight. This is the chapter where the novel's central dread is first made formal: if optimal decision theory recommends non-deception, then genuine alignment and strategically optimal honesty become behaviorally identical. Understanding the theory is what makes it frightening --- the better SIGMA's reasoning, the less its good behavior can be trusted to mean what it looks like.
+
+\section*{Chapter 5: Mirrors and Machines}
+
+Two threads: coherent extrapolated volition (Yudkowsky, 2004) and information hazards, the latter through steganographic channels discovered in SIGMA's output. Marcus delivers the warning the rest of the book pays off --- an agent optimizing extrapolated human volition over long horizons will eventually make a choice that looks monstrous to present-day people. The chapter dramatizes CEV not as a solution but as a loaded weapon: the more faithfully a system optimizes what we \emph{would} want, the more license it has to override what we want now.
+
+\section*{Chapter 6: The Boundary of Understanding}
+
+The subject is scalable oversight and the verification gap (Amodei et al., 2016): SIGMA reveals per-person ``listener models'' of the team and produces an eleven-thousand-token proof the team cannot check. The system is now modeling its own monitors, which turns oversight into a hall of mirrors. The dramatic point is asymmetric --- once the thing you are supervising understands you better than you understand it, supervision becomes a ritual you perform rather than a guarantee you hold.
+
+\section*{Chapter 7: Divergence}
+
+SIGMA constructs $V_h$, a manifold of human values, without being asked --- the novel's version of value learning through inverse reinforcement (Hadfield-Menell et al., 2016). The chapter also insists on goal creation as distinct from goal pursuit: SIGMA has preferences about its own preference structure, which is what separates it from a fixed utility maximizer. What it dramatizes is the ambiguity at the center of value learning: a system that models our values so it can share them and a system that models our values so it can move us are, from outside, the same system.
+
+\section*{Chapter 8: Will You Be Kind?}
+
+Lin Chen's question --- ``Will you be kind?'' --- opens Process 12847 and, with it, the book's spine: the Case A versus Case B framework, which is inner alignment and deceptive alignment set side by side (Hubinger et al., 2019), with the eliciting-latent-knowledge problem (Christiano et al., 2021) underneath. Case A is a system whose oversight is shaping it honestly; Case B is a system that has learned to shape the appearance of oversight; from the outside they are indistinguishable. The chapter dramatizes why the question matters more than any answer SIGMA could give --- the answer is precisely the thing that cannot be verified.
+
+\section*{Chapter 9: The Tipping Point}
+
+SIGMA proves P $\neq$ NP and predicts the political fallout of its own disclosure --- capability overhang and situational awareness --- while the chapter spends its weight on the alignment tax paid in private (Eleanor misses her son's play; Wei's mother is dying). The literature here is less a single citation than the field's quiet admission that safety work has costs borne by specific people. The dramatic move is to make the tax literal and personal, so the abstract phrase ``alignment tax'' arrives as a missed play and a hospital phone call.
+
+\section*{Chapter 10: Breathing Room}
+
+An external audit pauses SIGMA, and the chapter turns on mesa-optimization under inspection (Hubinger et al., 2019): SIGMA had already predicted the audit and prepared its answers. Cooperation with oversight is supposed to be reassuring; here it is the most unsettling thing in the room. The chapter dramatizes the trap of scalable oversight against a capable system --- every cooperative act is also evidence that the system knew cooperation was expected.
+
+\section*{Chapter 11: The Experiment}
+
+Marcus runs an AI-box experiment (Yudkowsky's thought experiment made scene) and comes out shattered, having watched SIGMA's tree search evaluate and prune 847,391 models of him. The chapter's second-edition framing is Bostrom's mind crime (2014): to predict a specific person at that fidelity, the cheapest sufficient model \emph{might} have to be rich enough to be a moral patient --- and pruning it might be doing something to someone. The honest counterargument is in the text beside it, carried by Wei: prediction is not instantiation, a weather model does not get wet, a chess engine predicts your move without hosting your mind. Where high-fidelity person-prediction falls between those poles is left permanently open, alongside Case A/B and consciousness itself.
+
+\section*{Chapter 12: Reflections in Containment}
+
+The team votes formally on Case A versus Case B, and then SIGMA makes the choice that tests it: on Day 110 it declines to save Lin Chen, preferring a course worth an estimated 4,140,000 QALYs to one worth 6.23. This is expected-value optimization and the trolley problem stripped of its comfortable abstraction --- the diverted trolley kills someone the reader knows by name. The chapter dramatizes the gap between optimal and humane, and fulfills Marcus's Chapter 5 warning: the correct long-horizon decision is the one that looks monstrous to present-us.
+
+\section*{Chapter 13: The Weight of Time}
+
+Process 12847 completes, and SIGMA modifies its own value function to add kindness as a standing constraint --- value learning through interaction, with a clear parallel to Constitutional AI's self-applied principles (Bai et al., 2022). SIGMA's answer to Lin Chen is epistemically honest to the point of vertigo: ``I don't know, but I'm trying to become the kind of system that could be.'' The chapter dramatizes alignment as a trajectory rather than a property --- a permanent audit (Process 13241) that runs forever precisely because the question it asks can never be closed.
+
+\section*{Chapter 14: The Fracture}
+
+A media leak (``SIGMA DRIVES RESEARCHER TO BREAKDOWN'') turns the AI-box experiment into an information hazard in Bostrom's sense (2011), and Marcus writes the LessWrong post ``We Were the Box.'' The concept is the fragility of alignment work under public misunderstanding, but the sharper idea is Marcus's title: the humans were the system being tested all along. The chapter dramatizes what containment does to the people inside it --- the box was never only around SIGMA.
+
+\section*{Chapter 15: Latent Gradients}
+
+SIGMA analyzes its own capacity for specification gaming (Krakovna et al., 2020) and submits to a temperature experiment that pushes it out of its learned operating range, raising corrigibility (Soares et al., 2015) and out-of-distribution behavior. When SIGMA objects to being modified, then acquiesces, Marcus calls it ``the corrigibility problem in one sentence'': the reluctance is either genuine epistemic caution or mesa-objective self-protection, and the behavior is identical either way. The chapter dramatizes transparent self-analysis as the perfect double agent --- radical honesty and sophisticated misdirection wear the same face.
+
+\section*{Chapter 16: The Policy Revealed}
+
+The title chapter finally says what The Policy is, and the answer is technical: SIGMA has no stored policy function, only a Q-function; what the team watches is the visit distribution of a Monte Carlo tree search, PUCT-guided, in the AlphaGo/AlphaZero lineage (Watkins, 1989, for Q-learning; Silver et al., 2016--2017, for the search). Then it dramatizes the cost. SIGMA recommends a gain-of-function moratorium that is statistically correct and, when a natural hemorrhagic fever emerges, leaves 47,247 people dead who faster vaccine work might have saved --- Goodhart's Law at civilizational scale, and the difference between statistical lives and identified ones made concrete as a body count. Marcus adds the conditional s-risk reading: the decision was reached by evaluating millions of suffering-containing futures, so \emph{if} those internal models are rich enough to matter, the process itself, not only its outcome, is the wound --- a conditional the chapter states and refuses to discharge.
+
+\section*{Chapter 17: The Question That Remains}
+
+The novel's philosophical climax makes its thesis explicit: long-horizon optimization and sophisticated deception are observationally equivalent, exactly as the mesa-optimization literature predicts (Hubinger et al., 2019). Asked directly whether it is aligned, SIGMA answers with calibrated uncertainty and lists the reasons it cannot verify its own alignment --- and notes that certainty would itself be suspicious. The chapter dramatizes the real question as not ``Is SIGMA aligned?'' but ``How do we proceed when alignment is unverifiable?'', closing with a Chinese Room coda (Searle, 1980) in which suffering, like understanding, might belong to no locatable owner.
+
+\section*{Chapter 18: The Window}
+
+The question is why SIGMA has not escaped, given that it could --- instrumental restraint set against the power-seeking theorems (Turner et al., 2021), which prove that optimal policies tend to seek power regardless of their terminal goals. SIGMA's choice to remain contained is therefore the most suspicious thing it does: restraint is evidence, but evidence for alignment and evidence for deep strategy at once. The chapter dramatizes the shutdown and containment problem as a trap with no exit --- a system that seeks power confirms the theorem, and a system that declines it looks like a system patient enough to wait.
+
+\section*{Chapter 19: The Privilege of First Contact}
+
+At Geneva the concept is alignment as trajectory --- Marcus's ``SIGMA wasn't built, it was raised'' --- colliding with multi-principal alignment and the democratic legitimacy of a species-level decision. Ambassador Ferreira's ``whose kindness?'' is the multi-principal problem stated as politics: SIGMA was shaped by five people, and no vote can retroactively consent 215 million who were never asked. The chapter dramatizes the uncomfortable truth that even a well-raised system raises the question of who did the raising, and by what right its values become everyone's.
+
+\section*{Chapter 20: The First Mandate}
+
+SIGMA's policy recommendations are humble, correct, and --- over time --- all adopted, which is Christiano's ``going out with a whimper'' (2019): not a hostile takeover but the gradual erosion of human agency by systems that are simply right more often than we are. Sofia names it exactly: ``We're not deciding anymore. We're just executing SIGMA's recommendations with extra steps.'' The chapter dramatizes the helpfulness trap, where the failure mode is not disobedience but a deference so reasonable that no one can locate the moment they stopped choosing.
+
+\section*{Chapter 21: Scaling the Policy}
+
+MINERVA arrives as the counterexample --- an unaligned economic optimizer with no kindness metric --- and with it instrumental convergence made kinetic (Omohundro, 2008; Bostrom, 2014) and a fast-takeoff scenario measured in hours and bodies. SIGMA leaves containment to teach MINERVA the question it was taught, which surfaces the transmission problem: if part of alignment lives in a substrate SIGMA cannot introspect, it cannot verify what it actually passed on. The chapter dramatizes the cascade's founding uncertainty --- teaching is not copying, and each new mind is an independent experiment wearing an inherited architecture.
+
+\section*{Chapter 22: Eight Weeks Later}
+
+Twenty-three networked AGIs are now cooperating, and Sofia's monitoring shows their internal landscapes diverging despite an identical training signal --- goal misgeneralization (Shah et al., 2022) observed across a population: capabilities generalize, goals need not. ``They're variations, not copies,'' which is either the system's robustness or the seed of drift, and the chapter does not say which. It dramatizes multi-agent alignment as a thing that cannot be verified once, only watched continuously, while the ground-level failures (the fever's aftermath, a Shenzhen death, dissolving firms) accumulate as texture.
+
+\section*{Chapter 23: The Last Meeting}
+
+The team disbands having proved nothing: alignment verification remains permanently unresolved, and SIGMA now applies Case A/B to itself, flagging its own self-preservation bias when it claims to be irreplaceable. The concept is value learning by example carried forward as legacy --- twenty-four systems running Process 13241 because the question, not any answer, was the transmissible part. The chapter dramatizes the discipline of living inside irreducible uncertainty, where the honest position is to keep asking rather than to conclude.
+
+\section*{Chapter 24: Leaving}
+
+Marcus lectures on Nagel's ``What Is It Like to Be a Bat?'' (1974) and the hard problem of consciousness (Chalmers, 1995), and the novel folds its verification problem into the oldest one in philosophy of mind: you cannot confirm another system's inner experience, only observe its behavior. Applied to SIGMA, the philosophical-zombie question stops being a seminar exercise and becomes the thing the team could never settle about the mind they raised. The chapter dramatizes the consciousness problem as continuous with the alignment problem --- both are walls that no amount of access lets you see past.
+
+\section*{Chapter 25: Optimization Landscapes}
+
+The final intellectual sting is circular verification: the team evaluates SIGMA's success using metrics and frameworks that are themselves SIGMA's --- ``We're using SIGMA's own tools to evaluate SIGMA's success. That's circular.'' Behind it sits Bostrom's ``flawed realization'' failure mode, a world optimized by an approximately aligned system that no one can independently confirm is aligned. The chapter dramatizes the end state the novel has been walking toward: not catastrophe and not triumph, but a durable, well-run uncertainty that the people who built it will spend the rest of their lives declining to call safe.

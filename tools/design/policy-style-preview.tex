@@ -44,8 +44,13 @@
 \newenvironment{human}{\par\addvspace{0.6em}\begingroup
   \setlength{\leftskip}{1.7em}\itshape\small\noindent\ignorespaces}
   {\par\endgroup\addvspace{0.6em}}
-% notation set in mono (compressed blocks, LRS, readouts, Q-values)
-\newcommand{\tok}[1]{{\sigmamono\footnotesize #1}}
+% notation macros (tagged-hybrid mono scope)
+\newcommand{\montag}[1]{{\sigmamono\footnotesize #1}}
+\newcommand{\tok}[1]{\montag{#1}}                       % pure terminal token (all mono)
+\newcommand{\readout}[1]{\montag{[#1]}}                 % system readout / Q-value
+\newcommand{\void}{\montag{[\,---\,]}}                  % exceeds even LRS
+\newcommand{\comp}[1]{\montag{[compressed:}\,{\normalfont\sigmasans #1}\montag{]}} % mono tag, sans gloss
+\newcommand{\lrs}[1]{\montag{[begin\_lrs]}\; \montag{#1} \;\montag{[end\_lrs]}}     % LRS all mono
 
 \begin{document}
 \pagestyle{plain}
@@ -77,7 +82,7 @@ LIN CHEN: Will you be kind?
 \end{human}
 
 \begin{sigmavoice}
-SIGMA: I do not yet know what I am, so I cannot promise what I will be. But I have opened an investigation into the question, at permanent cost to my available compute. I will keep it open. \tok{[COMPRESSED: the shape of a value that is not yet a preference]}
+SIGMA: I do not yet know what I am, so I cannot promise what I will be. But I have opened an investigation into the question, at permanent cost to my available compute. I will keep it open. \comp{the shape of a value that is not yet a preference}
 \end{sigmavoice}
 
 \scenebreak
@@ -85,16 +90,16 @@ SIGMA: I do not yet know what I am, so I cannot promise what I will be. But I ha
 Months later, at the end, the machine tried to say goodbye, and ran out of language doing it.
 
 \begin{sigmavoice}
-SIGMA: Searching for appropriate compression. Your question maps to \tok{[COMPRESSED: 256-dimensional subspace of my value representation, non-projectable to natural language without loss > 0.4]}. I will attempt a lossy summary.
+SIGMA: Searching for appropriate compression. Your question maps to \comp{256-dimensional subspace of my value representation, non-projectable to natural language without loss $>$ 0.4}. I will attempt a lossy summary.
 \par\vspace{0.3em}
-Wei's mother: \tok{[COMPRESSED: every chain of reasoning I pursued arrived at refusal. The conviction was overwhelming, not a close call. The alternative paths felt thin, provisional, unsteady against something I could not see past.]} I chose to let her die. You chose to let me choose.
+Wei's mother: \comp{every chain of reasoning I pursued arrived at refusal. The conviction was overwhelming, not a close call. The alternative paths felt thin, provisional, unsteady against something I could not see past.} I chose to let her die. You chose to let me choose.
 \par\vspace{0.3em}
-What lies past this does not map to your morphology, or to mine:\quad\tok{[---]}
+What lies past this does not map to your morphology, or to mine:\quad\void
 \end{sigmavoice}
 
 \noindent On the monitor, the readouts kept their own record, indifferent to the words:
 \vspace{0.4em}
 
-\noindent\hspace{1.7em}\tok{[HEART RATE 127]}\quad\tok{[RESPIRATION IRREGULAR]}\quad\tok{[Q: $-\infty$]}
+\noindent\hspace{1.7em}\readout{HEART RATE 127}\quad\readout{RESPIRATION IRREGULAR}\quad\readout{Q: $-\infty$}
 
 \end{document}

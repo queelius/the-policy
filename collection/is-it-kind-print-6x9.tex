@@ -12,10 +12,19 @@
   footskip=0.3in
 ]{geometry}
 
-% === Fonts ===
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{ebgaramond}
+% === Fonts (lualatex + fontspec, matching the novel) ===
+\usepackage{fontspec}
+\setmainfont{EBGaramond12-Regular}[
+  Path=/usr/share/fonts/truetype/ebgaramond/, Extension=.ttf,
+  ItalicFont=EBGaramond12-Italic, BoldFont=EBGaramond12-Bold,
+  BoldItalicFont=EBGaramond12-Italic]
+\newfontfamily\sigmasans{Inter-Regular}[
+  Path=/usr/share/fonts/opentype/inter/, Extension=.otf,
+  ItalicFont=Inter-Italic, BoldFont=Inter-SemiBold]
+\newfontfamily\sigmamono{Go-Mono}[
+  Path=/usr/share/fonts/fonts-go/, Extension=.ttf,
+  ItalicFont=Go-Mono-Italic, BoldFont=Go-Mono-Bold, RawFeature={-tlig}]
+\usepackage{microtype}
 
 % === Typography ===
 \usepackage{setspace}
@@ -51,14 +60,20 @@
   \renewcommand{\footrulewidth}{0pt}
 }
 
-% === Chapter formatting ===
+% === Chapter formatting (story-title heads: letterspaced small caps + ornament) ===
 \usepackage{titlesec}
+\usepackage{tikz}
+\newcommand{\chapterornament}{%
+  \begin{tikzpicture}[baseline=-0.4ex,line cap=round]
+    \foreach \a in {-4,-3,-2,-1,0,1,2,3,4}{%
+      \draw[black!55,line width=0.3pt] (0,0)
+        .. controls (0,0.12) and ({0.05*\a},0.22) .. ({0.10*\a},0.36);}%
+  \end{tikzpicture}}
 \titleformat{\chapter}[display]
-  {\normalfont\scshape\centering}
-  {}
-  {0pt}
-  {\LARGE}
-\titlespacing*{\chapter}{0pt}{50pt}{30pt}
+  {\centering\normalfont}{}{0pt}
+  {\LARGE\scshape\textls[60]}
+  [\vspace{10pt}\chapterornament]
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
 
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 

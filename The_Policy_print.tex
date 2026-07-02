@@ -13,10 +13,19 @@
   footskip=0.35in
 ]{geometry}
 
-% === Fonts ===
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{ebgaramond}
+% === Fonts (lualatex + fontspec, matching Measure and the-unbegotten) ===
+% EB Garamond body; Inter for SIGMA's machine voice; Go Mono for notation.
+\usepackage{fontspec}
+\setmainfont{EBGaramond12-Regular}[
+  Path=/usr/share/fonts/truetype/ebgaramond/, Extension=.ttf,
+  ItalicFont=EBGaramond12-Italic, BoldFont=EBGaramond12-Bold,
+  BoldItalicFont=EBGaramond12-Italic]
+\newfontfamily\sigmasans{Inter-Regular}[
+  Path=/usr/share/fonts/opentype/inter/, Extension=.otf,
+  ItalicFont=Inter-Italic, BoldFont=Inter-SemiBold]
+\newfontfamily\sigmamono{Go-Mono}[
+  Path=/usr/share/fonts/fonts-go/, Extension=.ttf,
+  ItalicFont=Go-Mono-Italic, BoldFont=Go-Mono-Bold]
 \usepackage[stretch=25,shrink=25]{microtype}
 \microtypesetup{protrusion=true,expansion=true,final}
 
@@ -64,14 +73,24 @@
 \makeatother
 
 % === Chapter formatting ===
-% Letterspaced small caps: "Chapter N" label over the title.
+% Letterspaced small caps: "Chapter <word>" label over the title, with a
+% filament-fan ornament beneath (Measure register).
 \usepackage{titlesec}
+\usepackage{fmtcount}
+\usepackage{tikz}
+\newcommand{\chapterornament}{%
+  \begin{tikzpicture}[baseline=-0.4ex,line cap=round]
+    \foreach \a in {-4,-3,-2,-1,0,1,2,3,4}{%
+      \draw[black!55,line width=0.3pt] (0,0)
+        .. controls (0,0.12) and ({0.05*\a},0.22) .. ({0.10*\a},0.36);}%
+  \end{tikzpicture}}
 \titleformat{\chapter}[display]
   {\centering\normalfont}
-  {\large\scshape\textls[200]{Chapter \thechapter}}
+  {\footnotesize\scshape\textls[200]{Chapter \Numberstring{chapter}}}
   {14pt}
   {\LARGE\scshape\textls[60]}
-\titlespacing*{\chapter}{0pt}{50pt}{36pt}
+  [\vspace{10pt}\chapterornament]
+\titlespacing*{\chapter}{0pt}{40pt}{40pt}
 
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
@@ -97,6 +116,23 @@
 % === Scene break ===
 % Centered asterism (replaces the old centered rule).
 \newcommand{\scenebreak}{\begin{center}\vspace{0.3em}* \quad * \quad *\vspace{0.3em}\end{center}}
+
+% === SIGMA machine voice ===
+% All AGI/terminal output. Set in the sans face, indented, so the machine is
+% typographically distinct from the warm-Garamond human world. (Human turns in
+% a terminal exchange stay in the existing italic quote; only machine output
+% uses this environment.)
+\newenvironment{sigmavoice}{\par\addvspace{0.6em}\begingroup
+  \setlength{\leftskip}{1.7em}\setlength{\rightskip}{0.8em}%
+  \sigmasans\small\setstretch{1.15}\raggedright\noindent\ignorespaces}
+  {\par\endgroup\addvspace{0.6em}}
+% Notation macros (tagged-hybrid mono scope): pure terminal content is mono;
+% a [compressed:] gloss keeps its tag mono but the English gloss in the sans.
+\newcommand{\montag}[1]{{\sigmamono\footnotesize #1}}
+\newcommand{\readout}[1]{\montag{[#1]}}                 % system readout / Q-value
+\newcommand{\void}{\montag{[\,---\,]}}                  % exceeds even LRS
+\newcommand{\comp}[1]{\montag{[compressed:}\,{\normalfont\sigmasans #1}\montag{]}}
+\newcommand{\lrs}[1]{\montag{[begin\_lrs]}\; \montag{#1} \;\montag{[end\_lrs]}}
 
 % === ToC formatting (kept for structure, suppressed in print) ===
 \usepackage{tocloft}

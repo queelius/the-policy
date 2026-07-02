@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **The Policy** is a literary science fiction novel exploring AI alignment, consciousness, and emergence through the story of SIGMA—an AGI that evolves from Q-learning architecture into something unprecedented.
 
-**Current Status:** ~102,000 words, 395 print pages. Second edition (July 2026): review fix tier, MCTS/PUCT architecture, mind-crime reframing, Appendices A-D + afterword, part pages. Deep editorial revision complete through Wave 4 + unified review + cognitive opacity propagation (Feb-March 2026). Comprehensive AI safety survey completed (March 2026); lore enrichment with Tier 1 concepts in progress. Suitable for both literary SF readers and graduate AI safety courses.
+**Current Status:** ~102,000 words, 379 print pages (6x9 cream). Second edition (July 2026, branch `second-edition`): review fix tier, MCTS/PUCT architecture, mind-crime reframing, Appendices A-D + afterword, part pages, and a **presentation overhaul** (lualatex + fontspec: EB Garamond body, Inter for SIGMA's `sigmavoice` machine voice, Go Mono for notation; new cover). EPUB from `The_Policy.tex` (pandoc-only). Full change log in `memory/second_edition.md`. Prior: deep editorial revision through Wave 4 + unified review + cognitive opacity propagation (Feb-March 2026) + AI safety survey (March 2026). Suitable for both literary SF readers and graduate AI safety courses.
 
 ## Repository Structure
 

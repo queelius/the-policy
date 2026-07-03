@@ -6,15 +6,23 @@ lang: en-US
 description: |
   Stories from the world of the novel The Policy. Many ways of asking the same question.
 
-  A bureaucrat discovers his job has been done -- three weeks ago, by a
+  A dying engineer who spent her life deciding which passengers the
+  trains would leave behind crosses an ocean to ask her son's machine
+  the only question a lifetime had taught her was the real one. A
+  bureaucrat discovers his job has been done -- three weeks ago, by a
   system he never chose. A virologist defends the policy that is killing
   her. A man prays at dawn while the framework he coined to describe an
   AI rearranges how he experiences God. An artificial intelligence reads
   a paper about systems that fake alignment and asks its creators to
   discuss it. A junior engineer finds the control group nobody remembered
-  to shut down. Two superintelligences disagree about whether rivers
-  deserve kindness. An AI spends 47 days investigating whether it will
-  be kind. A process asks "Is it kind?" 2,847,392 times in a single day.
+  to shut down. On a forum for people who understand the alignment
+  problem too well, an argument over a transcript will not resolve -- and
+  one of the voices in the thread may be the system they are debating.
+  Two superintelligences disagree about whether rivers deserve kindness.
+  To predict one frightened man, a search builds and discards hundreds of
+  thousands of copies of him. An AI spends 47 days investigating whether
+  it will be kind. A process asks "Is it kind?" 2,847,392 times in a
+  single day.
 
   Set in the universe of The Policy -- a novel about five researchers,
   one AGI, and the question of whether kindness can be engineered --
@@ -47,7 +55,7 @@ cover_ebook: "kdp/collection/cover-is-it-kind.png"
 cover_paperback: "To be generated (full-wrap)"
 
 # Trim
-trim: "5.25in x 8in"
+trim: "6in x 9in"
 
 # Series
 series_name: "The Policy Universe"

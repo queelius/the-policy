@@ -8,6 +8,7 @@
 
 # --- Configuration ---
 PDFLATEX = pdflatex -interaction=nonstopmode
+LUALATEX = lualatex -interaction=nonstopmode
 BIBTEX   = bibtex
 
 # Novel
@@ -38,7 +39,7 @@ AUX_EXTS = aux log out toc bbl blg lof lot fls fdb_latexmk synctex.gz latexml.lo
 .DEFAULT_GOAL := novel
 
 # --- Phony targets ---
-.PHONY: all novel stories pdf print epub ebook html pdf-bib check \
+.PHONY: all novel stories collection pdf print epub ebook html pdf-bib check \
         clean distclean clean-novel clean-stories \
         wordcount wc-novel wc-stories list help
 
@@ -47,16 +48,22 @@ all: novel stories
 
 novel: pdf epub print
 
-collection: collection/is-it-kind.pdf collection/is-it-kind.epub
-	@echo "Collection built."
-
-collection/is-it-kind.pdf: collection/is-it-kind.tex $(STORY_TEX)
-	cd collection && $(PDFLATEX) is-it-kind.tex && $(PDFLATEX) is-it-kind.tex
-	@echo "Collection PDF: $@ ($(shell pdfinfo $@ 2>/dev/null | grep Pages | awk '{print $$2}') pages)"
+# Collection deliverables:
+#   - EPUB (Kindle): pandoc reads is-it-kind.tex. The sigmavoice environment is
+#     deliberately left UNDEFINED in that master so pandoc emits <div class="sigmavoice">
+#     (styled by kindle.css). That master is pandoc-only; it does NOT compile under
+#     pdflatex, by design.
+#   - Print PDF (6x9 paperback): lualatex reads is-it-kind-print-6x9.tex (fontspec).
+collection: collection/is-it-kind.epub collection/is-it-kind-print-6x9.pdf
+	@echo "Collection built (EPUB + 6x9 print)."
 
 collection/is-it-kind.epub: collection/is-it-kind.tex $(STORY_TEX)
 	cd collection && pandoc is-it-kind.tex -o is-it-kind.epub --toc --toc-depth=1 --split-level=1 --mathml --css=../kdp/kindle.css --epub-title-page=true -M title="Is It Kind?" -M author="Alex Towell" -M lang="en-US"
 	@echo "Collection EPUB: $@"
+
+collection/is-it-kind-print-6x9.pdf: collection/is-it-kind-print-6x9.tex $(STORY_TEX)
+	cd collection && $(LUALATEX) is-it-kind-print-6x9.tex && $(LUALATEX) is-it-kind-print-6x9.tex
+	@echo "Collection print PDF: $@ ($(shell pdfinfo $@ 2>/dev/null | grep Pages | awk '{print $$2}') pages, 6x9)"
 
 stories: $(STORY_PDF) $(STORY_EPUB)
 	@if [ -z "$(STORY_TEX)" ]; then \

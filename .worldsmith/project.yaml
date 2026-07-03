@@ -11,7 +11,21 @@ works:
     master: The_Policy.tex
     file_types: [tex]
 
-  # --- Drafted short stories ---
+  # --- Collection (published on Amazon KDP, 2026) ---
+  - name: "Is It Kind? Stories from The Policy Universe"
+    type: collection
+    manuscript: collection/
+    master: collection/is-it-kind.tex
+    file_types: [tex]
+    description: >
+      Published short-story collection (~49k words; Amazon KDP, priced
+      $0.99). A binding over works in stories/, in reading order: The
+      Shanghai Engineer, The Whimper, Hemorrhagic, Jamal's Dawn,
+      Seventy-Eight Percent, The Naive Variants, We Were the Box, The
+      First Disagreement, 847,391 Marcuses, Process 12847, The Kindness
+      Audit.
+
+  # --- Drafted short stories (collected in Is It Kind?) ---
   - name: Hemorrhagic
     type: short-story
     manuscript: stories/hemorrhagic/
@@ -26,40 +40,48 @@ works:
     file_types: [tex]
     lore: stories/process-12847/lore/
 
-  # --- Spinoff short stories (spec complete, awaiting draft) ---
+  # --- Drafted short stories, continued (collected in Is It Kind?) ---
+  # (Previously marked "spec complete, awaiting draft"; in fact drafted and
+  # published in the Is It Kind? collection. Each has a standalone master.)
   - name: The First Disagreement
     type: short-story
     manuscript: stories/first-disagreement/
+    master: stories/first-disagreement/first-disagreement.tex
     file_types: [tex]
     lore: stories/first-disagreement/lore/
 
   - name: The Naive Variants
     type: short-story
     manuscript: stories/naive-variants/
+    master: stories/naive-variants/naive-variants.tex
     file_types: [tex]
     lore: stories/naive-variants/lore/
 
   - name: Seventy-Eight Percent
     type: short-story
     manuscript: stories/seventy-eight-percent/
+    master: stories/seventy-eight-percent/seventy-eight-percent.tex
     file_types: [tex]
     lore: stories/seventy-eight-percent/lore/
 
   - name: The Kindness Audit
     type: short-story
     manuscript: stories/kindness-audit/
+    master: stories/kindness-audit/kindness-audit.tex
     file_types: [tex]
     lore: stories/kindness-audit/lore/
 
   - name: Jamal's Dawn
     type: short-story
     manuscript: stories/jamals-dawn/
+    master: stories/jamals-dawn/jamals-dawn.tex
     file_types: [tex]
     lore: stories/jamals-dawn/lore/
 
   - name: The Whimper
     type: short-story
     manuscript: stories/whimper/
+    master: stories/whimper/whimper.tex
     file_types: [tex]
     lore: stories/whimper/lore/
 
